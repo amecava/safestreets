@@ -1,0 +1,81 @@
+\section{Introduction}
+\subsection{Purpose of this document}
+The purpose of a \textbf{R}equirement \textbf{A}nalysis and \textbf{S}pecifications \textbf{D}ocument is the process of discovering the purpose for which a software system was intended, by identifying stakeholders and their needs, and documenting these in a form that is amenable to analysis, communication, and subsequent implementation. \cite{RE} It is also concerned with the relationship of software's factors such as goals, functions and constrains to precise specifications of software behavior, and to their evolution over time and across software families.\cite{Zave}
+
+\subsection{Scope}
+
+SafeStreets is a crowd-­sourced application that intends to provide users with the possibility to notify authorities when traffic violations occur, and in particular parking violations. 
+
+The application allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the application allows both end users and authorities to mine the information that has been received, for example by highlighting the streets (or the areas) with the highest frequency of violations, or the vehicles that commit the most violations. Of course, different levels of visibility are offered to different roles.\cite{Assignments}
+
+\subsubsection{Goals}
+	\label{sec:goals}
+	\begin{enumerate}[label=\textbf{G\arabic*}]
+		\item \label{goal:register} Allow guest users to register to the system
+		\item \label{goal:login}Allow registered users to authenticate to the system
+		\item \label{goal:position}Provide logged users with the position of available cars
+		\item \label{goal:notifyMaintenance} Notify maintenance service with a list of not available cars 
+		\item \label{goal:maintenanceDone} Provide the maintenance service with a way to notify the system when a car is available again 
+		\item \label{goal:needMaintenance} Provide users with a way to report a damaged car
+		\item \label{goal:usersHistory} Provide a way to show to each user his rents and payments history
+		\item \label{goal:banUnbanUsers} Provide customer service with a way to ban registered users in order to prevent them from reserving or using other cars, and enable them to use the service again
+		\item \label{goal:carReservation} Allow a logged user to reserve a car, if available, and hold that reservation for an hour
+		\item \label{goal:reservationFee} Charge a user for 1\euro\ in case he hasn't used the car he reserved after an hour from such reservation
+		\item \label{goal:completeRent} Allow a logged user to perform a complete rent: reserving a car, using it and leaving it terminating the rent, accomplishing the payment procedure related to aforementioned rent
+		\item \label{goal:calculateCost} Calculate and charge the user for the correct amount of money he has to pay for his last ride, also considering the various discounts and fees applicable based on the ride
+		\item \label{goal:moneySavingOption}Allow a logged user to enable a money saving option which provides him with a charging station as destination of the ride to get a discount on the cost of the aforementioned ride
+	\end{enumerate}
+
+\subsection{Glossary}
+	\subsubsection{Definitions}
+	\begin{description}
+		\item[System:]the PowerEnJoy software we are to develop
+		\item[Company:] the company we are developing the system for
+		\item[Guest \emph{or} Guest user:] person who access the system as non logged user
+		\item[Logged user \emph{or} Authenticated user:] authenticated person who is interfacing with the system
+		\item[User:] guest user or logged user
+		\item[Banned user:] a user that can not use the system, he can only contact the customer care service
+		\item[Registration:]  interaction between a non registered user and the system in which the user, providing all of the information required by the system for the creation of an account, receives from the system the credentials needed to authenticate to the system
+		\item[Authentication \emph{or} Login:] interaction between guests and the system that grants authenticated user's privileges to a guest user
+		\item[Car:] an electric car owned by the company
+		\item[Available car:] the car can be reserved by a user
+		\item[Reserved car:] the car has been reserved by a user
+		\item[In use car:] a car is becomes in use when a user ignites the engine and stops being in use at the end of the rent
+		\item[Not available car:] the car can not be reserved by a user, a maintenance operator will deal with it
+		\item[Battery level critical:] battery level under 20\%
+		\item[Charging station:] location where cars owned by the company can be charged using a provided plug
+		\item[Safe area:] area of the map where a rent can be terminated without the corresponding additional fee
+		\item[Payment procedure:] process which realizes the monetary transaction between the user and the system
+		\item[Restricted access API:] API that can be used only by authorized person or system through an access token
+		\item[GPS Coordinates:] GPS coordinates are a unique identifier of a precise geographic location on the earth
+		\item[Base cost:] Ride cost calculated proportionally to the rent time
+		\item[Rent time:] Time period starting from the moment the engine was turned on, until the car is locked
+	\end{description}
+\subsubsection{Acronyms}
+	\begin{description}
+		\item [RASD:] Requirements Analysis and Specification Document
+		\item [API:] Application Programming Interface
+		\item [GPS:] Global Position System
+		\item [DBMS:] Data Base Management System
+		\item [FSM:] Finite-State Machine
+		\item [GIS:] Geographic Information System
+	\end{description}
+\subsubsection{Abbreviations}
+	\begin{description}
+		\item [m:] meters (with multiples and submultiples)
+		\item [w.r.t.:] with respect to
+		\item [i.d.:] id est
+		\item [i.f.f.:] if and only if
+		\item [e.g.:] exempli gratia
+		\item [etc.:] et cetera
+	\end{description}
+
+\subsection{Document overview}
+According to the IEEE standard \cite{IeeeRasd}, this document is structured as
+\begin{enumerate}
+	\item \textbf{Introduction}: it provides an overview of this entire document and product goals
+	\item \textbf{Overall description}: it describes general factors that affect the product providing the background for system requirements
+	\item \textbf{Specific requirements}: it contains all system's functional and non-functional requirements
+	\item \textbf{Use cases identification}: it contains the usage scenarios of the system with the use case diagram, use cases descriptions and other diagrams
+	\item \textbf{Appendices}: it contains the Alloy model, software and tools used, hours of work per each team member
+\end{enumerate}

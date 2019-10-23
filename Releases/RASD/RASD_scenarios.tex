@@ -1,0 +1,647 @@
+\section{Use cases identification}
+\subsection{Scenarios}
+Here are some scenarios that describe the usage of the system.
+\subsubsection{Scenario 1}
+\label{scenario:1}
+Francesco wants to have a beer with his friend Vincenzo so Francesco logs in to system and searches for cars nearby. He notices that there are two cars available next to his house, he decides to reserve the one with more battery and after few minutes he reaches it. He starts to drive until he reaches Vincenzo's house, Vincenzo gets into the car and they arrive to the beer house where they terminate the rent.
+
+\subsubsection{Scenario 2}
+\label{scenario:2}
+Mirjana has been told by her friend Elisa that a new car sharing service is available in their city and so she decided to give it a try as she wants to go shopping in the city center. She registers to the system providing all information requested, she inserts the destination address and enables the money saving option. She is provided by the system with a charging station not far from the shopping center and, as it is a sunny day, she decided to take that location as destination in order to achieve a discount and reach the shopping center on foot. 
+
+\subsubsection{Scenario 3}
+\label{scenario:3}
+Giovanni is really interested in electric cars so he decides to use the PowerEnJoy system. He wants to go to the museum in the afternoon so he reserves a car. After one hour he is notified by the system that his reservation is expired and he is charged of a 1\euro\ fee. When he is ready to exit his house he notices that the same car is still available so he reserves it again, reaches it and starts driving. When he arrives at the destination he sees a charging station next to the museum so he decides to leave the car there plugging the charging cable in order to get a discount.
+
+\subsubsection{Scenario 4}
+\label{scenario:4}
+Dino reserves a car, he reaches it and unlock the doors. He starts driving but after few minutes the engine stops and a warning icon lights up in the dashboard. He contacts the customer care service that suggests him to reserve a different car which is nearby, the customer care operator then tags the first car as not available specifying a brief description of the fault. The maintenance service is now aware of the problem and they take care of resolving the issue: a maintenance operator is sent to the car, he unlocks it  and fixes it. When the car is fully functional he tags it as available using a restricted access API of our system.
+
+\subsubsection{Scenario 5}
+\label{scenario:5}
+Stefania often uses PowerEnJoy service when she is coming back home after work. Before finish her work schedule she checks with the map if there are cars nearby in order to reserve one of them: today she can see one from the window that is not present in the map because its battery is empty. After a while she checks again the map and she notices that the car is now located in a charging station nearby and it is available for a reservation.
+	
+\subsubsection{Scenario 6}
+\label{scenario:6}
+Lorenzo is driving a PowerEnJoy car in order to reach Dino's house outside the safe area. As soon as he exists the safe area the car system notifies him with a message. When he is arrived he terminates the rent, the payment is executed with an extra fee and the car is tagged as not available.
+
+\clearpage
+\subsection{Use case diagram}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{useCase}
+	\caption{
+		\label{fig:useCase} 
+		Use case diagram
+	}
+\end{figure}
+\clearpage
+\paragraph{Notes to read the diagram}
+The use case diagram represents the possible interactions of actors with the system and the different use cases in which the actors are involved.\\
+
+The "Maintenance service system" is an external software which the system-to-be needs to interact with. \\
+ 
+We do not consider the external payment handling system an actor since it does not start any interaction with our system, it simply reacts when our system requests its services; this interaction is encapsulated as sub-procedure in the flow of events of the "Rent payment" use case.\\
+
+We do not consider the car an actor for the same reason, moreover the only interactions started by the car are trigger events which are very simple interactions, which we do not consider use cases.\\
+\clearpage
+\subsection{Use cases description}
+
+\subsubsection{Registration}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Registration} \\
+\midrule
+\textbf{Actors} & Non registered user \\
+\midrule
+\textbf{Entry conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user asks the system to register to its services
+	\item The system shows the appropriate form to fill to register to the system
+	\item The user inserts an username to be uniquely identified by the system
+	\item The user inserts his own email address
+	\item The user inserts his name, surname, birth date and place and current domicile
+	\item The user inserts his driving license ID code
+	\item The user inserts payment information
+	\item The user confirms data inserted are correct e submit the form
+	\item The system checks the username to be unique
+	\item The system checks the email to be unique
+	\item The system checks the driving license ID to be unique
+	\item The system sends an email to the user with a unique link to verify the email address inserted by the user really belongs to him
+	\item The user clicking on the link received confirms his email address
+	\item The user is notified by mail the registration procedure is correctly completed and
+	provided with a password bound to his username to access the system
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The user is able to authenticate to the system as \emph{registered} user with its own credentials\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the username inserted by the user is already used by another user, the system displays an error message asking the user to insert another username
+	\item If the mail inserted by the user is already used by another user, the system displays an error message asking the user to insert another mail
+	\item If the user notices to have entered wrong informations he could edit them at the end of the process of registration in his personal page
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Registration} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdRegistration.png}
+	\caption{
+		\label{fig:registrationSequence} 
+		\emph{Registration} sequence diagram
+	}
+\end{figure}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Authentication}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Authentication} \\
+\midrule
+\textbf{Actors} &  Registered user \\
+\midrule
+\textbf{Entry conditions} & The user must know his username and password \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user inserts his username and password in the appropriate form and submit it
+	\item The system validates the inserted credentials checking also if the user has confirmed his own email address
+	\item The system checks if the user is banned
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & If the credential validation is successful and the user is not banned he is granted the proper privileges\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the credential validation failed an error message is displayed
+	\item If the credential validation is successful and the user is banned a message providing assistance is displayed and the system doesn't allows the user to access to the system
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Authentication} use case description}
+\end{longtable}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdLogin.png}
+	\caption{
+		\label{fig:authSequence} 
+		\emph{Authentication} sequence diagram
+	}
+\end{figure}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{View cars on the map}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{View cars on the map} \\
+\midrule
+\textbf{Actors} &  Logged user \\
+\midrule
+\textbf{Entry conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user chooses if he wants to use his GPS position or insert a different one manually
+		\subitem a. The system retrieves the user's GPS position
+		\subitem b. The user inserts a position
+	\item The system retrieves the position of all \emph{Available} cars and their battery level percentage
+	\item The system shows a map with all available cars, charging stations position and safe areas near the position indicated
+	\item The user can click on a car on the map to see its battery level percentage
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The user can navigate a map with all available cars near the position indicated by him\\
+\midrule
+\textbf{Exceptions} & 
+If the position inserted by the user is not correct an error message is displayed \\
+\bottomrule
+\caption{\emph{View cars on the map} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdCarMapVisualization.png}
+	\caption{
+		\label{fig:carsMapSequence} 
+		\emph{View cars on the map}  sequence diagram
+	}
+\end{figure}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Car reservation}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Car reservation} \\
+\midrule
+\textbf{Actors} &  Logged user \\
+\midrule
+\textbf{Entry conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item \textbf{View cars on the map}
+	\item The user selects the car he wants to reserve
+	\item The user confirms he wants to reserve that car
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The system set the state of the chosen car as \emph{Reserved} paired with the user who made the reservation\\
+\midrule
+\textbf{Exceptions} &  If the user has already reserved a car, the system shows an error message and doesn't allow him to reserve another car \\
+\bottomrule
+\caption{\emph{Car reservation} use case description}
+\end{longtable}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Car unlock}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Car unlock} \\
+\midrule
+\textbf{Actors} &  Logged user \\
+\midrule
+\textbf{Entry conditions} & The user reserved car \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user asks the system to unlock the car he reserved
+	\item The system checks if the user's position is at most 5 meters away from the position of the car he reserved
+	\item The system unlocks the car with the state set as \emph{Reserved} paired with the aforementioned user
+	\item The system sends a message to the user, confirming that the car is unlocked
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The car is unlocked and the user can pick it up\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the position of the user is not at most 5 meters away from the position of the car he reserved the system displays an error message
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Car unlock} use case description}
+\end{longtable}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdCarUnlock.png}
+	\caption{
+		\label{fig:carUnlockSequence} 
+		\emph{Car unlock} sequence diagram
+	}
+\end{figure}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Car rent}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Car rent} \\
+\midrule
+\textbf{Actors} &  Logged user \\
+\midrule
+\textbf{Entry conditions} & 
+The user is paired with the \emph{Reserved} state of a car\\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item \textbf{Car unlock}
+	\item The user ignites the car engine
+	\item The system sets the state of the \emph{Reserved} car to \emph{In Use} paired
+	with the same user
+	\item During the rent the user is informed about the current charge and whether he is or not inside a safe area
+	\item The user leaves the car turning off the engine and closing the doors
+	\item The system locks the car
+    \item The system activates a timer to allow the user to plug the car into a charging station if it is
+    near one of them
+    \item When the timer expires:
+    	\begin{enumerate}[label = 8.\arabic*]
+    		\item The system retrieves informations about the ride from the car: number of passengers detected during the ride, position of the car and battery level at the end of the ride and if the car is or not on charge 
+    		\item The system sets the car as \emph{Available}
+    	\end{enumerate}
+    \item \textbf{Rent payment}
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & 
+The user is charged of the correct amount for the ride and at anytime could perform another rent, the car is available again\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the user doesn't start the engine up to one hour after the reservation, he is charged of 1\euro (through a payment procedure), the car state is set as \emph{Available} and the user is notified his reservation is expired
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Car rent} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdCarRent}
+	\caption{
+		\label{fig:rentSequence} 
+		\emph{Car rent} sequence diagram
+	}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdOneEuroFee}
+	\caption{
+		\label{fig:euroFeeSequence} 
+		\emph{One Euro fee} sequence diagram
+	}
+\end{figure}
+\clearpage
+The overall status of a car can be represented by the FSM in \autoref{fig:carFSA}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.5]{CarFSA}
+			\caption{
+				\label{fig:carFSA} 
+				Car status FSM
+			}
+		\end{figure}
+%///////////////////////////////////////////////////////////
+\paragraph{Notes to read the diagram}
+The \emph{Not Available} state includes the cases in which the car is either broken or a user left it with a critical battery level and not on charge.\\ 
+
+The system changes the state of a car from \emph{Available} to \emph{Not Available} when its battery level is critical and the car is not on charge (see \ref{req:notAvailbleCritical}).\\
+
+Even if the car is left with no battery left, it is still able to communicate with the system, so the rent can end normally and the maintenance service will take care the car
+(see \ref{da:zeroBattery}).
+\clearpage
+
+\subsubsection{Rent payment}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Rent payment} \\
+\midrule
+\textbf{Actors} &  Logged user\\
+\midrule
+\textbf{Entry conditions} & 
+The user must have completed a rent shutting off the engine and exiting the car. The system has retrieved information about the ride from the car. \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The system checks if the car position is or is not inside a safe area
+	\item The system checks if the car has detected more than one passenger during the rent
+	\item The system checks the car battery percentage
+	\item The system checks if the car is plugged on a charging station
+	\item The system checks the distance of the car from the nearest charging station
+	\item The system calculates the cost of the ride based on the rent time
+	\item The system determines the applicable discounts/extra fee applying it to the cost of the ride
+	\item The system starts a payment procedure with user's payment information using
+	an external service
+	\item The system waits a response from the external payment service
+	\item The system logs data about the rent and the payment
+    \item The system notifies the user about the result of the payment procedure and on discount/extra fees applied
+\end{enumerate} \\
+\midrule
+\textbf{Alternative flow} & 
+Flow of events as specified upon from \emph{1} to \emph{7}
+\begin{enumerate}[label=8 \alph*.]
+	\item The system detects the user has enabled the \emph{money saving option}
+	\item The system checks if the car is currently on charge on the charge station determined by the system at the begin of the rent
+	\item The system determines the applicable discounts/extra fee applying it to the cost of the ride eventually also taking in account the \emph{money saving option} discount if the car is currently on charge on the charge station determined by the system at the begin of the rent
+\end{enumerate}
+Flow of events as specified upon from \emph{9} to \emph{12} \\
+\midrule
+\textbf{Exit conditions} & 
+The user is charged of the correct amount for the ride\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the payment procedure is not correctly completed the user is banned, rent information is stored, the payment suspended and the user is informed to contact the customer service.  
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Rent payment} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdRentPayment}
+	\caption{
+		\label{fig:paymentSequence} 
+		\emph{Rent payment} sequence diagram
+	}
+\end{figure}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Money saving option}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Money saving option} \\
+\midrule
+\textbf{Actors} &  Logged user\\
+\midrule
+\textbf{Entry conditions} & 
+The user should have enabled the \emph{money saving option} \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item \textbf{Car Reservation}
+	\item The system asks the user to insert his destination
+	\item The user inserts his destination
+	\item The system searches for charging stations near the destination position inserted by the
+	user with available plugs
+	\item The system chooses a charging station in order to ensure a uniform distribution of cars in
+	the city and taking in account the destination of the user
+	\item The system informs the user about the charging station to reach in order to obtain the discount
+	\item \textbf{Car Rent} (\textbf{Car Reservation} already done)
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} &
+\begin{itemize}
+	\item If the user has left the car plugged in the charging station suggested by the
+	\emph{money saving option} he has obtained the correct discount
+	\item The user can any time perform another rent
+	\item Car is again available
+\end{itemize} \\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the user doesn't leave the car in the charging station suggested by the
+	\emph{money saving option} he doesn't obtain the related discount
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Money saving option} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdMoneySavingOption}
+	\caption{
+		\label{fig:msOptionSequence} 
+		\emph{Money saving option} sequence diagram
+	}
+\end{figure}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Visualization of not available cars}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Visualization of not available cars} \\
+\midrule
+\textbf{Actors} &  Maintenance service system\\
+\midrule
+\textbf{Entry conditions} & Maintenance service system must know the access token to be identified by the system\\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The maintenance service system asks for the list of car with state set as \emph{Not Available} sending the request
+	paired with the  access token
+	\item The system checks the access token
+	\item The system retrieves the list of car with state set as \emph{Not Available} along with the identifier used by the system to identify each car, the GPS position of each car, the description of the problem of each car and the software key to access each car
+	\item The system sends the information to the maintenance service system
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The maintenance service system receives the list of cars with state set as \emph{Not Available} \\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the access token sent by the maintenance service system is not recognized, the system sent to the maintenance service system an error message
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Visualization of not available cars} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdViewNotAvaCars}
+	\caption{
+		\label{fig:visNotAvaSequence} 
+		\emph{Visualization of not available cars} sequence diagram
+	}
+\end{figure}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Tag a car as available}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Tag a car as available} \\
+\midrule
+\textbf{Actors} &  Maintenance service system\\
+\midrule
+\textbf{Entry conditions} & Maintenance service system must know the access token to be identified by the system\\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The maintenance service system asks to tag a car as Available sending the car identifier
+	paired with the access token
+	\item The system checks the access token sent by the maintenance service
+	\item The system checks the identifier received corresponds to a car with state set as \emph{Not Available}
+	\item The system checks if the car identified by the identifier received is locked
+	\item The system set the state of the car identified by the aforementioned identifier as \emph{Available}
+	\item The system sends to the maintenance service system a confirmation message the car state has been set as \emph{Available}
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The car state is set as \emph{Available} \\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the access token sent by the maintenance service system is not recognized, the system sends to the maintenance service system an error message
+	\item If the car identifier sent by the maintenance service system is not recognized or doesn't correspond to a car set as \emph{Not Available}, the system sends to the maintenance service system an error message
+	\item If the car identifier sent by the maintenance service system corresponds to a car not locked, the system sends to the maintenance service system an error message
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Tag a car as not available} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdTagCarAva}
+	\caption{
+		\label{fig:tagAvaSequence} 
+		\emph{Tag a car as available} sequence diagram
+	}
+\end{figure}
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Visualization of users information}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Visualization of users information} \\
+\midrule
+\textbf{Actors} &  Customer care operator\\
+\midrule
+\textbf{Entry conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The customer care operator inserts the username or the mail of a registered user
+	\item The system checks if the username or the mail correspond to a user registered to the
+	system
+	\item The system retrieves user's data (name, surname, birth date and place, current domicile
+	and driving license information) along with information about the car state the user is
+	actually paired with
+	\item The system shows to the customer care operator the info about the user
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The customer care operator can view the information required about the user \\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If no users are found according to the parameters inserted by the customer care operator the system shows an error message
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Visualization of users information} use case description}
+\end{longtable}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{View users payments and rents history}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{View users payments and rents history} \\
+\midrule
+\textbf{Actors} &  Customer care operator\\
+\midrule
+\textbf{Entry conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item \textbf{Visualization of users information}
+	\item The customer care operator asks to view user's payments and rents history
+	\item The system retrieves the list of user's payments (successful and unsuccessful)
+	\item The system retrieves the list of user's rents
+	\item The system shows to the customer care operator user's payments and rents history
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The customer care operator can view the information required about the user \\
+\midrule
+\textbf{Exceptions} & \\
+\bottomrule
+\caption{\emph{View users payments and rents history} use case description}
+\end{longtable}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Mark or unmark a user as banned}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Mark or unmark a user as banned} \\
+\midrule
+\textbf{Actors} &  Customer care operator\\
+\midrule
+\textbf{Entry conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The customer care operator inserts the username of a registered user
+	\item The customer care operator asks to ban or to enable the registered user paired with the inserted username
+		\begin{itemize}
+			\item If the operator wants to mark a user as \emph{banned} he must insert a brief description of reasons why  
+		\end{itemize}		 
+	\item The system checks if the username corresponds to a user registered to the system
+	\item The system marks or unmarks the user paired with the username as \emph{banned}
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The state of the user is updated \\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the username inserted by the customer car operator is not recognized, the system shows an error message
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Mark or unmark a user as banned} use case description}
+\end{longtable}
+
+%///////////////////////////////////////////////////////////
+\clearpage
+\subsubsection{Tag a car as not available}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Tag a car as not available} \\
+\midrule
+\textbf{Actors} &  Customer care operator\\
+\midrule
+\textbf{Entry conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The customer care operator inserts the identifier of the car
+	\item The customer care operator asks to mark the car as \emph{Not Available}
+	\item The customer care operator inserts a brief description of why the car state must be set as \emph{Not Available}
+	\item The system checks the car identifier
+	\item The system set the state of the car identified by the aforementioned identifier as \emph{Not Available} paired with the description
+	\item The system shows a confirmation message the car has been tagged as \emph{Not Available}
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The state of the car is setted as \emph{Not Available}\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If car identifier sent by the customer care operator is not recognized, the system displays an error message
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Tag a car as not available} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/Sequence/sdTagCarNotAva}
+	\caption{
+		\label{fig:notAvaSequence} 
+		\emph{Tag a car as Not Available} sequence diagram
+	}
+\end{figure}
+\clearpage
+\subsection{UML class diagram}
+Based on collected scenarios and on the identified use cases we have developed the following requirements-level class diagram\cite{TextualAnalysis}. To ensure a better readability class attributes are not represented.
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{/diagrams/ClassDiagram}
+	\caption{
+		\label{fig:classDiagram} 
+		UML class diagram
+	}
+\end{figure}
