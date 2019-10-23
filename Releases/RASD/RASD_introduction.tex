@@ -13,17 +13,18 @@ The application allows users to send pictures of violations, including suitable 
 	\begin{enumerate}[label=\textbf{G\arabic*}]
 		\item \label{goal:register} Allow guest users to register to the system
 		\item \label{goal:login}Allow registered users to authenticate to the system
-		\item \label{goal:position}Provide logged users with the position of available cars
-		\item \label{goal:notifyMaintenance} Notify maintenance service with a list of not available cars 
-		\item \label{goal:maintenanceDone} Provide the maintenance service with a way to notify the system when a car is available again 
-		\item \label{goal:needMaintenance} Provide users with a way to report a damaged car
-		\item \label{goal:usersHistory} Provide a way to show to each user his rents and payments history
-		\item \label{goal:banUnbanUsers} Provide customer service with a way to ban registered users in order to prevent them from reserving or using other cars, and enable them to use the service again
-		\item \label{goal:carReservation} Allow a logged user to reserve a car, if available, and hold that reservation for an hour
-		\item \label{goal:reservationFee} Charge a user for 1\euro\ in case he hasn't used the car he reserved after an hour from such reservation
-		\item \label{goal:completeRent} Allow a logged user to perform a complete rent: reserving a car, using it and leaving it terminating the rent, accomplishing the payment procedure related to aforementioned rent
-		\item \label{goal:calculateCost} Calculate and charge the user for the correct amount of money he has to pay for his last ride, also considering the various discounts and fees applicable based on the ride
-		\item \label{goal:moneySavingOption}Allow a logged user to enable a money saving option which provides him with a charging station as destination of the ride to get a discount on the cost of the aforementioned ride
+		\item \label{goal:provideData}Allow users to provide data: upload a picture, specify the type of violation and possibly the street in which the violation occurred
+		\item \label{goal:retrievePosition} Retrieve the geographical position of the violation from the users' position
+		\item \label{goal:userLog} Allow users to consult information based on previously received data at their level of visibility
+		\item \label{goal:authorityLog} Allow authorities to consult information based on previously received data at their level of visibility
+		\item \label{goal:connectMunicipality} Retrieve information about accidents from the municipality 
+		\item \label{goal:crossInformation} Cross municipality's information with SafeStreets data 
+		\item \label{goal:unsafeAreas} Identify potentially unsafe areas
+		\item \label{goal:suggestInterventions} Suggest possible interventions to the municipality
+		\item \label{goal:avoidLeaks} Ensure that the information provided by the users is never altered or manipulated in any way
+		\item \label{goal:ticketsInformation}Access the archive of emitted tickets
+		\item \label{goal:statistics} Build statistics based on the information about issued tickets
+		
 	\end{enumerate}
 
 \subsection{Glossary}
