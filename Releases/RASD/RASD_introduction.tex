@@ -12,45 +12,28 @@ The application allows users to send pictures of violations, including suitable 
 	\label{sec:goals}
 	\begin{enumerate}[label=\textbf{G\arabic*}]
 		\item \label{goal:register} Allow guest users to register to the system
-		\item \label{goal:login}Allow registered users to authenticate to the system
-		\item \label{goal:provideData}Allow users to provide data: upload a picture, specify the type of violation and possibly the street in which the violation occurred
-		\item \label{goal:retrievePosition} Retrieve the geographical position of the violation from the users' position
-		\item \label{goal:userLog} Allow users to consult information based on previously received data at their level of visibility
-		\item \label{goal:authorityLog} Allow authorities to consult information based on previously received data at their level of visibility
-		\item \label{goal:connectMunicipality} Retrieve information about accidents from the municipality 
-		\item \label{goal:crossInformation} Cross municipality's information with SafeStreets data 
-		\item \label{goal:unsafeAreas} Identify potentially unsafe areas
-		\item \label{goal:suggestInterventions} Suggest possible interventions to the municipality
-		\item \label{goal:avoidLeaks} Ensure that the information provided by the users is never altered or manipulated in any way
-		\item \label{goal:ticketsInformation}Access the archive of emitted tickets
-		\item \label{goal:statistics} Build statistics based on the information about issued tickets
-		
+		\item \label{goal:login} Allow registered users to authenticate to the system
+		\item \label{goal:provideData} Allow users to provide data: upload a picture, specify the type of violation and possibly the street in which the violation occurred
+		\item \label{goal:retrieveData} Allow users to consult previously received data served with different levels of visibility based on their role
+		\item \label{goal:connectMunicipality} Cross SafeStreets data with information about the accidents that occur on the territory of the municipalities to identify potentially unsafe areas, and suggest possible interventions
+		\item \label{goal:avoidLeaks} Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated
+		\item \label{goal:ticketsInformation} Access the municipality archives of emitted tickets and build statistics based on the retrieved information
 	\end{enumerate}
 
 \subsection{Glossary}
 	\subsubsection{Definitions}
 	\begin{description}
-		\item[System:]the PowerEnJoy software we are to develop
-		\item[Company:] the company we are developing the system for
+		\item[System:]the SafeStreets software we are to develop
+		\item[Municipality:] a city, a town or a village, or a small group of them
+		\item[Local police:] the local police of the municipality
 		\item[Guest \emph{or} Guest user:] person who access the system as non logged user
 		\item[Logged user \emph{or} Authenticated user:] authenticated person who is interfacing with the system
 		\item[User:] guest user or logged user
-		\item[Banned user:] a user that can not use the system, he can only contact the customer care service
 		\item[Registration:]  interaction between a non registered user and the system in which the user, providing all of the information required by the system for the creation of an account, receives from the system the credentials needed to authenticate to the system
 		\item[Authentication \emph{or} Login:] interaction between guests and the system that grants authenticated user's privileges to a guest user
-		\item[Car:] an electric car owned by the company
-		\item[Available car:] the car can be reserved by a user
-		\item[Reserved car:] the car has been reserved by a user
-		\item[In use car:] a car is becomes in use when a user ignites the engine and stops being in use at the end of the rent
-		\item[Not available car:] the car can not be reserved by a user, a maintenance operator will deal with it
-		\item[Battery level critical:] battery level under 20\%
-		\item[Charging station:] location where cars owned by the company can be charged using a provided plug
-		\item[Safe area:] area of the map where a rent can be terminated without the corresponding additional fee
-		\item[Payment procedure:] process which realizes the monetary transaction between the user and the system
+		\item[Upload procedure:] process which realizes the transfer of data between the user and the system
 		\item[Restricted access API:] API that can be used only by authorized person or system through an access token
 		\item[GPS Coordinates:] GPS coordinates are a unique identifier of a precise geographic location on the earth
-		\item[Base cost:] Ride cost calculated proportionally to the rent time
-		\item[Rent time:] Time period starting from the moment the engine was turned on, until the car is locked
 	\end{description}
 \subsubsection{Acronyms}
 	\begin{description}
@@ -65,7 +48,6 @@ The application allows users to send pictures of violations, including suitable 
 	\begin{description}
 		\item [m:] meters (with multiples and submultiples)
 		\item [w.r.t.:] with respect to
-		\item [i.d.:] id est
 		\item [i.f.f.:] if and only if
 		\item [e.g.:] exempli gratia
 		\item [etc.:] et cetera
