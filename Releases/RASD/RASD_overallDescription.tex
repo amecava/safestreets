@@ -1,6 +1,17 @@
 \section{Overall description}
+
 \subsection{Product perspective}
-\todo{class diagrams, statecharts, communication}
+	
+	\todo{description}
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=300, height=200]{uml}}
+			\caption{
+				\label{fig:systemInterfaces} 
+				Class Diagram
+			}
+		\end{figure}
+
 	\subsubsection{System interfaces}
 	\label{sec:systemInterfaces}
 		The system we are to develop will have some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}.
@@ -35,35 +46,48 @@
 		\item View and edit personal information
 	\end{enumerate}
 	
+\subsubsection{Hardware interfaces}
+	The only hardware interfaces with which the system cooperates are the smartphones of the users and the hardware that supports the system that offers municipality's service.
+	
 \subsubsection{Software interfaces}
-Databases and DBMSs are clearly required in order to store data about users, violations, safe/unsafe areas etc.
-
-As mentioned before (see \hyperref[sec:systemInterfaces]{system interfaces section}) the system needs to use external APIs and to expose interfaces in order to interact with other systems.
-
+	In order to reach the goals highlighted in the \hyperref[sec:goals]{goals section} the system need to interface with:
+	\begin{enumerate}
+		\item Databases and DBMSs, clearly required in order to store data about users, violations, safe/unsafe areas etc.
+		\item The software offered by the municipality, required in order to 
+		\item The map API offered by the GIS
+	\end{enumerate}
+	
+\subsubsection{Communication interfaces}
+	We want to ensure the encryption of data shared with our system, and take all the precaution needed, thus the PPTP protocol is used to create a crypto saved tunnel at the link layer.
+	\todo{scelta implementativa o va bene?}
 \subsection{Product functions}
-\todo{}
 
-\subsection{User characteristics}
-	Users can use our system when they want to rent a car.\\
-	Necessary conditions for the user in order to use the system are:
-	\begin{itemize}
-		\item He must have a smartphone and be able to use it
-		\item He must be in the age of majority
-		\item He must have a proper valid driving license
-		\item He must be able to drive a car (i.d. he must be in both physical and mental health)
-	\end{itemize}
-	The user agrees to these conditions during the registration to the system.
-
-\subsection{Domain assumption}
+\subsection{User Characteristics}
+	Users can use our system when they notice a violation and want to communicate it to the authorities.\\
+ 	Necessary conditions for the user in order to use the system are:
+ 	\begin{itemize}
+ 		\item He must have a smartphone and be able to use it
+ 		\item He must be in the age of majority
+ 		\item He must be able to identify a violation and tell the type of it
+ 	\end{itemize}
+ 	The user agrees to these conditions during the registration to the system.
+ 	
+\subsection{Constraints}
+	We assume that these constraints are always met:
+	\begin{enumerate}[label=\textbf{C\arabic*}]
+		\item GPS position is supposed to be accurate (max error $\pm5$m)
+		\item The quality of the picture is sufficient to recognise the plate number (min resolution 320x240)
+		\item Internet connection must be strong enough to allow the upload of the picture in a reasonable amount of time (supported technologies are 3G, 4G and 5G due to the performance requirement)
+	\end{enumerate}
+	
+\subsection{Assumptions}
 	We assume that these assumptions hold true in the domain of our system 
 	\begin{enumerate}[label=\textbf{DA\arabic*}]
-		\item GPS position is supposed to be accurate (max error $\pm5$m)
 		\item GPS position of all users is always obtainable
 		\item Internet connection always works correctly
 		\item Municipality services are always reachable
-		\item Charging station can exclusively be used by PowerEnJoy cars
-		\item The set of safe areas is pre-defined and is provided to our system by the customer
 		\item The maps provided by the GIS are always up to date
-		
+		\item The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
 	\end{enumerate}
+		
 \clearpage
