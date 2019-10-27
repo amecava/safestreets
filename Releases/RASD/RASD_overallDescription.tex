@@ -5,7 +5,7 @@
 	\todo{description}
 	\begin{figure}[h]
 			\centering
-			\includegraphics[width=300, height=200]{uml}}
+			\includegraphics[width=300pt, height=200pt]{uml}
 			\caption{
 				\label{fig:systemInterfaces} 
 				Class Diagram
@@ -17,7 +17,7 @@
 		The system we are to develop will have some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}.
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=300, height=50]{system_blocks}
+			\includegraphics[width=300pt, height=50pt]{system_blocks}
 			\caption{
 				\label{fig:systemInterfaces} 
 				Overview of system interfaces
@@ -26,7 +26,7 @@
 	\paragraph{Municipality}
 	The system will interact with municipalities. Our system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets).
 	
-	 In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generates traffic tickets from it, and suggest possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorized vehicles to prevent unsafe parking). 
+	 In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generates traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorized vehicles to prevent unsafe parking). 
 	 
 	\paragraph{Map} Highlighted streets (or areas) with the highest frequency of violations, and unsafe areas are displayed to all users on an up-to-date map which relies on an external GIS.
 
@@ -61,6 +61,20 @@
 	We want to ensure the encryption of data shared with our system, and take all the precaution needed, thus the PPTP protocol is used to create a crypto saved tunnel at the link layer.
 	\todo{scelta implementativa o va bene?}
 \subsection{Product functions}
+\paragraph{Violation upload procedure} 
+Provide logged users with the possibility to notify authorities when traffic violations occur, and in particular parking violations. The application allows users to send pictures of violations, including their date, time, and position, to authorities. 
+SafeStreets then stores the information provided, completing it with suitable meta-­data. In particular, when it receives a picture, it runs an algorithm to read the license plate (the user can help with the recognition), and stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the name of the street where the violation occurred.
+
+\paragraph{Retrieve data from municipality}
+Retrieve the information about the accidents that occur on the territory of the municipality using the municipality offered service, and cross this information with SafeStreets data to identify potentially unsafe areas, and suggest possible interventions to the municipality via a \emph{restricted access API} provided to them.
+
+\paragraph{Show information and statistics}
+The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. 
+
+\paragraph{Restricted access API}
+The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generates traffic tickets from it, and can receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). 
+
+
 
 \subsection{User Characteristics}
 	Users can use our system when they notice a violation and want to communicate it to the authorities.\\
@@ -82,7 +96,7 @@
 	
 \subsection{Assumptions}
 	We assume that these assumptions hold true in the domain of our system 
-	\begin{enumerate}[label=\textbf{DA\arabic*}]
+	\begin{enumerate}[label=\textbf{	DA\arabic*}]
 		\item GPS position of all users is always obtainable
 		\item Internet connection always works correctly
 		\item Municipality services are always reachable
