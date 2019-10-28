@@ -6,14 +6,10 @@ The purpose of a \textbf{R}equirement \textbf{A}nalysis and \textbf{S}pecificati
 
 	SafeStreets is a crowd-­sourced application that intends to provide users with the possibility to notify authorities when traffic violations occur, and in particular parking violations. 
 
-	The application allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the application allows both end users and authorities to mine the information that has been received, for example by highlighting the streets (or the areas) with the highest frequency of violations, or the vehicles that commit the most violations. 
+	The system allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the system allows users to mine the previously stored information, for example by highlighting the streets (or the areas) with the highest frequency of violations, or by showing statistics regarding the vehicles that commit the most violations.
 	
-	Users are allowed to consult only certain information, in fact, to guarantee different levels of visibility, the system  will provide a \emph{restricted access} API that connects to the municipality's service to create a secure bridge for data retrieval. This connection will enable SafeStreets to cross its data with municipality's and make analysis with the aim of identifying potentially unsafe areas and proposing feasible solutions.
+	The system will also provide a communication interface to the municipality's provided service to create a secure bridge for data transfer. This connection will enable SafeStreets to cross its data with municipality's to make analysis and build different types of statistics. Moreover the system will offer back to the municipality the possibility to retrieve information about the violations in order to generate traffic tickets from it and receive suggestions on possible interventions. \cite{Assignments}
 	
-	Moreover, through the restricted access API, the system will offer back to the municipality the possibility to retrieve information about the violations and generates traffic tickets from it. Of course we will take extreme care of the security of the information shared to prevent any possible alteration and leak.
-	
-	In addition, SafeStreets will gather back the information about issued tickets to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets).
-
 \subsubsection{Goals}
 	\label{sec:goals}
 	\begin{enumerate}[label=\textbf{G\arabic*}]
@@ -51,10 +47,8 @@ The purpose of a \textbf{R}equirement \textbf{A}nalysis and \textbf{S}pecificati
 		\item [API:] Application Programming Interface
 		\item [GPS:] Global Position System
 		\item [DBMS:] Data Base Management System
-		\item [FSM:] Finite-State Machine
 		\item [GIS:] Geographic Information System
 		\item [UML:] Unified Modeling Language
-		\item [GUI:] Graphical User Interface
 			
 	\end{description}
 \subsubsection{Abbreviations}

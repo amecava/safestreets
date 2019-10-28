@@ -8,7 +8,7 @@
 		
 	\begin{figure}[h]
 			\centering
-			\includegraphics[width=350pt]{uml.png}
+			\includegraphics[width=350pt, height=200pt]{uml.png}
 			\caption{
 				\label{fig:classDiagram} 
 				Class Diagram
@@ -67,9 +67,9 @@ The system requires a user interface as the access point where users interact wi
 
 \subsection{Product functions}
 \paragraph{Violation upload procedure} 
-Provide logged users with the possibility to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including suitable metadata.
-SafeStreets then stores the information provided, completing it with suitable meta-­data. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the name of the street where the violation occurred.
+Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred.
 
+The gathered metadata will be both descriptive, used for discovery and identification, as information to search and locate an object, such as title, author, subjects, keywords, and administrative, such as technical information, including file type, or when and how the data was created.
 \clearpage
 
 	\begin{figure}[h]
@@ -81,7 +81,8 @@ SafeStreets then stores the information provided, completing it with suitable me
 	\end{figure}
 	
 \paragraph{Retrieve data from municipality}
-Retrieve the information about the accidents that occur on the territory using the service offered by the municipalities and cross these data with SafeStreets data, to identify potentially unsafe areas. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them. \newline
+Retrieve the information about the accidents that occur on the territory and the issued tickets using the service offered by the municipalities and cross this data with SafeStreets data to identify potentially unsafe areas and build different types of statistics. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them. \newline
+
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=285pt,height=205pt]{RequestMunicipality.png}
@@ -93,8 +94,7 @@ Retrieve the information about the accidents that occur on the territory using t
 \clearpage
 
 \paragraph{Show information and statistics}
-The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. 
-	\newline
+The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=310pt, height=145pt]{ShowStatistics.png}
@@ -104,8 +104,7 @@ The application allows logged users to mine the information that has been receiv
 	\end{figure}
 	
 \paragraph{Restricted access API}
-The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, so increasing their safety. 
-	\newline
+The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, increasing their safety. \newline
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=315pt, height=185pt]{RequestAPI.png}
@@ -116,12 +115,11 @@ The system will expose via a \emph{restricted access API} the stored information
 
 
 \subsection{User Characteristics}
-	Users can use our system when they notice a violation and want to communicate it to the authorities.\\
- 	Necessary conditions for the user in order to use the system are:
+	Users can use our system when they notice a violation and want to communicate it to the authorities. Necessary conditions for the user in order to use the system are:
  	\begin{itemize}
- 		\item The user must have a smartphone with a working connection to the internet and he must be able to properly use it
- 		\item The user must be in the age of majority
- 		\item The user must be able to identify a violation and its type
+ 		\item The user must have a smartphone with a working connection to the internet and must be able to functionally use the provided services
+ 		\item The user must be in the age of majority in order to decrease the cases of wrong reports caused by user's inexperience on the topic 
+ 		\item A direct consequence of the previous item is that the user must be able to identify violations and the different types of violations
  	\end{itemize}
  	The user agrees to these conditions during the registration to the system.
  	
