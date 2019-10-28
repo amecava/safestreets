@@ -1,8 +1,8 @@
 \section{Overall description}
 
 \subsection{Product perspective}
+		
 	
-	\todo{description}
 	\begin{figure}[h]
 			\centering
 			\includegraphics[width=300pt, height=200pt]{uml}
@@ -14,7 +14,7 @@
 
 	\subsubsection{System interfaces}
 	\label{sec:systemInterfaces}
-		The system we are to develop will have some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}.
+		The system we are to develop requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=300pt, height=50pt]{system_blocks}
@@ -23,12 +23,12 @@
 				Overview of system interfaces
 			}
 		\end{figure}
-	\paragraph{Municipality}
+	\paragraph{Municipality service}
 	The system will interact with municipalities. Our system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets).
 	
 	 In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorized vehicles to prevent unsafe parking). 
 	 
-	\paragraph{Map} Highlighted streets (or areas) with the highest frequency of violations, and unsafe areas are displayed to all users on an up-to-date map which relies on an external GIS.
+	\paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualize the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalized by area or total number. The system can map the change in a specific geographic area to visualize statistics, or to evaluate the results of the SafeStreets initiative.
 
 \subsubsection{User interfaces}		
 \paragraph{Guest user}
@@ -65,16 +65,48 @@
 \paragraph{Violation upload procedure} 
 Provide logged users with the possibility to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including their date, time, and position, to authorities. 
 SafeStreets then stores the information provided, completing it with suitable meta-­data. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the name of the street where the violation occurred.
-
+	\newline\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt]{SubmitViolation.png}
+		\caption{
+			\label{fig:violationUpload} Violation upload process
+		}
+	\end{figure}
+	\newline\newline
 \paragraph{Retrieve data from municipality}
 Retrieve the information about the accidents that occur on the territory using the service offered by the municipalities and cross these data with SafeStreets data, to identify potentially unsafe areas. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them.
-
+	\pagebreak
+	\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt]{RequestMunicipality.png}
+		\caption{
+			\label{fig:retrieveMunicipality} Retrieve data from municipality
+		}
+	\end{figure}
+\newline
 \paragraph{Show information and statistics}
 The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. 
-
+	\newline\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt, height=130pt]{ShowStatistics.png}
+		\caption{
+			\label{fig:showStatistics} Show information and statistics
+		}
+	\end{figure}
+	\pagebreak
 \paragraph{Restricted access API}
 The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, so increasing their safety. 
-
+	\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt]{RequestAPI.png}
+		\caption{
+			\label{fig:restrictedAPI} Restricted access API
+		}
+	\end{figure}
 
 
 \subsection{User Characteristics}
