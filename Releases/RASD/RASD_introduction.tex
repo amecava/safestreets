@@ -6,19 +6,20 @@ The purpose of a \textbf{R}equirement \textbf{A}nalysis and \textbf{S}pecificati
 
 SafeStreets is a crowd-­sourced application that intends to provide users with the possibility to notify authorities when traffic violations occur, and in particular parking violations. 
 
-The application allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the application allows both end users and authorities to mine the information that has been received, for example by highlighting the streets (or the areas) with the highest frequency of violations, or the vehicles that commit the most violations. Of course, different levels of visibility are offered to different roles.\cite{Assignments}
+The application allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the application allows both end users and municipality to mine the information that has been received, for example by highlighting the streets (or the areas) with the highest frequency of violations, or the vehicles that commit the most violations. Of course, different levels of visibility are offered to different roles.\cite{Assignments}
 
 \subsubsection{Goals}
 	\label{sec:goals}
 	\begin{enumerate}[label=\textbf{G\arabic*}]
 		\item \label{goal:register} Allow guest users to register to the system
 		\item \label{goal:login} Allow registered users to authenticate to the system
-		\item \label{goal:provideData} Allow users to provide data: upload a picture, specify the type of violation, manually insert the licence plate number and possibly the street in which the violation occurred
-		\item \label{goal:consultMap} Allow users to consult a map showing unsafe areas and view statistics about previously submitted violations
-		\item \label{retrieveData} Allow municipality to retrieve violation data using a restrict access API provided to them
-		\item \label{goal:connectMunicipality} Cross SafeStreets data with information about the accidents that occur on the territory of the municipalities to identify potentially unsafe areas, and suggest possible interventions
+		\item \label{goal:userTransfer} Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation
 		\item \label{goal:avoidLeaks} Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated
-		\item \label{goal:ticketsInformation} Access the municipality archives of emitted tickets and build statistics based on the retrieved information
+		\item \label{goal:municipalityTransfer} Allow the system to retrieve data about the accidents that occur on the territory and data about issued tickets via the municipality provided service
+		\item \label{goal:statistics} Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build statistics
+		\item \label{goal:consultMap} Allow users to consult a map highlighting the streets (and the areas) with the highest frequency of violations, the identified potentially unsafe areas and view statistics about previously stored violations
+		\item \label{retrieveData} Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
+
 	\end{enumerate}
 
 \subsection{Glossary}
@@ -32,7 +33,7 @@ The application allows users to send pictures of violations, including suitable 
 		\item[User:] guest user or logged user
 		\item[Registration:]  interaction between a non registered user and the system in which the user, providing all of the information required by the system for the creation of an account, receives from the system the credentials needed to authenticate to the system
 		\item[Authentication \emph{or} Login:] interaction between guests and the system that grants authenticated user's privileges to a guest user
-		\item[Upload procedure:] process w hich realizes the transfer of data between the user and the system
+		\item[Upload procedure:] process which realizes the transfer of data between the user and the system
 		\item[Restricted access API:] API that can be used only by authorized person or system through an access token
 		\item[GPS Coordinates:] GPS coordinates are a unique identifier of a precise geographic location on the earth
 		\item[Chain of Custody \emph{or} Chain of Evidence:] process of validating how any kind of evidence has been gathered, tracked, and protected on its way to a court of law. It guarantees that the data presented is “as originally acquired” and has not been tampered with and is authentic prior to admission into evidence.\cite{Stone}

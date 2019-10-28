@@ -1,8 +1,8 @@
 \section{Overall description}
 
 \subsection{Product perspective}
+		
 	
-	\todo{description}
 	\begin{figure}[h]
 			\centering
 			\includegraphics[width=300pt, height=200pt]{uml}
@@ -14,7 +14,7 @@
 
 	\subsubsection{System interfaces}
 	\label{sec:systemInterfaces}
-		The system we are to develop will have some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}.
+		The system we are to develop requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}.
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=300pt, height=50pt]{system_blocks}
@@ -23,12 +23,12 @@
 				Overview of system interfaces
 			}
 		\end{figure}
-	\paragraph{Municipality}
+	\paragraph{Municipality service}
 	The system will interact with municipalities. Our system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets).
 	
 	 In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorized vehicles to prevent unsafe parking). 
 	 
-	\paragraph{Map} Highlighted streets (or areas) with the highest frequency of violations, and unsafe areas are displayed to all users on an up-to-date map which relies on an external GIS.
+	\paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualize the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalized by area or total number. The system can map the change in a specific geographic area to visualize statistics, or to evaluate the results of the SafeStreets initiative.
 
 \subsubsection{User interfaces}		
 \paragraph{Guest user}
