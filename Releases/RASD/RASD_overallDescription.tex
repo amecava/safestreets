@@ -1,13 +1,16 @@
 \section{Overall description}
 
 \subsection{Product perspective}
-		
+	
+	The product is not independent nor totally self-contained but defines a component of a larger system. This subsection relates the requirements of that larger system to functionality of the software and identifies interfaces between that system and the software. \cite{IeeeRasd}
+	
+	A class diagram in UML that describes the general structure of the system showing the system's classes, their attributes, operations (or methods), and the relationships among objects is represented in \autoref{fig:classDiagram}. To ensure a better readability not all class attributes are represented.
 	
 	\begin{figure}[h]
 			\centering
 			\includegraphics[width=300pt, height=200pt]{uml}
 			\caption{
-				\label{fig:systemInterfaces} 
+				\label{fig:classDiagram} 
 				Class Diagram
 			}
 		\end{figure}
@@ -23,47 +26,49 @@
 				Overview of system interfaces
 			}
 		\end{figure}
-	\paragraph{Municipality service}
-	The system will interact with municipalities. Our system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets).
-	
-	 In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorized vehicles to prevent unsafe parking). 
-	 
-	\paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualize the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalized by area or total number. The system can map the change in a specific geographic area to visualize statistics, or to evaluate the results of the SafeStreets initiative.
+		
+\paragraph{Municipality Data Exchange} The system will interact with municipalities. Our system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorized vehicles to prevent unsafe parking). 
+		
+\paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualize the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalized by area or total number. The system can map the change in a specific geographic area to visualize statistics, or to evaluate the results of the SafeStreets initiative.	
 
-\subsubsection{User interfaces}		
+\subsubsection{User interfaces}
+
+The system requires a user interface as the access point where users interact with the system. As the user interface design can dramatically affect the usability and user experience of the system, the layout of the user interface will be clearly set out so that elements can be found in a logical position, in a way that users will be able to find the the information and services they are looking for.
+
 \paragraph{Guest user}
-	Using the interfaces of the system users can:
-	\begin{enumerate}
-		\item Register to the system or request an account for a specific municipality
-		\item Log-in to the system
-	\end{enumerate}
+	Using the user interfaces of the system guest users can:
+	\begin{itemize}
+		\item Register to the system
+		\item Authenticate and log-in to the system
+	\end{itemize}
+	
 \paragraph{Logged User}
-	Using the interfaces of the system users can:
-	\begin{enumerate}
+	Using the user interfaces of the system logged users can:
+	\begin{itemize}
 		\item Submit a violation with all the required and optional metadata
 		\item View a map through an external GIS with highlighted streets (or areas) with the highest frequency of violations
 		\item View statistics on vehicles that commit the most violations, the most egregious offenders, or the effectiveness of the SafeStreets initiative.
-			\todo{Siamo sicuri di voler fare che tutti gli utenti possono vedere queste staitistiche?}
 		\item View and edit personal information
-	\end{enumerate}
-	
+	\end{itemize}
+		
 \subsubsection{Hardware interfaces}
-	The only hardware interfaces with which the system cooperates are the smartphones of the users and the hardware that supports the system that offers municipality's service.
+	The system will interact with the user's device hardware interfaces. The required hardware sensors will be further discussed in the \hyperref[sec:constraints]{constraints section}.
 	
+	\begin{itemize} 
+		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
+		\item Full access to the user's device camera hardware is needed for the user to capture a photo
+		\item The geomagnetic field sensor and the proximity hardware-based sensor are leveraged to determine the position of the user's device
+	\end{itemize}
+
 \subsubsection{Software interfaces}
-	In order to reach the goals highlighted in the \hyperref[sec:goals]{goals section} the system need to interface with:
-	\begin{enumerate}
-		\item Databases and DBMSs, clearly required in order to store data about users, violations, safe/unsafe areas etc.
-		\item The software offered by the municipality, required in order to exchange data with its services
-		\item The map API offered by the GIS
-	\end{enumerate}
+	In order to reach the goals highlighted in the goals section the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
 	
 \subsubsection{Communication interfaces}
-	We want to ensure the encryption of data shared with our system. This involves recording of metadata information as well as issues of access control and security for all the handling digital chain of custody.
+	The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
 	
 \subsection{Product functions}
 \paragraph{Violation upload procedure} 
-Provide logged users with the possibility to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including their date, time, and position, to authorities. 
+Provide logged users with the possibility to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including suitable metadata.
 SafeStreets then stores the information provided, completing it with suitable meta-­data. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the name of the street where the violation occurred.
 
 \paragraph{Retrieve data from municipality}
@@ -81,13 +86,14 @@ The system will expose via a \emph{restricted access API} the stored information
 	Users can use our system when they notice a violation and want to communicate it to the authorities.\\
  	Necessary conditions for the user in order to use the system are:
  	\begin{itemize}
- 		\item He must have a smartphone with a working connection to the internet and he must be able to properly use it
- 		\item He must be in the age of majority
- 		\item He must be able to identify a violation and its type
+ 		\item The user must have a smartphone with a working connection to the internet and he must be able to properly use it
+ 		\item The user must be in the age of majority
+ 		\item The user must be able to identify a violation and its type
  	\end{itemize}
  	The user agrees to these conditions during the registration to the system.
  	
 \subsection{Constraints}
+\label{sec:constraints}
 	We assume that these constraints are always met:
 	\begin{enumerate}[label=\textbf{C\arabic*}]
 		\item GPS position is supposed to be accurate (max error $\pm5$m)
