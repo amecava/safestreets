@@ -8,7 +8,7 @@
 		
 	\begin{figure}[h]
 			\centering
-			\includegraphics[width=350pt]{uml.png}
+			\includegraphics[width=350pt]{diagrams/uml.png}
 			\caption{
 				\label{fig:classDiagram} 
 				Class Diagram
@@ -20,7 +20,7 @@
 		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}. \newline \newline
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=300pt, height=50pt]{system_blocks}
+			\includegraphics[width=300pt, height=50pt]{diagrams/system_blocks}
 			\caption{
 				\label{fig:systemInterfaces} 
 				Overview of system interfaces
@@ -74,7 +74,7 @@ SafeStreets then stores the information provided, completing it with suitable me
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=320pt]{SubmitViolation.png}
+		\includegraphics[width=320pt]{diagrams/state-diagrams/SubmitViolation.png}
 		\caption{
 			\label{fig:violationUpload} Violation upload process
 		}
@@ -84,7 +84,7 @@ SafeStreets then stores the information provided, completing it with suitable me
 Retrieve the information about the accidents that occur on the territory using the service offered by the municipalities and cross these data with SafeStreets data, to identify potentially unsafe areas. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them. \newline
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=285pt,height=205pt]{RequestMunicipality.png}
+		\includegraphics[width=285pt, height=205pt]{diagrams/state-diagrams/RequestMunicipality.png}
 		\caption{
 			\label{fig:retrieveMunicipality} Retrieve data from municipality
 		}
@@ -97,7 +97,7 @@ The application allows logged users to mine the information that has been receiv
 	\newline
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=310pt, height=145pt]{ShowStatistics.png}
+		\includegraphics[width=310pt, height=145pt]{diagrams/state-diagrams/ShowStatistics.png}
 		\caption{
 			\label{fig:showStatistics} Show information and statistics
 		}
@@ -108,7 +108,7 @@ The system will expose via a \emph{restricted access API} the stored information
 	\newline
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=315pt, height=185pt]{RequestAPI.png}
+		\includegraphics[width=315pt, height=185pt]{diagrams/state-diagrams/RequestAPI.png}
 		\caption{
 			\label{fig:restrictedAPI} Restricted access API
 		}
