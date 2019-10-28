@@ -70,16 +70,48 @@ The system requires a user interface as the access point where users interact wi
 \paragraph{Violation upload procedure} 
 Provide logged users with the possibility to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including suitable metadata.
 SafeStreets then stores the information provided, completing it with suitable meta-­data. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the name of the street where the violation occurred.
-
+	\newline\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt]{SubmitViolation.png}
+		\caption{
+			\label{fig:violationUpload} Violation upload process
+		}
+	\end{figure}
+	\newline\newline
 \paragraph{Retrieve data from municipality}
 Retrieve the information about the accidents that occur on the territory using the service offered by the municipalities and cross these data with SafeStreets data, to identify potentially unsafe areas. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them.
-
+	\pagebreak
+	\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt]{RequestMunicipality.png}
+		\caption{
+			\label{fig:retrieveMunicipality} Retrieve data from municipality
+		}
+	\end{figure}
+\newline
 \paragraph{Show information and statistics}
 The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. 
-
+	\newline\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt, height=130pt]{ShowStatistics.png}
+		\caption{
+			\label{fig:showStatistics} Show information and statistics
+		}
+	\end{figure}
+	\pagebreak
 \paragraph{Restricted access API}
 The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, so increasing their safety. 
-
+	\newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt]{RequestAPI.png}
+		\caption{
+			\label{fig:restrictedAPI} Restricted access API
+		}
+	\end{figure}
 
 
 \subsection{User Characteristics}
