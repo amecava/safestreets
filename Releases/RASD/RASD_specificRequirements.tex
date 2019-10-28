@@ -6,21 +6,22 @@ The following requirements are derived in order to achieve the specified goals.
 	\begin{description}
 		\item \ref{goal:register}\ Allow guest users to register to the system
 			\begin{enumerate}[label=\textbf{R\arabic*}]
-  				\item The system must require the \emph{guest} user to insert a username to identify him
-  				\item The system must require the \emph{guest} user to insert a password to protect his account
-  				\item The system must require the \emph{guest} user to insert an e-mail address
-  				\item The system must require the \emph{guest} user to his personal ID to verify his identity
-   				\item The system must check that the username inserted by the \emph{guest} user doesn't belong to another user already registered to the system 
-   				\item The system must check that the password inserted by the \emph{guest} user satisfies the security constraints for a strong passphrase 
-   				\item The system must check that the e-mail address inserted by the \emph{guest} user doesn't belong to another user already registered to the system
-   				\item The system must check that no user is already registered using the ID inserted by the \emph{guest} user 
-   				\item The system must check that the email inserted by the \emph{guest} user exists and belongs to him sending him a verification e-mail
-   				\item The system must allow the \emph{authority} user that needs to register to service to request an account
-   				\item The system must provide a specific username and password to the \emph{authority} user that needs to register to service 
-   				\item The system offers an interface that allows the user to modify or update his e-mail address or password (username and ID cannot be changed)
+			
+  				\item The system must require the \emph{guest} user to insert his fiscal code, a username, a valid e-mail and a password to identify him
+  				
+   				\item The system must check that the validity of the data inserted by the \emph{guest} user namely avoid duplicates, invalid fiscal codes and too weak passwords
+   				
+   				\item The system must send an e-mail to the \emph{guest} user to verify the e-mail address given during the registration
   			\end{enumerate}
+  			
+		
+				\textbf{DA2} Internet connection always works correctly
+				
+				\textbf{DA5} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
+			
+  			
 		\item \ref{goal:login}\ Allow registered users to authenticate to the system
-			\begin{enumerate}[resume*]
+			\begin{enumerate}[label=\textbf{R\arabic*}, resume]
   				\item The system must require the user to insert his username and password to authenticate to the system
    				\item The system must be able to check if the username and password pair
    				correspond to a user correctly registered to the system
@@ -74,7 +75,7 @@ The processes of providing data and loading the map of safe and unsafe areas sho
 	\subsubsection{Availability}
 	The system must be available 99,9\% of the time (up to 8,76 hours per year of downtime). The system should be accessible 24 hours per day.
 	\subsubsection{Security}
-	Users personal information and payment information are encrypted and must be protected during transmission.
+	Users personal information and payment information are encrypted and must be protected during transmission, as already stated the PTPP protocol will be used to ensure encryption through the network.
 	Restricted access APIs must check that who tries to use them is actually allowed to do so.
 	\subsubsection{Portability}
 	The system must be also accessible by the most common mobile platforms (iOS and Android devices).

@@ -4,9 +4,15 @@ The purpose of a \textbf{R}equirement \textbf{A}nalysis and \textbf{S}pecificati
 
 \subsection{Scope}
 
-SafeStreets is a crowd-­sourced application that intends to provide users with the possibility to notify authorities when traffic violations occur, and in particular parking violations. 
+	SafeStreets is a crowd-­sourced application that intends to provide users with the possibility to notify authorities when traffic violations occur, and in particular parking violations. 
 
-The application allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the application allows both end users and municipality to mine the information that has been received, for example by highlighting the streets (or the areas) with the highest frequency of violations, or the vehicles that commit the most violations. Of course, different levels of visibility are offered to different roles. \cite{Assignments}
+	The application allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the application allows both end users and authorities to mine the information that has been received, for example by highlighting the streets (or the areas) with the highest frequency of violations, or the vehicles that commit the most violations. 
+	
+	Users are allowed to consult only certain information, in fact, to guarantee different levels of visibility, the system  will provide a \emph{restricted access} API that connects to the municipality's service to create a secure bridge for data retrieval. This connection will enable SafeStreets to cross its data with municipality's and make analysis with the aim of identifying potentially unsafe areas and proposing feasible solutions.
+	
+	Moreover, through the restricted access API, the system will offer back to the municipality the possibility to retrieve information about the violations and generates traffic tickets from it. Of course we will take extreme care of the security of the information shared to prevent any possible alteration and leak.
+	
+	In addition, SafeStreets will gather back the information about issued tickets to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets).
 
 \subsubsection{Goals}
 	\label{sec:goals}
@@ -27,7 +33,7 @@ The application allows users to send pictures of violations, including suitable 
 	\begin{description}
 		\item[System \emph{or} Product:]the SafeStreets software we are to develop
 		\item[Municipality:] a city, a town or a village, or a small group of them
-		\item[Local authorities:] the local authorities of the municipality for example the local police
+		\item[Local authorities \emph{or} authorities:] the local authorities of the municipality for example the local police
 		\item[Guest \emph{or} Guest user:] person who access the system as non logged user
 		\item[Logged user \emph{or} Authenticated user:] authenticated person who is interfacing with the system
 		\item[User:] guest user or logged user
