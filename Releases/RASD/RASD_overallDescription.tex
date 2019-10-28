@@ -8,7 +8,7 @@
 		
 	\begin{figure}[h]
 			\centering
-			\includegraphics[width=350pt, height=200pt]{uml.png}
+			\includegraphics[width=350pt, height=200pt]{diagrams/uml.png}
 			\caption{
 				\label{fig:classDiagram} 
 				Class Diagram
@@ -20,7 +20,7 @@
 		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}. \newline \newline
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=300pt, height=50pt]{system_blocks}
+			\includegraphics[width=300pt, height=50pt]{diagrams/system_blocks}
 			\caption{
 				\label{fig:systemInterfaces} 
 				Overview of system interfaces
@@ -74,7 +74,7 @@ The gathered metadata will be both descriptive, used for discovery and identific
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=320pt]{SubmitViolation.png}
+		\includegraphics[width=320pt]{diagrams/state-diagrams/SubmitViolation.png}
 		\caption{
 			\label{fig:violationUpload} Violation upload process
 		}
@@ -85,7 +85,7 @@ Retrieve the information about the accidents that occur on the territory and the
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=285pt,height=205pt]{RequestMunicipality.png}
+		\includegraphics[width=285pt, height=205pt]{diagrams/state-diagrams/RequestMunicipality.png}
 		\caption{
 			\label{fig:retrieveMunicipality} Retrieve data from municipality
 		}
@@ -97,7 +97,7 @@ Retrieve the information about the accidents that occur on the territory and the
 The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=310pt, height=145pt]{ShowStatistics.png}
+		\includegraphics[width=310pt, height=145pt]{diagrams/state-diagrams/ShowStatistics.png}
 		\caption{
 			\label{fig:showStatistics} Show information and statistics
 		}
@@ -107,7 +107,7 @@ The application allows logged users to mine the information that has been receiv
 The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, increasing their safety. \newline
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=315pt, height=185pt]{RequestAPI.png}
+		\includegraphics[width=315pt, height=185pt]{diagrams/state-diagrams/RequestAPI.png}
 		\caption{
 			\label{fig:restrictedAPI} Restricted access API
 		}
