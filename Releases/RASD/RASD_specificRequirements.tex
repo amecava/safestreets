@@ -4,9 +4,21 @@
 
 \subsubsection{System Interfaces}
 
-\paragraph{Municipality Data Exchange}
+\paragraph{Municipality Data Exchange} Since Municipality's service 	is an external component of our system, will be described based on the functionalities it will be required to offer, namely:
+	\begin{itemize}
+		\item authenticate to our system
+		\item upload and retrieve data about violations and statistics to our system
+		\item retrieve possible suggestions
+		\item retrieve tickets information for ticket generation
+		\item upload tickets data for further analysis
+	\end{itemize}
 
-\clearpage
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=320pt]{diagrams/systemInterfaces.png}
+		\caption{
+			\label{fig:municipalityServiceUML} Municipality service}
+	\end{figure}
 
 \paragraph{Geographic Information System} The definition of the external GIS interface is GIS dependant and will be described in a functionality-based way. The system is required to perform the following functions:
 
