@@ -28,7 +28,8 @@
 		\end{figure} 
 \clearpage			
 \paragraph{Municipality Data Exchange} The system will interact with municipalities. The system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). 
-		
+
+\label{gis}	
 \paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualise the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalised by area or total number. The system can map the change in a specific geographic area to visualise statistics, or to evaluate the results of the SafeStreets initiative.	
 
 \subsubsection{User Interfaces}
@@ -46,8 +47,8 @@ The system requires a user interface as the access point where users interact wi
 	Using the user interfaces of the system logged users can:
 	\begin{itemize}
 		\item Submit a violation with all the required and optional metadata
-		\item View a map through an external GIS with highlighted streets (or areas) with the highest frequency of violations
-		\item View statistics on vehicles that commit the most violations, the most egregious offenders, or the effectiveness of the SafeStreets initiative.
+		\item Consult a map through an external GIS visualising specific data based on a selected criteria
+		\item Consult different statistics generated upon the system and the municipality collected data
 		\item View and edit personal information
 	\end{itemize}
 		
@@ -67,16 +68,14 @@ The system requires a user interface as the access point where users interact wi
 
 \subsection{Product Functions}
 \paragraph{Violation Upload Procedure} 
-Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred.
-
-The gathered metadata will be both descriptive, used for discovery and identification, as information to search and locate an object, such as title, author, subjects, keywords, and administrative, such as technical information, including file type, or when and how the data was created.
+Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred. 
 \clearpage
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=320pt]{diagrams/state-diagrams/SubmitViolation.png}
 		\caption{
-			\label{fig:violationUpload} Violation upload process
+			\label{fig:violationUpload} Violation Upload Process
 		}
 	\end{figure}
 	
@@ -87,27 +86,26 @@ Retrieve the information about the accidents that occur on the territory and the
 		\centering
 		\includegraphics[width=285pt, height=205pt]{diagrams/state-diagrams/RequestMunicipality.png}
 		\caption{
-			\label{fig:retrieveMunicipality} Retrieve data from municipality
-		}
+			\label{fig:retrieveMunicipality} Retrieve Data From Municipality}
 	\end{figure}
 	
 \clearpage
 
 \paragraph{Show Information and Statistics}
-The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
+The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=310pt, height=145pt]{diagrams/state-diagrams/ShowStatistics.png}
+		\includegraphics[width=300pt, height=135pt]{diagrams/state-diagrams/ShowStatistics.png}
 		\caption{
-			\label{fig:showStatistics} Show information and statistics
-		}
+			\label{fig:showStatistics} Show Information and Statistics
+			}
 	\end{figure}
 	
 \paragraph{Restricted Access API}
 The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, increasing their safety. \newline
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=315pt, height=185pt]{diagrams/state-diagrams/RequestAPI.png}
+		\includegraphics[width=300pt, height=170pt]{diagrams/state-diagrams/RequestAPI.png}
 		\caption{
 			\label{fig:restrictedAPI} Restricted access API
 		}

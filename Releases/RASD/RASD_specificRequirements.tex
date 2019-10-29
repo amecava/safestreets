@@ -1,9 +1,41 @@
 \section{Specific Requirements}
 
 \subsection{External Interfaces}
-Complement interface descriptions of 2
+
 \subsubsection{System Interfaces}
+
+\paragraph{Municipality Data Exchange}
+
+\clearpage
+
+\paragraph{Geographic Information System} The definition of the external GIS interface is GIS dependant and will be described in a functionality-based way. The system is required to perform the following functions:
+
+	\begin{itemize}
+		\item load and filter data based on the user requested criteria
+		\item cache retrieved data for the most common user requested criteria
+		\item communicate the loaded and filtered data to the external GIS with the final goal of presenting the requested map to the user via the \hyperref[sec:3userinterface]{user interfaces}
+	\end{itemize}
+	
+	The system via the external GIS is required to be capable of handling the following data visualisations:
+	
+	\begin{itemize}
+		\item visualise the spatial location of stored violations inside a specific geographic area requested by the user
+		\item visualise the spatial location of stored violations inside a specific geographic area and a specific time range requested by the user
+		\item visualise the distinction between possible safe and unsafe areas identified by the system
+		\item map quantities and concentrations, such as where the most and least number of violations occurred, highlighting the streets (and areas) with the highest frequency of violations
+		\item map the change of quantities and concentrations inside a specific geographic area and a specific time range requested by the user
+	\end{itemize}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=320pt]{diagrams/GIS.png}
+		\caption{
+			\label{fig:externalGIS} GIS Functionalities}
+	\end{figure}
+
 \subsubsection{User Interfaces}
+\label{sec:3userinterface}
+
 \subsubsection{Hardware Interfaces}
 \subsubsection{Software Interfaces}
 \subsubsection{Communication Interfaces}
