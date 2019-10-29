@@ -82,7 +82,7 @@ The following requirements are derived in order to achieve the specified goals.
 			
 			\textbf{DA2} Internet connection always works correctly
 			
-		\item \ref{goal:avoidLeaks}}\ Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated			\begin{enumerate}[resume*]
+		\item \ref{goal:avoidLeaks}\ Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated			\begin{enumerate}[resume*]
    				\item The system must provide a secure channel to communicate with the users
    				\item The system must encrypt the connection with the users in order to protect the process of providing data
    				\item The system must adopt security measures to prevent malicious accesses and to protect sensible data
@@ -91,7 +91,7 @@ The following requirements are derived in order to achieve the specified goals.
   			
   			
 		
-		\item \ref{goal:municipalityTransfer}}\ Allow the system to retrieve data about the accidents that occur on the territory and data about issued tickets via the municipality provided service
+		\item \ref{goal:municipalityTransfer}\ Allow the system to retrieve data about the accidents that occur on the territory and data about issued tickets via the municipality provided service
 			\begin{enumerate}[resume*]
    				\item The system must be able to retrieve data about accidents from municipality systems 
    				\item The system must be able to process data retrieved from municipality
@@ -103,17 +103,25 @@ The following requirements are derived in order to achieve the specified goals.
   			
 			\textbf{DA3} Municipality services are always reachable
   			
-  		\item \ref{goal:statistics}}\ Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build statistics
+  		\item \ref{goal:statistics}\ Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build statistics
   			\begin{enumerate}[resume*]
   				\item 
    				
   			\end{enumerate}
-  		\item \ref{goal:ticketsInformation}\ Access the municipality archives of emitted tickets and build statistics based on the retrieved information
+  		\item \ref{goal:consultMap}\ Allow users to consult a map highlighting the streets (and the areas) with the highest frequency of violations, the identified potentially unsafe areas and view statistics about previously stored violations
   			\begin{enumerate}[resume*] 
   				\item The system must be able to retrieve data about tickets issued by the municipality 
    				\item The system must be able to process data retrieved from municipality
    				\item The system must be able to elaborate issued tickets information to generate statistics about useful violations provided by users
    			\end{enumerate}
+   			
+   			\item \ref{goal:retrieveData}Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
+   				\begin{enumerate}[resume*] 
+  				\item The system must be able to retrieve data about tickets issued by the municipality 
+   				\item The system must be able to process data retrieved from municipality
+   				\item The system must be able to elaborate issued tickets information to generate statistics about useful violations provided by users
+   			\end{enumerate}
+   			
    	\end{description}
   	
 \subsection{Performance Requirements}
