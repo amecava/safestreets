@@ -1,6 +1,6 @@
-\section{Overall description}
+\section{Overall Description}
 
-\subsection{Product perspective}
+\subsection{Product Perspective}
 	
 	The product is not independent nor totally self-contained but defines a component of a larger system. This subsection relates the requirements of that larger system to functionality of the software and identifies interfaces between that system and the software.
 	
@@ -15,7 +15,7 @@
 			}
 		\end{figure}
 
-	\subsubsection{System interfaces}
+	\subsubsection{System Interfaces}
 	\label{sec:systemInterfaces}
 		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}. \newline \newline
 		\begin{figure}[h]
@@ -31,11 +31,11 @@
 		
 \paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualise the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalised by area or total number. The system can map the change in a specific geographic area to visualise statistics, or to evaluate the results of the SafeStreets initiative.	
 
-\subsubsection{User interfaces}
+\subsubsection{User Interfaces}
 
 The system requires a user interface as the access point where users interact with the system. As the user interface design can dramatically affect the usability and user experience of the system, the layout of the user interface will be clearly set out so that elements can be found in a logical position, in a way that users will be able to find the the information and services they are looking for.
 
-\paragraph{Guest user}
+\paragraph{Guest User}
 	Using the user interfaces of the system guest users can:
 	\begin{itemize}
 		\item Register to the system
@@ -51,7 +51,7 @@ The system requires a user interface as the access point where users interact wi
 		\item View and edit personal information
 	\end{itemize}
 		
-\subsubsection{Hardware interfaces}
+\subsubsection{Hardware Interfaces}
 	The system will interact with the user's device hardware interfaces.	
 	\begin{itemize} 
 		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
@@ -59,14 +59,14 @@ The system requires a user interface as the access point where users interact wi
 		\item The geomagnetic field sensor and the proximity hardware-based sensor are leveraged to determine the position of the user's device
 	\end{itemize}
 
-\subsubsection{Software interfaces}
+\subsubsection{Software Interfaces}
 	In order to reach the goals highlighted in the goals section the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
 	
-\subsubsection{Communication interfaces}
+\subsubsection{Communication Interfaces}
 	The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
 
-\subsection{Product functions}
-\paragraph{Violation upload procedure} 
+\subsection{Product Functions}
+\paragraph{Violation Upload Procedure} 
 Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred.
 
 The gathered metadata will be both descriptive, used for discovery and identification, as information to search and locate an object, such as title, author, subjects, keywords, and administrative, such as technical information, including file type, or when and how the data was created.
@@ -80,7 +80,7 @@ The gathered metadata will be both descriptive, used for discovery and identific
 		}
 	\end{figure}
 	
-\paragraph{Retrieve data from municipality}
+\paragraph{Retrieve Data from Municipality}
 Retrieve the information about the accidents that occur on the territory and the issued tickets using the service offered by the municipalities and cross this data with SafeStreets data to identify potentially unsafe areas and build different types of statistics. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them. \newline
 
 	\begin{figure}[h]
@@ -93,7 +93,7 @@ Retrieve the information about the accidents that occur on the territory and the
 	
 \clearpage
 
-\paragraph{Show information and statistics}
+\paragraph{Show Information and Statistics}
 The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
 	\begin{figure}[h]
 		\centering
@@ -103,7 +103,7 @@ The application allows logged users to mine the information that has been receiv
 		}
 	\end{figure}
 	
-\paragraph{Restricted access API}
+\paragraph{Restricted Access API}
 The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, increasing their safety. \newline
 	\begin{figure}[h]
 		\centering
