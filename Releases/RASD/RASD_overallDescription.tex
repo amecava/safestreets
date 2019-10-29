@@ -68,16 +68,14 @@ The system requires a user interface as the access point where users interact wi
 
 \subsection{Product Functions}
 \paragraph{Violation Upload Procedure} 
-Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred.
-
-The gathered metadata will be both descriptive, used for discovery and identification, as information to search and locate an object, such as title, author, subjects, keywords, and administrative, such as technical information, including file type, or when and how the data was created.
+Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred. 
 \clearpage
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=320pt]{diagrams/state-diagrams/SubmitViolation.png}
 		\caption{
-			\label{fig:violationUpload} Violation upload process
+			\label{fig:violationUpload} Violation Upload Process
 		}
 	\end{figure}
 	
@@ -88,20 +86,19 @@ Retrieve the information about the accidents that occur on the territory and the
 		\centering
 		\includegraphics[width=285pt, height=205pt]{diagrams/state-diagrams/RequestMunicipality.png}
 		\caption{
-			\label{fig:retrieveMunicipality} Retrieve data from municipality
-		}
+			\label{fig:retrieveMunicipality} Retrieve Data From Municipality}
 	\end{figure}
 	
 \clearpage
 
 \paragraph{Show Information and Statistics}
-The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
+The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=300pt, height=135pt]{diagrams/state-diagrams/ShowStatistics.png}
 		\caption{
-			\label{fig:showStatistics} Show information and statistics
-		}
+			\label{fig:showStatistics} Show Information and Statistics
+			}
 	\end{figure}
 	
 \paragraph{Restricted Access API}
