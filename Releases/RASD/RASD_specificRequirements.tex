@@ -78,52 +78,67 @@ The following requirements are derived in order to achieve the specified goals.
    				\item The system must check that the validity of the data inserted by the \emph{guest} user namely avoid duplicates, invalid fiscal codes and too weak passwords
    				
    				\item The system must send an e-mail to the \emph{guest} user to verify the e-mail address given during the registration
+   
   			\end{enumerate}
-  			
-		
+  				
 				\textbf{DA2} Internet connection always works correctly
 				
-				\textbf{DA5} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
+				\textbf{DA6} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
 			
   			
 		\item \ref{goal:login}\ Allow registered users to authenticate to the system
 			\begin{enumerate}[label=\textbf{R\arabic*}, resume]
   				\item The system must require the user to insert his username and password to authenticate to the system
-   				\item The system must be able to check if the username and password pair
-   				correspond to a user correctly registered to the system
-   				\item The system must allow access to a user if username and password inserted corresponds to a user correctly registered to the system
-   				\item The system must allow access to the services provided by the system only to authenticated users that and have confirmed their own e-mail address
+   				\item The system must be able to check if the username and password pair correspond to a user correctly registered to the system and grant the access to that user
+
 			\end{enumerate}
-		\item \ref{goal:provideData}\ Allow users to provide data: upload a picture, specify the type of violation, manually insert the licence plate number and possibly the street in which the violation occurred
-			\begin{enumerate}[resume*]
-				\item The system must require the user to login in order to allow him to provide data
-				\item The system must require the user to upload a picture of the vehicle subject of the violation
+			
+			\textbf{DA2} Internet connection always works correctly
+			
+			\textbf{DA5} The DBMS always works properly so that the information in the DB are always accessible
+			
+		\item \ref{goal:userTransfer}}\ Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation			\begin{enumerate}[resume*]
+				\item The system must allow the user to take a picture of the violation and the plate from the mobile application
   				\item The system must allow the user to manually insert the license plate number in order to help the recognition algorithm
   				\item The system must be able to retrieve the license plate of the vehicle running an algorithm to recognise it
   				\item The system must be able to verify that the license plate number is valid and registered to a vehicle
   				\item The system must require the user to specify the type of violation
   				\item The system must allow the user to provide the location of the violation, manually specifying the address, picking it up from the map or using the GPS of the device
    			\end{enumerate}
-		\item \ref{goal:retrieveData}\ Allow users to consult previously received data served with different levels of visibility based on their role
-			\begin{enumerate}[resume*]
-   				\item The system must require the user to login in order to allow him to consult information about previous violations
-   				\item The system must allow the authenticated user to request summary information on the past violations
-   				\item The system must allow the authenticated authority to request detailed information on the past violations
-   				\item The system must be able to provide the requested information to user
-   				\item The system must allow the user to consult the requested violations information
+   			
+   			\textbf{C2} The quality of the picture is sufficient to recognise the plate number (min resolution 320x240)
+   			
+			\textbf{C3} Internet connection must be strong enough to allow the upload of the picture in a reasonable amount of time (supported technologies are 3G, 4G and 5G due to the performance requirement)
+			
+			\textbf{DA1} GPS position of all users is always obtainable
+			
+			\textbf{DA2} Internet connection always works correctly
+			
+		\item \ref{goal:avoidLeaks}}\ Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated			\begin{enumerate}[resume*]
+   				\item The system must provide a secure channel to communicate with the users
+   				\item The system must encrypt the connection with the users in order to protect the process of providing data
+   				\item The system must adopt security measures to prevent malicious accesses and to protect sensible data
+   				\item Questo davvero non lo so mori miei
   			\end{enumerate}
-		\item \ref{goal:connectMunicipality}\ Cross SafeStreets data with information about the accidents that occur on the territory of the municipalities to identify potentially unsafe areas, and suggest possible intervention
+  			
+  			
+		
+		\item \ref{goal:municipalityTransfer}}\ Allow the system to retrieve data about the accidents that occur on the territory and data about issued tickets via the municipality provided service
 			\begin{enumerate}[resume*]
    				\item The system must be able to retrieve data about accidents from municipality systems 
    				\item The system must be able to process data retrieved from municipality
    				\item The system must be able to elaborate accidents and violations information to extract data about unsafe areas
    				\item The system must be able to provide data to municipality systems to suggest possible interventions to increase safety in a specific area
   			\end{enumerate}
-  		\item \ref{goal:avoidLeaks}\ Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated
+  			
+  			\textbf{DA2} Internet connection always works correctly
+  			
+			\textbf{DA3} Municipality services are always reachable
+  			
+  		\item \ref{goal:statistics}}\ Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build statistics
   			\begin{enumerate}[resume*]
-  				\item The system must adopt security measures to prevent malicious accesses and to protect sensible data
-   				\item The system must provide a secure channel to communicate with the users
-   				\item The system must encrypt the connection with the users in order to protect the process of providing data
+  				\item 
+   				
   			\end{enumerate}
   		\item \ref{goal:ticketsInformation}\ Access the municipality archives of emitted tickets and build statistics based on the retrieved information
   			\begin{enumerate}[resume*] 
