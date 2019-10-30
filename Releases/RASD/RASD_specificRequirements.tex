@@ -4,31 +4,44 @@
 
 \subsubsection{System Interfaces}
 
-\paragraph{Municipality Data Exchange} Since Municipality's service 	is an external component of our system, will be described based on the functionalities it will be required to offer, namely:
-	\begin{itemize}
-		\item authenticate to our system
-		\item upload and retrieve data about violations and statistics to our system
-		\item retrieve possible suggestions
-		\item retrieve tickets information for ticket generation
-		\item upload tickets data for further analysis
-	\end{itemize}
-	
-	The system will use Municipality's service to offer the users the possibility to retrieve the information about the accidents that occur on the territory of the municipality. Furthermore, as already stated, we will cross our data with theirs to offer statistics about
+\paragraph{Municipality Data Exchange} The definition of the municipality data exchange interface is dependent to the corresponding SafeStreet's interface required to be offered to the municipalities. The municipality is required to offer the following functionalities to the system:
 
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=320pt]{diagrams/systemInterfaces.png}
-		\caption{
-			\label{fig:municipalityServiceUML} Municipality service}
-	\end{figure}
+	\begin{itemize}
+		\item guarantee a secure authentication to the municipalities' system using a provided \emph{restricted access API}
+		\item provide a secure transfer of data related to accidents occurred in the territory of the municipality
+		\item provide a secure transfer of data related to local authorities' issued tickets 
+	\end{itemize} 
+	
+	Leveraging the retrieved municipality data the system is required to cross this information with the system previously stored data. In addition, the system is required to perform the following functions on the crossed data:
+	
+	\begin{itemize}
+		\item build statistics on the frequency of violations
+		\item build statistics on the vehicles that commit the most violations
+		\item build statistics on the most egregious offenders leveraging the issued tickets data
+		\item build statistics on the effectiveness of the SafeStreets initiative by looking for trends in the issuing of tickets
+		\item identify potentially unsafe areas and store this new generated information 
+		\item identify possible interventions to be suggested to the municipalities and store this new generated information 
+	\end{itemize}
+		
+	To fulfil the bidirectional data exchange the system is required to offer the following functionalities to the municipalities:
+	
+	\begin{itemize}
+		\item guarantee a secure authentication to the system using a provided \emph{restricted access API}
+		\item provide a secure transfer of data related to user uploaded violations and all the corresponding metadata
+		\item provide a secure transfer of data related to possible interventions suggestions 
+		
+	\end{itemize} 
+	
+\clearpage
 
 \paragraph{Geographic Information System} The definition of the external GIS interface is GIS dependant and will be described in a functionality-based way. The system is required to perform the following functions:
 
 	\begin{itemize}
 		\item load and filter data based on the user requested criteria
 		\item cache retrieved data for the most common user requested criteria
-		\item communicate the loaded and filtered data to the external GIS with the final goal of presenting the requested map to the user via the \hyperref[sec:3userinterface]{user interfaces}
-	\end{itemize}
+		\item communicate the loaded and filtered data to the external GIS with the final goal of presenting the requested map to the user via the user interfaces
+		
+		\end{itemize}
 	
 	The system via the external GIS is required to be capable of handling the following data visualisations:
 	
@@ -44,11 +57,11 @@
 		\centering
 		\includegraphics[width=320pt]{diagrams/GIS.png}
 		\caption{
-			\label{fig:externalGIS} GIS Functionalities}
+			\label{fig:externalGIS} GIS Interaction Diagram}
 	\end{figure}
 
 \subsubsection{User Interfaces}
-\label{sec:3userinterface}
+\label{sec:userinterface}
 
 \subsubsection{Hardware Interfaces}
 \subsubsection{Software Interfaces}
@@ -111,7 +124,7 @@ The following requirements are derived in order to achieve the specified goals.
 			
 			\textbf{DA5} The DBMS always works properly so that the information in the DB are always accessible
 			
-		\item \ref{goal:userTransfer}}\ Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation			\begin{enumerate}[resume*]
+		\item \ref{goal:userTransfer}\ Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation			\begin{enumerate}[resume*]
 				\item The system must allow the user to take a picture of the violation and the plate from the mobile application
   				\item The system must allow the user to manually insert the license plate number in order to help the recognition algorithm
   				\item The system must be able to retrieve the license plate of the vehicle running an algorithm to recognise it
