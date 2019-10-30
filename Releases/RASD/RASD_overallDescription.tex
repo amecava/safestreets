@@ -27,7 +27,8 @@
 			}
 		\end{figure} 
 \clearpage			
-\paragraph{Municipality Data Exchange} The system will interact with municipalities. The system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). 
+\paragraph{Municipality Data Exchange} The system will interact with municipalities. The system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). \cite{Assignments}
+
 
 \label{gis}	
 \paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualise the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalised by area or total number. The system can map the change in a specific geographic area to visualise statistics, or to evaluate the results of the SafeStreets initiative.	
@@ -61,14 +62,14 @@ The system requires a user interface as the access point where users interact wi
 	\end{itemize}
 
 \subsubsection{Software Interfaces}
-	In order to reach the goals highlighted in the goals section the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
+	In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
 	
 \subsubsection{Communication Interfaces}
 	The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
 
 \subsection{Product Functions}
 \paragraph{Violation Upload Procedure} 
-Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred. 
+Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred. \cite{Assignments}
 \clearpage
 
 	\begin{figure}[h]
@@ -80,7 +81,7 @@ Provide logged users with the ability to notify authorities when traffic violati
 	\end{figure}
 	
 \paragraph{Retrieve Data from Municipality}
-Retrieve the information about the accidents that occur on the territory and the issued tickets using the service offered by the municipalities and cross this data with SafeStreets data to identify potentially unsafe areas and build different types of statistics. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them. \newline
+Retrieve the information about the accidents that occur on the territory and the issued tickets using the service offered by the municipalities and cross this data with SafeStreets data to identify potentially unsafe areas and build different types of statistics. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them. \cite{Assignments} \newline
 
 	\begin{figure}[h]
 		\centering
@@ -92,7 +93,7 @@ Retrieve the information about the accidents that occur on the territory and the
 \clearpage
 
 \paragraph{Show Information and Statistics}
-The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \newline
+The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \cite{Assignments} \newline
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=300pt, height=135pt]{diagrams/state-diagrams/ShowStatistics.png}
@@ -102,7 +103,7 @@ The application allows logged users to mine the information that has been receiv
 	\end{figure}
 	
 \paragraph{Restricted Access API}
-The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, increasing their safety. \newline
+The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, increasing their safety. \cite{Assignments} \newline
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=300pt, height=170pt]{diagrams/state-diagrams/RequestAPI.png}
@@ -137,8 +138,7 @@ The system will expose via a \emph{restricted access API} the stored information
 		\item Internet connection always works correctly
 		\item Municipality services are always reachable
 		\item The maps provided by the GIS are always reachable and up to date
-		\item The DBMS always works properly so that the information in the DB are always accessible
-		\item The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
+		\item The DBMS always works properly and the information in the DB are always accessible
 	\end{enumerate}
 		
 \clearpage
