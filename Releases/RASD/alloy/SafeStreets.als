@@ -20,5 +20,14 @@ sig Position {
 
 } 
 
+sig GIS {
+
+}
+
+sig Municipality {
+
+}
+
+
 
 
