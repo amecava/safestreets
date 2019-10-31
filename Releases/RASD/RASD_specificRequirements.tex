@@ -69,7 +69,7 @@
 	\begin{itemize}
 		\item The system is required to offer guest users the ability to register to the system. The personal ID and a valid e-mail address are required for the registration in order to verify the authenticity of the new account. A password policy, composed of a set of rules designed to enhance security issues, is required to be forced to the user.
 				
-		\item The system is required to offer already registered guest users the ability to authenticate and log-in to the system. The system is required to offer the possibility to choose between a username, e-mail or personal ID log-in. \newline
+		\item The system is required to offer already registered guest users the ability to authenticate and log-in to the system. The system is required to offer the possibility to choose between a username, e-mail or personal ID log-in. \newline\newline
 			
 			\begin{figure}[h]
   				\centering
@@ -96,15 +96,7 @@
     				\caption{Username Login}
   				\end{minipage}
 			\end{figure}
-	\end{itemize}
-
-
-\newpage\paragraph{Logged User}
-	\begin{itemize}
-		\item The system is required to permit logged users to submit a violation. The submission is required to include a live photo captured via the \hyperref[sec:hardwareinterfaces]{hardware interfaces} of the user's device. The license plate number of the vehicle represented in the captured photo is not a mandatory field for the violation submission, but it will be leveraged for image recognition support if present. The user interface is required to allow the user to select the type of the committed violation from a predefined list of possible violations..			
-		
-		\item The system is required to allow logged users to consult a map through an external GIS and handle the different data visualisations discussed in the \hyperref[p:mde]{Municipality Data Exchange} section.
-					 
+			
 			\begin{figure}[h]
   				\centering
   				\begin{minipage}[b]{0.4\textwidth}
@@ -117,9 +109,20 @@
     				\caption{Map Interface}
   				\end{minipage}
 			\end{figure}
+	\end{itemize}
+
+
+
+\clearpage\paragraph{Logged User}
+	\begin{itemize}
+		\item The system is required to permit logged users to submit a violation. The submission is required to include a live photo captured via the \hyperref[sec:hardwareinterfaces]{hardware interfaces} of the user's device. The license plate number of the vehicle represented in the captured photo is not a mandatory field for the violation submission, but it will be leveraged for image recognition support if present. The user interface is required to allow the user to select the type of the committed violation from a predefined list of possible violations..			
+		
+		\item The system is required to allow logged users to consult a map through an external GIS and handle the different data visualisations discussed in the \hyperref[p:mde]{Municipality Data Exchange} section.
+					 
+			
 			
 		\item The system is required to allow logged users to consult the different statistics generated upon the system and the municipality collected data listed in the \hyperref[p:mde]{Geographic Information System} section.
-		\item The system is required to allow logged users to view and edit the stored personal information in a profile section of the user interface and to log-out from the system.
+		\item The system is required to allow logged users to view and edit the stored personal information in a profile section of the user interface and to log-out from the system. \newline\newline
 			
 			\begin{figure}[h]
   				\centering
@@ -138,6 +141,14 @@
 \clearpage
 
 \subsubsection{Hardware Interfaces}
+
+The system will interact with the user's device hardware interfaces.	
+	\begin{itemize} 
+		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
+		\item Full access to the user's device camera hardware is needed for the user to capture a photo
+		\item The geomagnetic field sensor and the proximity hardware-based sensor are leveraged to determine the position of the user's device
+	\end{itemize}
+	
 \subsubsection{Software Interfaces}
 \subsubsection{Communication Interfaces}
 
