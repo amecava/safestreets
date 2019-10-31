@@ -27,13 +27,14 @@
 			}
 		\end{figure} 
 \clearpage			
-\paragraph{Municipality Data Exchange} The system will interact with municipalities. The system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the most egregious offenders, or the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). \cite{Assignments}
+\paragraph{Municipality Data Exchange} The system will interact with municipalities. The system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). \cite{Assignments}
 
 
 \label{gis}	
 \paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualise the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalised by area or total number. The system can map the change in a specific geographic area to visualise statistics, or to evaluate the results of the SafeStreets initiative.	
 
 \subsubsection{User Interfaces}
+\label{sec:userinterdaces}
 
 The system requires a user interface as the access point where users interact with the system. As the user interface design can dramatically affect the usability and user experience of the system, the layout of the user interface will be clearly set out so that elements can be found in a logical position, in a way that users will be able to find the the information and services they are looking for.
 
@@ -54,6 +55,7 @@ The system requires a user interface as the access point where users interact wi
 	\end{itemize}
 		
 \subsubsection{Hardware Interfaces}
+\label{sec:hardwareinterfaces}
 	The system will interact with the user's device hardware interfaces.	
 	\begin{itemize} 
 		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
@@ -93,7 +95,7 @@ Retrieve the information about the accidents that occur on the territory and the
 \clearpage
 
 \paragraph{Show Information and Statistics}
-The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, about the most egregious offenders, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \cite{Assignments} \newline
+The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \cite{Assignments} \newline
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=300pt, height=135pt]{diagrams/state-diagrams/ShowStatistics.png}
