@@ -4,7 +4,7 @@
 	
 	The product is not independent nor totally self-contained but defines a component of a larger system. This subsection relates the requirements of that larger system to functionality of the software and identifies interfaces between that system and the software.
 	
-	A class diagram in UML that describes the general structure of the system showing the system's classes, their attributes, operations (or methods), and the relationships among objects is represented in \autoref{fig:classDiagram}. To ensure a better readability not all class attributes and operations are represented. \newline \newline
+	A requirements-level class diagram in UML that describes the general structure of the system showing the system's classes, their attributes, operations (or methods), and the relationships among objects is represented in \autoref{fig:classDiagram}. To ensure a better readability not all class attributes and operations are represented. \newline 
 		
 	\begin{figure}[h]
 			\centering
@@ -17,7 +17,7 @@
 		
 	\subsubsection{System Interfaces}
 	\label{sec:systemInterfaces}
-		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}. \newline \newline
+		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}. \newline 
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=300pt, height=50pt]{diagrams/system_blocks}
@@ -72,6 +72,7 @@ The system requires a user interface as the access point where users interact wi
 \subsection{Product Functions}
 \paragraph{Violation Upload Procedure} 
 Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred. \cite{Assignments}
+
 \clearpage
 
 	\begin{figure}[h]
