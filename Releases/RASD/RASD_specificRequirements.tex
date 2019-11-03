@@ -4,98 +4,180 @@
 
 \subsubsection{System Interfaces}
 
-\paragraph{Municipality Data Exchange} The definition of the municipality data exchange interface is dependent to the corresponding SafeStreet's interface required to be offered to the municipalities. The municipality is required to offer the following functionalities to the system:
+\paragraph{Municipality Data Exchange} \label{p:mde} The definition of the municipality data exchange interface is dependent to the corresponding SafeStreet's interface required to be offered to the municipalities. The municipality is required to offer the following functionalities to the system:
 
 	\begin{itemize}
-		\item guarantee a secure authentication to the municipalities' system using a provided \emph{restricted access API}
-		\item provide a secure transfer of data related to accidents occurred in the territory of the municipality
-		\item provide a secure transfer of data related to local authorities' issued tickets 
+		\item Guarantee a secure authentication to the municipalities' system using a provided \emph{restricted access API}
+		\item Provide a secure transfer of data related to accidents occurred in the territory of the municipality
+		\item Provide a secure transfer of data related to local authorities' issued tickets 
 	\end{itemize} 
 	
 	Leveraging the retrieved municipality data the system is required to cross this information with the system previously stored data. In addition, the system is required to perform the following functions on the crossed data:
 	
 	\begin{itemize}
-		\item build statistics on the frequency of violations
-		\item build statistics on the vehicles that commit the most violations
-		\item build statistics on the most egregious offenders leveraging the issued tickets data
-		\item build statistics on the effectiveness of the SafeStreets initiative by looking for trends in the issuing of tickets
-		\item identify potentially unsafe areas and store this new generated information 
-		\item identify possible interventions to be suggested to the municipalities and store this new generated information 
+		\item Build statistics on the frequency of violations
+		\item Build statistics on the users that submit the most violations
+		\item Build statistics on the cities with the highest number of violations
+		\item Build statistics on the effectiveness of the SafeStreets initiative by looking for trends in the issuing of tickets
+		\item Identify potentially unsafe areas and store this new generated information 
+		\item Identify possible interventions to be suggested to the municipalities and store this new generated information 
 	\end{itemize}
 		
 	To fulfil the bidirectional data exchange the system is required to offer the following functionalities to the municipalities:
 	
 	\begin{itemize}
-		\item guarantee a secure authentication to the system using a provided \emph{restricted access API}
-		\item provide a secure transfer of data related to user uploaded violations and all the corresponding metadata
-		\item provide a secure transfer of data related to possible interventions suggestions 
+		\item Guarantee a secure authentication to the system using a provided \emph{restricted access API}
+		\item Provide a secure transfer of data related to user uploaded violations and all the corresponding metadata
+		\item Provide a secure transfer of data related to possible interventions suggestions 
 		
 	\end{itemize} 
 	
 \clearpage
 
-\paragraph{Geographic Information System} The definition of the external GIS interface is GIS dependant and will be described in a functionality-based way. The system is required to perform the following functions:
+\paragraph{Geographic Information System} \label{p:gis} The definition of the external GIS interface is GIS dependant and will be described in a functionality-based way. The system is required to perform the following functions:
 
 	\begin{itemize}
-		\item load and filter data based on the user requested criteria
-		\item cache retrieved data for the most common user requested criteria
-		\item communicate the loaded and filtered data to the external GIS with the final goal of presenting the requested map to the user via the user interfaces
+		\item Load and filter data based on the user requested criteria
+		\item Cache retrieved data for the most common user requested criteria
+		\item Communicate the loaded and filtered data to the external GIS with the final goal of presenting the requested map to the user via the user interfaces
 		
 		\end{itemize}
 	
 	The system via the external GIS is required to be capable of handling the following data visualisations:
 	
 	\begin{itemize}
-		\item visualise the spatial location of stored violations inside a specific geographic area requested by the user
-		\item visualise the spatial location of stored violations inside a specific geographic area and a specific time range requested by the user
-		\item visualise the distinction between possible safe and unsafe areas identified by the system
-		\item map quantities and concentrations, such as where the most and least number of violations occurred, highlighting the streets (and areas) with the highest frequency of violations
-		\item map the change of quantities and concentrations inside a specific geographic area and a specific time range requested by the user
+		\item Visualise the spatial location of stored violations inside a specific geographic area requested by the user
+		\item Visualise the spatial location of stored violations inside a specific geographic area and a specific time range requested by the user
+		\item Visualise the distinction between possible safe and unsafe areas identified by the system
+		\item Map quantities and concentrations, such as where the most and least number of violations occurred, highlighting the streets (and areas) with the highest frequency of violations
+		\item Map the change of quantities and concentrations inside a specific geographic area and a specific time range requested by the user \newline
 	\end{itemize}
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=320pt]{diagrams/GIS.png}
+		\includegraphics[width=335pt]{diagrams/GIS.png}
 		\caption{
 			\label{fig:externalGIS} GIS Interaction Diagram}
 	\end{figure}
 
 \subsubsection{User Interfaces}
-\label{sec:userinterface}
+
+	One of the key methodologies to capture the goals that the system's user interfaces must satisfy is through user interfaces mockups. The same structure of the overall description \hyperref[sec:goals]{corresponding section} will be used in order to extend the already stated requirements.
+
+ \paragraph{Guest User}
+
+	\begin{itemize}
+		\item The system is required to offer guest users the ability to register to the system. The personal ID and a valid e-mail address are required for the registration in order to verify the authenticity of the new account. A password policy, composed of a set of rules designed to enhance security issues, is required to be forced to the user.
+				
+		\item The system is required to offer already registered guest users the ability to authenticate and log-in to the system. The system is required to offer the possibility to choose between a username, e-mail or personal ID log-in. \newline\newline
+			
+			\begin{figure}[h]
+  				\centering
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/register-empty.png}
+    					\caption{Registration Empty}
+  				\end{minipage}
+  				\hfill
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/register.png}
+    				\caption{Registration Filled}
+  				\end{minipage}
+			\end{figure}
+		
+			\begin{figure}[h]
+  				\centering
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/login-empty.png}
+    					\caption{Login Empty}
+  				\end{minipage}
+  				\hfill
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/login.png}
+    				\caption{Username Login}
+  				\end{minipage}
+			\end{figure}
+			
+			\begin{figure}[h]
+  				\centering
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/submit-violation.png}
+    					\caption{Upload Procedure}
+  				\end{minipage}
+  				\hfill
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/map.png}
+    				\caption{Map Interface}
+  				\end{minipage}
+			\end{figure}
+	\end{itemize}
+
+
+
+\clearpage\paragraph{Logged User}
+	\begin{itemize}
+		\item The system is required to permit logged users to submit a violation. The submission is required to include a live photo captured via the \hyperref[sec:hardwareinterfaces]{hardware interfaces} of the user's device. The license plate number of the vehicle represented in the captured photo is not a mandatory field for the violation submission, but it will be leveraged for image recognition support if present. The user interface is required to allow the user to select the type of the committed violation from a predefined list of possible violations..			
+		
+		\item The system is required to allow logged users to consult a map through an external GIS and handle the different data visualisations discussed in the \hyperref[p:mde]{Municipality Data Exchange} section.
+					 
+			
+			
+		\item The system is required to allow logged users to consult the different statistics generated upon the system and the municipality collected data listed in the \hyperref[p:mde]{Geographic Information System} section.
+		\item The system is required to allow logged users to view and edit the stored personal information in a profile section of the user interface and to log-out from the system. \newline\newline
+			
+			\begin{figure}[h]
+  				\centering
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/statistics.png}
+    					\caption{Statistics View}
+  				\end{minipage}
+  				\hfill
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/profile.png}
+    				\caption{User Profile}
+  				\end{minipage}
+			\end{figure}
+	\end{itemize}
+
+\clearpage
 
 \subsubsection{Hardware Interfaces}
+	
 \subsubsection{Software Interfaces}
 \subsubsection{Communication Interfaces}
 
+\clearpage
 
 \subsection{Functional Requirements}
-Definition of use case diagrams, use cases and associated sequence/activity diagrams, and mapping on requirements
 
-\subsection{Performance Requirements}
+\subsubsection{Scenarios}
 
-\subsection{Logical Database Requirements}
+Application specific scenarios are presented to enrich the system's specification. These scenarios describe the usage of the system.
 
-\subsection{Design Constraints}
+\paragraph{Scenario 1}
+\label{scenario:1}
+	Davide is walking down the street and notices a car parked over the crosswalks. He opens the SafeStreets app, registers to the system with his fiscal code, and takes a picture from the in-app camera. Before uploading he adds information such as the type of violation (i.e. "Bad Parking") and the street in which the violation occurred. As soon as SafeStreet processes the uploaded data the authorities are alerted.
 
-\subsubsection{Standards Compliance}
-\subsubsection{Hardware Limitations}
-\subsubsection{Other?}
+\paragraph{Scenario 2}
+\label{scenario:2}
+	Carlo wants to teach his son to drive and wants to find the safest area of Milan in order to avoid exposing him to difficult situations in his first drives. He opens the SafeStreets app and consult the map with the streets that have the greatest number of incidents and violations, and will try to avoid them allowing his son to have a safe drive.
 
-\subsection{Software System Attributes}
+\paragraph{Scenario 3}
+\label{scenario:3}
+	SafeStreets automatically retrieves data from the municipality's service, and after a while notices that extremely frequently cars are parked in a prohibited restricted area of Milan. After further analysis and with the help of the users the system comes to the conclusion that drivers don't realise that they can't park in that area because of a misleading signal. SafeStreets  contacts the municipality and suggests a possible solution to the problem.
 
-\subsubsection{Reliability}
-\subsubsection{Availability}
-\subsubsection{Security}
-\subsubsection{Maintainability}
-\subsubsection{Portability}
+\paragraph{Scenario 4}
+\label{scenario:4}
+	After receiving a notification of "Dangerously parked car" with the picture showing a car parked in such a way that could risk a possible collision with the tram line, SafeStreets alerts the authorities in order to facilitate the process of car removal and the consequential ticket generation.
+	
+\clearpage
 
+\subsubsection{Use Cases}
 
+\clearpage
 
+\subsubsection{Requirements Mapping}
 
-
-\subsection{Functional Requirements}
-The following requirements are derived in order to achieve the specified goals.
-\subsubsection{Goals}
+	The following requirements are derived in order to achieve the specified goals.
 	\begin{description}
 		\item \ref{goal:register}\ Allow guest users to register to the system
 			\begin{enumerate}[label=\textbf{R\arabic*}]
@@ -182,6 +264,32 @@ The following requirements are derived in order to achieve the specified goals.
    			\end{enumerate}
    			
    	\end{description}
+
+\subsection{Performance Requirements}
+
+\subsection{Logical Database Requirements}
+
+\subsection{Design Constraints}
+
+\subsubsection{Standards Compliance}
+\subsubsection{Hardware Limitations}
+\subsubsection{Other?}
+
+\subsection{Software System Attributes}
+
+\subsubsection{Reliability}
+\subsubsection{Availability}
+\subsubsection{Security}
+\subsubsection{Maintainability}
+\subsubsection{Portability}
+
+
+
+
+
+\subsection{Functional Requirements}
+
+
   	
 \subsection{Performance Requirements}
 	The system should ensure acceptable response times in the interactions with the user, which strictly depends on the number of concurrent users and the connection speed.
