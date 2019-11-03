@@ -13,12 +13,26 @@ sig GuestUser extends User{
 }
 
 sig Violation{
+    position: one Position,
+    type: one Type,
+    plate: one Plate
+}
+
+sig Plate{
+    platenumber: one String
+}
+
+sig Type{
 
 }
 
 sig Position {
-
+    geoTag: one String
 } 
+
+sig Picture{
+
+}
 
 sig GIS {
 
