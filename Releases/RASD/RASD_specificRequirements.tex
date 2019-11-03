@@ -184,7 +184,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 	The following requirements are derived in order to achieve the specified goals.
 	\begin{description}
-		\item \ref{goal:register}\ Allow guest users to register to the system
+		\item \ref{goal:register} Allow guest users to register to the system
 			\begin{enumerate}[label=\textbf{R\arabic*}]
 			
   				\item The system must require the \emph{guest} user to insert his fiscal code, a username, a valid e-mail and a password to identify him
@@ -199,19 +199,18 @@ Application specific scenarios are presented to enrich the system's specificatio
 			
 			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
 			
-			\textbf{\ref{assumption:smartphoneOS}} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
+			\textbf{\ref{assumption:smartphoneOS}} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later) \newline
 			
   			
 		\item \ref{goal:login}\ Allow registered users to authenticate to the system
 			\begin{enumerate}[label=\textbf{R\arabic*}, resume]
   				\item The system must require the user to insert his username and password to authenticate to the system
-   				\item The system must be able to check if the username and password pair correspond to a user correctly registered to the system and grant the access to that user
-
+   				\item The system must be able to check if the username and password pair correspond to a user correctly registered to the system and grant the access to that user 
 			\end{enumerate}
 			
 			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
 			
-			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
 			
 		\item \ref{goal:userTransfer}\ Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation			
 			 \begin{enumerate}[resume*]
@@ -231,7 +230,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 			
 			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
 			
-			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
 			
 		\item \ref{goal:avoidLeaks}\ Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated			
 			\begin{enumerate}[resume*]
@@ -240,7 +239,7 @@ Application specific scenarios are presented to enrich the system's specificatio
    				\item The system must adopt security measures to prevent malicious accesses and to protect sensible data
    				\item Questo davvero non lo so mori miei
   			\end{enumerate}
-			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
+			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly \newline
 			
 		\item \ref{goal:municipalityTransfer}\ Allow the system to retrieve data about the accidents that occur on the territory and data about issued tickets via the municipality provided service
 			\begin{enumerate}[resume*]
@@ -254,7 +253,7 @@ Application specific scenarios are presented to enrich the system's specificatio
   			
 			\textbf{\ref{assumption:municipalityReachable}} Municipality services are always reachable
 			
-  			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+  			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
   			
   		\item \ref{goal:statistics}\ Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build and provide statistics
   			\begin{enumerate}[resume*]
@@ -266,7 +265,7 @@ Application specific scenarios are presented to enrich the system's specificatio
   			
   			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
   			
-			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
 			
   		\item \ref{goal:consultMap}\ Allow users to consult a map highlighting the streets (and the areas) with the highest frequency of violations, the identified potentially unsafe areas and view statistics about previously stored violations
   			\begin{enumerate}[resume*] 
@@ -279,7 +278,7 @@ Application specific scenarios are presented to enrich the system's specificatio
    			
    			\textbf{\ref{assumption:mapsReachable}} The maps provided by the GIS are always reachable and up to date
    			
-   			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+   			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
    			
    		\item \ref{goal:retrieveData}Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
    				\begin{enumerate}[resume*] 
