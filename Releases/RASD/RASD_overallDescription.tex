@@ -1,0 +1,148 @@
+\section{Overall Description}
+
+\subsection{Product Perspective}
+	
+	The product is not independent nor totally self-contained but defines a component of a larger system. This subsection relates the requirements of that larger system to functionality of the software and identifies interfaces between that system and the software.
+	
+	A requirements-level class diagram in UML that describes the general structure of the system showing the system's classes, their attributes, operations (or methods), and the relationships among objects is represented in \autoref{fig:classDiagram}. To ensure a better readability not all class attributes and operations are represented. \newline 
+		
+	\begin{figure}[h]
+			\centering
+			\includegraphics[width=350pt, height=200pt]{diagrams/uml.png}
+			\caption{ 
+				\label{fig:classDiagram} 
+				SafeStreets Class Diagram
+			}
+		\end{figure}
+		
+	\subsubsection{System Interfaces}
+	\label{sec:systemInterfaces}
+		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}. \newline 
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=300pt, height=50pt]{diagrams/system_blocks}
+			\caption{
+				\label{fig:systemInterfaces} 
+				Overview of system interfaces
+			}
+		\end{figure} 
+\clearpage			
+\paragraph{Municipality Data Exchange} The system will interact with municipalities. The system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). \cite{Assignments}
+
+
+\label{gis}	
+\paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualise the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalised by area or total number. The system can map the change in a specific geographic area to visualise statistics, or to evaluate the results of the SafeStreets initiative.	
+
+\subsubsection{User Interfaces}
+\label{sec:userinterfaces}
+
+The system requires a user interface as the access point where users interact with the system. As the user interface design can dramatically affect the usability and user experience of the system, the layout of the user interface will be clearly set out so that elements can be found in a logical position, in a way that users will be able to find the the information and services they are looking for.
+
+\paragraph{Guest User}
+	Using the user interfaces of the system guest users can:
+	\begin{itemize}
+		\item Register to the system
+		\item Authenticate and log-in to the system
+	\end{itemize}
+	
+\paragraph{Logged User}
+	Using the user interfaces of the system logged users can:
+	\begin{itemize}
+		\item Submit a violation with all the required and optional metadata
+		\item Consult a map through an external GIS visualising specific data based on a selected criteria
+		\item Consult different statistics generated upon the system and the municipality collected data
+		\item View and edit personal information
+	\end{itemize}
+		
+\subsubsection{Hardware Interfaces}
+\label{sec:hardwareinterfaces}
+	The system will interact with the user's device hardware interfaces.	
+	\begin{itemize} 
+		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
+		\item Full access to the user's device camera hardware is needed for the user to capture a photo
+		\item The geomagnetic field sensor and the proximity hardware-based sensor are leveraged to determine the position of the user's device
+	\end{itemize}
+
+\subsubsection{Software Interfaces}
+	In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
+	
+\subsubsection{Communication Interfaces}
+	The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
+
+\subsection{Product Functions}
+\paragraph{Violation Upload Procedure} 
+Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred. \cite{Assignments}
+
+\clearpage
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=320pt]{diagrams/state-diagrams/SubmitViolation.png}
+		\caption{
+			\label{fig:violationUpload} Violation Upload Process
+		}
+	\end{figure}
+	
+\paragraph{Retrieve Data from Municipality}
+Retrieve the information about the accidents that occur on the territory and the issued tickets using the service offered by the municipalities and cross this data with SafeStreets data to identify potentially unsafe areas and build different types of statistics. This will also allow the system to understand which violations are more likely to cause accidents in a particular zone and elaborate suggestions on possible interventions, later communicated to the municipality via a \emph{restricted access API} provided to them. \cite{Assignments} \newline
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=285pt, height=205pt]{diagrams/state-diagrams/RequestMunicipality.png}
+		\caption{
+			\label{fig:retrieveMunicipality} Retrieve Data From Municipality}
+	\end{figure}
+	
+\clearpage
+
+\paragraph{Show Information and Statistics}
+The application allows logged users to mine the information that has been received, highlighting the streets (or the areas) with the highest frequency of violations, considered unsafe areas, or the vehicles that commit the most violations. In addition, statistics about issued tickets, or the effectiveness of the SafeStreets initiative, are shown to the user if requested. \cite{Assignments} \newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt, height=135pt]{diagrams/state-diagrams/ShowStatistics.png}
+		\caption{
+			\label{fig:showStatistics} Show Information and Statistics
+			}
+	\end{figure}
+	
+\paragraph{Restricted Access API}
+The system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it and receive suggestions for possible interventions to carry out (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking), in order to decrease the risk of those areas, increasing their safety. \cite{Assignments} \newline
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=300pt, height=170pt]{diagrams/state-diagrams/RequestAPI.png}
+		\caption{
+			\label{fig:restrictedAPI} Restricted access API
+		}
+	\end{figure}
+
+
+\subsection{User Characteristics}
+	Users can use our system when they notice a violation and want to communicate it to the authorities. Necessary conditions for the user in order to use the system are:
+ 	\begin{itemize}
+ 		\item The user must have a smartphone with a working connection to the internet and must be able to functionally use the provided services
+ 		\item The user must be in the age of majority in order to decrease the cases of wrong reports caused by user's inexperience on the topic 
+ 		\item A direct consequence of the previous item is that the user must be able to identify violations and the different types of violations
+ 	\end{itemize}
+ 	The user agrees to these conditions during the registration to the system.
+ 	
+\subsection{Constraints}
+\label{sec:constraints}
+	We assume that these constraints are always met:
+	\begin{enumerate}[label=\textbf{C\arabic*}]
+		\item \label{constraint:accurateGPS} GPS position is supposed to be accurate (max error $\pm5$m)
+		\item \label{constraint:pictureQuality} The quality of the picture is sufficient to recognise the plate number (min resolution 320x240)
+		\item \label{constraint:strongConnection} Internet connection must be strong enough to allow the upload of the picture in a reasonable amount of time (supported technologies are 3G, 4G and 5G due to the performance requirement)
+	\end{enumerate}
+	
+\subsection{Assumptions}
+	We assume that these assumptions hold true in the domain of our system 
+	\begin{enumerate}[label=\textbf{	DA\arabic*}]
+		\item \label{assumption:obtainableGPS} GPS position of all users is always obtainable
+		\item \label{assumption:workingConnection} Internet connection always works correctly
+		\item \label{assumption:municipalityReachable} Municipality services are always reachable
+		\item \label{assumption:mapsReachable} The maps provided by the GIS are always reachable and up to date
+		\item \label{assumption:workingDBMS} The DBMS always works properly and the information in the DB are always accessible
+		\item \label{assumption:smartphoneOS} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
+		\end{enumerate}
+		
+\clearpage

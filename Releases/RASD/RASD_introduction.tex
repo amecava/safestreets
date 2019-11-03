@@ -1,0 +1,69 @@
+\section{Introduction}
+\subsection{Purpose of this document}
+The purpose of a \textbf{R}equirement \textbf{A}nalysis and \textbf{S}pecifications \textbf{D}ocument is the process of discovering the purpose for which a software system was intended, by identifying stakeholders and their needs, and documenting these in a form that is amenable to analysis, communication, and subsequent implementation. \cite{RE} It is also concerned with the relationship of software's factors such as goals, functions and constrains to precise specifications of software behaviour, and to their evolution over time and across software families. \cite{Zave}
+
+\subsection{Scope}
+
+	SafeStreets is a crowd-­sourced application that intends to provide users with the possibility to notify authorities when traffic violations occur, and in particular parking violations. 
+	
+	The system allows users to send pictures of violations, including suitable metadata, to authorities. Examples of violations are vehicles parked in the middle of bike lanes or in places reserved for people with disabilities, double parking, and so on. In addition, the system allows users to mine the previously stored information, for example by highlighting the streets (and the areas) with the highest frequency of violations, or by showing different types of statistics built upon the collected data.
+	
+	The system will also provide a communication interface to the municipality's provided service to create a secure bridge for data transfer. This connection will enable SafeStreets to cross its data with municipality's to make analysis and build different types of statistics. Moreover the system will offer back to the municipality the possibility to retrieve information about the violations in order to generate traffic tickets from it and receive suggestions on possible interventions. \cite{Assignments}
+	
+\subsubsection{Goals}
+	\label{sec:goals}
+	\begin{enumerate}[label=\textbf{G\arabic*}]
+		\item \label{goal:register} Allow guest users to register to the system
+		\item \label{goal:login} Allow registered users to authenticate to the system
+		\item \label{goal:userTransfer} Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation
+		\item \label{goal:avoidLeaks} Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated
+		\item \label{goal:municipalityTransfer} Allow the system to retrieve data about the accidents that occur on the territory and data about issued tickets via the municipality provided service
+		\item \label{goal:statistics} Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build and provide statistics
+		\item \label{goal:consultMap} Allow users to consult a map highlighting the streets (and the areas) with the highest frequency of violations, the identified potentially unsafe areas and view statistics about previously stored violations
+		\item \label{goal:retrieveData} Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
+
+	\end{enumerate}
+
+\subsection{Glossary}
+	\subsubsection{Definitions}
+	\begin{description}
+		\item[System \emph{or} Product:]the SafeStreets software we are to develop
+		\item[Municipality:] a city, a town or a village, or a small group of them
+		\item[Local authorities \emph{or} authorities:] the local authorities of the municipality for example the local police
+		\item[Guest \emph{or} Guest user:] person who access the system as non logged user
+		\item[Logged user \emph{or} Authenticated user:] authenticated person who is interfacing with the system
+		\item[User:] guest user or logged user
+		\item[Registration:]  interaction between a non registered user and the system in which the user, providing all of the information required by the system for the creation of an account, receives from the system the credentials needed to authenticate to the system
+		\item[Authentication \emph{or} Login:] interaction between guests and the system that grants authenticated user's privileges to a guest user
+		\item[Upload procedure:] process which realises the transfer of data between the user and the system
+		\item[Restricted access API:] API that can be used only by authorised person or system through an access token
+		\item[GPS Coordinates:] GPS coordinates are a unique identifier of a precise geographic location on the earth
+		\item[Chain of Custody \emph{or} Chain of Evidence:] process of validating how any kind of evidence has been gathered, tracked, and protected on its way to a court of law. It guarantees that the data presented is “as originally acquired” and has not been tampered with and is authentic prior to admission into evidence. \cite{Stone}
+		
+	\end{description}
+\subsubsection{Acronyms}
+	\begin{description}
+		\item [RASD:] Requirements Analysis and Specification Document
+		\item [API:] Application Programming Interface
+		\item [GPS:] Global Position System
+		\item [DBMS:] Data Base Management System
+		\item [GIS:] Geographic Information System
+		\item [UML:] Unified Modelling Language
+			
+	\end{description}
+\subsubsection{Abbreviations}
+	\begin{description}
+		\item [m:] meters (with multiples and submultiples)
+		\item [w.r.t.:] with respect to
+		\item [i.f.f.:] if and only if
+		\item [i.e.:] in example
+		\item [etc.:] et cetera
+	\end{description}
+
+\subsection{Document overview}
+According to the IEEE standard \cite{IeeeRasd}, this document is structured as
+\begin{enumerate}
+	\item \textbf{Introduction}: it provides an overview of the entire document and product goals
+	\item \textbf{Overall Description}: it describes general factors that affect the product providing the background for system requirements
+	\item \textbf{Specific Requirements}: it contains all the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements
+	\item \textbf{Formal Analysis using Alloy}: includes a brief presentation of the main objectives driving the formal modelling activity, as well as a description of the model itself, and what can be proved with it
