@@ -97,23 +97,11 @@
   				\end{minipage}
 			\end{figure}
 			
-			\begin{figure}[h]
-  				\centering
-  				\begin{minipage}[b]{0.4\textwidth}
-    				\includegraphics[width=\textwidth]{mockups/submit-violation.png}
-    					\caption{Upload Procedure}
-  				\end{minipage}
-  				\hfill
-  				\begin{minipage}[b]{0.4\textwidth}
-    				\includegraphics[width=\textwidth]{mockups/map.png}
-    				\caption{Map Interface}
-  				\end{minipage}
-			\end{figure}
 	\end{itemize}
 
 
 
-\clearpage\paragraph{Logged User}
+\newpage\paragraph{Logged User}
 	\begin{itemize}
 		\item The system is required to permit logged users to submit a violation. The submission is required to include a live photo captured via the \hyperref[sec:hardwareinterfaces]{hardware interfaces} of the user's device. The license plate number of the vehicle represented in the captured photo is not a mandatory field for the violation submission, but it will be leveraged for image recognition support if present. The user interface is required to allow the user to select the type of the committed violation from a predefined list of possible violations..			
 		
@@ -134,6 +122,19 @@
   				\begin{minipage}[b]{0.4\textwidth}
     				\includegraphics[width=\textwidth]{mockups/profile.png}
     				\caption{User Profile}
+  				\end{minipage}
+			\end{figure}
+			
+			\begin{figure}[h]
+  				\centering
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/submit-violation.png}
+    					\caption{Upload Procedure}
+  				\end{minipage}
+  				\hfill
+  				\begin{minipage}[b]{0.4\textwidth}
+    				\includegraphics[width=\textwidth]{mockups/map.png}
+    				\caption{Map Interface}
   				\end{minipage}
 			\end{figure}
 	\end{itemize}
@@ -256,7 +257,7 @@ Application specific scenarios are presented to enrich the system's specificatio
    				\item The system must be able to elaborate issued tickets information to generate statistics about useful violations provided by users
    			\end{enumerate}
    			
-   			\item \ref{goal:retrieveData}Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
+   			\item \ref{goal:retrieveData} Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
    				\begin{enumerate}[resume*] 
   				\item The system must be able to retrieve data about tickets issued by the municipality 
    				\item The system must be able to process data retrieved from municipality
@@ -282,6 +283,17 @@ Application specific scenarios are presented to enrich the system's specificatio
 \subsubsection{Security}
 \subsubsection{Maintainability}
 \subsubsection{Portability}
+
+\clearpage
+
+\section{Formal Analysis using Alloy}
+
+\subsection{Source code}
+		\lstinputlisting[language=alloy]{alloy/SafeStreets.als}
+		
+\subsection{Generated Worlds}
+
+\clearpage
 
 
 
