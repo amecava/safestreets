@@ -155,19 +155,23 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \paragraph{Scenario 1}
 \label{scenario:1}
-	Davide is walking down the street and notices a car parked over the crosswalks. He opens the SafeStreets app, registers to the system with his fiscal code, and takes a picture from the in-app camera. Before uploading he adds information such as the type of violation (i.e. "Bad Parking") and the street in which the violation occurred. As soon as SafeStreet processes the uploaded data the authorities are alerted.
+	Davide is walking down the street while he notices a car parked over the crosswalks. He decides to open the SafeStreets app, register to the system with his fiscal code and submit the violation he just ran into. So he takes a picture from the in-app camera, he adds information such as the type of violation (i.e. "Bad Parking") and het allows his device integrated GPS to retrieve his current position, recognising the street in which the violation occurred. Finally, he submits the form, SafeStreet processes the uploaded data the authorities are alerted.
 
 \paragraph{Scenario 2}
 \label{scenario:2}
-	Carlo wants to teach his son to drive and wants to find the safest area of Milan in order to avoid exposing him to difficult situations in his first drives. He opens the SafeStreets app and consult the map with the streets that have the greatest number of incidents and violations, and will try to avoid them allowing his son to have a safe drive.
+	Carlo wants to teach his son to drive but he doesn't want to expose him to difficult situations during his first experiences, so he decides to find the safest areas in Milan, where to lead his child driving. He opens the SafeStreets app and he consults the "Unsafe areas" section of the map, showing the most dangerous zones and the streets with the greatest number of accidents and violations. So Carlo is able to choose the roads he wants to avoid, assuring his son a safe drive.
 
 \paragraph{Scenario 3}
 \label{scenario:3}
-	SafeStreets automatically retrieves data from the municipality's service, and after a while notices that extremely frequently cars are parked in a prohibited restricted area of Milan. After further analysis and with the help of the users the system comes to the conclusion that drivers don't realise that they can't park in that area because of a misleading signal. SafeStreets  contacts the municipality and suggests a possible solution to the problem.
+	SafeStreets automatically retrieves data from the municipality service and, after processing the data about issued tickets, it notices that a restricted area of Milan is extremely often place of violations of cars parked in a prohibited zone. Thanks to a further analysis of the information provided by SafeStreets users, the pictures uploaded to the system highlight that the problem is a misleading signal, not allowing drivers to realise that they can't park in that area. SafeStreets contacts the municipality and notifies about this issue, suggesting a possible solution.
 
 \paragraph{Scenario 4}
 \label{scenario:4}
-	After receiving a notification of "Dangerously parked car" with the picture showing a car parked in such a way that could risk a possible collision with the tram line, SafeStreets alerts the authorities in order to facilitate the process of car removal and the consequential ticket generation.
+	The system receives a submission by a user alerting of a "Dangerously parked car". Processing the uploaded picture, it emerges that the vehicle is not completely placed within the stripes limiting the spots and, since the road where it was located is also crossed by railways, it is at risk of a collision with a train. SafeStreets alerts the authorities in order to anticipate and facilitate the car removal and the resulting ticket emission, possibly avoiding an accident.	
+	
+\paragraph{Scenario 5}
+\label{scenario:5}
+	Eleonora is about to leave for a trip to Italy with her friends, but they are undecided on which means of transport to choose, between moving by car or traveling by train, taking advantage of the local transport means of each city. Opening the SafeStreets app and consulting its Statistics section, they find out that the cities they want to visit are among the most subject to violations, meaning that it could turn out hard driving in their destinations, so they decide to leave by train.
 	
 \clearpage
 
@@ -190,9 +194,11 @@ Application specific scenarios are presented to enrich the system's specificatio
    
   			\end{enumerate}
   				
-				\textbf{DA2} Internet connection always works correctly
-				
-				\textbf{DA6} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
+			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
+			
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+			
+			\textbf{\ref{assumption:smartphoneOS}} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
 			
   			
 		\item \ref{goal:login}\ Allow registered users to authenticate to the system
@@ -202,11 +208,12 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 			\end{enumerate}
 			
-			\textbf{DA2} Internet connection always works correctly
+			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
 			
-			\textbf{DA5} The DBMS always works properly so that the information in the DB are always accessible
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
 			
-		\item \ref{goal:userTransfer}\ Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation			\begin{enumerate}[resume*]
+		\item \ref{goal:userTransfer}\ Allow users to transfer data to the system describing occurred violations, including the suitable metadata to describe the submitted violation			
+			 \begin{enumerate}[resume*]
 				\item The system must allow the user to take a picture of the violation and the plate from the mobile application
   				\item The system must allow the user to manually insert the license plate number in order to help the recognition algorithm
   				\item The system must be able to retrieve the license plate of the vehicle running an algorithm to recognise it
@@ -215,23 +222,25 @@ Application specific scenarios are presented to enrich the system's specificatio
   				\item The system must allow the user to provide the location of the violation, manually specifying the address, picking it up from the map or using the GPS of the device
    			\end{enumerate}
    			
-   			\textbf{C2} The quality of the picture is sufficient to recognise the plate number (min resolution 320x240)
+   			\textbf{\ref{constraint:pictureQuality}} The quality of the picture is sufficient to recognise the plate number (min resolution 320x240)
    			
-			\textbf{C3} Internet connection must be strong enough to allow the upload of the picture in a reasonable amount of time (supported technologies are 3G, 4G and 5G due to the performance requirement)
+			\textbf{\ref{constraint:strongConnection}} Internet connection must be strong enough to allow the upload of the picture in a reasonable amount of time (supported technologies are 3G, 4G and 5G due to the performance requirement)
 			
-			\textbf{DA1} GPS position of all users is always obtainable
+			\textbf{\ref{assumption:obtainableGPS}} GPS position of all users is always obtainable
 			
-			\textbf{DA2} Internet connection always works correctly
+			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
 			
-		\item \ref{goal:avoidLeaks}\ Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated			\begin{enumerate}[resume*]
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+			
+		\item \ref{goal:avoidLeaks}\ Ensure that the chain of custody of the information provided by the users is never broken, and the information is never altered or manipulated			
+			\begin{enumerate}[resume*]
    				\item The system must provide a secure channel to communicate with the users
    				\item The system must encrypt the connection with the users in order to protect the process of providing data
    				\item The system must adopt security measures to prevent malicious accesses and to protect sensible data
    				\item Questo davvero non lo so mori miei
   			\end{enumerate}
-  			
-  			
-		
+			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
+			
 		\item \ref{goal:municipalityTransfer}\ Allow the system to retrieve data about the accidents that occur on the territory and data about issued tickets via the municipality provided service
 			\begin{enumerate}[resume*]
    				\item The system must be able to retrieve data about accidents from municipality systems 
@@ -240,15 +249,24 @@ Application specific scenarios are presented to enrich the system's specificatio
    				\item The system must be able to provide data to municipality systems to suggest possible interventions to increase safety in a specific area
   			\end{enumerate}
   			
-  			\textbf{DA2} Internet connection always works correctly
+  			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
   			
-			\textbf{DA3} Municipality services are always reachable
+			\textbf{\ref{assumption:municipalityReachable}} Municipality services are always reachable
+			
+  			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
   			
-  		\item \ref{goal:statistics}\ Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build statistics
+  		\item \ref{goal:statistics}\ Allow the system to cross the information submitted by the users and the information retrieved from the municipality to build and provide statistics
   			\begin{enumerate}[resume*]
-  				\item 
-   				
+  				\item The system must be able to analyse the data about violations uploaded by the users
+  				\item The system must be able to extract useful information from the data processed
+  				\item The system must be able to elaborate the information and generate summary statistics data
+  				\item The system must be able to provide statistics data to app users
   			\end{enumerate}
+  			
+  			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
+  			
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+			
   		\item \ref{goal:consultMap}\ Allow users to consult a map highlighting the streets (and the areas) with the highest frequency of violations, the identified potentially unsafe areas and view statistics about previously stored violations
   			\begin{enumerate}[resume*] 
   				\item The system must be able to retrieve data about tickets issued by the municipality 
@@ -256,13 +274,23 @@ Application specific scenarios are presented to enrich the system's specificatio
    				\item The system must be able to elaborate issued tickets information to generate statistics about useful violations provided by users
    			\end{enumerate}
    			
-   			\item \ref{goal:retrieveData}Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
+   			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
+   			
+   			\textbf{\ref{assumption:mapsReachable}} The maps provided by the GIS are always reachable and up to date
+   			
+   			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+   			
+   		\item \ref{goal:retrieveData}Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
    				\begin{enumerate}[resume*] 
   				\item The system must be able to retrieve data about tickets issued by the municipality 
    				\item The system must be able to process data retrieved from municipality
    				\item The system must be able to elaborate issued tickets information to generate statistics about useful violations provided by users
    			\end{enumerate}
    			
+   			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
+   			
+			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+
    	\end{description}
 
 \subsection{Performance Requirements}

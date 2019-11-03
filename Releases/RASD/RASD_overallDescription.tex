@@ -34,7 +34,7 @@
 \paragraph{Geographic Information System} The system will interact with an external GIS. Our system will map the spatial location of stored violations and visualise the spatial relationships among them. The external GIS will map quantities, such as where the most and least number of violations occurred, to find places that meet the user requested criteria inside an area of interest. This can be accomplished mapping concentrations, or a quantity normalised by area or total number. The system can map the change in a specific geographic area to visualise statistics, or to evaluate the results of the SafeStreets initiative.	
 
 \subsubsection{User Interfaces}
-\label{sec:userinterdaces}
+\label{sec:userinterfaces}
 
 The system requires a user interface as the access point where users interact with the system. As the user interface design can dramatically affect the usability and user experience of the system, the layout of the user interface will be clearly set out so that elements can be found in a logical position, in a way that users will be able to find the the information and services they are looking for.
 
@@ -129,19 +129,20 @@ The system will expose via a \emph{restricted access API} the stored information
 \label{sec:constraints}
 	We assume that these constraints are always met:
 	\begin{enumerate}[label=\textbf{C\arabic*}]
-		\item GPS position is supposed to be accurate (max error $\pm5$m)
-		\item The quality of the picture is sufficient to recognise the plate number (min resolution 320x240)
-		\item Internet connection must be strong enough to allow the upload of the picture in a reasonable amount of time (supported technologies are 3G, 4G and 5G due to the performance requirement)
+		\item \label{constraint:accurateGPS} GPS position is supposed to be accurate (max error $\pm5$m)
+		\item \label{constraint:pictureQuality} The quality of the picture is sufficient to recognise the plate number (min resolution 320x240)
+		\item \label{constraint:strongConnection} Internet connection must be strong enough to allow the upload of the picture in a reasonable amount of time (supported technologies are 3G, 4G and 5G due to the performance requirement)
 	\end{enumerate}
 	
 \subsection{Assumptions}
 	We assume that these assumptions hold true in the domain of our system 
 	\begin{enumerate}[label=\textbf{	DA\arabic*}]
-		\item GPS position of all users is always obtainable
-		\item Internet connection always works correctly
-		\item Municipality services are always reachable
-		\item The maps provided by the GIS are always reachable and up to date
-		\item The DBMS always works properly and the information in the DB are always accessible
-	\end{enumerate}
+		\item \label{assumption:obtainableGPS} GPS position of all users is always obtainable
+		\item \label{assumption:workingConnection} Internet connection always works correctly
+		\item \label{assumption:municipalityReachable} Municipality services are always reachable
+		\item \label{assumption:mapsReachable} The maps provided by the GIS are always reachable and up to date
+		\item \label{assumption:workingDBMS} The DBMS always works properly and the information in the DB are always accessible
+		\item \label{assumption:smartphoneOS} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
+		\end{enumerate}
 		
 \clearpage
