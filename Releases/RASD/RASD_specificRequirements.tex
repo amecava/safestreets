@@ -151,7 +151,13 @@ The system will interact with the user's device hardware interfaces.
 	\end{itemize}
 	
 \subsubsection{Software Interfaces}
+
+TODO (Overall Description) In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
+
+
 \subsubsection{Communication Interfaces}
+
+TODO (Overall Description) The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
 
 \clearpage
 
@@ -194,21 +200,25 @@ Application specific scenarios are presented to enrich the system's specificatio
 	\end{figure}
 	
 	\paragraph{Notes to read the diagram}
-		The use case diagram represents the possible interactions of actors with the system and the different use cases in which the actors are involved.\\
+	\begin{itemize}
+		\item The use case diagram represents the possible interactions of actors with the system and the different use cases in which the actors are involved.
 
-		The "Municipality" actor includes all the authorities having access to the system, both to consult SafeStreets information and to retrieve data from the provided API.\\
+		\item The "Municipality" actor includes all the authorities having access to the system, both to consult SafeStreets information and to retrieve data from the provided API.
 		
-		Since the API has a restricted access, the authority must authenticate to the system in order to retrieve data from it.\\
+		\item Since the API has a restricted access, the authority must authenticate to the system in order to retrieve data from it.
 		
-		Authorities don't participate in the registration process because they login with a given account.\\
+		\item Authorities don't participate in the registration process because they login with a given account.
 		
-		The "GIS Service" is the external Geographical Information System used for the Map service integration.\\
+		\item The "GIS Service" is the external Geographical Information System used for the Map service integration.
+	\end{itemize}
+		
 
 \clearpage
 
 \subsubsection{Use Cases Description}
 
-\subsubsection{Registration}
+\textbf{Registration}
+
 \begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
 \toprule
 \textbf{Name} & \textbf{Registration} \\
@@ -260,7 +270,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \clearpage
 
-\subsubsection{Login}
+\textbf{Login}
 \begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
 \toprule
 \textbf{Name} & \textbf{Login} \\
@@ -298,7 +308,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \clearpage
 
-\subsubsection{API Authentication}
+\textbf{API Authentication}
 \begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
 \toprule
 \textbf{Name} & \textbf{Authentication} \\
@@ -335,7 +345,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \clearpage
 
-\subsubsection{Violation Submission}
+\textbf{Violation Submission}
 \begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
 \toprule
 \textbf{Name} & \textbf{Violation Submission} \\
@@ -380,7 +390,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 \clearpage
 
 \clearpage
-\subsubsection{View Map}
+\textbf{View Map}
 \begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
 \toprule
 \textbf{Name} & \textbf{View Map} \\

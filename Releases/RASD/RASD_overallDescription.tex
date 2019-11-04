@@ -56,7 +56,7 @@ The system requires a user interface as the access point where users interact wi
 		
 \subsubsection{Hardware Interfaces}
 \label{sec:hardwareinterfaces}
-	In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface to the user's device hardware. 
+	In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface to the user's device hardware. These hardware interfaces are required for communication between the user's device and the system and for gathering the required data for the violation upload procedure, such as the user's position or the picture of the violation.
 
 \subsubsection{Software Interfaces}
 	In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
@@ -67,8 +67,6 @@ The system requires a user interface as the access point where users interact wi
 \subsection{Product Functions}
 \paragraph{Violation Upload Procedure} 
 Provide logged users with the ability to notify authorities when traffic violations occur and, in particular, parking violations. The application allows users to send pictures of violations, including the suitable required metadata. In particular, when it receives a picture, it runs an algorithm to read the license plate number (the user can help with the recognition via an optional form) and it stores the retrieved information with the violation, including also the type of the violation (submitted by the user) and the street where the violation occurred. \cite{Assignments}
-
-\clearpage
 
 	\begin{figure}[h]
 		\centering
