@@ -142,6 +142,13 @@
 \clearpage
 
 \subsubsection{Hardware Interfaces}
+
+The system will interact with the user's device hardware interfaces.	
+	\begin{itemize} 
+		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
+		\item Full access to the user's device camera hardware is needed for the user to capture a photo
+		\item The geomagnetic field sensor and the proximity hardware-based sensor are leveraged to determine the position of the user's device
+	\end{itemize}
 	
 \subsubsection{Software Interfaces}
 \subsubsection{Communication Interfaces}
@@ -280,7 +287,7 @@ Application specific scenarios are presented to enrich the system's specificatio
    			
    			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
    			
-   		\item \ref{goal:retrieveData}Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
+   		\item \ref{goal:retrieveData} Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
    				\begin{enumerate}[resume*] 
   				\item The system must be able to retrieve data about tickets issued by the municipality 
    				\item The system must be able to process data retrieved from municipality
