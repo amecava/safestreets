@@ -142,9 +142,22 @@
 \clearpage
 
 \subsubsection{Hardware Interfaces}
+
+The system will interact with the user's device hardware interfaces.	
+	\begin{itemize} 
+		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
+		\item Full access to the user's device camera hardware is needed for the user to capture a photo
+		\item The geomagnetic field sensor and the proximity hardware-based sensor are leveraged to determine the position of the user's device
+	\end{itemize}
 	
 \subsubsection{Software Interfaces}
+
+TODO (Overall Description) In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
+
+
 \subsubsection{Communication Interfaces}
+
+TODO (Overall Description) The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
 
 \clearpage
 
@@ -176,7 +189,248 @@ Application specific scenarios are presented to enrich the system's specificatio
 	
 \clearpage
 
-\subsubsection{Use Cases}
+\subsubsection{Use Case Diagram}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=\linewidth]{diagrams/UseCaseDiagram.png}
+		\caption{
+			\label{fig:useCase} 
+				Use case diagram
+		}
+	\end{figure}
+	
+	\paragraph{Notes to read the diagram}
+	\begin{itemize}
+		\item The use case diagram represents the possible interactions of actors with the system and the different use cases in which the actors are involved.
+
+		\item The "Municipality" actor includes all the authorities having access to the system, both to consult SafeStreets information and to retrieve data from the provided API.
+		
+		\item Since the API has a restricted access, the authority must authenticate to the system in order to retrieve data from it.
+		
+		\item Authorities don't participate in the registration process because they login with a given account.
+		
+		\item The "GIS Service" is the external Geographical Information System used for the Map service integration.
+	\end{itemize}
+		
+
+\clearpage
+
+\subsubsection{Use Cases Description}
+
+\textbf{Registration}
+
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Registration} \\
+\midrule
+\textbf{Actors} & Guest user \\
+\midrule
+\textbf{Entry\newline conditions} &  The guest user downloaded and opened the app\\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user asks the system to register to its services
+	\item The system shows the appropriate form to fill to register to the system
+	\item The user inserts his personal ID to verify his identity
+	\item The user inserts his own email address
+	\item The user inserts a username to be uniquely identified by the system
+	\item The user inserts a password accordingly to the security constraints
+	\item The user confirms data inserted are correct e submit the form
+	\item The system checks the personal ID isn't already registered
+	\item The system checks the username to be unique
+	\item The system checks the email to be unique
+	\item The system sends an email to the user with a unique link to verify the email address inserted by the user really belongs to him
+	\item The user clicking on the link received confirms his email address
+	\item The user is notified by mail the registration procedure is correctly completed
+\end{enumerate} \\
+
+\midrule
+
+\textbf{Exit conditions} & The user is able to login to the system as a \emph{registered} user with its own credentials\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the personal ID inserted by the user is already registered, the system displays an error message asking the user to recover his account
+	\item If the username inserted by the user is already taken by another user, the system displays an error message asking the user to insert another username
+	\item If the email inserted by the user is already used by another user, the system displays an error message asking the user to insert another email address
+	\item If the user notices to have entered wrong informations he could edit them at the end of the process of registration in his personal page
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Registration} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sdRegistration.png}
+	\caption{
+		\label{fig:registrationSequence} 
+		\emph{Registration} sequence diagram
+	}
+\end{figure}
+
+\clearpage
+
+\textbf{Login}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Login} \\
+\midrule
+\textbf{Actors} &  Registered user \\
+\midrule
+\textbf{Entry \newline conditions} & The user must know his username and password \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user inserts his username and password in the appropriate form and submit it
+	\item The system validates the inserted credentials checking also if the user has confirmed his own email address
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & If the credential validation is successful, user is successfully logged in\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the credential validation failed, an error message is displayed
+	\item If the credential validation is successful but the email address isn't confirmed, the user is reminded to validate it through the received confirmation email
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Login} use case description}
+\end{longtable}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sdLogin.png}
+	\caption{
+		\label{fig:loginSequence} 
+		\emph{Login} sequence diagram
+	}
+\end{figure}
+
+\clearpage
+
+\textbf{API Authentication}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Authentication} \\
+\midrule
+\textbf{Actors} &  Municipality \\
+\midrule
+\textbf{Entry \newline conditions} & The authority must know his username and password \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The authority user inserts his username and password in the appropriate form and submit it
+	\item The system validates the inserted credentials
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & If the credential validation is successful, access to the API is given to the authority\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the credential validation failed, an error message is displayed
+	\item If the entered username is invalid, the municipality is prompted to manually contact the system owners to request a specific account to access the API functionalities
+\end{itemize} \\
+\bottomrule
+\caption{\emph{API Authentication} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sdAuthentication.png}
+	\caption{
+		\label{fig:authSequence} 
+		\emph{API Authentication} sequence diagram
+	}
+\end{figure}
+
+\clearpage
+
+\textbf{Violation Submission}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Violation Submission} \\
+\midrule
+\textbf{Actors} &  Logged user \\
+\midrule
+\textbf{Entry \newline conditions} & The user is logged in \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user takes a picture portraying the violation, with the license plate of the vehicle clearly visible
+	\item The user selects the most suitable violation type
+	\item The user possibly enters the license plate number manually
+	\item The user allows the app to retrieve his current location using the device GPS
+	\item The submits the fulfilled form
+	\item The system starts processing the entered information the picture, recognising the license plate number
+	\item The system registers the violation
+	\item The system confirms the procedure success
+\end{enumerate} \\
+\midrule
+\textbf{Exit conditions} & The user has successfully submitted the violation\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If a problem retrieving the current user location occurs, the user is warned to check the GPS service is accessible
+	\item If an upload problem occurs, the user is warned to check the internet connection
+	\item If the system cannot retrieve the license plate number and it isn't manually specified or the numbers don't match, an error is reported to the user
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Violation Submission} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sdViolationSubmission.png}
+	\caption{
+		\label{fig:submissionSequence} 
+		\emph{Violation Submission} sequence diagram
+	}
+\end{figure}
+
+\clearpage
+
+\clearpage
+\textbf{View Map}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{View Map} \\
+\midrule
+\textbf{Actors} & Logged user \\
+\midrule
+\textbf{Entry \newline conditions} & The user is logged in \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user chooses the type of map he wants to consult among:
+		\subitem a1. The map with his previously submitted violations
+		\subitem a2. The map with all the submitted violations
+		\subitem a3. The map highlighting the safe and unsafe areas
+	\item The user possibly selects the time interval of the violations he wants to view
+	\item The user sends the request
+	\item The system retrieves the map from the GIS Service
+	\item The system enriches the retrieved map with the requested information
+	\item The system shows the map in the user's instance of the app
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The user can view and explore the map\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the selected time interval is invalid, the user is warned and prompted to select a valid one
+	\item If the GIS Service cannot be retrieved, an error is reported to the user
+\end{itemize} \\
+\bottomrule
+\caption{\emph{View Map} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sdViewMap.png}
+	\caption{
+		\label{fig:mapSequence} 
+		\emph{View Map} sequence diagram
+	}
+\end{figure}
 
 \clearpage
 
@@ -280,7 +534,7 @@ Application specific scenarios are presented to enrich the system's specificatio
    			
    			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
    			
-   		\item \ref{goal:retrieveData}Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
+   		\item \ref{goal:retrieveData} Allow municipality to consult the system data and receive suggestions on possible interventions via a restrict access API 
    				\begin{enumerate}[resume*] 
   				\item The system must be able to retrieve data about tickets issued by the municipality 
    				\item The system must be able to process data retrieved from municipality
@@ -312,19 +566,6 @@ Application specific scenarios are presented to enrich the system's specificatio
 \subsubsection{Portability}
 
 \clearpage
-
-\section{Formal Analysis using Alloy}
-
-\subsection{Source code}
-		\lstinputlisting[language=alloy]{alloy/SafeStreets.als}
-		
-\subsection{Generated Worlds}
-
-\clearpage
-
-
-
-
 
 \subsection{Functional Requirements}
 
