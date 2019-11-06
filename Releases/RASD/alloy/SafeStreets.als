@@ -46,6 +46,7 @@ sig Report {
 
 sig City {
     name: one String,
+    isSafe: one Bool,
     numberOfViolations: one Int,
     areas: set Area,
     streets: set Street
@@ -110,7 +111,7 @@ fact UnsafeStreet {
     all s: Street | s.isSafe = False iff (some v: Violation | v.position.street = s and #v >= 10)
 }
 
-//An Area is considered unsafe if there are at least 4 streets of that area that are considered unsafe
+// An Area is considered unsafe if there are at least 4 streets of that area that are considered unsafe
 fact UnsafeArea {
     all a: Area | a.isSafe = False iff (some s: Street | a.street = s and #s >= 4)
 }
@@ -159,6 +160,7 @@ assert NoBadCorrespondence{
                                 and r.reportId = v.violationId
 }
 check NoBadCorrespondence for 5
+
 
 
 pred show{ 
