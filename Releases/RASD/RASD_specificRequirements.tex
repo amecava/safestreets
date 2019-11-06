@@ -261,7 +261,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics [width=\textwidth]{diagrams/sdRegistration.png}
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdRegistration.png}
 	\caption{
 		\label{fig:registrationSequence} 
 		\emph{Registration} sequence diagram
@@ -299,7 +299,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics [width=\textwidth]{diagrams/sdLogin.png}
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdLogin.png}
 	\caption{
 		\label{fig:loginSequence} 
 		\emph{Login} sequence diagram
@@ -336,7 +336,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics [width=\textwidth]{diagrams/sdAuthentication.png}
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdAuthentication.png}
 	\caption{
 		\label{fig:authSequence} 
 		\emph{API Authentication} sequence diagram
@@ -380,7 +380,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics [width=\textwidth]{diagrams/sdViolationSubmission.png}
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdViolationSubmission.png}
 	\caption{
 		\label{fig:submissionSequence} 
 		\emph{Violation Submission} sequence diagram
@@ -389,7 +389,6 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \clearpage
 
-\clearpage
 \textbf{View Map}
 \begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
 \toprule
@@ -425,10 +424,135 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics [width=\textwidth]{diagrams/sdViewMap.png}
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdViewMap.png}
 	\caption{
 		\label{fig:mapSequence} 
 		\emph{View Map} sequence diagram
+	}
+\end{figure}
+
+\clearpage
+
+\textbf{View Statistics}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{View Statistics} \\
+\midrule
+\textbf{Actors} & Logged user \\
+\midrule
+\textbf{Entry \newline conditions} & The user is logged in \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The user chooses the statistics tab in the app
+	\item The app sends the request to the system
+	\item A summary view of all the statistics is shown
+	\item Then, the user can choose a specific type of statistics he wants to consult among:
+		\subitem a1. A detailed statistic about the number of violations occurred upon a certain period of time in their country
+		\subitem a2. A ranking of SafeStreets users, ordered by their own number of submitted and confirmed violations
+		\subitem a3. A ranking of the most violation-subject cities in their country
+	\item The app sends the request to the system
+	\item The requested specific statistics is shown
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The user can view the statistics he wants\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the selected time interval is invalid, the user is warned and prompted to select a valid one
+	\item If the selected period has no violation data, the user is warned that no statistics can be shown
+\end{itemize} \\
+\bottomrule
+\caption{\emph{View Statistics} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdViewStatistics.png}
+	\caption{
+		\label{fig:statisticSequence} 
+		\emph{View Statistics} sequence diagram
+	}
+\end{figure}
+
+\clearpage
+
+\textbf{Retrieve Data from Municipality}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Retrieve Data from Municipality} \\
+\midrule
+\textbf{Actors} & Municipality \\
+\midrule
+\textbf{Entry \newline conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The system sends an authentication request to the Municipality API
+	\item The system waits for a response
+	\item The system sends a data retrieval request to the Municipality API
+	\item The system waits for a response
+	\item The system retrieves the requested data
+	\item The system processes the received data
+	\item The system register the analysed data in the DBMS
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The system has the most recent municipality data\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the Municipality API is unreachable, the system interrupts the process after a timeout
+	\item If the credentials are incorrect, the system receives a negative authentication response and the process interrupts
+	\item If the system doesn't get a retrieval response within the timeout, the retrieval fails and the process interrupts
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Retrieve Data from Municipality} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdRetrieveMunicipality.png}
+	\caption{
+		\label{fig:retrieveMunicipalitySequence} 
+		\emph{Retrieve Data from Municipality} sequence diagram
+	}
+\end{figure}
+
+\clearpage
+
+\textbf{Provide Data from API}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Provide Data from API} \\
+\midrule
+\textbf{Actors} & Municipality \\
+\midrule
+\textbf{Entry \newline conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item \textbf{API Authentication}
+	\item The system receives a data retrieval request from the Municipality
+	\item The system processes the request and provides the requested data
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The municipality has the most recent SafeStreets data\\
+\midrule
+\textbf{Exceptions} & 
+\begin{itemize}
+	\item If the API Authentication fails, the process interrupts
+	\item If the system doesn't receive a retrieval request within the timeout, the process interrupts
+\end{itemize} \\
+\bottomrule
+\caption{\emph{Provide Data from API} use case description}
+\end{longtable}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdProvideData.png}
+	\caption{
+		\label{fig:provideDataSequence} 
+		\emph{Provide Data from API} sequence diagram
 	}
 \end{figure}
 
