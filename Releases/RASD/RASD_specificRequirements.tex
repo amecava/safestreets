@@ -1,3 +1,6 @@
+\setlength{\parindent}{4ex}
+\setlength{\parskip}{1ex}
+
 \section{Specific Requirements}
 
 \subsection{External Interfaces}
@@ -11,8 +14,7 @@
 		\item Provide a secure transfer of data related to accidents occurred in the territory of the municipality
 		\item Provide a secure transfer of data related to local authorities' issued tickets 
 	\end{itemize} 
-	
-	Leveraging the retrieved municipality data the system is required to cross this information with the system previously stored data. In addition, the system is required to perform the following functions on the crossed data:
+Leveraging the retrieved municipality data the system is required to cross this information with the system previously stored data. In addition, the system is required to perform the following functions on the crossed data:
 	
 	\begin{itemize}
 		\item Build statistics on the frequency of violations
@@ -22,8 +24,7 @@
 		\item Identify potentially unsafe areas and store this new generated information 
 		\item Identify possible interventions to be suggested to the municipalities and store this new generated information 
 	\end{itemize}
-		
-	To fulfil the bidirectional data exchange the system is required to offer the following functionalities to the municipalities:
+To fulfil the bidirectional data exchange the system is required to offer the following functionalities to the municipalities:
 	
 	\begin{itemize}
 		\item Guarantee a secure authentication to the system using a provided \emph{restricted access API}
@@ -42,8 +43,7 @@
 		\item Communicate the loaded and filtered data to the external GIS with the final goal of presenting the requested map to the user via the user interfaces
 		
 		\end{itemize}
-	
-	The system via the external GIS is required to be capable of handling the following data visualisations:
+The system via the external GIS is required to be capable of handling the following data visualisations:
 	
 	\begin{itemize}
 		\item Visualise the spatial location of stored violations inside a specific geographic area requested by the user
@@ -103,7 +103,7 @@
 
 \newpage\paragraph{Logged User}
 	\begin{itemize}
-		\item The system is required to permit logged users to submit a violation. The submission is required to include a live photo captured via the \hyperref[sec:hardwareinterfaces]{hardware interfaces} of the user's device. The license plate number of the vehicle represented in the captured photo is not a mandatory field for the violation submission, but it will be leveraged for image recognition support if present. The user interface is required to allow the user to select the type of the committed violation from a predefined list of possible violations..			
+		\item The system is required to permit logged users to submit a violation. The submission is required to include a live photo captured via the hardware interfaces of the user's device. The license plate number of the vehicle represented in the captured photo is not a mandatory field for the violation submission, but it will be leveraged for image recognition support if present. The user interface is required to allow the user to select the type of the committed violation from a predefined list of possible violations..			
 		
 		\item The system is required to allow logged users to consult a map through an external GIS and handle the different data visualisations discussed in the \hyperref[p:mde]{Municipality Data Exchange} section.
 					 
@@ -142,7 +142,7 @@
 \clearpage
 
 \subsubsection{Hardware Interfaces}
-
+\label{sec:hardwareinterfaces2}
 The system will interact with the user's device hardware interfaces.	
 	\begin{itemize} 
 		\item Telephony and other wireless connections are leveraged for the communication between the user and the system
@@ -152,43 +152,56 @@ The system will interact with the user's device hardware interfaces.
 	
 \subsubsection{Software Interfaces}
 
-TODO (Overall Description) In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
+\paragraph{Databases} As stated in the corresponding \hyperref[sec:softwareinterfaces]{Software Interfaces} section of the overall description, databases are required to store data about users, violations, and the corresponding metadata. The system is required to have the following permissions on the databases:
 
+	\begin{itemize}
+		\item Edit database information, in order to edit database properties such as the name, description, and size of the database
+		\item View the databases, in order to retrieve the data stored in the databases
+		\item Create external backups and recover the database from them
+		\item Clone the database, by the means of data replication to avoid data loss issues 
+	\end{itemize}
+During the database creation process it is required to estimate how much data will be stored in the database in order to have enough resources available to cover both the database allocation and to cover any overhead.
+	
+
+\paragraph{DBMS} Database management systems are required in order to define, manipulate, retrieve and manage data in the databases. The DBMS should meet the following requirements:
+
+	\begin{itemize}
+		\item Provide data definition facilities
+		\item Provide facilities for storing, retrieving and updating data
+		\item Support multiple view of data
+		\item Provides facilities for specifying Integrity constraints
+		\item Provide facilities for controlling access to data
+		\item Allow simultaneous access and update 
+		\item Support transactions
+		\item Provide facilities for database recovery
+		\item Provide facilities for database maintenance
+	\end{itemize}
 
 \subsubsection{Communication Interfaces}
 
-TODO (Overall Description) The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
-
-\clearpage
+	The system is required to guarantee secure communication between the system and the external interfaces, and between the system and the users. By these means the system is required to use the SSL/TLS protocol to secure communication, in order to encrypt network traffic to protect it from potential threats such as man-in-the-middle attacks or packet sniffers. No fallback to insecure communications must be provided.
 
 \subsection{Functional Requirements}
 
 \subsubsection{Scenarios}
 
-Application specific scenarios are presented to enrich the system's specification. These scenarios describe the usage of the system.
-
-\paragraph{Scenario 1}
+Application specific scenarios are presented to enrich the system's specification. These scenarios describe the usage of the system.\\\\
+\textbf{Scenario 1 \space}
 \label{scenario:1}
-	Davide is walking down the street while he notices a car parked over the crosswalks. He decides to open the SafeStreets app, register to the system with his fiscal code and submit the violation he just ran into. So he takes a picture from the in-app camera, he adds information such as the type of violation (i.e. "Bad Parking") and het allows his device integrated GPS to retrieve his current position, recognising the street in which the violation occurred. Finally, he submits the form, SafeStreet processes the uploaded data the authorities are alerted.
-
-\paragraph{Scenario 2}
+	Davide is walking down the street while he notices a car parked over the crosswalks. He decides to open the SafeStreets app, register to the system with his fiscal code and submit the violation he just ran into. So he takes a picture from the in-app camera, he adds information such as the type of violation (i.e. "Bad Parking") and het allows his device integrated GPS to retrieve his current position, recognising the street in which the violation occurred. Finally, he submits the form, SafeStreet processes the uploaded data the authorities are alerted. \\\\
+\textbf{Scenario 2 \space}
 \label{scenario:2}
-	Carlo wants to teach his son to drive but he doesn't want to expose him to difficult situations during his first experiences, so he decides to find the safest areas in Milan, where to lead his child driving. He opens the SafeStreets app and he consults the "Unsafe areas" section of the map, showing the most dangerous zones and the streets with the greatest number of accidents and violations. So Carlo is able to choose the roads he wants to avoid, assuring his son a safe drive.
-
-\paragraph{Scenario 3}
+	Carlo wants to teach his son to drive but he doesn't want to expose him to difficult situations during his first experiences, so he decides to find the safest areas in Milan, where to lead his child driving. He opens the SafeStreets app and he consults the "Unsafe areas" section of the map, showing the most dangerous zones and the streets with the greatest number of accidents and violations. So Carlo is able to choose the roads he wants to avoid, assuring his son a safe drive. \\\\
+\textbf{Scenario 3 \space}
 \label{scenario:3}
-	SafeStreets automatically retrieves data from the municipality service and, after processing the data about issued tickets, it notices that a restricted area of Milan is extremely often place of violations of cars parked in a prohibited zone. Thanks to a further analysis of the information provided by SafeStreets users, the pictures uploaded to the system highlight that the problem is a misleading signal, not allowing drivers to realise that they can't park in that area. SafeStreets contacts the municipality and notifies about this issue, suggesting a possible solution.
-
-\paragraph{Scenario 4}
+	SafeStreets automatically retrieves data from the municipality service and, after processing the data about issued tickets, notices that a restricted area of Milan is extremely often place of violations of cars parked in a prohibited zone. Thanks to a further analysis of the information provided by SafeStreets users, the pictures uploaded to the system highlight that the problem is a misleading signal, not allowing drivers to realise that they can't park in that area. SafeStreets contacts the municipality and notifies about this issue, suggesting a possible solution. \\\\
+\textbf{Scenario 4 \space}
 \label{scenario:4}
-	The system receives a submission by a user alerting of a "Dangerously parked car". Processing the uploaded picture, it emerges that the vehicle is not completely placed within the stripes limiting the spots and, since the road where it was located is also crossed by railways, it is at risk of a collision with a train. SafeStreets alerts the authorities in order to anticipate and facilitate the car removal and the resulting ticket emission, possibly avoiding an accident.	
-	
-\paragraph{Scenario 5}
+	The system receives a submission by a user alerting of a "Dangerously parked car". Processing the picture, it emerges that the vehicle is not completely placed within the stripes and, since the road where it was located is also crossed by railways, it is at risk of collision with a train. SafeStreets alerts the authorities in order to facilitate the car removal and the resulting ticket emission, possibly avoiding an accident. \\\\
+\textbf{Scenario 5 \space}
 \label{scenario:5}
 	Juliet is about to leave for a trip to Italy with her friends, but they are undecided on which means of transport to choose, between moving by car or traveling by train, taking advantage of the local transport means of each city. Opening the SafeStreets app and consulting its Statistics section, they find out that the cities they want to visit are among the most subject to violations, meaning that it could turn out hard driving in their destinations, so they decide to leave by train.
 	
-\clearpage
-
 \subsubsection{Use Case Diagram}
 	\begin{figure}[h!]
 		\centering
@@ -576,9 +589,6 @@ Application specific scenarios are presented to enrich the system's specificatio
 			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
 			
 			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
-			
-			\textbf{\ref{assumption:smartphoneOS}} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later) \newline
-			
   			
 		\item \ref{goal:login}\ Allow registered users to authenticate to the system
 			\begin{enumerate}[label=\textbf{R\arabic*}, resume]
@@ -670,41 +680,52 @@ Application specific scenarios are presented to enrich the system's specificatio
 			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
 
    	\end{description}
+   	
+\clearpage 
 
 \subsection{Performance Requirements}
 
-\subsection{Logical Database Requirements}
+The system must ensure acceptable response times in the interactions with the user, which strictly depends on the number of concurrent users and the connection speed.
+	
+As of workload measurements, the system is required to support 80,000 users which will on a busy day generate 4500 user interactions. Moreover, by the means of scalability, the system must be capable of supporting at least 300,000 customers when implemented into a suitable production environment.
 
 \subsection{Design Constraints}
 
 \subsubsection{Standards Compliance}
+
+TODO \\
+
 \subsubsection{Hardware Limitations}
-\subsubsection{Other?}
+
+	The user's device is required to have the hardware interfaces and corresponding hardware sensors stated in the \hyperref[sec:hardwareinterfaces2]{hardware interfaces} section.
 
 \subsection{Software System Attributes}
 
 \subsubsection{Reliability}
+
+	The system probability of failure must be 0.0001 (1 out of 10000 plays) when a user requests to perform one of the offered functionalities. 
+	
 \subsubsection{Availability}
-\subsubsection{Security}
+
+	The system must be available 99,9\% of the time (up to 8,76 hours per year of downtime). The system is required to be accessible 24 hours per day.
+	
 \subsubsection{Maintainability}
+
+	The required maintenance is divided in the following categories:
+	
+	\begin{itemize}
+		\item corrective maintenance, the correction of faults when the system does not behave according to its specification
+		\item adaptive maintenance, the adaptation of the system to changes in the operational environment while keeping the same functionality
+		\item perfective maintenance, the extension of a system's functionality and improvement in the services provided
+	\end{itemize}
+
 \subsubsection{Portability}
 
-\clearpage
+	The system is required to be accessible by the most common mobile platforms (iOS and Android devices). In particular, the device of the user is required to run iOS 9 or later, or Android Jelly Bean or later.
 
-\subsection{Functional Requirements}
+\subsubsection{Security}
 
-
-  	
-\subsection{Performance Requirements}
-	The system should ensure acceptable response times in the interactions with the user, which strictly depends on the number of concurrent users and the connection speed.
-\newline
-The processes of providing data and loading the map of safe and unsafe areas shouldn't be too slow.
-\subsection{Software System Attributes}
-	\subsubsection{Availability}
-	The system must be available 99,9\% of the time (up to 8,76 hours per year of downtime). The system should be accessible 24 hours per day.
-	\subsubsection{Security}
-	Users personal information and payment information are encrypted and must be protected during transmission, as already stated the PTPP protocol will be used to ensure encryption through the network.
+TODO Users personal information and payment information are encrypted and must be protected during transmission, as already stated the PTPP protocol will be used to ensure encryption through the network.
 	Restricted access APIs must check that who tries to use them is actually allowed to do so.
-	\subsubsection{Portability}
-	The system must be also accessible by the most common mobile platforms (iOS and Android devices).
 
+\clearpage

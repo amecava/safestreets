@@ -1,3 +1,6 @@
+\setlength{\parindent}{4ex}
+\setlength{\parskip}{1ex}
+
 \section{Overall Description}
 
 \subsection{Product Perspective}
@@ -17,7 +20,7 @@
 		
 	\subsubsection{System Interfaces}
 	\label{sec:systemInterfaces}
-		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{goals stated before}. \newline 
+		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{Goals} stated before. \newline 
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=300pt, height=50pt]{diagrams/system_blocks}
@@ -56,12 +59,14 @@ The system requires a user interface as the access point where users interact wi
 		
 \subsubsection{Hardware Interfaces}
 \label{sec:hardwareinterfaces}
-	In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface to the user's device hardware. These hardware interfaces are required for communication between the user's device and the system and for gathering the required data for the violation upload procedure, such as the user's position or the picture of the violation.
+	In order to accomplish the \hyperref[sec:goals]{Goals} stated before the system requires to interface to the user's device hardware. These hardware interfaces are required for communication between the user's device and the system and for gathering the required data for the violation upload procedure, such as the user's position or the picture of the violation.
 
 \subsubsection{Software Interfaces}
-	In order to accomplish the \hyperref[sec:goals]{goals stated before} the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
+\label{sec:softwareinterfaces}
+	In order to accomplish the \hyperref[sec:goals]{Goals} stated before the system requires to interface with Databases and DBMSs, required in order to store data about users, violations, and the corresponding metadata. These interfaces are also required to guarantee the ability to input queries to the database in order to satisfy the system required capabilities.
 	
 \subsubsection{Communication Interfaces}
+\label{sec:communicationinterfaces}
 	The system requires secure communication within the involved entities in a way not susceptible to eavesdropping or interception. Secure communication includes means by which the system can share information that third parties cannot intercept or alter. For these reasons communication encryption methods must be implemented in a way that guarantees the use of encryption, i.e. if encrypted communication is impossible then no traffic is sent.
 
 \subsection{Product Functions}
@@ -135,7 +140,6 @@ The system will expose via a \emph{restricted access API} the stored information
 		\item \label{assumption:municipalityReachable} Municipality services are always reachable
 		\item \label{assumption:mapsReachable} The maps provided by the GIS are always reachable and up to date
 		\item \label{assumption:workingDBMS} The DBMS always works properly and the information in the DB are always accessible
-		\item \label{assumption:smartphoneOS} The smartphone of the user runs iOS (9 or later) or Android (Jelly Bean or later)
 		\end{enumerate}
 		
 \clearpage
