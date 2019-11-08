@@ -27,7 +27,7 @@ sig Violation{
     plate: one String
 }
 {
-    #this.type >= 1
+    #type >= 1
 }
 
 sig Report {
@@ -39,9 +39,9 @@ sig Report {
     type: set String,
     plate: lone Plate,
     validReport: one Bool
-} 
+}
 {
-    #this.type >= 1
+    #type >= 1
 }
 
 sig City {
@@ -113,7 +113,7 @@ fact UnsafeStreet {
 
 // An Area is considered unsafe if there are at least 4 streets of that area that are considered unsafe
 fact UnsafeArea {
-    all a: Area | a.isSafe = False iff (some s: Street | a.street = s and #s >= 4)
+    all a: Area | a.isSafe = False iff (some s: Street | s in a.streetsOfArea and #s >= 4)
 }
 
 // A plate (representing a driver) becomes an "egregious offender" if the number of violations
@@ -127,17 +127,16 @@ fact NoEmpyPlate{
 }
 
 // All violations must be associated  to logged user who uploaded it
-fact NoEmpyPlate{
+fact NoEmpyUploader{
     all v: Violation | some l: LoggedUser | v.uploadedBy in l
 }
 
 // There must not be two valid reports of the same violation simultaneously
 assert NoUbiquitousSubmissionsOfSamePlate{
     no disjoint r1, r2: Report | r1.validReport = True and r2.validReport = True
-                                and r1.reportId != r2.reportId
+				   and r1.reportId != r2.reportId
                                 and r1.timeStamp = r2.timeStamp 
-                                and r1.committedBy.platenumber = r2.committedBy.platenumber
-                                
+                                and r1.plate = r2.plate                  
 }
 check NoUbiquitousSubmissionsOfSamePlate for 5
 
@@ -146,8 +145,7 @@ assert NoUbiquitousSubmissionsBySameUser{
     no disjoint r1, r2: Report | r1.validReport = True and r2.validReport = True
                                 and r1.reportId != r2.reportId
                                 and r1.timeStamp = r2.timeStamp 
-                                and r1.uploadedBy.username = r2.uploadedBy.username
-                                
+                                and r1.uploadedBy.username = r2.uploadedBy.username                         
 }
 check NoUbiquitousSubmissionsBySameUser for 5
 
@@ -156,22 +154,25 @@ assert NoBadCorrespondence{
     no r: Report, v: Violation | (r.uploadedBy.username != v.uploadedBy.username
                                 or r.timeStamp != v.timeStamp
                                 or r.position.geoTag != v.position.geoTag
-                                or r.pictureId != v.picture.pictureId)
+                                or r.picture != v.picture.picture)
                                 and r.reportId = v.violationId
 }
 check NoBadCorrespondence for 5
 
-
-
-pred show{ 
-    #Report = 4
-    #LoggedUser = 4
-    #Area = 4
-    #Street = 20
-    #Plate = 10
-    #Violation = 2
-    #Position = 20
-    #Picture = 5
-    some u:LoggedUser | u.banned = True
+pred addReport [r:Report, p1, p2:Plate, v:Violation] {
+    r.validReport = True implies (p2.numberOfInfraction = p1.numberOfInfraction + 1)
 }
-run show for 10 but exactly 2 City
+
+pred showAddReport [r:Report, p1, p2:Plate, v:Violation] {
+    addReport[r, p1, p2, v] implies p2.numberOfInfraction = p1.numberOfInfraction + 1 else p2.numberOfInfraction = p1.numberOfInfraction
+}
+
+pred show { }
+
+run {
+	some r:Report, p1,p2:Plate, v:Violation | addReport[r, p1, p2, v]
+} for 10
+//oppure run addReport for 10, provali entrambi
+run showAddReport for 10
+run show for 10
+//run showAddReport for 10 Report, 3 LoggedUser, 10 Violation, 2 City, 2 Area, 10 Street, 4 Plate, 20 Position, 10 Picture
