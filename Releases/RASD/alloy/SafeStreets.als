@@ -20,7 +20,7 @@ sig LoggedUser extends User{
 }
 {
     // Users are considered a TopUser if they upload more than 50 violations (scaled values for simplicity)
-    topUser = True iff some v: Violation | v.report.uploadedBy = this and #v >= 2
+    topUser = True iff #{v: Violation | some r: Report | r in v.report and r.uploadedBy = this}  >= 2
 }
 
 sig Report {
@@ -55,8 +55,8 @@ sig City {
     isSafe: one Bool
 }
 {
-    // A City is considered unsafe if there are at least 5 areas of that City that are considered unsafe
-    isSafe = False iff (some a: Area | a in areasOfCity and #a >= 5)
+    // A City is considered unsafe if there are at least 5 areas of that City that are considered unsafe (scaled values for simplicity)
+    isSafe = False iff #{a: Area |  a in areasOfCity} >= 2
 }
 
 sig Area {
@@ -68,7 +68,7 @@ sig Area {
 }
 {
     // An Area is considered unsafe if there are at least 5 streets of that area that are considered unsafe (scaled values for simplicity)
-    isSafe = False iff (some s: Street | s in streetsOfArea and #s >= 2)
+    isSafe = False iff #{s: Street |  s in streetsOfArea} >= 2
 }
 
 sig Street {
@@ -78,7 +78,7 @@ sig Street {
 }
 {
     // A Street is considered unsafe if there are at least 10 violations on that Street (scaled values for simplicity)
-    isSafe = False iff (all v: Violation | v.report.position = this and #v >= 2)
+    isSafe = False iff #{v: Violation | some r: Report | r in v.report and r.position = this}  >= 2
 }
 
 sig Plate {
@@ -86,60 +86,60 @@ sig Plate {
 }
 {
     // A plate (representing a driver) becomes an "egregious offender" if the number of violations associated to its plate number becomes greater than 10 (scaled values for simplicity)
-    egregiousOffender = True iff (some v: Violation | v.committedBy = this and #v >= 2)
+    egregiousOffender = True iff #{v: Violation | v.committedBy = this}  >= 2
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // All FiscalCodes have to be associated to a User 
-fact FiscalCodeUserConnection{
+fact FiscalCodeUserConnection {
     all f: FiscalCode | some l: LoggedUser | l.fiscalCode = f
 }
 
 // All Usernames have to be associated to a User 
-fact UsernameUserConnection{
+fact UsernameUserConnection {
     all u: Username | some l: LoggedUser | l.username = u
 }
 
 // All Passwords have to be associated to a User 
-fact PasswordUserConnection{
+fact PasswordUserConnection {
     all p: Password | some l: LoggedUser | l.password = p
 }
 
 // All TimeStamps have to be associated to a Report 
-fact TimeStampReportConnection{
+fact TimeStampReportConnection {
     all t: TimeStamp | some r: Report | r.timeStamp = t
 }
 
 // All Types have to be associated to a Report 
-fact TypeReportConnection{
+fact TypeReportConnection {
    all t: Type | some r: Report | r.type = t
 }
 
 // All Pictures have to be associated to a Report
-fact PictureReportConnection{
+fact PictureReportConnection {
     all p: Picture | some r: Report | r.picture = p
 }
 
 // All Areas have to be associated to a City
-fact AreaCityConnection{
+fact AreaCityConnection {
     all a: Area | some c: City | a in c.areasOfCity and a.ofCity = c
 }
 
 // All Streets have to be associated to an Area
-fact StreetAreaConnection{
+fact StreetAreaConnection {
     all s: Street | some a: Area | s in a.streetsOfArea and s.ofArea = a
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // There must not be two different users with the same fiscal code
-fact NoDoubleFiscalCode{
+fact NoDoubleFiscalCode {
    no disjoint u1, u2: LoggedUser | u1.fiscalCode = u2.fiscalCode
 }
 
 // There must not be two different user with the same username
-fact NoDoubleUsername{
+fact NoDoubleUsername {
     no disjoint u1, u2: LoggedUser | u1.username = u2.username
 }
 
@@ -187,11 +187,16 @@ check ViolationReports for 5
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 pred world1 {
-    #Violation = 1
-    #LoggedUser = 1
+    #LoggedUser = 2
 
     #Area = 1
     #Street = 2
+
+    #Violation = 4
+
+    some disj l1, l2: LoggedUser | some disj s1, s2: Street | some disj v1, v2, v3, v4: Violation | s1.ofArea = s2.ofArea
+	and v1.report.uploadedBy = l1 and  v2.report.uploadedBy = l1 and  v3.report.uploadedBy = l1 and  v4.report.uploadedBy = l2
+	and v1.report.position = s1 and  v2.report.position = s1 and v3.report.position = s2 and  v4.report.position = s2
 	
 }
 
