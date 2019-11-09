@@ -18,8 +18,8 @@ sig LoggedUser extends User{
 
 sig Violation{
     violationId: one String,
-    uploadedBy: one User,
-    committedBy: lone Plate,
+    uploadedBy: one LoggedUser,
+    committedBy: one Plate,
     picture: one Picture,
     timeStamp: one String,
     position: one Position,
@@ -32,7 +32,7 @@ sig Violation{
 
 sig Report {
     reportId: one String,
-    uploadedBy: one User,
+    uploadedBy: one LoggedUser,
     picture: one Picture,
     timeStamp: one String,
     position: one Position,
@@ -116,8 +116,7 @@ fact UnsafeArea {
     all a: Area | a.isSafe = False iff (some s: Street | s in a.streetsOfArea and #s >= 4)
 }
 
-// A plate (representing a driver) becomes an "egregious offender" if the number of violations
-// associated to its plate number becomes greater than 10
+// A plate (representing a driver) becomes an "egregious offender" if the number of violations associated to its plate number becomes greater than 10
 fact EgregiousOffender{
     all p: Plate | p.egregiousOffender = True iff p.numberOfInfraction > 10
 }
@@ -129,6 +128,11 @@ fact NoEmpyPlate{
 // All violations must be associated  to logged user who uploaded it
 fact NoEmpyUploader{
     all v: Violation | some l: LoggedUser | v.uploadedBy in l
+}
+
+// All reports must be associated  to logged user who uploaded it
+fact NoEmpyUploader{
+    all r: Report | some l: LoggedUser | r.uploadedBy in l
 }
 
 // There must not be two valid reports of the same violation simultaneously
@@ -160,19 +164,16 @@ assert NoBadCorrespondence{
 check NoBadCorrespondence for 5
 
 pred addReport [r:Report, p1, p2:Plate, v:Violation] {
-    r.validReport = True implies (p2.numberOfInfraction = p1.numberOfInfraction + 1)
+	(p2.numberOfInfraction = p1.numberOfInfraction + 1)
+	and r.reportId = v.violationId
+	and v.uploadedBy.numOfSubmissions = v.uploadedBy.numOfSubmissions + 1
+	and v.committedBy.numberOfInfraction =  v.committedBy.numberOfInfraction + 1
+	and v.position.city.numberOfViolations = v.position.city.numberOfViolations + 1
 }
 
-pred showAddReport [r:Report, p1, p2:Plate, v:Violation] {
-    addReport[r, p1, p2, v] implies p2.numberOfInfraction = p1.numberOfInfraction + 1 else p2.numberOfInfraction = p1.numberOfInfraction
+pred ReportToViolation{
+	all r:Report, p1,p2:Plate, v:Violation | r.validReport = True implies addReport[r, p1, p2, v]
 }
 
-pred show { }
+run ReportToViolation for 10 Report, 3 LoggedUser, 10 Violation, 2 City, 2 Area, 10 Street, 4 Plate, 20 Position, 10 Picture
 
-run {
-	some r:Report, p1,p2:Plate, v:Violation | addReport[r, p1, p2, v]
-} for 10
-//oppure run addReport for 10, provali entrambi
-run showAddReport for 10
-run show for 10
-//run showAddReport for 10 Report, 3 LoggedUser, 10 Violation, 2 City, 2 Area, 10 Street, 4 Plate, 20 Position, 10 Picture
