@@ -177,12 +177,12 @@ fact ReportToViolation {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Valid reports must have a Plate valid and coherent to the Violation 
-assert ValidReportHasPlate {
-    all v: Violation | some r: Report | r in v.report implies r.plate != none and v.committedBy = r.plate
+// Violation's Reports must be valid and have a Plate valid and coherent to the Violation one
+assert ViolationReports {
+    all v: Violation | some r: Report | r in v.report implies r.validReport = True and r.plate != none and v.committedBy = r.plate
 }
 
-check ValidReportHasPlate for 5
+check ViolationReports for 5
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
