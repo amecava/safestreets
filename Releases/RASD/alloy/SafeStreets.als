@@ -1,83 +1,141 @@
 open util/boolean
 
+sig FiscalCode{}
+sig Username{}
+sig Password{}
+
+sig TimeStamp{}
+sig Type{}
+sig Picture{}
+
 abstract sig User{}
 
 sig LoggedUser extends User{
-    fiscalCode: one String,
-    username: one String,
-    password: one String,
-    banned: one Bool,
-    numOfSubmissions: one Int,
-    badReports: one Int,
+    fiscalCode: one FiscalCode,
+
+    username: one Username,
+    password: one Password,
+
     topUser: one Bool
 }
 {
-    topUser = True iff numOfSubmissions >= 50 and
-    banned = True iff badReports >= 3
-}
-
-sig Violation{
-    violationId: one String,
-    uploadedBy: one LoggedUser,
-    committedBy: one Plate,
-    picture: one Picture,
-    timeStamp: one String,
-    position: one Position,
-    type: set String,
-    plate: one String
-}
-{
-    #type >= 1
+    // Users are considered a TopUser if they upload more than 50 violations (scaled values for simplicity)
+    topUser = True iff some v: Violation | v.report.uploadedBy = this and #v >= 2
 }
 
 sig Report {
-    reportId: one String,
     uploadedBy: one LoggedUser,
+    timeStamp: one TimeStamp,
+    position: one Street,
+    type: set Type,
     picture: one Picture,
-    timeStamp: one String,
-    position: one Position,
-    type: set String,
     plate: lone Plate,
+
     validReport: one Bool
 }
 {
+    // Reports must have at least one violation type
     #type >= 1
 }
 
+sig Violation{
+    committedBy: one Plate,
+    report: set Report
+}
+{
+    // Violations must have at least one Report associated to it
+    #report >= 1
+    // All Reports associated to a Violation must have the same license Plate of the Violation
+    some r: Report | r in report and committedBy = r.plate
+}
+
 sig City {
-    name: one String,
-    isSafe: one Bool,
-    numberOfViolations: one Int,
-    areas: set Area,
-    streets: set Street
+    areasOfCity: set Area,
+
+    isSafe: one Bool
+}
+{
+    // A City is considered unsafe if there are at least 5 areas of that City that are considered unsafe
+    isSafe = False iff (some a: Area | a in areasOfCity and #a >= 5)
 }
 
 sig Area {
-    isUnsafeArea: one Bool,
-    streetsOfArea: set Street
+    ofCity: one City,
+    streetsOfArea: set Street,
+
+
+    isSafe: one Bool
+}
+{
+    // An Area is considered unsafe if there are at least 5 streets of that area that are considered unsafe (scaled values for simplicity)
+    isSafe = False iff (some s: Street | s in streetsOfArea and #s >= 2)
 }
 
 sig Street {
-    inCity: one String,
+    ofArea: one Area,
+
     isSafe: one Bool
 }
-
-sig Plate{
-    egregiousOffender: one Bool,
-    numberOfInfraction: one Int,
-    platenumber: one String
+{
+    // A Street is considered unsafe if there are at least 10 violations on that Street (scaled values for simplicity)
+    isSafe = False iff (all v: Violation | v.report.position = this and #v >= 2)
 }
 
-sig Position {
-    geoTag: one String,
-    city: one City,
-    area: one Area,
-    street: one Street
-} 
+sig Plate {
+    egregiousOffender: one Bool
+}
+{
+    // A plate (representing a driver) becomes an "egregious offender" if the number of violations associated to its plate number becomes greater than 10 (scaled values for simplicity)
+    egregiousOffender = True iff (some v: Violation | v.committedBy = this and #v >= 2)
+}
 
-sig Picture{
-    timeStamp: one String,
-    pictureId: one String
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// All FiscalCodes have to be associated to a User 
+fact FiscalCodeUserConnection{
+    all f: FiscalCode | some l: LoggedUser | l.fiscalCode = f
+}
+
+// All Usernames have to be associated to a User 
+fact UsernameUserConnection{
+    all u: Username | some l: LoggedUser | l.username = u
+}
+
+// All Passwords have to be associated to a User 
+fact PasswordUserConnection{
+    all p: Password | some l: LoggedUser | l.password = p
+}
+
+// All TimeStamps have to be associated to a Report 
+fact TimeStampReportConnection{
+    all t: TimeStamp | some r: Report | r.timeStamp = t
+}
+
+// All Types have to be associated to a Report 
+fact TypeReportConnection{
+   all t: Type | some r: Report | r.type = t
+}
+
+// All Pictures have to be associated to a Report
+fact PictureReportConnection{
+    all p: Picture | some r: Report | r.picture = p
+}
+
+// All Areas have to be associated to a City
+fact AreaCityConnection{
+    all a: Area | some c: City | a in c.areasOfCity and a.ofCity = c
+}
+
+// All Streets have to be associated to an Area
+fact StreetAreaConnection{
+    all s: Street | some a: Area | s in a.streetsOfArea and s.ofArea = a
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// There must not be two different users with the same fiscal code
+fact NoDoubleFiscalCode{
+   no disjoint u1, u2: LoggedUser | u1.fiscalCode = u2.fiscalCode
 }
 
 // There must not be two different user with the same username
@@ -85,95 +143,56 @@ fact NoDoubleUsername{
     no disjoint u1, u2: LoggedUser | u1.username = u2.username
 }
 
-// There must not be two different users with the same fiscal code
-fact NoDoubleFiscalCode{
-    no disjoint u1, u2: LoggedUser | u1.fiscalCode = u2.fiscalCode
+// There must not be two different Areas with the same Street
+fact NoSameStreetInDifferentAreas {
+    no disj a1, a2: Area | some s: Street | s in a1.streetsOfArea and s in a2.streetsOfArea
 }
 
-// A banned user can't send a report
-fact NoValidReportByBannedUser{
-    all r:Report | r.validReport = True implies r.uploadedBy.banned != True
+// There must not be two different Cities with the same Area
+fact NoSameAreaInDifferentCities {
+    no disj c1, c2: City | some a: Area | a in c1.areasOfCity and a in c2.areasOfCity
 }
 
-// An invalid report can't have the same id as a violation. In other words an invalid report can't become a violation
-fact NoViolationGeneratedByInvalidReport{
-    no v: Violation, r: Report | r.validReport = False and v.violationId = r.reportId
+// There must not be two different Violation with the same Report
+fact NoSameReportInDifferentViolations {
+    no disj v1, v2: Violation | some r: Report | r in v1.report and r in v2.report
 }
 
-// A valid report must have the same id of the corresponding violation
+// There must not be two different reports with the same picture
+fact NoDoublePictures{
+   no disjoint r1, r2: Report | r1.picture = r2.picture
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// A valid Report must have a Plate
+fact ValidReportHasPlate {
+    all r: Report |  r.validReport = True implies r.plate != none
+}
+
+// A valid report must be included in a Violation
 fact ReportToViolation {
-    all r: Report | r.validReport = True implies
-                    some v: Violation | r.reportId = v.violationId
+    all r: Report |  r.validReport = True iff some v: Violation | r in v.report
 }
 
-// A street is considered unsafe if there are at least 10 violations in that street
-fact UnsafeStreet {
-    all s: Street | s.isSafe = False iff (some v: Violation | v.position.street = s and #v >= 10)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Valid reports must have a Plate valid and coherent to the Violation 
+assert ValidReportHasPlate {
+    all v: Violation | some r: Report | r in v.report implies r.plate != none and v.committedBy = r.plate
 }
 
-// An Area is considered unsafe if there are at least 4 streets of that area that are considered unsafe
-fact UnsafeArea {
-    all a: Area | a.isSafe = False iff (some s: Street | s in a.streetsOfArea and #s >= 4)
+check ValidReportHasPlate for 5
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+pred world1 {
+    #Violation = 1
+    #LoggedUser = 1
+
+    #Area = 1
+    #Street = 2
+	
 }
 
-// A plate (representing a driver) becomes an "egregious offender" if the number of violations associated to its plate number becomes greater than 10
-fact EgregiousOffender{
-    all p: Plate | p.egregiousOffender = True iff p.numberOfInfraction > 10
-}
-// All violations must be associated  to a Plate
-fact NoEmpyPlate{
-    all v: Violation | some p: Plate | v.committedBy in p
-}
-
-// All violations must be associated  to logged user who uploaded it
-fact NoEmpyUploader{
-    all v: Violation | some l: LoggedUser | v.uploadedBy in l
-}
-
-// All reports must be associated  to logged user who uploaded it
-fact NoEmpyUploader{
-    all r: Report | some l: LoggedUser | r.uploadedBy in l
-}
-
-// There must not be two valid reports of the same violation simultaneously
-assert NoUbiquitousSubmissionsOfSamePlate{
-    no disjoint r1, r2: Report | r1.validReport = True and r2.validReport = True
-				   and r1.reportId != r2.reportId
-                                and r1.timeStamp = r2.timeStamp 
-                                and r1.plate = r2.plate                  
-}
-check NoUbiquitousSubmissionsOfSamePlate for 5
-
-// There must not be two valid reports by the same user simultaneously
-assert NoUbiquitousSubmissionsBySameUser{
-    no disjoint r1, r2: Report | r1.validReport = True and r2.validReport = True
-                                and r1.reportId != r2.reportId
-                                and r1.timeStamp = r2.timeStamp 
-                                and r1.uploadedBy.username = r2.uploadedBy.username                         
-}
-check NoUbiquitousSubmissionsBySameUser for 5
-
-// There must not be bad correspondence between the report and the corresponding approved violation 
-assert NoBadCorrespondence{
-    no r: Report, v: Violation | (r.uploadedBy.username != v.uploadedBy.username
-                                or r.timeStamp != v.timeStamp
-                                or r.position.geoTag != v.position.geoTag
-                                or r.picture != v.picture.picture)
-                                and r.reportId = v.violationId
-}
-check NoBadCorrespondence for 5
-
-pred addReport [r:Report, p1, p2:Plate, v:Violation] {
-	(p2.numberOfInfraction = p1.numberOfInfraction + 1)
-	and r.reportId = v.violationId
-	and v.uploadedBy.numOfSubmissions = v.uploadedBy.numOfSubmissions + 1
-	and v.committedBy.numberOfInfraction =  v.committedBy.numberOfInfraction + 1
-	and v.position.city.numberOfViolations = v.position.city.numberOfViolations + 1
-}
-
-pred ReportToViolation{
-	all r:Report, p1,p2:Plate, v:Violation | r.validReport = True implies addReport[r, p1, p2, v]
-}
-
-run ReportToViolation for 10 Report, 3 LoggedUser, 10 Violation, 2 City, 2 Area, 10 Street, 4 Plate, 20 Position, 10 Picture
-
+run world1 for 5
