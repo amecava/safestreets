@@ -178,6 +178,7 @@ During the database creation process it is required to estimate how much data wi
 	\end{itemize}
 
 \subsubsection{Communication Interfaces}
+\label{sec:ci}
 
 	The system is required to guarantee secure communication between the system and the external interfaces, and between the system and the users. By these means the system is required to use the SSL/TLS protocol to secure communication, in order to encrypt network traffic to protect it from potential threats such as man-in-the-middle attacks or packet sniffers. No fallback to insecure communications must be provided.
 
@@ -562,7 +563,7 @@ Application specific scenarios are presented to enrich the system's specificatio
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdProvideData.png}
+	\includegraphics [width=\textwidth]{diagrams/sequence-diagrams/sdProvideAPI.png}
 	\caption{
 		\label{fig:provideDataSequence} 
 		\emph{Provide Data from API} sequence diagram
@@ -656,8 +657,8 @@ Application specific scenarios are presented to enrich the system's specificatio
 			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible \newline
 			
   		\item \ref{goal:consultMap}\ Allow users to consult a map highlighting the streets (and the areas) with the highest frequency of violations, the identified potentially unsafe areas and view statistics about previously stored violations
-  			\begin{enumerate}[resume*] 
-  				\item The system must be able to retrieve data about tickets issued by the municipality 
+  			\begin{enumerate}[resume*]
+   				\item The system must be able to retrieve data about tickets issued by the municipality 
    				\item The system must be able to process data retrieved from municipality
    				\item The system must be able to elaborate issued tickets information to generate statistics about useful violations provided by users
    			\end{enumerate}
@@ -693,12 +694,27 @@ As of workload measurements, the system is required to support 80,000 users whic
 
 \subsubsection{Standards Compliance}
 
-TODO \\
+\paragraph{Application Security} Concerning application security the system is required to be compliant to the \emph{OWASP Top 10} standard in order to avoid the following software security vulnerabilities found all throughout the software development industry:
+
+	\begin{enumerate}[label=\textbf{A\arabic*}]
+		\item Injection
+		\item Broken Authentication
+		\item Sensitive Data Exposure
+		\item XML External Entities
+		\item Broken Access Control
+		\item Security Misconfiguration
+		\item Cross-Site Scripting (XSS)
+		\item Insecure Deserialisation
+		\item Using Components with Known Vulnerabilities
+		\item Insufficient Logging and Monitoring
+	\end{enumerate}
+
+\paragraph{Data Protection} Concerning data protection the system is required to be compliant to the \emph{GDPR} regulation in EU law on data protection and privacy for all individual citizens of the European Union and the European Economic Area. The \emph{GDPR} aims primarily to give control to individuals over their personal data and to simplify the regulatory environment for international business.
 
 \subsubsection{Hardware Limitations}
 
 	The user's device is required to have the hardware interfaces and corresponding hardware sensors stated in the \hyperref[sec:hardwareinterfaces2]{hardware interfaces} section.
-
+	
 \subsection{Software System Attributes}
 
 \subsubsection{Reliability}
@@ -714,9 +730,9 @@ TODO \\
 	The required maintenance is divided in the following categories:
 	
 	\begin{itemize}
-		\item corrective maintenance, the correction of faults when the system does not behave according to its specification
-		\item adaptive maintenance, the adaptation of the system to changes in the operational environment while keeping the same functionality
-		\item perfective maintenance, the extension of a system's functionality and improvement in the services provided
+		\item Corrective maintenance, the correction of faults when the system does not behave according to its specification
+		\item Adaptive maintenance, the adaptation of the system to changes in the operational environment while keeping the same functionality
+		\item Perfective maintenance, the extension of a system's functionality and improvement in the services provided
 	\end{itemize}
 
 \subsubsection{Portability}
@@ -725,7 +741,16 @@ TODO \\
 
 \subsubsection{Security}
 
-TODO Users personal information and payment information are encrypted and must be protected during transmission, as already stated the PTPP protocol will be used to ensure encryption through the network.
-	Restricted access APIs must check that who tries to use them is actually allowed to do so.
+As stated in the \hyperref[sec:ci]{Communication Interfaces} section the system is required to use the SSL/TLS protocol to secure communication considering the following:
+
+	\begin{itemize}
+		\item It should be ensured that TLS is the latest version and supported by the client, API gateway, and target backend
+		\item The certificate key stores and trust stores should be highly protected and encrypted
+		\item Only authorised users should have access to certificate key stores and trust stores
+	\end{itemize}
+
+Concerning the \emph{restricted access API}, the OAuth mechanisms is required to secure the API endpoints. The system is required to leverage OAuth 2.0 implementations returning OPAQUE strings in exchange for Access Tokens, further used to access API resources.
+
+
 
 \clearpage

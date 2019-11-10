@@ -10,9 +10,8 @@ sig Picture{}
 
 abstract sig User{}
 
-sig LoggedUser extends User{
+sig LoggedUser extends User {
     fiscalCode: one FiscalCode,
-
     username: one Username,
     password: one Password,
 
@@ -63,7 +62,6 @@ sig Area {
     ofCity: one City,
     streetsOfArea: set Street,
 
-
     isSafe: one Bool
 }
 {
@@ -89,7 +87,7 @@ sig Plate {
     egregiousOffender = True iff #{v: Violation | v.committedBy = this}  >= 2
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 
 // All FiscalCodes have to be associated to a User 
 fact FiscalCodeUserConnection {
@@ -121,6 +119,11 @@ fact PictureReportConnection {
     all p: Picture | some r: Report | r.picture = p
 }
 
+// All Plates have to be associated to a Report
+fact PlateReportConnection {
+    all p: Plate | some r: Report | r.plate = p
+}
+
 // All Areas have to be associated to a City
 fact AreaCityConnection {
     all a: Area | some c: City | a in c.areasOfCity and a.ofCity = c
@@ -131,7 +134,7 @@ fact StreetAreaConnection {
     all s: Street | some a: Area | s in a.streetsOfArea and s.ofArea = a
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 
 // There must not be two different users with the same fiscal code
 fact NoDoubleFiscalCode {
@@ -163,7 +166,7 @@ fact NoDoublePictures{
    no disjoint r1, r2: Report | r1.picture = r2.picture
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 
 // A valid Report must have a Plate
 fact ValidReportHasPlate {
@@ -175,7 +178,12 @@ fact ReportToViolation {
     all r: Report |  r.validReport = True iff some v: Violation | r in v.report
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// A User can't submit two different Violations at the exact same time
+fact NoConcurrentReports {
+    no disj r1, r2: Report | r1.uploadedBy = r2.uploadedBy and r1.timeStamp = r2.timeStamp
+}
+
+/////////////////////////////////////////////////////
 
 // Violation's Reports must be valid and have a Plate valid and coherent to the Violation one
 assert ViolationReports {
@@ -186,7 +194,6 @@ check ViolationReports for 5
 
 // The number of Violations must not be more than the number of Reports
 assert NoMoreViolations {
-
     #Report >= #Violation
 }
 
@@ -194,40 +201,65 @@ check NoMoreViolations for 5
 
 // The number of Violation must not exceed the number of valid Reports (since there can be more than one valid Report for a single Violation)
 assert ViolationsValidReports {
-
     #Violation <= #{r: Report | r.validReport = True}
 }
 
 check ViolationsValidReports for 5
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
 
+// World with a Top User
 pred world1 {
-    #LoggedUser = 2
+    #LoggedUser = 1
+    #Violation = 2
 
+    some disj v1, v2: Violation | v1.report.uploadedBy = v2.report.uploadedBy
+}
+
+run world1 for 5 but 1 Plate
+
+// World with an unsafe Street
+pred world2 {
     #Area = 1
     #Street = 2
 
-    #Violation = 4
+    #Violation = 2
 
-    some disj l1, l2: LoggedUser | some disj s1, s2: Street | some disj v1, v2, v3, v4: Violation | s1.ofArea = s2.ofArea
-	and v1.report.uploadedBy = l1 and  v2.report.uploadedBy = l1 and  v3.report.uploadedBy = l1 and  v4.report.uploadedBy = l2
-	and v1.report.position = s1 and  v2.report.position = s1 and v3.report.position = s2 and  v4.report.position = s2
-	
+    some disj l1: LoggedUser | some disj s1: Street | some disj v1, v2: Violation | v1.committedBy = v2.committedBy
+	and v1.report.uploadedBy = l1 and  v2.report.uploadedBy = l1 
+	and v1.report.position = s1 and  v2.report.position = s1
 }
 
+run world2 for 5 but 1 LoggedUser
 
-run world1 for 5
+// World with an invalid Report
+pred world3 {
+    #Report = 2
+    #Violation = 1
 
-pred world2 {
-    #LoggedUser = 1
-
-    #Area = 2
-    #Street = 4
-
-    #Violation = 0
-some disj s1, s2: Street | s1.ofArea = s2.ofArea
-
+    some disj r1, r2: Report | some disj v: Violation |
+        r1 in v.report and r2 not in v.report
 }
 
-run world2 for 5
+run world3 for 5 but 1 LoggedUser, 1 Plate
+
+// World with two valid Reports for the same Violation
+pred world4 {
+    #Report = 2
+    #Violation = 1
+
+    some disj r1, r2: Report | some disj v: Violation |
+        r1 in v.report and r2 in v.report
+}
+
+run world4 for 5 but 1 LoggedUser, 1 Plate
+
+// World with an egregious offender Plate
+pred world5 {
+    #Plate = 1
+    #Violation = 2
+
+    some disj v1, v2: Violation | v1.committedBy = v2.committedBy
+}
+
+run world5 for 5 but 1 LoggedUser
