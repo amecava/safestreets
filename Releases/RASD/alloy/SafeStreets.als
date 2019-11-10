@@ -56,7 +56,7 @@ sig City {
 }
 {
     // A City is considered unsafe if there are at least 5 areas of that City that are considered unsafe (scaled values for simplicity)
-    isSafe = False iff #{a: Area |  a in areasOfCity} >= 2
+    isSafe = False iff #{a: Area |  a in areasOfCity and a.isSafe = False} >= 2
 }
 
 sig Area {
@@ -68,7 +68,7 @@ sig Area {
 }
 {
     // An Area is considered unsafe if there are at least 5 streets of that area that are considered unsafe (scaled values for simplicity)
-    isSafe = False iff #{s: Street |  s in streetsOfArea} >= 2
+    isSafe = False iff #{s: Street |  s in streetsOfArea and s.isSafe = False} >= 2
 }
 
 sig Street {
@@ -184,6 +184,22 @@ assert ViolationReports {
 
 check ViolationReports for 5
 
+// The number of Violations must not be more than the number of Reports
+assert NoMoreViolations {
+
+    #Report >= #Violation
+}
+
+check NoMoreViolations for 5
+
+// The number of Violation must not exceed the number of valid Reports (since there can be more than one valid Report for a single Violation)
+assert ViolationsValidReports {
+
+    #Violation <= #{r: Report | r.validReport = True}
+}
+
+check ViolationsValidReports for 5
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 pred world1 {
@@ -200,4 +216,18 @@ pred world1 {
 	
 }
 
+
 run world1 for 5
+
+pred world2 {
+    #LoggedUser = 1
+
+    #Area = 2
+    #Street = 4
+
+    #Violation = 0
+some disj s1, s2: Street | s1.ofArea = s2.ofArea
+
+}
+
+run world2 for 5
