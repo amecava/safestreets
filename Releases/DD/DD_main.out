@@ -12,28 +12,56 @@
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Context viewpoint}{subsection.2.1}% 12
 \BOOKMARK [3][-]{subsubsection.2.1.2}{Composition viewpoint}{subsection.2.1}% 13
 \BOOKMARK [2][-]{subsection.2.2}{Component view}{section.2}% 14
-\BOOKMARK [2][-]{subsection.2.3}{Deployment view}{section.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Four tier architecture}{subsection.2.3}% 16
-\BOOKMARK [3][-]{subsubsection.2.3.2}{Deployment diagram}{subsection.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.4}{Runtime view}{section.2}% 18
-\BOOKMARK [2][-]{subsection.2.5}{Component interfaces}{section.2}% 19
-\BOOKMARK [1][-]{section.3}{User interface design}{}% 20
-\BOOKMARK [2][-]{subsection.3.1}{User app}{section.3}% 21
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Login page}{subsection.3.1}% 22
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Home page}{subsection.3.1}% 23
-\BOOKMARK [3][-]{subsubsection.3.1.3}{See available cars}{subsection.3.1}% 24
-\BOOKMARK [3][-]{subsubsection.3.1.4}{Reserve a car}{subsection.3.1}% 25
-\BOOKMARK [3][-]{subsubsection.3.1.5}{Money saving option}{subsection.3.1}% 26
-\BOOKMARK [3][-]{subsubsection.3.1.6}{Unlock a car}{subsection.3.1}% 27
-\BOOKMARK [3][-]{subsubsection.3.1.7}{Payment history}{subsection.3.1}% 28
-\BOOKMARK [3][-]{subsubsection.3.1.8}{Rent history}{subsection.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.2}{Customer care app}{section.3}% 30
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Home page}{subsection.3.2}% 31
-\BOOKMARK [3][-]{subsubsection.3.2.2}{User's information}{subsection.3.2}% 32
-\BOOKMARK [1][-]{section.4}{Requirements traceability}{}% 33
-\BOOKMARK [2][-]{subsection.4.1}{Functional requirements}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.2}{Non functional requirements}{section.4}% 35
-\BOOKMARK [1][-]{section*.19}{Appendices}{}% 36
-\BOOKMARK [1][-]{Appendix.1.A}{Software and tools used}{}% 37
-\BOOKMARK [1][-]{Appendix.1.B}{Hours of work}{}% 38
-\BOOKMARK [1][-]{Appendix.1.C}{Changelog}{}% 39
+\BOOKMARK [3][-]{subsubsection.2.2.1}{DB component}{subsection.2.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Server component}{subsection.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.3}{RentManager component}{subsection.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.4}{MaintenanceManager component}{subsection.2.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.5}{UserInformationManager component}{subsection.2.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.2.6}{AccessManager component}{subsection.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.7}{UserAppServer component}{subsection.2.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.8}{CustomerCareServer component}{subsection.2.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.9}{DataProvider component}{subsection.2.2}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.10}{CarHandler and EventBroker components}{subsection.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.3}{Deployment view}{section.2}% 25
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Four tier architecture}{subsection.2.3}% 26
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Implementation choices}{subsection.2.3}% 27
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Decision Tree}{subsection.2.3}% 28
+\BOOKMARK [3][-]{subsubsection.2.3.4}{Deployment diagram}{subsection.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.4}{Runtime view}{section.2}% 30
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Map}{subsection.2.4}% 31
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Car reservation}{subsection.2.4}% 32
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Performing a rent}{subsection.2.4}% 33
+\BOOKMARK [3][-]{subsubsection.2.4.4}{Payment}{subsection.2.4}% 34
+\BOOKMARK [3][-]{subsubsection.2.4.5}{Reservation expiring}{subsection.2.4}% 35
+\BOOKMARK [3][-]{subsubsection.2.4.6}{Maintenance API and failures occurrence}{subsection.2.4}% 36
+\BOOKMARK [2][-]{subsection.2.5}{Component interfaces}{section.2}% 37
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Car-server interfaces}{subsection.2.5}% 38
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Maintenance API interface}{subsection.2.5}% 39
+\BOOKMARK [3][-]{subsubsection.2.5.3}{User Application interface}{subsection.2.5}% 40
+\BOOKMARK [3][-]{subsubsection.2.5.4}{Customer Care interface}{subsection.2.5}% 41
+\BOOKMARK [3][-]{subsubsection.2.5.5}{GIS API}{subsection.2.5}% 42
+\BOOKMARK [3][-]{subsubsection.2.5.6}{DBMS API}{subsection.2.5}% 43
+\BOOKMARK [3][-]{subsubsection.2.5.7}{Payments API}{subsection.2.5}% 44
+\BOOKMARK [1][-]{section.3}{User interface design}{}% 45
+\BOOKMARK [2][-]{subsection.3.1}{User app}{section.3}% 46
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Login page}{subsection.3.1}% 47
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Home page}{subsection.3.1}% 48
+\BOOKMARK [3][-]{subsubsection.3.1.3}{See available cars}{subsection.3.1}% 49
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Reserve a car}{subsection.3.1}% 50
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Money saving option}{subsection.3.1}% 51
+\BOOKMARK [3][-]{subsubsection.3.1.6}{Unlock a car}{subsection.3.1}% 52
+\BOOKMARK [3][-]{subsubsection.3.1.7}{Payment history}{subsection.3.1}% 53
+\BOOKMARK [3][-]{subsubsection.3.1.8}{Rent history}{subsection.3.1}% 54
+\BOOKMARK [2][-]{subsection.3.2}{Customer care app}{section.3}% 55
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Home page}{subsection.3.2}% 56
+\BOOKMARK [3][-]{subsubsection.3.2.2}{User's information}{subsection.3.2}% 57
+\BOOKMARK [1][-]{section.4}{Requirements traceability}{}% 58
+\BOOKMARK [2][-]{subsection.4.1}{Functional requirements}{section.4}% 59
+\BOOKMARK [2][-]{subsection.4.2}{Non functional requirements}{section.4}% 60
+\BOOKMARK [1][-]{section.5}{Implementation, integration and test plan}{}% 61
+\BOOKMARK [2][-]{subsection.5.1}{Overview}{section.5}% 62
+\BOOKMARK [2][-]{subsection.5.2}{Component integration}{section.5}% 63
+\BOOKMARK [1][-]{section*.66}{Appendices}{}% 64
+\BOOKMARK [1][-]{Appendix.1.A}{Software and tools used}{}% 65
+\BOOKMARK [1][-]{Appendix.1.B}{Hours of work}{}% 66
+\BOOKMARK [1][-]{Appendix.1.C}{Changelog}{}% 67

@@ -1,0 +1,64 @@
+\section{Implementation, integration and test plan}
+
+    \subsection{Overview}
+
+        Our system's client-server architecture has two main subsystems:
+        \begin{itemize}           
+            \item MobileApp
+            \item AppServer
+        \end{itemize}
+        
+        The AppServer will be implemented following a bottom-up strategy since it will be built on various modules that cooperate in order
+        to ensure that the goals and standards stated in the \emph{RASD}\cite{RASD} will be met.\\
+        The AppServer relies on the GIS and the Municipality API, which will be considered reliable and accurate services and will be
+        tested only "server side" (i.d. checking that our system can exploit them properly).\\
+        For what it concerns the the AppServer, each submodule will be implemented and tested with formal methods before being integrated 
+        with the other modules it has to deal with, since integrating a malfunctioning module with other can only lead to bigger problems 
+        and the effort and time needed to fix them could increase exponentially.\\
+        To better understand the decisions we made about implementation, testing and integration here are two tables that list the features
+        we want to offer linked with the relevance we gave them considering the difficulty of the implementation and the importance for 
+        the user.\\
+
+        \begin{table}[h!]
+            \begin{center}
+            
+            \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+                \textbf{Feature} & \textbf{Importance} & \textbf{Difficulty of implementation}\\
+                
+                \hline
+                Sign up and login & Low & Low\\
+                Consult personal data & Low & Low\\
+                Upload a picture & High & Medium\\
+                Consult the map & Medium & High\\
+                See statistics & Medium & High\\
+
+            \end{tabular}
+            \caption{Users features}
+            \label{tab:table1}
+            \end{center}
+        \end{table}
+
+
+      
+        \begin{table}[h!]
+            \begin{center}
+            
+            \begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+                \textbf{Feature} & \textbf{Importance} & \textbf{Difficulty of implementation}\\
+                
+                \hline
+                Authenticate & Low & Low\\
+                Access the API & High & Low\\
+                Retrieve violations' data & High & Medium\\
+                Retrieve statistics & Medium & Medium\\
+                Retrieve tickets's data & High & High\\
+                Share data & Medium & Medium\\
+
+            \end{tabular}
+            \caption{Municipality features}
+            \label{tab:table1}
+            \end{center}
+        \end{table}
+
+    \subsection{Component integration}
+
