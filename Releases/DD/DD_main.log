@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.8)  30 NOV 2019 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.8)  1 DEC 2019 10:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -475,11 +475,7 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/latex_pseudocode.sty) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.aux (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_userinterfacedesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.aux
-
-LaTeX Warning: Label `tab:table1' multiply defined.
-
-) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.aux))
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/latex_pseudocode.sty) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.aux)
 \openout1 = `DD_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -533,7 +529,6 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 45.
 LaTeX Info: Redefining \pageref on input line 45.
 LaTeX Info: Redefining \nameref on input line 45.
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.out) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.out)
 \@outlinefile=\write4
 \openout4 = `DD_main.out'.
 
@@ -541,7 +536,7 @@ LaTeX Info: Redefining \nameref on input line 45.
 \openout2 = `DD_cover.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.tex
-<./img/logo_poli.png, id=312, 666.49pt x 302.12875pt>
+<./img/logo_poli.png, id=31, 666.49pt x 302.12875pt>
 File: ./img/logo_poli.png Graphic file (type png)
 <use ./img/logo_poli.png>
 Package pdftex.def Info: ./img/logo_poli.png  used on input line 9.
@@ -553,25 +548,33 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_poli.png>]) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.toc [1
-
-
-])
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_poli.png>])
 \tf@toc=\write5
 \openout5 = `DD_main.toc'.
 
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.lof [2])
 \tf@lof=\write6
 \openout6 = `DD_main.lof'.
 
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.lot)
 \tf@lot=\write7
 \openout7 = `DD_main.lot'.
 
- [3]
+ [1
+
+
+]
 \openout2 = `DD_introduction.aux'.
 
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.tex
+
+LaTeX Warning: Citation `SoftwareArch' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `RASD' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Citation `RASD' on page 1 undefined on input line 13.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.27 		\item [REST API:]
@@ -579,7 +582,11 @@ l.27 		\item [REST API:]
 
 
 ]
-Overfull \hbox (10.77371pt too wide) in paragraph at lines 43--46
+
+LaTeX Warning: Citation `RASD' on page 2 undefined on input line 43.
+
+
+Overfull \hbox (11.20416pt too wide) in paragraph at lines 43--46
 \T1/cmr/m/n/10 de-scribed in the \T1/cmr/m/it/10 SafeStreets: Re-quire-ments Anal-y-sis and Spec-i-fi-ca-tion Document\T1/cmr/m/n/10 .[[]] 
  []
 
@@ -593,21 +600,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 \openout2 = `DD_archdesign.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.tex
-<./img/contextViewPoint.pdf, id=524, 468.79138pt x 232.9503pt>
+<./img/contextViewPoint.pdf, id=82, 468.79138pt x 232.9503pt>
 File: ./img/contextViewPoint.pdf Graphic file (type pdf)
 <use ./img/contextViewPoint.pdf>
 Package pdftex.def Info: ./img/contextViewPoint.pdf  used on input line 8.
 (pdftex.def)             Requested size: 345.0pt x 171.43857pt.
-<./img/ClientServer.pdf, id=525, 343.40916pt x 122.06012pt>
+<./img/ClientServer.pdf, id=83, 343.40916pt x 122.06012pt>
 File: ./img/ClientServer.pdf Graphic file (type pdf)
 <use ./img/ClientServer.pdf>
 Package pdftex.def Info: ./img/ClientServer.pdf  used on input line 20.
 (pdftex.def)             Requested size: 172.5pt x 61.313pt.
-<./img/ComponentOverview.pdf, id=526, 794.00638pt x 348.34138pt>
+<./img/ComponentOverview.pdf, id=84, 655.48888pt x 420.61137pt>
 File: ./img/ComponentOverview.pdf Graphic file (type pdf)
 <use ./img/ComponentOverview.pdf>
 Package pdftex.def Info: ./img/ComponentOverview.pdf  used on input line 31.
-(pdftex.def)             Requested size: 345.0pt x 151.35187pt.
+(pdftex.def)             Requested size: 345.0pt x 221.38264pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -616,17 +623,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <./img/contextViewPoint.pdf> <./img/ClientServer.pdf>] [4 <./img/ComponentOverview.pdf>]
-<./img/highLevelComponents.png, id=584, 572.1375pt x 446.66875pt>
+<./img/highLevelComponents.png, id=148, 572.1375pt x 446.66875pt>
 File: ./img/highLevelComponents.png Graphic file (type png)
 <use ./img/highLevelComponents.png>
 Package pdftex.def Info: ./img/highLevelComponents.png  used on input line 57.
 (pdftex.def)             Requested size: 345.0pt x 269.34598pt.
- [5
+
+
+LaTeX Warning: Reference `fig:highLevelComponents' on page 5 undefined on input line 64.
+
+[5
 
  <./img/highLevelComponents.png>] [6
 
 ]
-<./img/ER.pdf, id=596, 955.57pt x 797.98125pt>
+
+LaTeX Warning: Reference `fig:ERModel' on page 7 undefined on input line 128.
+
+<./img/ER.pdf, id=161, 955.57pt x 797.98125pt>
 File: ./img/ER.pdf Graphic file (type pdf)
 <use ./img/ER.pdf>
 Package pdftex.def Info: ./img/ER.pdf  used on input line 132.
@@ -650,6 +664,13 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 161.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [8]
+
+LaTeX Warning: Citation `gpx' on page 9 undefined on input line 196.
+
+
+LaTeX Warning: Reference `fig:ServerComponent' on page 9 undefined on input line 208.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
  []
@@ -659,7 +680,7 @@ Overfull \hbox (3.53214pt too wide) in paragraph at lines 216--217
 []\T1/cmr/m/n/10 associations be-tween in-ter-nal com-po-nents needed to be clar-i-fied, so lollipop-
  []
 
-<./img/ServerComponent.png, id=648, 1204.5pt x 1125.20375pt>
+<./img/ServerComponent.png, id=213, 1204.5pt x 1125.20375pt>
 File: ./img/ServerComponent.png Graphic file (type png)
 <use ./img/ServerComponent.png>
 Package pdftex.def Info: ./img/ServerComponent.png  used on input line 221.
@@ -670,29 +691,38 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [9
 
 ] [10 <./img/ServerComponent.png>]
-<./img/ObjectRentManager.pdf, id=664, 1534.73375pt x 836.12375pt>
+
+LaTeX Warning: Reference `fig:rentObjectDiagram' on page 11 undefined on input line 231.
+
+<./img/ObjectRentManager.pdf, id=228, 1534.73375pt x 836.12375pt>
 File: ./img/ObjectRentManager.pdf Graphic file (type pdf)
 <use ./img/ObjectRentManager.pdf>
 Package pdftex.def Info: ./img/ObjectRentManager.pdf  used on input line 237.
 (pdftex.def)             Requested size: 1534.73003pt x 836.1217pt.
- [11
+[11
 
  <./img/ObjectRentManager.pdf>] [12]
-<./img/ObjectMaintenanceManager.pdf, id=686, 825.0825pt x 616.3025pt>
+
+LaTeX Warning: Reference `fig:maintenanceManagerObjectDiagram' on page 13 undefined on input line 256.
+
+<./img/ObjectMaintenanceManager.pdf, id=252, 825.0825pt x 616.3025pt>
 File: ./img/ObjectMaintenanceManager.pdf Graphic file (type pdf)
 <use ./img/ObjectMaintenanceManager.pdf>
 Package pdftex.def Info: ./img/ObjectMaintenanceManager.pdf  used on input line 261.
 (pdftex.def)             Requested size: 345.0pt x 257.698pt.
- [13
+[13
 
  <./img/ObjectMaintenanceManager.pdf>]
-<./img/ObjectUserInformationManager.pdf, id=698, 823.075pt x 420.57124pt>
+
+LaTeX Warning: Reference `fig:userInformationManagerObjectDiagram' on page 14 undefined on input line 274.
+
+<./img/ObjectUserInformationManager.pdf, id=265, 823.075pt x 420.57124pt>
 File: ./img/ObjectUserInformationManager.pdf Graphic file (type pdf)
 <use ./img/ObjectUserInformationManager.pdf>
 Package pdftex.def Info: ./img/ObjectUserInformationManager.pdf  used on input line 278.
 (pdftex.def)             Requested size: 345.0pt x 176.28575pt.
- [14 <./img/ObjectUserInformationManager.pdf>] [15]
-<./img/4Tier.pdf, id=717, 775.89874pt x 206.39569pt>
+[14 <./img/ObjectUserInformationManager.pdf>] [15]
+<./img/4Tier.pdf, id=291, 775.89874pt x 206.39569pt>
 File: ./img/4Tier.pdf Graphic file (type pdf)
 <use ./img/4Tier.pdf>
 Package pdftex.def Info: ./img/4Tier.pdf  used on input line 318.
@@ -700,45 +730,61 @@ Package pdftex.def Info: ./img/4Tier.pdf  used on input line 318.
  [16
 
  <./img/4Tier.pdf>]
-<./img/deployComponent.pdf, id=734, 1392.20125pt x 1057.9525pt>
+<./img/deployComponent.pdf, id=311, 866.27638pt x 811.11026pt>
 File: ./img/deployComponent.pdf Graphic file (type pdf)
 <use ./img/deployComponent.pdf>
-Package pdftex.def Info: ./img/deployComponent.pdf  used on input line 354.
-(pdftex.def)             Requested size: 1392.19786pt x 1057.94992pt.
+Package pdftex.def Info: ./img/deployComponent.pdf  used on input line 355.
+(pdftex.def)             Requested size: 866.27428pt x 811.10828pt.
  [17 <./img/deployComponent.pdf>]
-Overfull \hbox (13.82684pt too wide) in paragraph at lines 372--373
+Overfull \hbox (13.82684pt too wide) in paragraph at lines 373--374
  []\T1/cmr/bx/n/10 DBMS:[] \T1/cmr/m/n/10 MySQL was cho-sen as DBMS since it is the most pop-u-lar and widespread
  []
 
 [18
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+LaTeX Warning: Reference `fig:decisionTree' on page 19 undefined on input line 376.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-<./img/decisionTree.pdf, id=755, 806.01125pt x 921.4425pt>
+<./img/decisionTree.pdf, id=344, 806.01125pt x 921.4425pt>
 File: ./img/decisionTree.pdf Graphic file (type pdf)
 <use ./img/decisionTree.pdf>
-Package pdftex.def Info: ./img/decisionTree.pdf  used on input line 379.
+Package pdftex.def Info: ./img/decisionTree.pdf  used on input line 380.
 (pdftex.def)             Requested size: 345.0pt x 394.41287pt.
 [19
 
- <./img/decisionTree.pdf>] [20
+ <./img/decisionTree.pdf>]
+
+LaTeX Warning: Reference `fig:deployment' on page 20 undefined on input line 388.
+
+
+LaTeX Warning: Reference `fig:deployServerComponent' on page 20 undefined on input line 388.
+
+
+LaTeX Warning: Reference `fig:highLevelComponents' on page 20 undefined on input line 388.
+
+[20
 
 ]
-<./img/deployment.pdf, id=775, 1121.18875pt x 1118.1775pt>
+<./img/deployment.pdf, id=364, 1121.18875pt x 1118.1775pt>
 File: ./img/deployment.pdf Graphic file (type pdf)
 <use ./img/deployment.pdf>
-Package pdftex.def Info: ./img/deployment.pdf  used on input line 397.
+Package pdftex.def Info: ./img/deployment.pdf  used on input line 398.
 (pdftex.def)             Requested size: 345.0pt x 344.07214pt.
  [21 <./img/deployment.pdf>]
-<./img/sequenceDiagrams/MapGeneration.png, id=785, 2107.875pt x 1481.535pt>
+
+LaTeX Warning: Reference `fig:mapGeneration' on page 22 undefined on input line 413.
+
+<./img/sequenceDiagrams/MapGeneration.png, id=373, 2107.875pt x 1481.535pt>
 File: ./img/sequenceDiagrams/MapGeneration.png Graphic file (type png)
 <use ./img/sequenceDiagrams/MapGeneration.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/MapGeneration.png  used on input line 424.
+Package pdftex.def Info: ./img/sequenceDiagrams/MapGeneration.png  used on input line 425.
 (pdftex.def)             Requested size: 2107.86987pt x 1481.53139pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -747,15 +793,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [23 <./img/sequenceDiagrams/MapGeneration.png>]
 
-LaTeX Warning: Hyper reference `sec:msoAlgorithm' on page 24 undefined on input line 434.
+LaTeX Warning: Reference `fig:sequenceCarReservation' on page 24 undefined on input line 434.
 
-<./img/sequenceDiagrams/ReserveCar.png, id=799, 2959.055pt x 1304.875pt>
+
+LaTeX Warning: Hyper reference `sec:msoAlgorithm' on page 24 undefined on input line 435.
+
+<./img/sequenceDiagrams/ReserveCar.png, id=390, 2959.055pt x 1304.875pt>
 File: ./img/sequenceDiagrams/ReserveCar.png Graphic file (type png)
 <use ./img/sequenceDiagrams/ReserveCar.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/ReserveCar.png  used on input line 445.
+Package pdftex.def Info: ./img/sequenceDiagrams/ReserveCar.png  used on input line 446.
 (pdftex.def)             Requested size: 2959.0478pt x 1304.87183pt.
 
-LaTeX Warning: Float too large for page by 12.68753pt on input line 450.
+LaTeX Warning: Float too large for page by 12.68753pt on input line 451.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -763,31 +812,43 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [24
 
 ] [25 <./img/sequenceDiagrams/ReserveCar.png>]
-Overfull \hbox (5.35889pt too wide) in paragraph at lines 454--456
+Overfull \hbox (5.35889pt too wide) in paragraph at lines 455--457
 \T1/cmr/m/n/10 The fol-low-ing se-quence di-a-grams show the in-ter-ac-tions be-tween the [] []
  []
+
+
+LaTeX Warning: Reference `fig:sequenceUnlockStartRent' on page 26 undefined on input line 457.
+
+
+LaTeX Warning: Reference `fig:sequenceEndRent1' on page 26 undefined on input line 458.
+
+
+LaTeX Warning: Reference `fig:sequenceEndRent2' on page 26 undefined on input line 459.
+
+
+LaTeX Warning: Reference `fig:sequenceEndRent1' on page 26 undefined on input line 472.
 
 [26
 
 ]
-<./img/sequenceDiagrams/UnlockStartRent.png, id=820, 3505.095pt x 2348.775pt>
+<./img/sequenceDiagrams/UnlockStartRent.png, id=411, 3505.095pt x 2348.775pt>
 File: ./img/sequenceDiagrams/UnlockStartRent.png Graphic file (type png)
 <use ./img/sequenceDiagrams/UnlockStartRent.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/UnlockStartRent.png  used on input line 481.
+Package pdftex.def Info: ./img/sequenceDiagrams/UnlockStartRent.png  used on input line 482.
 (pdftex.def)             Requested size: 3505.08649pt x 2348.7693pt.
-<./img/sequenceDiagrams/EndRent.png, id=821, 2557.555pt x 1883.035pt>
+<./img/sequenceDiagrams/EndRent.png, id=412, 2557.555pt x 1883.035pt>
 File: ./img/sequenceDiagrams/EndRent.png Graphic file (type png)
 <use ./img/sequenceDiagrams/EndRent.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/EndRent.png  used on input line 489.
+Package pdftex.def Info: ./img/sequenceDiagrams/EndRent.png  used on input line 490.
 (pdftex.def)             Requested size: 2557.54878pt x 1883.03043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./img/sequenceDiagrams/EndRent2.png, id=822, 1126.2075pt x 909.3975pt>
+<./img/sequenceDiagrams/EndRent2.png, id=413, 1126.2075pt x 909.3975pt>
 File: ./img/sequenceDiagrams/EndRent2.png Graphic file (type png)
 <use ./img/sequenceDiagrams/EndRent2.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/EndRent2.png  used on input line 497.
+Package pdftex.def Info: ./img/sequenceDiagrams/EndRent2.png  used on input line 498.
 (pdftex.def)             Requested size: 1126.20477pt x 909.3953pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -795,44 +856,62 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [27
 
  <./img/sequenceDiagrams/UnlockStartRent.png>] [28 <./img/sequenceDiagrams/EndRent.png>] [29 <./img/sequenceDiagrams/EndRent2.png>]
-<./img/sequenceDiagrams/Payment.png, id=841, 1254.6875pt x 1005.7575pt>
+
+LaTeX Warning: Reference `fig:sequencePayment' on page 30 undefined on input line 507.
+
+
+LaTeX Warning: Reference `fig:sequenceEndRent2' on page 30 undefined on input line 507.
+
+<./img/sequenceDiagrams/Payment.png, id=433, 1254.6875pt x 1005.7575pt>
 File: ./img/sequenceDiagrams/Payment.png Graphic file (type png)
 <use ./img/sequenceDiagrams/Payment.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/Payment.png  used on input line 515.
+Package pdftex.def Info: ./img/sequenceDiagrams/Payment.png  used on input line 516.
 (pdftex.def)             Requested size: 1254.68445pt x 1005.75505pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [30
 
 ] [31 <./img/sequenceDiagrams/Payment.png>]
-<./img/sequenceDiagrams/ReserveTimer.png, id=854, 1399.2275pt x 1222.5675pt>
+
+LaTeX Warning: Reference `fig:sequenceReserveTimer' on page 32 undefined on input line 525.
+
+<./img/sequenceDiagrams/ReserveTimer.png, id=447, 1399.2275pt x 1222.5675pt>
 File: ./img/sequenceDiagrams/ReserveTimer.png Graphic file (type png)
 <use ./img/sequenceDiagrams/ReserveTimer.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/ReserveTimer.png  used on input line 533.
+Package pdftex.def Info: ./img/sequenceDiagrams/ReserveTimer.png  used on input line 534.
 (pdftex.def)             Requested size: 1399.22409pt x 1222.56451pt.
- [32
+[32
 
  <./img/sequenceDiagrams/ReserveTimer.png>]
-Overfull \hbox (0.14072pt too wide) in paragraph at lines 543--544
+
+LaTeX Warning: Reference `fig:sequenceMaintenanceAPI' on page 33 undefined on input line 543.
+
+
+LaTeX Warning: Citation `RASD' on page 33 undefined on input line 544.
+
+
+Overfull \hbox (0.14072pt too wide) in paragraph at lines 544--545
  []\T1/cmr/bx/n/10 Interactions not rep-re-sented[] \T1/cmr/m/n/10 When a car has to be tagged back as []
  []
 
-<./img/sequenceDiagrams/maintenanceAPI.png, id=865, 1273.75874pt x 992.70876pt>
+<./img/sequenceDiagrams/maintenanceAPI.png, id=457, 1273.75874pt x 992.70876pt>
 File: ./img/sequenceDiagrams/maintenanceAPI.png Graphic file (type png)
 <use ./img/sequenceDiagrams/maintenanceAPI.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceAPI.png  used on input line 547.
+Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceAPI.png  used on input line 548.
 (pdftex.def)             Requested size: 1273.75565pt x 992.70634pt.
 [33
 
  <./img/sequenceDiagrams/maintenanceAPI.png>]
-<./img/sequenceDiagrams/maintenanceBatteryLevel.png, id=874, 1834.855pt x 859.21pt>
+
+LaTeX Warning: Reference `fig:sequenceMaintenanceBattery' on page 34 undefined on input line 556.
+
+<./img/sequenceDiagrams/maintenanceBatteryLevel.png, id=466, 1834.855pt x 859.21pt>
 File: ./img/sequenceDiagrams/maintenanceBatteryLevel.png Graphic file (type png)
 <use ./img/sequenceDiagrams/maintenanceBatteryLevel.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceBatteryLevel.png  used on input line 559.
+Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceBatteryLevel.png  used on input line 560.
 (pdftex.def)             Requested size: 345.0pt x 161.54723pt.
- [34
+[34
 
  <./img/sequenceDiagrams/maintenanceBatteryLevel.png>] [35
 
@@ -843,6 +922,9 @@ Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceBatteryLevel.png  use
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
+
+
+LaTeX Warning: Citation `RASD' on page 37 undefined on input line 4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
@@ -858,7 +940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 
 ]
-<mockups/loginPage.pdf, id=895, 293.095pt x 585.18625pt>
+<mockups/loginPage.pdf, id=497, 293.095pt x 585.18625pt>
 File: mockups/loginPage.pdf Graphic file (type pdf)
 <use mockups/loginPage.pdf>
 Package pdftex.def Info: mockups/loginPage.pdf  used on input line 21.
@@ -870,7 +952,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-<mockups/homePage.pdf, id=908, 306.14375pt x 585.18625pt>
+<mockups/homePage.pdf, id=513, 306.14375pt x 585.18625pt>
 File: mockups/homePage.pdf Graphic file (type pdf)
 <use mockups/homePage.pdf>
 Package pdftex.def Info: mockups/homePage.pdf  used on input line 47.
@@ -907,7 +989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<mockups/findCar.pdf, id=922, 699.61375pt x 585.18625pt>
+<mockups/findCar.pdf, id=528, 699.61375pt x 585.18625pt>
 File: mockups/findCar.pdf Graphic file (type pdf)
 <use mockups/findCar.pdf>
 Package pdftex.def Info: mockups/findCar.pdf  used on input line 69.
@@ -927,7 +1009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-<mockups/reserveCar.pdf, id=935, 667.49374pt x 585.18625pt>
+<mockups/reserveCar.pdf, id=543, 667.49374pt x 585.18625pt>
 File: mockups/reserveCar.pdf Graphic file (type pdf)
 <use mockups/reserveCar.pdf>
 Package pdftex.def Info: mockups/reserveCar.pdf  used on input line 93.
@@ -952,7 +1034,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-<mockups/moneySavingOption.pdf, id=948, 718.685pt x 585.18625pt>
+<mockups/moneySavingOption.pdf, id=560, 718.685pt x 585.18625pt>
 File: mockups/moneySavingOption.pdf Graphic file (type pdf)
 <use mockups/moneySavingOption.pdf>
 Package pdftex.def Info: mockups/moneySavingOption.pdf  used on input line 117.
@@ -972,7 +1054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<mockups/unlockCar.pdf, id=962, 683.55376pt x 585.18625pt>
+<mockups/unlockCar.pdf, id=576, 683.55376pt x 585.18625pt>
 File: mockups/unlockCar.pdf Graphic file (type pdf)
 <use mockups/unlockCar.pdf>
 Package pdftex.def Info: mockups/unlockCar.pdf  used on input line 143.
@@ -983,6 +1065,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
  []
 
 [43 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/unlockCar.pdf>]
+
+LaTeX Warning: Reference `fig:paymentHistory' on page 44 undefined on input line 154.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
@@ -997,12 +1083,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-<mockups/paymentHistory.pdf, id=977, 293.095pt x 585.18625pt>
+<mockups/paymentHistory.pdf, id=591, 293.095pt x 585.18625pt>
 File: mockups/paymentHistory.pdf Graphic file (type pdf)
 <use mockups/paymentHistory.pdf>
 Package pdftex.def Info: mockups/paymentHistory.pdf  used on input line 163.
 (pdftex.def)             Requested size: 137.9979pt x 275.51974pt.
 [44 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/paymentHistory.pdf>]
+
+LaTeX Warning: Reference `fig:payments' on page 45 undefined on input line 171.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
@@ -1012,7 +1102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-<mockups/payments.pdf, id=991, 662.475pt x 585.18625pt>
+<mockups/payments.pdf, id=606, 662.475pt x 585.18625pt>
 File: mockups/payments.pdf Graphic file (type pdf)
 <use mockups/payments.pdf>
 Package pdftex.def Info: mockups/payments.pdf  used on input line 190.
@@ -1025,6 +1115,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--202
  []
 
 
+LaTeX Warning: Reference `fig:rentHistory' on page 46 undefined on input line 203.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
@@ -1034,7 +1127,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--216
 
  []
 
-<mockups/rentHistory.pdf, id=1006, 658.46pt x 585.18625pt>
+<mockups/rentHistory.pdf, id=620, 658.46pt x 585.18625pt>
 File: mockups/rentHistory.pdf Graphic file (type pdf)
 <use mockups/rentHistory.pdf>
 Package pdftex.def Info: mockups/rentHistory.pdf  used on input line 219.
@@ -1042,19 +1135,22 @@ Package pdftex.def Info: mockups/rentHistory.pdf  used on input line 219.
 [46
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/rentHistory.pdf>]
-<mockups/customerCare1.pdf, id=1020, 733.74126pt x 576.1525pt>
+
+LaTeX Warning: Hyper reference `sec:userInfoCc' on page 47 undefined on input line 235.
+
+<mockups/customerCare1.pdf, id=635, 733.74126pt x 576.1525pt>
 File: mockups/customerCare1.pdf Graphic file (type pdf)
 <use mockups/customerCare1.pdf>
 Package pdftex.def Info: mockups/customerCare1.pdf  used on input line 243.
 (pdftex.def)             Requested size: 308.77647pt x 242.46591pt.
- [47
+[47
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/customerCare1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-<mockups/customerCare2.pdf, id=1033, 733.74126pt x 576.1525pt>
+<mockups/customerCare2.pdf, id=652, 733.74126pt x 576.1525pt>
 File: mockups/customerCare2.pdf Graphic file (type pdf)
 <use mockups/customerCare2.pdf>
 Package pdftex.def Info: mockups/customerCare2.pdf  used on input line 260.
@@ -1065,28 +1161,12 @@ Package pdftex.def Info: mockups/customerCare2.pdf  used on input line 260.
 \openout2 = `DD_reqtraceability.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-[]|[]
- []
+LaTeX Warning: Reference `tbl:mappingGoalsOnComponent' on page 49 undefined on input line 5.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-[]
- []
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-[]
- []
-
-
-Overfull \hbox (6.05553pt too wide) in paragraph at lines 11--12
-[]| 
  []
 
 
@@ -1100,127 +1180,95 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 []|[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 []|[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []|[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 []|[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 []|[]
  []
 
 
-Overfull \hbox (6.05553pt too wide) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.tex:35: Package inputenc Error: Unicode character ﬁ (U+FB01)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35                 of violations, the identiﬁ
+                                                 ed potentially unsafe areas...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 []|[]
  []
 
 
-Overfull \hbox (6.05553pt too wide) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 []|[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-[]|[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-[]|[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-[]|[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-[]|[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-[]
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 7--39
+Overfull \hbox (24.0pt too wide) in alignment at lines 8--43
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 39
+Underfull \vbox (badness 10000) detected at line 43
  []
 
 [49
@@ -1230,6 +1278,10 @@ Underfull \vbox (badness 10000) detected at line 39
 \openout2 = `DD_implementationTesting.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.tex
+
+LaTeX Warning: Citation `RASD' on page 51 undefined on input line 12.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 11--21
 
  []
@@ -1242,12 +1294,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-<./img/userDataIntegration.pdf, id=1066, 262.0992pt x 176.5797pt>
+<./img/userDataIntegration.pdf, id=691, 262.0992pt x 176.5797pt>
 File: ./img/userDataIntegration.pdf Graphic file (type pdf)
 <use ./img/userDataIntegration.pdf>
 Package pdftex.def Info: ./img/userDataIntegration.pdf  used on input line 97.
 (pdftex.def)             Requested size: 172.5pt x 116.21692pt.
-<./img/submissionDataIntegration.pdf, id=1067, 262.0992pt x 176.5797pt>
+<./img/submissionDataIntegration.pdf, id=692, 262.0992pt x 176.5797pt>
 File: ./img/submissionDataIntegration.pdf Graphic file (type pdf)
 <use ./img/submissionDataIntegration.pdf>
 Package pdftex.def Info: ./img/submissionDataIntegration.pdf  used on input line 106.
@@ -1255,7 +1307,7 @@ Package pdftex.def Info: ./img/submissionDataIntegration.pdf  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/statisticsDataintegration.pdf, id=1068, 262.0992pt x 176.5797pt>
+<./img/statisticsDataintegration.pdf, id=693, 262.0992pt x 176.5797pt>
 File: ./img/statisticsDataintegration.pdf Graphic file (type pdf)
 <use ./img/statisticsDataintegration.pdf>
 Package pdftex.def Info: ./img/statisticsDataintegration.pdf  used on input line 115.
@@ -1263,7 +1315,7 @@ Package pdftex.def Info: ./img/statisticsDataintegration.pdf  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/apiDataIntegration.pdf, id=1069, 262.0992pt x 60.225pt>
+<./img/apiDataIntegration.pdf, id=694, 262.0992pt x 60.225pt>
 File: ./img/apiDataIntegration.pdf Graphic file (type pdf)
 <use ./img/apiDataIntegration.pdf>
 Package pdftex.def Info: ./img/apiDataIntegration.pdf  used on input line 124.
@@ -1278,12 +1330,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
 
-<./img/userAppIntegration.pdf, id=1155, 262.0992pt x 60.225pt>
+<./img/userAppIntegration.pdf, id=787, 262.0992pt x 60.225pt>
 File: ./img/userAppIntegration.pdf Graphic file (type pdf)
 <use ./img/userAppIntegration.pdf>
 Package pdftex.def Info: ./img/userAppIntegration.pdf  used on input line 140.
 (pdftex.def)             Requested size: 172.5pt x 39.6374pt.
-<./img/customerCareIntegration.pdf, id=1156, 262.0992pt x 60.225pt>
+<./img/customerCareIntegration.pdf, id=788, 262.0992pt x 60.225pt>
 File: ./img/customerCareIntegration.pdf Graphic file (type pdf)
 <use ./img/customerCareIntegration.pdf>
 Package pdftex.def Info: ./img/customerCareIntegration.pdf  used on input line 149.
@@ -1293,7 +1345,26 @@ Package pdftex.def Info: ./img/customerCareIntegration.pdf  used on input line 1
  <./img/userAppIntegration.pdf> <./img/customerCareIntegration.pdf>]
 \openout2 = `DD_appendix.aux'.
 
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.tex [55
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.tex
+
+LaTeX Warning: Hyper reference `sec:carServerInt' on page 55 undefined on input line 28.
+
+
+LaTeX Warning: Reference `fig:ERModel' on page 55 undefined on input line 34.
+
+
+LaTeX Warning: Hyper reference `sec:mapRunView' on page 55 undefined on input line 39.
+
+
+LaTeX Warning: Hyper reference `sec:gis' on page 55 undefined on input line 39.
+
+
+LaTeX Warning: Reference `fig:sequenceUnlockStartRent' on page 55 undefined on input line 43.
+
+
+LaTeX Warning: Reference `fig:rentObjectDiagram' on page 55 undefined on input line 44.
+
+[55
 
 
 ]) [56]
@@ -1302,30 +1373,36 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.aux (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_userinterfacedesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
-Package rerunfilecheck Info: File `DD_main.out' has not changed.
-(rerunfilecheck)             Checksum: 1B12428573EF2F807377B4A17FFFE134;5116.
 
+
+Package rerunfilecheck Warning: File `DD_main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DD_main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  1B12428573EF2F807377B4A17FFFE134;5116.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 19618 strings out of 492616
- 367140 string characters out of 6129481
- 677242 words of memory out of 5000000
- 22818 multiletter control sequences out of 15000+600000
- 18431 words of font info for 36 fonts, out of 8000000 for 9000
+ 19513 strings out of 492616
+ 363402 string characters out of 6129481
+ 671443 words of memory out of 5000000
+ 22740 multiletter control sequences out of 15000+600000
+ 18314 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,81p,748b,1151s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.pdf (60 pages, 4663372 bytes).
+ 62i,11n,81p,748b,1151s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.pdf (58 pages, 4484369 bytes).
 PDF statistics:
- 1341 PDF objects out of 1440 (max. 8388607)
- 1113 compressed objects within 12 object streams
- 275 named destinations out of 1000 (max. 500000)
- 869 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 972 PDF objects out of 1000 (max. 8388607)
+ 747 compressed objects within 8 object streams
+ 273 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
