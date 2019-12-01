@@ -1,0 +1,1051 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  29 NOV 2019 12:19
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.tex
+(/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/05/04 3.31 The Babel package
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/05/04 3.31 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count89
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/02/04 v3.8 Customized lists
+\enitkv@toks@=\toks16
+\labelindent=\skip43
+\enit@outerparindent=\dimen104
+\enit@toks=\toks17
+\enit@inbox=\box27
+\enit@count@id=\count90
+\enitdp@description=\count91
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+\f@nch@headwidth=\skip44
+\f@nch@O@elh=\skip45
+\f@nch@O@erh=\skip46
+\f@nch@O@olh=\skip47
+\f@nch@O@orh=\skip48
+\f@nch@O@elf=\skip49
+\f@nch@O@erf=\skip50
+\f@nch@O@olf=\skip51
+\f@nch@O@orf=\skip52
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+)
+\XKV@depth=\count92
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen107
+\pgfutil@tempdimb=\dimen108
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box28
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2019/04/04 v3.1.2 (3.1.2)
+))
+Package: pgf 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen109
+\pgf@y=\dimen110
+\pgf@xa=\dimen111
+\pgf@ya=\dimen112
+\pgf@xb=\dimen113
+\pgf@yb=\dimen114
+\pgf@xc=\dimen115
+\pgf@yc=\dimen116
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count93
+\c@pgf@countb=\count94
+\c@pgf@countc=\count95
+\c@pgf@countd=\count96
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count97
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2019/04/04 v3.1.2 (3.1.2)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2019/04/04 v3.1.2 (3.1.2)
+))) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfsyssoftpath@smallbuffer@items=\count98
+\pgfsyssoftpath@bigbuffer@items=\count99
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen117
+\pgfmath@count=\count100
+\pgfmath@box=\box29
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count101
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@picminx=\dimen118
+\pgf@picmaxx=\dimen119
+\pgf@picminy=\dimen120
+\pgf@picmaxy=\dimen121
+\pgf@pathminx=\dimen122
+\pgf@pathmaxx=\dimen123
+\pgf@pathminy=\dimen124
+\pgf@pathmaxy=\dimen125
+\pgf@xx=\dimen126
+\pgf@xy=\dimen127
+\pgf@yx=\dimen128
+\pgf@yy=\dimen129
+\pgf@zx=\dimen130
+\pgf@zy=\dimen131
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@path@lastx=\dimen132
+\pgf@path@lasty=\dimen133
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@shorten@end@additional=\dimen134
+\pgf@shorten@start@additional=\dimen135
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count102
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgflinewidth=\dimen136
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@pt@x=\dimen137
+\pgf@pt@y=\dimen138
+\pgf@pt@temp=\dimen139
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfarrowsep=\dimen140
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@max=\dimen141
+\pgf@sys@shading@range@num=\count103
+\pgf@shadingcount=\count104
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfexternal@startupbox=\box33
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfnodeparttextbox=\box34
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2019/04/04 v3.1.2 (3.1.2)
+\pgf@nodesepstart=\dimen142
+\pgf@nodesepend=\dimen143
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2019/04/04 v3.1.2 (3.1.2)
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen144
+\pgffor@skip=\dimen145
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@plot@mark@count=\count105
+\pgfplotmarksize=\dimen146
+)
+\tikz@lastx=\dimen147
+\tikz@lasty=\dimen148
+\tikz@lastxsaved=\dimen149
+\tikz@lastysaved=\dimen150
+\tikzleveldistance=\dimen151
+\tikzsiblingdistance=\dimen152
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count106
+\tikznumberofchildren=\count107
+\tikznumberofcurrentchild=\count108
+\tikz@fig@count=\count109
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfmatrixcurrentrow=\count110
+\pgfmatrixcurrentcolumn=\count111
+\pgf@matrix@numberofcolumns=\count112
+)
+\tikz@expandcount=\count113
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2019/04/04 v3.1.2 (3.1.2)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2019/04/04 v3.1.2 (3.1.2)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count114
+\calc@Bcount=\count115
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count116
+\calc@Cskip=\skip55
+)
+\c@@todonotes@numberoftodonotes=\count117
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen155
+\Hy@linkcounter=\count118
+\Hy@pagecounter=\count119
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count120
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count121
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen156
+\Fld@menulength=\count122
+\Field@Width=\dimen157
+\Fld@charsize=\dimen158
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count123
+\c@Item=\count124
+\c@Hfootnote=\count125
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count126
+\c@bookmark@seq@number=\count127
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip56
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 30.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count128
+\c@@ppsavesec=\count129
+\c@@ppsaveapp=\count130
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box39
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count131
+\@cmidlb=\count132
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count133
+\@lastruleclass=\count134
+\@thisrulewidth=\dimen171
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+\LTleft=\skip57
+\LTright=\skip58
+\LTpre=\skip59
+\LTpost=\skip60
+\LTchunksize=\count135
+\LTcapwidth=\dimen172
+\LT@head=\box40
+\LT@firsthead=\box41
+\LT@foot=\box42
+\LT@lastfoot=\box43
+\LT@cols=\count136
+\LT@rows=\count137
+\c@LT@tables=\count138
+\c@LT@chunks=\count139
+\LT@p@ftn=\toks33
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count140
+\lst@gtempboxa=\box44
+\lst@token=\toks34
+\lst@length=\count141
+\lst@currlwidth=\dimen173
+\lst@column=\count142
+\lst@pos=\count143
+\lst@lostspace=\dimen174
+\lst@width=\dimen175
+\lst@newlines=\count144
+\lst@lineno=\count145
+\lst@maxwidth=\dimen176
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count146
+\lst@skipnumbers=\count147
+\lst@framebox=\box45
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/latex_alloy.sty) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_overallDescription.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_alloy.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.aux))
+\openout1 = `RASD_main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count148
+\scratchdimen=\dimen177
+\scratchbox=\box46
+\nofMPsegments=\count149
+\nofMParguments=\count150
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count151
+\MPscratchDim=\dimen178
+\MPnumerator=\count152
+\makeMPintoPDFobject=\count153
+\everyMPtoPDFconversion=\toks36
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box47
+Package hyperref Info: Link coloring ON on input line 45.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count154
+)
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.out) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.out)
+\@outlinefile=\write4
+\openout4 = `RASD_main.out'.
+
+\c@lstlisting=\count155
+\openout2 = `RASD_cover.aux'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_cover.tex
+<./img/logo_poli.png, id=228, 666.49pt x 302.12875pt>
+File: ./img/logo_poli.png Graphic file (type png)
+<use ./img/logo_poli.png>
+Package pdftex.def Info: ./img/logo_poli.png  used on input line 9.
+(pdftex.def)             Requested size: 199.94853pt x 90.63931pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 33.
+ [1
+
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_poli.png>]) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.toc [1
+
+
+])
+\tf@toc=\write5
+\openout5 = `RASD_main.toc'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.lof)
+\tf@lof=\write6
+\openout6 = `RASD_main.lof'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.lot)
+\tf@lot=\write7
+\openout7 = `RASD_main.lot'.
+
+ [2]
+\openout2 = `RASD_introduction.aux'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_introduction.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 		\item \label
+                   {goal:retrieveData} Allow municipality to consult the sys... [1
+
+
+] [2]) [3]
+\openout2 = `RASD_overallDescription.aux'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_overallDescription.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+<./img/diagrams/uml.png, id=419, 798.985pt x 459.7175pt>
+File: ./img/diagrams/uml.png Graphic file (type png)
+<use ./img/diagrams/uml.png>
+Package pdftex.def Info: ./img/diagrams/uml.png  used on input line 14.
+(pdftex.def)             Requested size: 350.00616pt x 200.00356pt.
+
+Overfull \hbox (5.00616pt too wide) in paragraph at lines 14--18
+ [][] 
+ []
+
+<./img/diagrams/system_blocks.pdf, id=422, 370.5042pt x 60.225pt>
+File: ./img/diagrams/system_blocks.pdf Graphic file (type pdf)
+<use ./img/diagrams/system_blocks.pdf>
+Package pdftex.def Info: ./img/diagrams/system_blocks.pdf  used on input line 26.
+(pdftex.def)             Requested size: 299.99933pt x 50.00142pt.
+[4
+
+
+ <./img/diagrams/uml.png> <./img/diagrams/system_blocks.pdf
+
+pdfTeX warning: pdflatex (file ./img/diagrams/system_blocks.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+ [5
+
+]
+<./img/diagrams/state-diagrams/SubmitViolation.png, id=451, 791.95876pt x 460.72125pt>
+File: ./img/diagrams/state-diagrams/SubmitViolation.png Graphic file (type png)
+<use ./img/diagrams/state-diagrams/SubmitViolation.png>
+Package pdftex.def Info: ./img/diagrams/state-diagrams/SubmitViolation.png  used on input line 78.
+(pdftex.def)             Requested size: 320.0pt x 186.16225pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+<./img/diagrams/state-diagrams/RequestMunicipality.png, id=453, 776.9025pt x 559.08875pt>
+File: ./img/diagrams/state-diagrams/RequestMunicipality.png Graphic file (type png)
+<use ./img/diagrams/state-diagrams/RequestMunicipality.png>
+Package pdftex.def Info: ./img/diagrams/state-diagrams/RequestMunicipality.png  used on input line 89.
+(pdftex.def)             Requested size: 285.00737pt x 204.99983pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7 <./img/diagrams/state-diagrams/SubmitViolation.png> <./img/diagrams/state-diagrams/RequestMunicipality.png>]
+<./img/diagrams/state-diagrams/ShowStatistics.png, id=467, 733.74126pt x 335.2525pt>
+File: ./img/diagrams/state-diagrams/ShowStatistics.png Graphic file (type png)
+<use ./img/diagrams/state-diagrams/ShowStatistics.png>
+Package pdftex.def Info: ./img/diagrams/state-diagrams/ShowStatistics.png  used on input line 100.
+(pdftex.def)             Requested size: 300.00735pt x 134.99895pt.
+<./img/diagrams/state-diagrams/RequestAPI.png, id=469, 698.61pt x 410.53375pt>
+File: ./img/diagrams/state-diagrams/RequestAPI.png Graphic file (type png)
+<use ./img/diagrams/state-diagrams/RequestAPI.png>
+Package pdftex.def Info: ./img/diagrams/state-diagrams/RequestAPI.png  used on input line 110.
+(pdftex.def)             Requested size: 300.00203pt x 169.99873pt.
+ [8
+
+ <./img/diagrams/state-diagrams/ShowStatistics.png> <./img/diagrams/state-diagrams/RequestAPI.png>] [9])
+\openout2 = `RASD_specificRequirements.aux'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.tex [10
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+<./img/diagrams/GIS.png, id=498, 663.47874pt x 443.6575pt>
+File: ./img/diagrams/GIS.png Graphic file (type png)
+<use ./img/diagrams/GIS.png>
+Package pdftex.def Info: ./img/diagrams/GIS.png  used on input line 58.
+(pdftex.def)             Requested size: 335.0pt x 224.00803pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+<./img/mockups/register-empty.png, id=500, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/register-empty.png Graphic file (type png)
+<use ./img/mockups/register-empty.png>
+Package pdftex.def Info: ./img/mockups/register-empty.png  used on input line 77.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+<./img/mockups/register.png, id=501, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/register.png Graphic file (type png)
+<use ./img/mockups/register.png>
+Package pdftex.def Info: ./img/mockups/register.png  used on input line 82.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./img/mockups/login-empty.png, id=502, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/login-empty.png Graphic file (type png)
+<use ./img/mockups/login-empty.png>
+Package pdftex.def Info: ./img/mockups/login-empty.png  used on input line 90.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+<./img/mockups/login.png, id=503, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/login.png Graphic file (type png)
+<use ./img/mockups/login.png>
+Package pdftex.def Info: ./img/mockups/login.png  used on input line 95.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+<./img/mockups/statistics.png, id=512, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/statistics.png Graphic file (type png)
+<use ./img/mockups/statistics.png>
+Package pdftex.def Info: ./img/mockups/statistics.png  used on input line 118.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+<./img/mockups/profile.png, id=513, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/profile.png Graphic file (type png)
+<use ./img/mockups/profile.png>
+Package pdftex.def Info: ./img/mockups/profile.png  used on input line 123.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./img/mockups/submit-violation.png, id=514, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/submit-violation.png Graphic file (type png)
+<use ./img/mockups/submit-violation.png>
+Package pdftex.def Info: ./img/mockups/submit-violation.png  used on input line 131.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+<./img/mockups/map.png, id=515, 1172.38pt x 2101.8525pt>
+File: ./img/mockups/map.png Graphic file (type png)
+<use ./img/mockups/map.png>
+Package pdftex.def Info: ./img/mockups/map.png  used on input line 136.
+(pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./img/diagrams/GIS.png>] [13 <./img/mockups/register-empty.png> <./img/mockups/register.png> <./img/mockups/login-empty.png> <./img/mockups/login.png>] [14 <./img/mockups/statistics.png> <./img/mockups/profile.png> <./img/mockups/submit-violation.png> <./img/mockups/map.png>] [15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 189--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--205
+
+ []
+
+[16]
+<./img/diagrams/UseCaseDiagram.png, id=550, 871.255pt x 532.99126pt>
+File: ./img/diagrams/UseCaseDiagram.png Graphic file (type png)
+<use ./img/diagrams/UseCaseDiagram.png>
+Package pdftex.def Info: ./img/diagrams/UseCaseDiagram.png  used on input line 209.
+(pdftex.def)             Requested size: 345.0pt x 211.0538pt.
+ [17 <./img/diagrams/UseCaseDiagram.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 236--274
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 274
+ []
+
+[18
+
+]
+<./img/diagrams/sequence-diagrams/sdRegistration.png, id=574, 1102.1175pt x 909.3975pt>
+File: ./img/diagrams/sequence-diagrams/sdRegistration.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdRegistration.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdRegistration.png  used on input line 278.
+(pdftex.def)             Requested size: 345.0pt x 284.67169pt.
+ [19 <./img/diagrams/sequence-diagrams/sdRegistration.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 288--311
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 311
+ []
+
+<./img/diagrams/sequence-diagrams/sdLogin.png, id=580, 644.4075pt x 704.6325pt>
+File: ./img/diagrams/sequence-diagrams/sdLogin.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdLogin.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdLogin.png  used on input line 316.
+(pdftex.def)             Requested size: 345.0pt x 377.2596pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20
+
+] [21 <./img/diagrams/sequence-diagrams/sdLogin.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 326--349
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 349
+ []
+
+<./img/diagrams/sequence-diagrams/sdAuthentication.png, id=592, 644.4075pt x 564.1075pt>
+File: ./img/diagrams/sequence-diagrams/sdAuthentication.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdAuthentication.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdAuthentication.png  used on input line 353.
+(pdftex.def)             Requested size: 345.0pt x 302.02263pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22
+
+] [23 <./img/diagrams/sequence-diagrams/sdAuthentication.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 363--393
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 393
+ []
+
+<./img/diagrams/sequence-diagrams/sdViolationSubmission.png, id=606, 714.67pt x 694.595pt>
+File: ./img/diagrams/sequence-diagrams/sdViolationSubmission.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdViolationSubmission.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViolationSubmission.png  used on input line 397.
+(pdftex.def)             Requested size: 345.0pt x 335.30957pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24
+
+] [25 <./img/diagrams/sequence-diagrams/sdViolationSubmission.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 407--437
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 437
+ []
+
+<./img/diagrams/sequence-diagrams/sdViewMap.png, id=624, 713.66624pt x 723.70375pt>
+File: ./img/diagrams/sequence-diagrams/sdViewMap.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdViewMap.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViewMap.png  used on input line 441.
+(pdftex.def)             Requested size: 345.0pt x 349.84744pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26
+
+] [27 <./img/diagrams/sequence-diagrams/sdViewMap.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 451--481
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 481
+ []
+
+<./img/diagrams/sequence-diagrams/sdViewStatistics.png, id=640, 743.77875pt x 716.6775pt>
+File: ./img/diagrams/sequence-diagrams/sdViewStatistics.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdViewStatistics.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViewStatistics.png  used on input line 485.
+(pdftex.def)             Requested size: 345.0pt x 332.43143pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28
+
+] [29 <./img/diagrams/sequence-diagrams/sdViewStatistics.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 495--524
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 524
+ []
+
+<./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png, id=657, 760.8425pt x 673.51625pt>
+File: ./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png  used on input line 528.
+(pdftex.def)             Requested size: 345.0pt x 305.41238pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30
+
+] [31 <./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 538--562
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 562
+ []
+
+<./img/diagrams/sequence-diagrams/sdProvideAPI.png, id=674, 643.40375pt x 673.51625pt>
+File: ./img/diagrams/sequence-diagrams/sdProvideAPI.png Graphic file (type png)
+<use ./img/diagrams/sequence-diagrams/sdProvideAPI.png>
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdProvideAPI.png  used on input line 566.
+(pdftex.def)             Requested size: 345.0pt x 361.15494pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32
+
+] [33 <./img/diagrams/sequence-diagrams/sdProvideAPI.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
+
+ []
+
+[34
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 622--623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--671
+
+ []
+
+[36] [37
+
+] [38])
+\openout2 = `RASD_alloy.aux'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_alloy.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 7.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/SafeStreets.als [39
+
+
+
+] [40] [41] [42] [43])
+<alloy/world1.png, id=1030, 1600.98125pt x 524.96124pt>
+File: alloy/world1.png Graphic file (type png)
+<use alloy/world1.png>
+Package pdftex.def Info: alloy/world1.png  used on input line 13.
+(pdftex.def)             Requested size: 518.45615pt x 170.0pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<alloy/world2.png, id=1031, 1541.76pt x 671.50874pt>
+File: alloy/world2.png Graphic file (type png)
+<use alloy/world2.png>
+Package pdftex.def Info: alloy/world2.png  used on input line 22.
+(pdftex.def)             Requested size: 528.07315pt x 230.0pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<alloy/world3.png, id=1032, 1514.65875pt x 565.11125pt>
+File: alloy/world3.png Graphic file (type png)
+<use alloy/world3.png>
+Package pdftex.def Info: alloy/world3.png  used on input line 31.
+(pdftex.def)             Requested size: 536.05513pt x 200.0pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<alloy/world4.png, id=1033, 1526.70375pt x 576.1525pt>
+File: alloy/world4.png Graphic file (type png)
+<use alloy/world4.png>
+Package pdftex.def Info: alloy/world4.png  used on input line 40.
+(pdftex.def)             Requested size: 529.97475pt x 200.0pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<alloy/world5.png, id=1034, 1525.7pt x 560.0925pt>
+File: alloy/world5.png Graphic file (type png)
+<use alloy/world5.png>
+Package pdftex.def Info: alloy/world5.png  used on input line 49.
+(pdftex.def)             Requested size: 544.80505pt x 200.0pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[44] [45 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world1.png (PNG copy)>] [46 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world2.png (PNG copy)>] [47 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world3.png (PNG copy)>] [48 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world4.png (PNG copy)>] [49 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world5.png (PNG copy)>]) [50
+
+]
+\openout2 = `RASD_appendix.aux'.
+
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.tex [51
+
+
+]) [52
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_overallDescription.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_alloy.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Package rerunfilecheck Info: File `RASD_main.out' has not changed.
+(rerunfilecheck)             Checksum: D23F5A1D138E9541F7F23D1EA1139E21;3381.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
+ ) 
+Here is how much of TeX's memory you used:
+ 19889 strings out of 492616
+ 367894 string characters out of 6129480
+ 622398 words of memory out of 5000000
+ 22836 multiletter control sequences out of 15000+600000
+ 19015 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,12n,81p,1024b,2058s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.pdf (55 pages, 6284762 bytes).
+PDF statistics:
+ 1302 PDF objects out of 1440 (max. 8388607)
+ 1142 compressed objects within 12 object streams
+ 540 named destinations out of 1000 (max. 500000)
+ 651 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,49 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Purpose of this document}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Scope}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Goals}{subsection.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.3}{Glossary}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Definitions}{subsection.1.3}% 6
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Acronyms}{subsection.1.3}% 7
+\BOOKMARK [3][-]{subsubsection.1.3.3}{Abbreviations}{subsection.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.4}{Document overview}{section.1}% 9
+\BOOKMARK [1][-]{section.2}{Overall Description}{}% 10
+\BOOKMARK [2][-]{subsection.2.1}{Product Perspective}{section.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.1.1}{System Interfaces}{subsection.2.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.2}{User Interfaces}{subsection.2.1}% 13
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Hardware Interfaces}{subsection.2.1}% 14
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Software Interfaces}{subsection.2.1}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.5}{Communication Interfaces}{subsection.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.2}{Product Functions}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.3}{User Characteristics}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.4}{Constraints}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.5}{Assumptions}{section.2}% 20
+\BOOKMARK [1][-]{section.3}{Specific Requirements}{}% 21
+\BOOKMARK [2][-]{subsection.3.1}{External Interfaces}{section.3}% 22
+\BOOKMARK [3][-]{subsubsection.3.1.1}{System Interfaces}{subsection.3.1}% 23
+\BOOKMARK [3][-]{subsubsection.3.1.2}{User Interfaces}{subsection.3.1}% 24
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Hardware Interfaces}{subsection.3.1}% 25
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Software Interfaces}{subsection.3.1}% 26
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Communication Interfaces}{subsection.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.2}{Functional Requirements}{section.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Scenarios}{subsection.3.2}% 29
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Use Case Diagram}{subsection.3.2}% 30
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Use Cases Description}{subsection.3.2}% 31
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Requirements Mapping}{subsection.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.3}{Performance Requirements}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.4}{Design Constraints}{section.3}% 34
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Standards Compliance}{subsection.3.4}% 35
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Hardware Limitations}{subsection.3.4}% 36
+\BOOKMARK [2][-]{subsection.3.5}{Software System Attributes}{section.3}% 37
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Reliability}{subsection.3.5}% 38
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Availability}{subsection.3.5}% 39
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Maintainability}{subsection.3.5}% 40
+\BOOKMARK [3][-]{subsubsection.3.5.4}{Portability}{subsection.3.5}% 41
+\BOOKMARK [3][-]{subsubsection.3.5.5}{Security}{subsection.3.5}% 42
+\BOOKMARK [1][-]{section.4}{Formal Analysis using Alloy}{}% 43
+\BOOKMARK [2][-]{subsection.4.1}{Source code}{section.4}% 44
+\BOOKMARK [2][-]{subsection.4.2}{Generated Worlds}{section.4}% 45
+\BOOKMARK [1][-]{section*.22}{Appendices}{}% 46
+\BOOKMARK [1][-]{Appendix.1.A}{Software and tools used}{}% 47
+\BOOKMARK [1][-]{Appendix.1.B}{Hours of Work}{}% 48
+\BOOKMARK [1][-]{Appendix.1.C}{Changelog}{}% 49
