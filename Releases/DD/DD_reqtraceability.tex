@@ -2,7 +2,7 @@
 
     \subsection{Functional requirements}
 
-        In the \autoref{tbl:mappingGoalsOnComponent} is presented a mapping correspondece between the requirements defined in the RASD
+        In the \autoref{tbl:mappingGoalsOnComponent} is presented a mapping correspondence between the requirements defined in the RASD
         related to each goal and the components identified in the server component diagram.\\
 
         \begin{longtable}{p{0.7\linewidth}p{0.3\linewidth}}
@@ -14,7 +14,7 @@
             \midrule
                 \textbf{G2} Allow registered users to authenticate to the system 
                     & \mbox{UserAppServer} \mbox{AccessHandler} \mbox{DataProvider}\\
-            \midrule
+            \midrule 
                 \textbf{G3} Allow users to transfer data to the system describing occurred violations,
                  including the suitable metadata to describe the submitted violation 
                  & \mbox{UserAppServer} \mbox{SubmissionHandler} \mbox{DataProvider}\\
@@ -40,7 +40,7 @@
                 & \mbox{APIHandler} \mbox{DataProvider}\\
             \bottomrule
             \caption{\label{tbl:mappingGoalsOnComponent}Mapping goals on components}
-        \end{longtable}
+        \end{longtable} 
 
     \subsection{Non functional requirements}
 
@@ -54,7 +54,8 @@
         \paragraph{Security}
         Security protocols are used for transmission and storage of sensitive data.
         Maintenance API is only accessible through token mechanisms.
-        Customer Care Server is accessed over a VPN to ensure security.
+        Customer Care Server is accessed over a VPN to ensure security. \todo{fix}
 
         \paragraph{Portability}
         Users access the system through a web-based application that enables the portability and a cross-operative system compatibility.
+ 

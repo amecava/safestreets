@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  1 DEC 2019 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.8)  2 DEC 2019 09:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.tex
-(/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.tex
+**/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.tex
+(/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -477,11 +477,11 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/latex_pseudocode.sty) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_archdesign.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_reqtraceability.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_implementationTesting.aux
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/latex_pseudocode.sty) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.aux (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_userinterfacedesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.aux
 
 LaTeX Warning: Label `tab:table1' multiply defined.
 
-) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_appendix.aux))
+) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.aux))
 \openout1 = `DD_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -535,14 +535,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 46.
 LaTeX Info: Redefining \pageref on input line 46.
 LaTeX Info: Redefining \nameref on input line 46.
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.out) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.out)
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.out) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.out)
 \@outlinefile=\write4
 \openout4 = `DD_main.out'.
 
 \c@lstlisting=\count155
 \openout2 = `DD_cover.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_cover.tex
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.tex
 <./img/logo_poli.png, id=312, 666.49pt x 302.12875pt>
 File: ./img/logo_poli.png Graphic file (type png)
 <use ./img/logo_poli.png>
@@ -555,25 +555,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_poli.png>]) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.toc [1
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_poli.png>]) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.toc [1
 
 
 ])
 \tf@toc=\write5
 \openout5 = `DD_main.toc'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.lof [2])
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.lof [2])
 \tf@lof=\write6
 \openout6 = `DD_main.lof'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.lot)
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.lot)
 \tf@lot=\write7
 \openout7 = `DD_main.lot'.
 
  [3]
 \openout2 = `DD_introduction.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_introduction.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.27 		\item [REST API:]
@@ -594,7 +594,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ) [2]
 \openout2 = `DD_archdesign.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_archdesign.tex
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.tex
 <./img/contextViewPoint.pdf, id=524, 468.79138pt x 232.9503pt>
 File: ./img/contextViewPoint.pdf Graphic file (type pdf)
 <use ./img/contextViewPoint.pdf>
@@ -735,113 +735,110 @@ File: ./img/deployment.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/deployment.pdf  used on input line 398.
 (pdftex.def)             Requested size: 345.0pt x 344.07214pt.
  [21 <./img/deployment.pdf>]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 410.
 <./img/sequenceDiagrams/MapGeneration.png, id=796, 2107.875pt x 1481.535pt>
 File: ./img/sequenceDiagrams/MapGeneration.png Graphic file (type png)
 <use ./img/sequenceDiagrams/MapGeneration.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/MapGeneration.png  used on input line 425.
+Package pdftex.def Info: ./img/sequenceDiagrams/MapGeneration.png  used on input line 421.
 (pdftex.def)             Requested size: 2107.86987pt x 1481.53139pt.
+ [22
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+ <./img/sequenceDiagrams/MapGeneration.png>]
 
-[22
+LaTeX Warning: Hyper reference `sec:msoAlgorithm' on page 23 undefined on input line 431.
 
-
-] [23 <./img/sequenceDiagrams/MapGeneration.png>]
-
-LaTeX Warning: Hyper reference `sec:msoAlgorithm' on page 24 undefined on input line 435.
-
-<./img/sequenceDiagrams/ReserveCar.png, id=810, 2959.055pt x 1304.875pt>
+<./img/sequenceDiagrams/ReserveCar.png, id=805, 2959.055pt x 1304.875pt>
 File: ./img/sequenceDiagrams/ReserveCar.png Graphic file (type png)
 <use ./img/sequenceDiagrams/ReserveCar.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/ReserveCar.png  used on input line 446.
+Package pdftex.def Info: ./img/sequenceDiagrams/ReserveCar.png  used on input line 442.
 (pdftex.def)             Requested size: 2959.0478pt x 1304.87183pt.
 
-LaTeX Warning: Float too large for page by 12.68753pt on input line 451.
+LaTeX Warning: Float too large for page by 12.68753pt on input line 447.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24
+[23
 
-] [25 <./img/sequenceDiagrams/ReserveCar.png>]
-Overfull \hbox (5.35889pt too wide) in paragraph at lines 455--457
+] [24 <./img/sequenceDiagrams/ReserveCar.png>]
+Overfull \hbox (5.35889pt too wide) in paragraph at lines 451--453
 \T1/cmr/m/n/10 The fol-low-ing se-quence di-a-grams show the in-ter-ac-tions be-tween the [] []
  []
 
-[26
+[25
 
 ]
-<./img/sequenceDiagrams/UnlockStartRent.png, id=831, 3505.095pt x 2348.775pt>
+<./img/sequenceDiagrams/UnlockStartRent.png, id=826, 3505.095pt x 2348.775pt>
 File: ./img/sequenceDiagrams/UnlockStartRent.png Graphic file (type png)
 <use ./img/sequenceDiagrams/UnlockStartRent.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/UnlockStartRent.png  used on input line 482.
+Package pdftex.def Info: ./img/sequenceDiagrams/UnlockStartRent.png  used on input line 478.
 (pdftex.def)             Requested size: 3505.08649pt x 2348.7693pt.
-<./img/sequenceDiagrams/EndRent.png, id=832, 2557.555pt x 1883.035pt>
+<./img/sequenceDiagrams/EndRent.png, id=827, 2557.555pt x 1883.035pt>
 File: ./img/sequenceDiagrams/EndRent.png Graphic file (type png)
 <use ./img/sequenceDiagrams/EndRent.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/EndRent.png  used on input line 490.
+Package pdftex.def Info: ./img/sequenceDiagrams/EndRent.png  used on input line 486.
 (pdftex.def)             Requested size: 2557.54878pt x 1883.03043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./img/sequenceDiagrams/EndRent2.png, id=833, 1126.2075pt x 909.3975pt>
+<./img/sequenceDiagrams/EndRent2.png, id=828, 1126.2075pt x 909.3975pt>
 File: ./img/sequenceDiagrams/EndRent2.png Graphic file (type png)
 <use ./img/sequenceDiagrams/EndRent2.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/EndRent2.png  used on input line 498.
+Package pdftex.def Info: ./img/sequenceDiagrams/EndRent2.png  used on input line 494.
 (pdftex.def)             Requested size: 1126.20477pt x 909.3953pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27
+[26
 
- <./img/sequenceDiagrams/UnlockStartRent.png>] [28 <./img/sequenceDiagrams/EndRent.png>] [29 <./img/sequenceDiagrams/EndRent2.png>]
-<./img/sequenceDiagrams/Payment.png, id=852, 1254.6875pt x 1005.7575pt>
+ <./img/sequenceDiagrams/UnlockStartRent.png>] [27 <./img/sequenceDiagrams/EndRent.png>] [28 <./img/sequenceDiagrams/EndRent2.png>]
+<./img/sequenceDiagrams/Payment.png, id=847, 1254.6875pt x 1005.7575pt>
 File: ./img/sequenceDiagrams/Payment.png Graphic file (type png)
 <use ./img/sequenceDiagrams/Payment.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/Payment.png  used on input line 516.
+Package pdftex.def Info: ./img/sequenceDiagrams/Payment.png  used on input line 512.
 (pdftex.def)             Requested size: 1254.68445pt x 1005.75505pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30
+[29
 
-] [31 <./img/sequenceDiagrams/Payment.png>]
-<./img/sequenceDiagrams/ReserveTimer.png, id=866, 1399.2275pt x 1222.5675pt>
+] [30 <./img/sequenceDiagrams/Payment.png>]
+<./img/sequenceDiagrams/ReserveTimer.png, id=861, 1399.2275pt x 1222.5675pt>
 File: ./img/sequenceDiagrams/ReserveTimer.png Graphic file (type png)
 <use ./img/sequenceDiagrams/ReserveTimer.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/ReserveTimer.png  used on input line 534.
+Package pdftex.def Info: ./img/sequenceDiagrams/ReserveTimer.png  used on input line 530.
 (pdftex.def)             Requested size: 1399.22409pt x 1222.56451pt.
- [32
+ [31
 
  <./img/sequenceDiagrams/ReserveTimer.png>]
-Overfull \hbox (0.14072pt too wide) in paragraph at lines 544--545
+Overfull \hbox (0.14072pt too wide) in paragraph at lines 540--541
  []\T1/cmr/bx/n/10 Interactions not rep-re-sented[] \T1/cmr/m/n/10 When a car has to be tagged back as []
  []
 
-<./img/sequenceDiagrams/maintenanceAPI.png, id=876, 1273.75874pt x 992.70876pt>
+<./img/sequenceDiagrams/maintenanceAPI.png, id=871, 1273.75874pt x 992.70876pt>
 File: ./img/sequenceDiagrams/maintenanceAPI.png Graphic file (type png)
 <use ./img/sequenceDiagrams/maintenanceAPI.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceAPI.png  used on input line 548.
+Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceAPI.png  used on input line 544.
 (pdftex.def)             Requested size: 1273.75565pt x 992.70634pt.
-[33
+[32
 
  <./img/sequenceDiagrams/maintenanceAPI.png>]
-<./img/sequenceDiagrams/maintenanceBatteryLevel.png, id=885, 1834.855pt x 859.21pt>
+<./img/sequenceDiagrams/maintenanceBatteryLevel.png, id=879, 1834.855pt x 859.21pt>
 File: ./img/sequenceDiagrams/maintenanceBatteryLevel.png Graphic file (type png)
 <use ./img/sequenceDiagrams/maintenanceBatteryLevel.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceBatteryLevel.png  used on input line 560.
+Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceBatteryLevel.png  used on input line 556.
 (pdftex.def)             Requested size: 345.0pt x 161.54723pt.
- [34
+ [33
 
- <./img/sequenceDiagrams/maintenanceBatteryLevel.png>] [35
+ <./img/sequenceDiagrams/maintenanceBatteryLevel.png>] [34
 
-]) [36]
+]) [35]
 \openout2 = `DD_userinterfacedesign.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.tex
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_userinterfacedesign.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -856,23 +853,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[37
+[36
 
 
 ]
-<mockups/loginPage.pdf, id=906, 293.095pt x 585.18625pt>
+<mockups/loginPage.pdf, id=901, 293.095pt x 585.18625pt>
 File: mockups/loginPage.pdf Graphic file (type pdf)
 <use mockups/loginPage.pdf>
 Package pdftex.def Info: mockups/loginPage.pdf  used on input line 21.
 (pdftex.def)             Requested size: 137.9979pt x 275.51974pt.
- [38
+ [37
 
- </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/loginPage.pdf>]
+ </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/loginPage.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-<mockups/homePage.pdf, id=919, 306.14375pt x 585.18625pt>
+<mockups/homePage.pdf, id=914, 306.14375pt x 585.18625pt>
 File: mockups/homePage.pdf Graphic file (type pdf)
 <use mockups/homePage.pdf>
 Package pdftex.def Info: mockups/homePage.pdf  used on input line 47.
@@ -882,9 +879,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[39
+[38
 
- </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/homePage.pdf>]
+ </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/homePage.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -909,12 +906,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<mockups/findCar.pdf, id=933, 699.61375pt x 585.18625pt>
+<mockups/findCar.pdf, id=927, 699.61375pt x 585.18625pt>
 File: mockups/findCar.pdf Graphic file (type pdf)
 <use mockups/findCar.pdf>
 Package pdftex.def Info: mockups/findCar.pdf  used on input line 69.
 (pdftex.def)             Requested size: 310.4979pt x 259.71504pt.
-[40 </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/findCar.pdf>]
+[39 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/findCar.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
@@ -929,7 +926,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-<mockups/reserveCar.pdf, id=946, 667.49374pt x 585.18625pt>
+<mockups/reserveCar.pdf, id=941, 667.49374pt x 585.18625pt>
 File: mockups/reserveCar.pdf Graphic file (type pdf)
 <use mockups/reserveCar.pdf>
 Package pdftex.def Info: mockups/reserveCar.pdf  used on input line 93.
@@ -939,7 +936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[41 </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/reserveCar.pdf>]
+[40 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/reserveCar.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
@@ -954,7 +951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-<mockups/moneySavingOption.pdf, id=959, 718.685pt x 585.18625pt>
+<mockups/moneySavingOption.pdf, id=954, 718.685pt x 585.18625pt>
 File: mockups/moneySavingOption.pdf Graphic file (type pdf)
 <use mockups/moneySavingOption.pdf>
 Package pdftex.def Info: mockups/moneySavingOption.pdf  used on input line 117.
@@ -964,7 +961,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[42 </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/moneySavingOption.pdf>]
+[41 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/moneySavingOption.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -974,7 +971,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<mockups/unlockCar.pdf, id=974, 683.55376pt x 585.18625pt>
+<mockups/unlockCar.pdf, id=969, 683.55376pt x 585.18625pt>
 File: mockups/unlockCar.pdf Graphic file (type pdf)
 <use mockups/unlockCar.pdf>
 Package pdftex.def Info: mockups/unlockCar.pdf  used on input line 143.
@@ -984,7 +981,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[43 </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/unlockCar.pdf>]
+[42 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/unlockCar.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
@@ -999,12 +996,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-<mockups/paymentHistory.pdf, id=988, 293.095pt x 585.18625pt>
+<mockups/paymentHistory.pdf, id=983, 293.095pt x 585.18625pt>
 File: mockups/paymentHistory.pdf Graphic file (type pdf)
 <use mockups/paymentHistory.pdf>
 Package pdftex.def Info: mockups/paymentHistory.pdf  used on input line 163.
 (pdftex.def)             Requested size: 137.9979pt x 275.51974pt.
-[44 </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/paymentHistory.pdf>]
+[43 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/paymentHistory.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
@@ -1014,14 +1011,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-<mockups/payments.pdf, id=1002, 662.475pt x 585.18625pt>
+<mockups/payments.pdf, id=997, 662.475pt x 585.18625pt>
 File: mockups/payments.pdf Graphic file (type pdf)
 <use mockups/payments.pdf>
 Package pdftex.def Info: mockups/payments.pdf  used on input line 190.
 (pdftex.def)             Requested size: 310.4979pt x 274.26965pt.
-[45
+[44
 
- </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/payments.pdf>]
+ </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/payments.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
@@ -1036,37 +1033,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--216
 
  []
 
-<mockups/rentHistory.pdf, id=1017, 658.46pt x 585.18625pt>
+<mockups/rentHistory.pdf, id=1011, 658.46pt x 585.18625pt>
 File: mockups/rentHistory.pdf Graphic file (type pdf)
 <use mockups/rentHistory.pdf>
 Package pdftex.def Info: mockups/rentHistory.pdf  used on input line 219.
 (pdftex.def)             Requested size: 310.4979pt x 275.94835pt.
-[46
+[45
 
- </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/rentHistory.pdf>]
-<mockups/customerCare1.pdf, id=1031, 733.74126pt x 576.1525pt>
+ </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/rentHistory.pdf>]
+<mockups/customerCare1.pdf, id=1026, 733.74126pt x 576.1525pt>
 File: mockups/customerCare1.pdf Graphic file (type pdf)
 <use mockups/customerCare1.pdf>
 Package pdftex.def Info: mockups/customerCare1.pdf  used on input line 243.
 (pdftex.def)             Requested size: 308.77647pt x 242.46591pt.
- [47
+ [46
 
- </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare1.pdf>]
+ </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/customerCare1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-<mockups/customerCare2.pdf, id=1044, 733.74126pt x 576.1525pt>
+<mockups/customerCare2.pdf, id=1039, 733.74126pt x 576.1525pt>
 File: mockups/customerCare2.pdf Graphic file (type pdf)
 <use mockups/customerCare2.pdf>
 Package pdftex.def Info: mockups/customerCare2.pdf  used on input line 260.
 (pdftex.def)             Requested size: 308.77647pt x 242.46591pt.
-) [48
+) [47
 
- </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare2.pdf>]
+ </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/customerCare2.pdf>]
 \openout2 = `DD_reqtraceability.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_reqtraceability.tex
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
@@ -1160,18 +1157,18 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 8--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[49
+[48
 
 
-]) [50]
+]) [49]
 \openout2 = `DD_implementationTesting.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_implementationTesting.tex
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--21
 
  []
 
-[51
+[50
 
 
 ]
@@ -1179,12 +1176,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-<./img/userDataIntegration.pdf, id=1076, 262.0992pt x 176.5797pt>
+<./img/userDataIntegration.pdf, id=1071, 262.0992pt x 176.5797pt>
 File: ./img/userDataIntegration.pdf Graphic file (type pdf)
 <use ./img/userDataIntegration.pdf>
 Package pdftex.def Info: ./img/userDataIntegration.pdf  used on input line 97.
 (pdftex.def)             Requested size: 172.5pt x 116.21692pt.
-<./img/submissionDataIntegration.pdf, id=1077, 262.0992pt x 176.5797pt>
+<./img/submissionDataIntegration.pdf, id=1072, 262.0992pt x 176.5797pt>
 File: ./img/submissionDataIntegration.pdf Graphic file (type pdf)
 <use ./img/submissionDataIntegration.pdf>
 Package pdftex.def Info: ./img/submissionDataIntegration.pdf  used on input line 106.
@@ -1192,7 +1189,7 @@ Package pdftex.def Info: ./img/submissionDataIntegration.pdf  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/statisticsDataintegration.pdf, id=1078, 262.0992pt x 176.5797pt>
+<./img/statisticsDataintegration.pdf, id=1073, 262.0992pt x 176.5797pt>
 File: ./img/statisticsDataintegration.pdf Graphic file (type pdf)
 <use ./img/statisticsDataintegration.pdf>
 Package pdftex.def Info: ./img/statisticsDataintegration.pdf  used on input line 115.
@@ -1200,7 +1197,7 @@ Package pdftex.def Info: ./img/statisticsDataintegration.pdf  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/apiDataIntegration.pdf, id=1079, 262.0992pt x 60.225pt>
+<./img/apiDataIntegration.pdf, id=1074, 262.0992pt x 60.225pt>
 File: ./img/apiDataIntegration.pdf Graphic file (type pdf)
 <use ./img/apiDataIntegration.pdf>
 Package pdftex.def Info: ./img/apiDataIntegration.pdf  used on input line 124.
@@ -1208,35 +1205,35 @@ Package pdftex.def Info: ./img/apiDataIntegration.pdf  used on input line 124.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52
+[51
 
- <./img/userDataIntegration.pdf>] [53 <./img/submissionDataIntegration.pdf> <./img/statisticsDataintegration.pdf> <./img/apiDataIntegration.pdf>]
+ <./img/userDataIntegration.pdf>] [52 <./img/submissionDataIntegration.pdf> <./img/statisticsDataintegration.pdf> <./img/apiDataIntegration.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
  []
 
-<./img/userAppIntegration.pdf, id=1165, 262.0992pt x 60.225pt>
+<./img/userAppIntegration.pdf, id=1161, 262.0992pt x 60.225pt>
 File: ./img/userAppIntegration.pdf Graphic file (type pdf)
 <use ./img/userAppIntegration.pdf>
 Package pdftex.def Info: ./img/userAppIntegration.pdf  used on input line 140.
 (pdftex.def)             Requested size: 172.5pt x 39.6374pt.
-<./img/customerCareIntegration.pdf, id=1166, 262.0992pt x 60.225pt>
+<./img/customerCareIntegration.pdf, id=1162, 262.0992pt x 60.225pt>
 File: ./img/customerCareIntegration.pdf Graphic file (type pdf)
 <use ./img/customerCareIntegration.pdf>
 Package pdftex.def Info: ./img/customerCareIntegration.pdf  used on input line 149.
 (pdftex.def)             Requested size: 172.5pt x 39.6374pt.
-) [54
+) [53
 
  <./img/userAppIntegration.pdf> <./img/customerCareIntegration.pdf>]
 \openout2 = `DD_appendix.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_appendix.tex [55
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.tex [54
 
 
-]) [56]
+]) [55]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_archdesign.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_reqtraceability.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_implementationTesting.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_appendix.aux))
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.aux (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_userinterfacedesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
 Package rerunfilecheck Info: File `DD_main.out' has not changed.
@@ -1251,18 +1248,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
- 19617 strings out of 492616
- 365674 string characters out of 6129480
- 677249 words of memory out of 5000000
- 22818 multiletter control sequences out of 15000+600000
+ 19731 strings out of 492616
+ 369775 string characters out of 6129481
+ 677543 words of memory out of 5000000
+ 22933 multiletter control sequences out of 15000+600000
  18314 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,81p,725b,1151s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,81p,748b,1151s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.pdf (60 pages, 4498593 bytes).
+Output written on /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.pdf (59 pages, 4499295 bytes).
 PDF statistics:
- 1348 PDF objects out of 1440 (max. 8388607)
- 1117 compressed objects within 12 object streams
- 275 named destinations out of 1000 (max. 500000)
+ 1344 PDF objects out of 1440 (max. 8388607)
+ 1114 compressed objects within 12 object streams
+ 274 named destinations out of 1000 (max. 500000)
  869 words of extra memory for PDF output out of 10000 (max. 10000000)
 
