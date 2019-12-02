@@ -61,65 +61,49 @@
 	}
 \end{figure}
 
-Considering all the previous graphs, we have identified in \autoref{fig:highLevelComponents} the following high level components, interfaces and mapping of the functionality defined in the RASD:
+Considering all the previous graphs, we have identified the following high level components and interfaces, shown in \autoref{fig:highLevelComponents}, implementing the functionalities defined in the RASD:
 \begin{itemize}
 
-	\item User application
+	\item \textbf{User Application}
 	\begin{itemize}
 		\item Register
 		\item Login
-		\item View the map with the position of
-		\begin{itemize}
-			\item himself
-			\item safe areas
-			\item available cars (with their battery level)
-			\item charging stations
-		\end{itemize}
-		\item Reserve a car
-		\item View customer care contacts
-		\item Unlock the reserved car
+		\item Submit a new violation
+		\item View the map with user's own previous submissions
+		\item View the map with all the violations by street
+		\item View the map with safe and unsafe areas
+		\item Consult statistics about violations
 		\item View and edit personal information
-		\item View rents and payments history
 	\end{itemize}
 	\clearpage
-	\item Customer Care application
+	\item \textbf{SafeStreets Operator Application}
 	\begin{itemize}
-		\item View each user profile, including personal information, progress of the current rent, rent and payment history
+		\item View each user profile, including personal information, submissions history and violations history
 		\item Mark and unmark users as banned
-		\item Mark cars as Not Available
+		\item Analyse and approve (or reject) violation reports
 	\end{itemize}
 	
-	\item DBMS
+	\item \textbf{DBMS}
 	\begin{itemize}
 		\item Store and retrieve data
 	\end{itemize}	
 	
-	\item GIS API
+	\item \textbf{GIS API}
 	\begin{itemize}
-		\item Retrieve a reference to an up-to-date map centered on a given position
-		\item Add pointers to the aforementioned map
-		\item Get the latitude and longitude of a given location and vice versa
+		\item Retrieve a reference to an up-to-date map
+		\item Enrich the map with the requested violations
+		\item Enrich the map with graphics representing safe and unsafe areas
 	\end{itemize}
 	
-	\item Payments API
+	\item \textbf{Municipality API}
 	\begin{itemize}
-		\item Execute payment transactions
+		\item Retrieve information about accidents
 	\end{itemize}
 	
-	\item Maintenance API
+	\item \textbf{API}
 	\begin{itemize}
-		\item Expose the list of the cars tagged as Not Available with their GPS position, a brief description of the problem and a software key to access the car
-		\item Tag Not Available cars as Available
-	\end{itemize}
-	
-	\item Car Primitives API
-	\begin{itemize}
-		\item Call car embedded system's primitives
-	\end{itemize}
-	
-	\item Car Event Handler Interface
-	\begin{itemize}
-		\item Triggered by an event notification from cars
+		\item Expose information about the submitted violations
+		\item Suggest possible solutions to avoid violations
 	\end{itemize}
 \end{itemize}
 \clearpage
@@ -204,26 +188,81 @@ An example of such an XML file is
 
 \paragraph{Security}Users' passwords and all credit card numbers (associated to users and used for past payments) must be stored with proper and secure encryption.
 
+\clearpage
 \subsubsection{Server component}
-To explain how the Server component manages interfaces, communication with external components and system functionalities we represent in \autoref{fig:ServerComponent} its internal structure showing its main components and their interactions.
+In this section, we illustrate the \emph{Server} structure and its main components and interactions, in order to explain how interfaces, communication with external components and system functionalities are performed and managed.
 \\
 
-This white box representation shows the parts composing the \emph{Server} component and their interactions by means of lollipop-socket notation. When designing this component's internal structure several concerns and requirements were taken into account:
+The white box representation (\autoref{fig:ServerComponent}) shows the parts composing the \emph{Server} component and their interactions by means of lollipop-socket notation. When designing this component's internal structure, several concerns and requirements were taken into account:
 \begin{itemize}
-	\item all of its required and provided interfaces had to be delegated to some part of its internal structure
-	\item all of the functionalities related to the car reservation, unlock, use and rent payment had to be addressed and provided by some parts of this component
-	\item it had to communicate in different ways with different components, so interface specific parts had to be designed
-	\item associations between internal components needed to be clarified, so lollipop-socket notation was used to express the provided or required interfaces of each part
+	\item All of its required and provided interfaces had to be delegated to some part of its internal structure
+	\item All of the functionalities related to violation submission and report validation had to be addressed and provided by some parts of this component
+	\item Interface specific parts had to be designed in order to communicate in different ways with different external components
+	\item Associations between internal components needed to be clarified
 \end{itemize}
 
 \begin{figure}[h]
-			\centering
-			\includegraphics[width=\linewidth]{ServerComponent}
-			\caption{
-				\label{fig:ServerComponent} 
-				Server component
-			}
-		\end{figure}
+	\centering
+	\includegraphics[width=\linewidth]{ServerComponent}
+	\caption{
+	\label{fig:ServerComponent} 
+		Server component
+	}
+\end{figure}
+
+\paragraph{UserAppServer}
+This component acts as an interface between the user and the application logic of the system: it receives users' violation submission requests or information consultation requests and routes them to the specific handler. This component solves the concerns related to the handling of the requests sent by the users without work loading the rest of the application logic. It also allows the decoupling of the application logic from the presentation logic, which has to be realised in a four tier client-server architecture.
+\paragraph{ValidationAppServer}
+This component provides the \textit{ValidationApplication} client with the information that the operator needs in order to validate the reports submitted by the users and it finally registers the approval or rejection in the \textit{DBMS}. This component was decoupled from the \textit{UserAppServer} component for its structure, but it offers different functionalities and it is only used and accessible by a specific operator via the client application.
+\paragraph{MapHandler}
+This component processes the map visualisation requests performed by the users. It is supported by an external \textit{GIS Service} to retrieve and enrich the map with the information requested. Each of its modules is in charge of retrieve the information to visualise and contact the map service, providing the necessary data. This approach allows the decoupling of the presentation logic from the application logic.\newline\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{MapHandlerComponent}
+	\caption{
+		\label{fig:mapHandlerComponentDiagram} 
+		\emph{MapHandler} object diagram
+	}
+\end{figure}
+\paragraph{StatisticsHandler}
+This component processes the statistics requests performed by the users, retrieving data from the \textit{DBMS}, analysing it and turning it into the requested information, which can regard a general or more specific scope. Having a component for this specific purpose enhances decoupling in the system and provides a security layer for the integrity of the data.
+\paragraph{SubmissionHandler}
+This component processes the violation data submitted by the users and the \textit{ImageAnalyser} module is involved to perform the recognition of the license plate in the picture. Finally, the \textit{PlateValidator} module checks whether the recognised plate and possibly the manually inserted plate match and are valid. This data is stored as a report and later validated by the operator to eventually turn it into a violation.\newline\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{SubmissionHandlerComponent}
+	\caption{
+		\label{fig:submissionHandlerComponentDiagram} 
+		\emph{SubmissionHandler} object diagram
+	}
+\end{figure}
+\paragraph{AccessHandler}
+This component manages the registration and login phase of the users, encapsulating the logic required to verify the credentials or register new user's information in the \textit{DBMS}. Having a component for this specific purpose enhances decoupling in the system and ensures that these functionalities will not be generate any changes in other components of the system.\newline\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{AccessHandlerComponent}
+	\caption{
+		\label{fig:accessHandlerComponentDiagram} 
+		\emph{AccessHandler} object diagram
+	}
+\end{figure}
+\paragraph{UserInformationHandler}
+This component manages the user information present in the system and provides \textit{UserAppServer} and \textit{ValidationAppServer} the data accessible by the user, given his roles' permissions. The main purpose of this component is to secure users' data, avoiding unauthorised users to consult sensible information. The diagram in \autoref{fig:userInformationHandlerDiagram} shows the internal structure of the \textit{UserInformationHandler} component and the delegation associations between the components interfaces involved.
+\paragraph{ValidationHandler}
+This component is used to provide the reports stored in the \textit{DBMS} that still have to be validated to the \textit{ValidationApplication}, in order to allow the \textit{ValidationOperator} to evaluate the submission and decide to approve or reject it. The decision is then stored and the violations information are updated. This component is required to avoid possible malicious or involuntary wrong usages of the system by the customers, trying to submit an unreal violation.
+\paragraph{DataProvider}
+This component is in charge of providing a unified interface to access the different data sources of the System, both the \textit{DBMS} and the files contained in the File System of the OS hosting the application logic. This component allows a better decoupling between the application logic components and the underlying data layer. 
+\paragraph{APIHandler}
+This component is used to manage the authorities requests of accessing informations about submitted violations. The \textit{SecurityChecker} module guarantees that only authorised municipalities is allowed to retrieve that data. Having a component for this specific purpose enhances decoupling between the presentation layer and the data layer, ensuring data reservation and protection. \autoref{fig:APIHandlerDiagram} shows the internal structure of this component.\newline\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{APIHandlerComponent}
+	\caption{
+		\label{fig:APIHandlerDiagram} 
+		\emph{APIHandler} object diagram
+	}
+\end{figure}
+		
 \clearpage
 
 \subsubsection{RentManager component}
