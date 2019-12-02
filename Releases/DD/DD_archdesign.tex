@@ -22,7 +22,7 @@
 				\label{fig:ClientServer} 
 				Client Server architecture
 			}
-		\end{figure}
+		\end{figure} 
 		
 	\subsubsection{Composition viewpoint}
 	
@@ -374,13 +374,14 @@ we decided to design the system on a four tier architecture pattern (see also \l
 		\end{itemize}
 	\item Business Logic: components which realizes the functionalities offered by the system
 		\begin{itemize}
-			\item RentManager
-			\item AccessManager
-			\item UserInformationManager
-			\item MaintenanceManager
-			\item EventBroker
-			\item CarHandler
+			\item MapHandler
+			\item StatisticsHandler
+			\item SubmissionHandler
+			\item AccessHandler
+			\item UserInformationHandler
+			\item ValidationHandler
 			\item DataProvider
+			\item APIHandler
 		\end{itemize}
 	\item Data: components which store and manage the access to the data produced and needed by the Business Logic
 		\begin{itemize}
@@ -390,7 +391,7 @@ we decided to design the system on a four tier architecture pattern (see also \l
 
 \begin{figure}[h]
 			\centering
-			\includegraphics[angle=90,width=0.9685\linewidth]{deployComponent}
+			\includegraphics[angle=0,width=0.9685\linewidth]{deployComponent}
 			\caption{
 				\label{fig:deployServerComponent} 
 				Mapping server component on architecture
@@ -399,7 +400,7 @@ we decided to design the system on a four tier architecture pattern (see also \l
 \clearpage
 
 \subsubsection{Implementation choices}
-The following technologies were chosen for the implementation of the PowerEnJoy system. J2EE was the main choice we made because it offers a wide range of functionalities that makes the development of scalable multi tiered web based application much easier than with other technologies.
+The following technologies were chosen for the implementation of the SafeStreets system. J2EE was the main choice we made because it offers a wide range of functionalities that makes the development of scalable multi tiered web based application much easier than with other technologies.
 
 \paragraph{Web Pages:} JSP was chosen over Servlets because the content of our web pages has few dynamic parts so writing small chunks of Java code in html pages is a more suitable solution
 \paragraph{Application Logic:} EJB were used to implement the Application Logic components since our application is developed using J2EE
