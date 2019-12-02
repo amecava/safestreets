@@ -1,13 +1,10 @@
 \section{Implementation, integration and test plan}
 
-    \subsection{Overview}
-
-        Our system's client-server architecture has two main components:
-        \begin{itemize}           
-            \item UserApplication
-            \item Server
-        \end{itemize}
+    
+    We now want to present how we will implement our system by explaining the strategy we will follow for the Server
+    and how the features we want to offer will be implement and integrated.\\
         
+        \subsection{Server}
         The Server will be implemented following a bottom-up strategy since it will be built on various modules that will cooperate in order
         to ensure that the goals and standards stated in the \emph{RASD}\cite{RASD} will be met.\\
         The Server relies on the GIS and the Municipality API, which will be considered reliable and accurate services and will be
@@ -18,7 +15,8 @@
         To better understand the decisions we made about implementation, testing and integration here are two tables that list the features
         we want to offer linked with the relevance we gave them considering the difficulty of the implementation and the importance for 
         the user.\\
-
+        
+        \subsection{UserApplication features}
         \begin{table}[h!]
             \begin{center}
             
@@ -41,17 +39,26 @@
         \begin{itemize}
             \item \textbf{Sign up and login:} sign up and login are features that are fundamental to identify users and allow them to 
                 properly upload reports. The modules that will support the login phase will be \emph{AccessHandler}, that will be 
-                implemented right after the \emph{UserInformationHandler} since their functionalities are linked. Moreover they 
+                implemented right before the \emph{UserInformationHandler} since their functionalities are linked. Moreover they 
                 will be tested following the "relies on" relationship. They both rely on \emph{DataProvider} module, so their testing 
-                procedure will be subjected to the one of the \emph{DataProvider} and the same stands for the integration procedure.
-            \item \textbf{Consult personal data:} 
-            \item \textbf{Upload a picture:}
-            \item \textbf{Consult the map:}
-            \item \textbf{See statistics:}
+                procedure will be subjected to the one of the \emph{DataProvider} and the same stands for the integration procedure
+            \item \textbf{Consult personal data:} the module \emph{UserInformationHandler} is the one responsible of making this feature 
+                available. It will be integrated with the \emph{DataProvider}, and will be implemtented after the \emph{AccessHandler} since
+                a user needs to sign up to the system before accessing his information
+            \item \textbf{Upload a picture:} this feature is the core of the whole system, and several modules are involved in its 
+                realization. The \emph{SubmissionHandler} is responsible of coordinating all the operations and method calls necessary 
+                to perform the action. It will call the \emph{DataProvider} and will interact with the \emph{GIS}, for these reasons it
+                will be integrated with them.
+            \item \textbf{Consult the map:} this feature will concerne the \emph{DataProvider}, the \emph{MapHandler} and the 
+                \emph{GIS API}. The first one will be responsible of retrieving the proper information from the database, 
+                while the \emph{MapHandler} will format the data sent from the \emph{userAppServer} in order to forward it to the 
+                \emph{GIS API} to allow it to offer the rendered map
+            \item \textbf{See statistics:} the \emph{StatisticsHandler} will trigger the \emph{DataProvider} to retrieve updated
+                data from the \emph{Municipality API} and the \emph{DBMS} with the objective of updating all the possible 
+                statistics that the system will offer to the user and the Municipality
         \end{itemize}
        
-        \clearpage
-
+        \subsection{Municipality features}
         \begin{table}[h!]
             \begin{center}
             
@@ -72,14 +79,9 @@
             \end{center}
         \end{table}
 
-        \begin{itemize}
-            \item \textbf{Authenticate:} 
-            \item \textbf{Access the API:}
-            \item \textbf{Retrieve violations' data:}
-            \item \textbf{Retrieve statistics:}
-            \item \textbf{Retrieve tickets's data:}
-            \item \textbf{Share data:}
-        \end{itemize}
+        All these features will be made available through the \emph{API}. Since it will be of fundamental importance for the 
+        system's interface with the Municipality it will have to be implemented on a strong and reliable backend (all the 
+        "logic" modules) and for this reason it will be implemented after the whole Server will be fully tested.\\
 
     \subsection{Integration}
 

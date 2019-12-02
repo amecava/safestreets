@@ -5,36 +5,40 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces High-level components }}{5}{figure.4}% 
 \contentsline {figure}{\numberline {5}{\ignorespaces ER model }}{7}{figure.5}% 
 \contentsline {figure}{\numberline {6}{\ignorespaces Server component }}{10}{figure.6}% 
-\contentsline {figure}{\numberline {7}{\ignorespaces \emph {RentManager} object diagram }}{11}{figure.7}% 
-\contentsline {figure}{\numberline {8}{\ignorespaces \emph {MaintenanceManager} object diagram }}{13}{figure.8}% 
-\contentsline {figure}{\numberline {9}{\ignorespaces \emph {UserInformationManager} object diagram }}{14}{figure.9}% 
-\contentsline {figure}{\numberline {10}{\ignorespaces Four tier architecture with internet layer }}{16}{figure.10}% 
-\contentsline {figure}{\numberline {11}{\ignorespaces Mapping server component on architecture }}{17}{figure.11}% 
-\contentsline {figure}{\numberline {12}{\ignorespaces Decision Tree }}{19}{figure.12}% 
-\contentsline {figure}{\numberline {13}{\ignorespaces Deployment diagram }}{21}{figure.13}% 
-\contentsline {figure}{\numberline {14}{\ignorespaces \emph {Map generation} sequence diagram }}{22}{figure.14}% 
-\contentsline {figure}{\numberline {15}{\ignorespaces \emph {Car reservation} sequence diagram }}{24}{figure.15}% 
-\contentsline {figure}{\numberline {16}{\ignorespaces \emph {Car unlock and start rent} sequence diagram }}{26}{figure.16}% 
-\contentsline {figure}{\numberline {17}{\ignorespaces \emph {End rent} sequence diagram (part 1) }}{27}{figure.17}% 
-\contentsline {figure}{\numberline {18}{\ignorespaces \emph {End rent} sequence diagram (part 2) }}{28}{figure.18}% 
-\contentsline {figure}{\numberline {19}{\ignorespaces \emph {Payment} sequence diagram }}{30}{figure.19}% 
-\contentsline {figure}{\numberline {20}{\ignorespaces \emph {Reservation expiring} sequence diagram }}{31}{figure.20}% 
-\contentsline {figure}{\numberline {21}{\ignorespaces \emph {MaintenanceAPI} sequence diagram }}{32}{figure.21}% 
-\contentsline {figure}{\numberline {22}{\ignorespaces \emph {Battery level critical trigger} sequence diagram }}{33}{figure.22}% 
-\contentsline {figure}{\numberline {23}{\ignorespaces \emph {Login page} mockup }}{37}{figure.23}% 
-\contentsline {figure}{\numberline {24}{\ignorespaces \emph {Home page} mockup }}{38}{figure.24}% 
-\contentsline {figure}{\numberline {25}{\ignorespaces \emph {See available cars} mockup }}{39}{figure.25}% 
-\contentsline {figure}{\numberline {26}{\ignorespaces \emph {Reserve a car} mockup }}{40}{figure.26}% 
-\contentsline {figure}{\numberline {27}{\ignorespaces \emph {Money saving option} mockup }}{41}{figure.27}% 
-\contentsline {figure}{\numberline {28}{\ignorespaces \emph {Unlock a car} mockup }}{42}{figure.28}% 
-\contentsline {figure}{\numberline {29}{\ignorespaces \emph {Payment history} mockup }}{43}{figure.29}% 
-\contentsline {figure}{\numberline {30}{\ignorespaces \emph {Single payment records} mockup }}{44}{figure.30}% 
-\contentsline {figure}{\numberline {31}{\ignorespaces \emph {Rent history} mockup }}{45}{figure.31}% 
-\contentsline {figure}{\numberline {32}{\ignorespaces \emph {Customer care home page} mockup }}{46}{figure.32}% 
-\contentsline {figure}{\numberline {33}{\ignorespaces \emph {Customer care user's information page} mockup }}{47}{figure.33}% 
-\contentsline {figure}{\numberline {34}{\ignorespaces User data integration }}{51}{figure.34}% 
-\contentsline {figure}{\numberline {35}{\ignorespaces Submissions and violations data integration }}{52}{figure.35}% 
-\contentsline {figure}{\numberline {36}{\ignorespaces Statistics and map data integration }}{52}{figure.36}% 
-\contentsline {figure}{\numberline {37}{\ignorespaces Municipality API data integration }}{52}{figure.37}% 
-\contentsline {figure}{\numberline {38}{\ignorespaces User app integration }}{53}{figure.38}% 
-\contentsline {figure}{\numberline {39}{\ignorespaces Customer Care integration }}{53}{figure.39}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces \emph {MapHandler} object diagram }}{11}{figure.7}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces \emph {SubmissionHandler} object diagram }}{12}{figure.8}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces \emph {AccessHandler} object diagram }}{12}{figure.9}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces \emph {APIHandler} object diagram }}{13}{figure.10}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces \emph {RentManager} object diagram }}{14}{figure.11}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces \emph {MaintenanceManager} object diagram }}{16}{figure.12}% 
+\contentsline {figure}{\numberline {13}{\ignorespaces \emph {UserInformationManager} object diagram }}{17}{figure.13}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces Four tier architecture with internet layer }}{19}{figure.14}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces Mapping server component on architecture }}{20}{figure.15}% 
+\contentsline {figure}{\numberline {16}{\ignorespaces Decision Tree }}{22}{figure.16}% 
+\contentsline {figure}{\numberline {17}{\ignorespaces Deployment diagram }}{24}{figure.17}% 
+\contentsline {figure}{\numberline {18}{\ignorespaces \emph {Upload submission} sequence diagram }}{25}{figure.18}% 
+\contentsline {figure}{\numberline {19}{\ignorespaces \emph {Map request} sequence diagram }}{26}{figure.19}% 
+\contentsline {figure}{\numberline {20}{\ignorespaces \emph {Car unlock and start rent} sequence diagram }}{28}{figure.20}% 
+\contentsline {figure}{\numberline {21}{\ignorespaces \emph {End rent} sequence diagram (part 1) }}{29}{figure.21}% 
+\contentsline {figure}{\numberline {22}{\ignorespaces \emph {End rent} sequence diagram (part 2) }}{30}{figure.22}% 
+\contentsline {figure}{\numberline {23}{\ignorespaces \emph {Payment} sequence diagram }}{32}{figure.23}% 
+\contentsline {figure}{\numberline {24}{\ignorespaces \emph {Reservation expiring} sequence diagram }}{33}{figure.24}% 
+\contentsline {figure}{\numberline {25}{\ignorespaces \emph {MaintenanceAPI} sequence diagram }}{34}{figure.25}% 
+\contentsline {figure}{\numberline {26}{\ignorespaces \emph {Battery level critical trigger} sequence diagram }}{35}{figure.26}% 
+\contentsline {figure}{\numberline {27}{\ignorespaces \emph {Login page} mockup }}{39}{figure.27}% 
+\contentsline {figure}{\numberline {28}{\ignorespaces \emph {Home page} mockup }}{40}{figure.28}% 
+\contentsline {figure}{\numberline {29}{\ignorespaces \emph {See available cars} mockup }}{41}{figure.29}% 
+\contentsline {figure}{\numberline {30}{\ignorespaces \emph {Reserve a car} mockup }}{42}{figure.30}% 
+\contentsline {figure}{\numberline {31}{\ignorespaces \emph {Money saving option} mockup }}{43}{figure.31}% 
+\contentsline {figure}{\numberline {32}{\ignorespaces \emph {Unlock a car} mockup }}{44}{figure.32}% 
+\contentsline {figure}{\numberline {33}{\ignorespaces \emph {Payment history} mockup }}{45}{figure.33}% 
+\contentsline {figure}{\numberline {34}{\ignorespaces \emph {Single payment records} mockup }}{46}{figure.34}% 
+\contentsline {figure}{\numberline {35}{\ignorespaces \emph {Rent history} mockup }}{47}{figure.35}% 
+\contentsline {figure}{\numberline {36}{\ignorespaces \emph {Customer care home page} mockup }}{48}{figure.36}% 
+\contentsline {figure}{\numberline {37}{\ignorespaces \emph {Customer care user's information page} mockup }}{49}{figure.37}% 
+\contentsline {figure}{\numberline {38}{\ignorespaces User data integration }}{54}{figure.38}% 
+\contentsline {figure}{\numberline {39}{\ignorespaces Submissions and violations data integration }}{54}{figure.39}% 
+\contentsline {figure}{\numberline {40}{\ignorespaces Statistics and map data integration }}{55}{figure.40}% 
+\contentsline {figure}{\numberline {41}{\ignorespaces Municipality API data integration }}{55}{figure.41}% 
+\contentsline {figure}{\numberline {42}{\ignorespaces User app integration }}{56}{figure.42}% 
+\contentsline {figure}{\numberline {43}{\ignorespaces Customer Care integration }}{56}{figure.43}% 

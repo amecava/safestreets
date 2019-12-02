@@ -418,7 +418,7 @@ The following technologies were chosen for the implementation of the SafeStreets
 	\centering
 	\includegraphics[width=\linewidth]{decisionTree}
 	\caption{
-		\label{fig:decisionTree} 
+		\label{fig:decisionTree}  
 		Decision Tree
 	}
 \end{figure}
@@ -450,38 +450,42 @@ In this section we represent some runtime views of the supposed interactions bet
 	The \emph{Login Phase} is represented only in the first diagram in order to show how it will be performed but will no be 
 	repeated in every diagram in order to improve readability.
 
-\subsubsection{Map}
+\subsubsection{Upload}
 
-	\label{sec:mapRunView}
-	The \autoref{fig:mapGeneration} shows how the upload of a report is handled in the Server component of the system.
+	\label{sec:uploadRunView}
+	The \autoref{fig:uploadSubmission} shows how the upload of a report is handled in the Server component of the system.
 
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[angle=0,width=\linewidth]{sequenceDiagrams/MapGeneration}
+		\includegraphics[angle=0,width=\linewidth]{sequenceDiagrams/uploadSubmission}
 		\caption{
-			\label{fig:mapGeneration} 
-			\emph{Map generation} sequence diagram
+			\label{fig:uploadSubmission} 
+			\emph{Upload submission} sequence diagram
 		}
 	\end{figure}
 	\clearpage
-	
-\subsubsection{Car reservation}
-The diagram in \autoref{fig:sequenceCarReservation} shows the car reservation process.\\
-The \mbox{\emph{MoneySavingOptionManager}} component determines the appropriate charging station for the money saving option given the user destination using the algorithm described in the \hyperref[sec:msoAlgorithm]{proper section}.
+
+\paragraph{Note} As already stated in the following diagrams we will assume that the user has already logged in correctly
+	in order to focus on the purpose of the diagram.\\
+
+\subsubsection{Map request}
+The diagram in \autoref{fig:mapRequest} shows the map request process.\\
 
 \paragraph{Interactions not represented}
 \begin{itemize}
-\item The \emph{createReservationJPA} method of \emph{DataProvider} checks if the car is \emph{Available} before creating the reservation, the eventual exception flow is not represented.
-\item The \emph{ReservationRequestManager} need an interaction with the external GIS API in order to convert into latitude and longitude the destination inserted by the user for the money saving option.
-\item To improve redeability of the diagram some interactions between \emph{MSOManager} and \emph{DataProvider} are omitted.
+\item The \emph{MapHandler} needs an interaction with the GIS while calling its "processUserDataForMap()" method	
+	to process latitude and longitude information needed to generate the right "userData" to query the DBMS. 
+\item To improve redeability of the diagram we omitted the interaction between the \emph{DataProvider} and the 
+	\emph{Municipality API} since the first checks if the latter has new data regarding the interested area of the 
+	map requested before returning data
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[h!]  
 	\centering
-	\includegraphics[angle=90,width=0.75\linewidth]{sequenceDiagrams/ReserveCar}
+	\includegraphics[angle=0,width=0.75\linewidth]{sequenceDiagrams/mapRequest}
 	\caption{
-		\label{fig:sequenceCarReservation} 
-		\emph{Car reservation} sequence diagram
+		\label{fig:mapRequest} 
+		\emph{Map request} sequence diagram
 	}
 \end{figure}
 

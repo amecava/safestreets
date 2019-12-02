@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.8)  2 DEC 2019 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.8)  2 DEC 2019 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -543,7 +543,7 @@ LaTeX Info: Redefining \nameref on input line 46.
 \openout2 = `DD_cover.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.tex
-<./img/logo_poli.png, id=312, 666.49pt x 302.12875pt>
+<./img/logo_poli.png, id=320, 666.49pt x 302.12875pt>
 File: ./img/logo_poli.png Graphic file (type png)
 <use ./img/logo_poli.png>
 Package pdftex.def Info: ./img/logo_poli.png  used on input line 9.
@@ -595,17 +595,17 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 \openout2 = `DD_archdesign.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.tex
-<./img/contextViewPoint.pdf, id=524, 468.79138pt x 232.9503pt>
+<./img/contextViewPoint.pdf, id=542, 468.79138pt x 232.9503pt>
 File: ./img/contextViewPoint.pdf Graphic file (type pdf)
 <use ./img/contextViewPoint.pdf>
 Package pdftex.def Info: ./img/contextViewPoint.pdf  used on input line 8.
 (pdftex.def)             Requested size: 345.0pt x 171.43857pt.
-<./img/ClientServer.pdf, id=525, 343.40916pt x 122.06012pt>
+<./img/ClientServer.pdf, id=543, 343.40916pt x 122.06012pt>
 File: ./img/ClientServer.pdf Graphic file (type pdf)
 <use ./img/ClientServer.pdf>
 Package pdftex.def Info: ./img/ClientServer.pdf  used on input line 20.
 (pdftex.def)             Requested size: 172.5pt x 61.313pt.
-<./img/ComponentOverview.pdf, id=526, 655.48888pt x 420.61137pt>
+<./img/ComponentOverview.pdf, id=544, 655.48888pt x 420.61137pt>
 File: ./img/ComponentOverview.pdf Graphic file (type pdf)
 <use ./img/ComponentOverview.pdf>
 Package pdftex.def Info: ./img/ComponentOverview.pdf  used on input line 31.
@@ -618,28 +618,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
  <./img/contextViewPoint.pdf> <./img/ClientServer.pdf>] [4 <./img/ComponentOverview.pdf>]
-<./img/highLevelComponents.png, id=584, 572.1375pt x 446.66875pt>
+<./img/highLevelComponents.png, id=602, 548.0475pt x 446.66875pt>
 File: ./img/highLevelComponents.png Graphic file (type png)
 <use ./img/highLevelComponents.png>
 Package pdftex.def Info: ./img/highLevelComponents.png  used on input line 57.
-(pdftex.def)             Requested size: 345.0pt x 269.34598pt.
+(pdftex.def)             Requested size: 345.0pt x 281.1847pt.
  [5
 
  <./img/highLevelComponents.png>] [6
 
 ]
-<./img/ER.pdf, id=596, 955.57pt x 797.98125pt>
+<./img/ER.pdf, id=614, 955.57pt x 797.98125pt>
 File: ./img/ER.pdf Graphic file (type pdf)
 <use ./img/ER.pdf>
-Package pdftex.def Info: ./img/ER.pdf  used on input line 132.
+Package pdftex.def Info: ./img/ER.pdf  used on input line 116.
 (pdftex.def)             Requested size: 334.13452pt x 279.02974pt.
 
-Overfull \hbox (14.53737pt too wide) in paragraph at lines 139--140
+Overfull \hbox (14.53737pt too wide) in paragraph at lines 123--124
  []\T1/cmr/bx/n/10 Users[] \T1/cmr/m/n/10 Be-yond the pri-mary key, the [], [] and []
  []
 
 
-LaTeX Warning: Hyper reference `sec:paymentAlgorithms' on page 7 undefined on input line 143.
+LaTeX Warning: Hyper reference `sec:paymentAlgorithms' on page 7 undefined on input line 127.
 
 [7
 
@@ -648,194 +648,239 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 161.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 145.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [8]
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+) [8] [9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
-
-Overfull \hbox (3.53214pt too wide) in paragraph at lines 216--217
-[]\T1/cmr/m/n/10 associations be-tween in-ter-nal com-po-nents needed to be clar-i-fied, so lollipop-
- []
-
-<./img/ServerComponent.png, id=648, 1204.5pt x 1125.20375pt>
+<./img/ServerComponent.png, id=675, 1204.5pt x 1125.20375pt>
 File: ./img/ServerComponent.png Graphic file (type png)
 <use ./img/ServerComponent.png>
-Package pdftex.def Info: ./img/ServerComponent.png  used on input line 221.
+Package pdftex.def Info: ./img/ServerComponent.png  used on input line 206.
 (pdftex.def)             Requested size: 345.0pt x 322.28314pt.
+[10
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ <./img/ServerComponent.png>]
+<./img/MapHandlerComponent.png, id=681, 1252.68pt x 452.69125pt>
+File: ./img/MapHandlerComponent.png Graphic file (type png)
+<use ./img/MapHandlerComponent.png>
+Package pdftex.def Info: ./img/MapHandlerComponent.png  used on input line 221.
+(pdftex.def)             Requested size: 345.0pt x 124.67352pt.
 
-[9
+Underfull \hbox (badness 10000) in paragraph at lines 218--227
 
-] [10 <./img/ServerComponent.png>]
-<./img/ObjectRentManager.pdf, id=664, 1534.73375pt x 836.12375pt>
+ []
+
+
+Overfull \hbox (4.28554pt too wide) in paragraph at lines 228--229
+ []\T1/cmr/bx/n/10 StatisticsHandler[] \T1/cmr/m/n/10 This com-po-nent pro-cesses the statis-tics re-quests per-formed
+ []
+
+<./img/SubmissionHandlerComponent.png, id=682, 971.63pt x 452.69125pt>
+File: ./img/SubmissionHandlerComponent.png Graphic file (type png)
+<use ./img/SubmissionHandlerComponent.png>
+Package pdftex.def Info: ./img/SubmissionHandlerComponent.png  used on input line 233.
+(pdftex.def)             Requested size: 345.0pt x 160.7376pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--239
+
+ []
+
+[11 <./img/MapHandlerComponent.png>]
+<./img/AccessHandlerComponent.png, id=693, 1253.68375pt x 453.695pt>
+File: ./img/AccessHandlerComponent.png Graphic file (type png)
+<use ./img/AccessHandlerComponent.png>
+Package pdftex.def Info: ./img/AccessHandlerComponent.png  used on input line 243.
+(pdftex.def)             Requested size: 345.0pt x 124.85304pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
+
+ []
+
+
+LaTeX Warning: Reference `fig:userInformationHandlerDiagram' on page 12 undefined on input line 250.
+
+[12 <./img/SubmissionHandlerComponent.png> <./img/AccessHandlerComponent.png>]
+<./img/APIHandlerComponent.png, id=703, 791.95876pt x 423.5825pt>
+File: ./img/APIHandlerComponent.png Graphic file (type png)
+<use ./img/APIHandlerComponent.png>
+Package pdftex.def Info: ./img/APIHandlerComponent.png  used on input line 259.
+(pdftex.def)             Requested size: 345.0pt x 184.52835pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--265
+
+ []
+
+[13 <./img/APIHandlerComponent.png>]
+<./img/ObjectRentManager.pdf, id=713, 1534.73375pt x 836.12375pt>
 File: ./img/ObjectRentManager.pdf Graphic file (type pdf)
 <use ./img/ObjectRentManager.pdf>
-Package pdftex.def Info: ./img/ObjectRentManager.pdf  used on input line 237.
+Package pdftex.def Info: ./img/ObjectRentManager.pdf  used on input line 276.
 (pdftex.def)             Requested size: 1534.73003pt x 836.1217pt.
- [11
+ [14
 
- <./img/ObjectRentManager.pdf>] [12]
-<./img/ObjectMaintenanceManager.pdf, id=686, 825.0825pt x 616.3025pt>
+ <./img/ObjectRentManager.pdf>] [15]
+<./img/ObjectMaintenanceManager.pdf, id=736, 825.0825pt x 616.3025pt>
 File: ./img/ObjectMaintenanceManager.pdf Graphic file (type pdf)
 <use ./img/ObjectMaintenanceManager.pdf>
-Package pdftex.def Info: ./img/ObjectMaintenanceManager.pdf  used on input line 261.
+Package pdftex.def Info: ./img/ObjectMaintenanceManager.pdf  used on input line 300.
 (pdftex.def)             Requested size: 345.0pt x 257.698pt.
- [13
-
- <./img/ObjectMaintenanceManager.pdf>]
-<./img/ObjectUserInformationManager.pdf, id=698, 823.075pt x 420.57124pt>
-File: ./img/ObjectUserInformationManager.pdf Graphic file (type pdf)
-<use ./img/ObjectUserInformationManager.pdf>
-Package pdftex.def Info: ./img/ObjectUserInformationManager.pdf  used on input line 278.
-(pdftex.def)             Requested size: 345.0pt x 176.28575pt.
- [14 <./img/ObjectUserInformationManager.pdf>] [15]
-<./img/4Tier.pdf, id=717, 775.89874pt x 206.39569pt>
-File: ./img/4Tier.pdf Graphic file (type pdf)
-<use ./img/4Tier.pdf>
-Package pdftex.def Info: ./img/4Tier.pdf  used on input line 318.
-(pdftex.def)             Requested size: 345.0pt x 91.77493pt.
  [16
 
+ <./img/ObjectMaintenanceManager.pdf>]
+<./img/ObjectUserInformationManager.pdf, id=748, 823.075pt x 420.57124pt>
+File: ./img/ObjectUserInformationManager.pdf Graphic file (type pdf)
+<use ./img/ObjectUserInformationManager.pdf>
+Package pdftex.def Info: ./img/ObjectUserInformationManager.pdf  used on input line 317.
+(pdftex.def)             Requested size: 345.0pt x 176.28575pt.
+ [17 <./img/ObjectUserInformationManager.pdf>] [18]
+<./img/4Tier.pdf, id=767, 775.89874pt x 206.39569pt>
+File: ./img/4Tier.pdf Graphic file (type pdf)
+<use ./img/4Tier.pdf>
+Package pdftex.def Info: ./img/4Tier.pdf  used on input line 357.
+(pdftex.def)             Requested size: 345.0pt x 91.77493pt.
+ [19
+
  <./img/4Tier.pdf>]
-<./img/deployComponent.pdf, id=734, 866.27638pt x 811.11026pt>
+<./img/deployComponent.pdf, id=784, 866.27638pt x 811.11026pt>
 File: ./img/deployComponent.pdf Graphic file (type pdf)
 <use ./img/deployComponent.pdf>
-Package pdftex.def Info: ./img/deployComponent.pdf  used on input line 355.
+Package pdftex.def Info: ./img/deployComponent.pdf  used on input line 394.
 (pdftex.def)             Requested size: 866.27428pt x 811.10828pt.
- [17 <./img/deployComponent.pdf>]
-Overfull \hbox (13.82684pt too wide) in paragraph at lines 373--374
+ [20 <./img/deployComponent.pdf>]
+Overfull \hbox (13.82684pt too wide) in paragraph at lines 412--413
  []\T1/cmr/bx/n/10 DBMS:[] \T1/cmr/m/n/10 MySQL was cho-sen as DBMS since it is the most pop-u-lar and widespread
  []
 
-[18
+[21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
-<./img/decisionTree.pdf, id=766, 806.01125pt x 921.4425pt>
+<./img/decisionTree.pdf, id=816, 806.01125pt x 921.4425pt>
 File: ./img/decisionTree.pdf Graphic file (type pdf)
 <use ./img/decisionTree.pdf>
-Package pdftex.def Info: ./img/decisionTree.pdf  used on input line 380.
+Package pdftex.def Info: ./img/decisionTree.pdf  used on input line 419.
 (pdftex.def)             Requested size: 345.0pt x 394.41287pt.
-[19
+[22
 
- <./img/decisionTree.pdf>] [20
+ <./img/decisionTree.pdf>] [23
 
 ]
-<./img/deployment.pdf, id=786, 1121.18875pt x 1118.1775pt>
+<./img/deployment.pdf, id=836, 1121.18875pt x 1118.1775pt>
 File: ./img/deployment.pdf Graphic file (type pdf)
 <use ./img/deployment.pdf>
-Package pdftex.def Info: ./img/deployment.pdf  used on input line 398.
+Package pdftex.def Info: ./img/deployment.pdf  used on input line 437.
 (pdftex.def)             Requested size: 345.0pt x 344.07214pt.
- [21 <./img/deployment.pdf>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 410.
-<./img/sequenceDiagrams/MapGeneration.png, id=796, 2107.875pt x 1481.535pt>
-File: ./img/sequenceDiagrams/MapGeneration.png Graphic file (type png)
-<use ./img/sequenceDiagrams/MapGeneration.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/MapGeneration.png  used on input line 421.
-(pdftex.def)             Requested size: 2107.86987pt x 1481.53139pt.
- [22
+ [24 <./img/deployment.pdf>]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 449.
+<./img/sequenceDiagrams/uploadSubmission.png, id=845, 1044.90375pt x 864.22874pt>
+File: ./img/sequenceDiagrams/uploadSubmission.png Graphic file (type png)
+<use ./img/sequenceDiagrams/uploadSubmission.png>
+Package pdftex.def Info: ./img/sequenceDiagrams/uploadSubmission.png  used on input line 460.
+(pdftex.def)             Requested size: 1044.9012pt x 864.22662pt.
+ [25
 
 
- <./img/sequenceDiagrams/MapGeneration.png>]
+ <./img/sequenceDiagrams/uploadSubmission.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 468--470
 
-LaTeX Warning: Hyper reference `sec:msoAlgorithm' on page 23 undefined on input line 431.
-
-<./img/sequenceDiagrams/ReserveCar.png, id=805, 2959.055pt x 1304.875pt>
-File: ./img/sequenceDiagrams/ReserveCar.png Graphic file (type png)
-<use ./img/sequenceDiagrams/ReserveCar.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/ReserveCar.png  used on input line 442.
-(pdftex.def)             Requested size: 2959.0478pt x 1304.87183pt.
-
-LaTeX Warning: Float too large for page by 12.68753pt on input line 447.
+ []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
 
-[23
+ []
 
-] [24 <./img/sequenceDiagrams/ReserveCar.png>]
-Overfull \hbox (5.35889pt too wide) in paragraph at lines 451--453
+<./img/sequenceDiagrams/mapRequest.png, id=854, 1044.90375pt x 673.51625pt>
+File: ./img/sequenceDiagrams/mapRequest.png Graphic file (type png)
+<use ./img/sequenceDiagrams/mapRequest.png>
+Package pdftex.def Info: ./img/sequenceDiagrams/mapRequest.png  used on input line 485.
+(pdftex.def)             Requested size: 1044.9012pt x 673.5146pt.
+[26
+
+ <./img/sequenceDiagrams/mapRequest.png>]
+Overfull \hbox (5.35889pt too wide) in paragraph at lines 494--496
 \T1/cmr/m/n/10 The fol-low-ing se-quence di-a-grams show the in-ter-ac-tions be-tween the [] []
  []
 
-[25
+[27
 
 ]
-<./img/sequenceDiagrams/UnlockStartRent.png, id=826, 3505.095pt x 2348.775pt>
+<./img/sequenceDiagrams/UnlockStartRent.png, id=874, 3505.095pt x 2348.775pt>
 File: ./img/sequenceDiagrams/UnlockStartRent.png Graphic file (type png)
 <use ./img/sequenceDiagrams/UnlockStartRent.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/UnlockStartRent.png  used on input line 478.
+Package pdftex.def Info: ./img/sequenceDiagrams/UnlockStartRent.png  used on input line 521.
 (pdftex.def)             Requested size: 3505.08649pt x 2348.7693pt.
-<./img/sequenceDiagrams/EndRent.png, id=827, 2557.555pt x 1883.035pt>
+<./img/sequenceDiagrams/EndRent.png, id=875, 2557.555pt x 1883.035pt>
 File: ./img/sequenceDiagrams/EndRent.png Graphic file (type png)
 <use ./img/sequenceDiagrams/EndRent.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/EndRent.png  used on input line 486.
+Package pdftex.def Info: ./img/sequenceDiagrams/EndRent.png  used on input line 529.
 (pdftex.def)             Requested size: 2557.54878pt x 1883.03043pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./img/sequenceDiagrams/EndRent2.png, id=828, 1126.2075pt x 909.3975pt>
+<./img/sequenceDiagrams/EndRent2.png, id=876, 1126.2075pt x 909.3975pt>
 File: ./img/sequenceDiagrams/EndRent2.png Graphic file (type png)
 <use ./img/sequenceDiagrams/EndRent2.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/EndRent2.png  used on input line 494.
+Package pdftex.def Info: ./img/sequenceDiagrams/EndRent2.png  used on input line 537.
 (pdftex.def)             Requested size: 1126.20477pt x 909.3953pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26
+[28
 
- <./img/sequenceDiagrams/UnlockStartRent.png>] [27 <./img/sequenceDiagrams/EndRent.png>] [28 <./img/sequenceDiagrams/EndRent2.png>]
-<./img/sequenceDiagrams/Payment.png, id=847, 1254.6875pt x 1005.7575pt>
+ <./img/sequenceDiagrams/UnlockStartRent.png>] [29 <./img/sequenceDiagrams/EndRent.png>] [30 <./img/sequenceDiagrams/EndRent2.png>]
+<./img/sequenceDiagrams/Payment.png, id=894, 1254.6875pt x 1005.7575pt>
 File: ./img/sequenceDiagrams/Payment.png Graphic file (type png)
 <use ./img/sequenceDiagrams/Payment.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/Payment.png  used on input line 512.
+Package pdftex.def Info: ./img/sequenceDiagrams/Payment.png  used on input line 555.
 (pdftex.def)             Requested size: 1254.68445pt x 1005.75505pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29
+[31
 
-] [30 <./img/sequenceDiagrams/Payment.png>]
-<./img/sequenceDiagrams/ReserveTimer.png, id=861, 1399.2275pt x 1222.5675pt>
+] [32 <./img/sequenceDiagrams/Payment.png>]
+<./img/sequenceDiagrams/ReserveTimer.png, id=907, 1399.2275pt x 1222.5675pt>
 File: ./img/sequenceDiagrams/ReserveTimer.png Graphic file (type png)
 <use ./img/sequenceDiagrams/ReserveTimer.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/ReserveTimer.png  used on input line 530.
+Package pdftex.def Info: ./img/sequenceDiagrams/ReserveTimer.png  used on input line 573.
 (pdftex.def)             Requested size: 1399.22409pt x 1222.56451pt.
- [31
+ [33
 
  <./img/sequenceDiagrams/ReserveTimer.png>]
-Overfull \hbox (0.14072pt too wide) in paragraph at lines 540--541
+Overfull \hbox (0.14072pt too wide) in paragraph at lines 583--584
  []\T1/cmr/bx/n/10 Interactions not rep-re-sented[] \T1/cmr/m/n/10 When a car has to be tagged back as []
  []
 
-<./img/sequenceDiagrams/maintenanceAPI.png, id=871, 1273.75874pt x 992.70876pt>
+<./img/sequenceDiagrams/maintenanceAPI.png, id=918, 1273.75874pt x 992.70876pt>
 File: ./img/sequenceDiagrams/maintenanceAPI.png Graphic file (type png)
 <use ./img/sequenceDiagrams/maintenanceAPI.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceAPI.png  used on input line 544.
+Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceAPI.png  used on input line 587.
 (pdftex.def)             Requested size: 1273.75565pt x 992.70634pt.
-[32
+[34
 
  <./img/sequenceDiagrams/maintenanceAPI.png>]
-<./img/sequenceDiagrams/maintenanceBatteryLevel.png, id=879, 1834.855pt x 859.21pt>
+<./img/sequenceDiagrams/maintenanceBatteryLevel.png, id=926, 1834.855pt x 859.21pt>
 File: ./img/sequenceDiagrams/maintenanceBatteryLevel.png Graphic file (type png)
 <use ./img/sequenceDiagrams/maintenanceBatteryLevel.png>
-Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceBatteryLevel.png  used on input line 556.
+Package pdftex.def Info: ./img/sequenceDiagrams/maintenanceBatteryLevel.png  used on input line 599.
 (pdftex.def)             Requested size: 345.0pt x 161.54723pt.
- [33
+ [35
 
- <./img/sequenceDiagrams/maintenanceBatteryLevel.png>] [34
+ <./img/sequenceDiagrams/maintenanceBatteryLevel.png>] [36
 
-]) [35]
+]) [37]
 \openout2 = `DD_userinterfacedesign.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_userinterfacedesign.tex
@@ -853,23 +898,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[36
+[38
 
 
 ]
-<mockups/loginPage.pdf, id=901, 293.095pt x 585.18625pt>
+<mockups/loginPage.pdf, id=947, 293.095pt x 585.18625pt>
 File: mockups/loginPage.pdf Graphic file (type pdf)
 <use mockups/loginPage.pdf>
 Package pdftex.def Info: mockups/loginPage.pdf  used on input line 21.
 (pdftex.def)             Requested size: 137.9979pt x 275.51974pt.
- [37
+ [39
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/loginPage.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-<mockups/homePage.pdf, id=914, 306.14375pt x 585.18625pt>
+<mockups/homePage.pdf, id=961, 306.14375pt x 585.18625pt>
 File: mockups/homePage.pdf Graphic file (type pdf)
 <use mockups/homePage.pdf>
 Package pdftex.def Info: mockups/homePage.pdf  used on input line 47.
@@ -879,7 +924,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[38
+[40
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/homePage.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
@@ -906,12 +951,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-<mockups/findCar.pdf, id=927, 699.61375pt x 585.18625pt>
+<mockups/findCar.pdf, id=974, 699.61375pt x 585.18625pt>
 File: mockups/findCar.pdf Graphic file (type pdf)
 <use mockups/findCar.pdf>
 Package pdftex.def Info: mockups/findCar.pdf  used on input line 69.
 (pdftex.def)             Requested size: 310.4979pt x 259.71504pt.
-[39 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/findCar.pdf>]
+[41 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/findCar.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
@@ -926,7 +971,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-<mockups/reserveCar.pdf, id=941, 667.49374pt x 585.18625pt>
+<mockups/reserveCar.pdf, id=988, 667.49374pt x 585.18625pt>
 File: mockups/reserveCar.pdf Graphic file (type pdf)
 <use mockups/reserveCar.pdf>
 Package pdftex.def Info: mockups/reserveCar.pdf  used on input line 93.
@@ -936,7 +981,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[40 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/reserveCar.pdf>]
+[42 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/reserveCar.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
@@ -951,7 +996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-<mockups/moneySavingOption.pdf, id=954, 718.685pt x 585.18625pt>
+<mockups/moneySavingOption.pdf, id=1001, 718.685pt x 585.18625pt>
 File: mockups/moneySavingOption.pdf Graphic file (type pdf)
 <use mockups/moneySavingOption.pdf>
 Package pdftex.def Info: mockups/moneySavingOption.pdf  used on input line 117.
@@ -961,7 +1006,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[41 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/moneySavingOption.pdf>]
+[43 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/moneySavingOption.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -971,7 +1016,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<mockups/unlockCar.pdf, id=969, 683.55376pt x 585.18625pt>
+<mockups/unlockCar.pdf, id=1015, 683.55376pt x 585.18625pt>
 File: mockups/unlockCar.pdf Graphic file (type pdf)
 <use mockups/unlockCar.pdf>
 Package pdftex.def Info: mockups/unlockCar.pdf  used on input line 143.
@@ -981,7 +1026,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[42 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/unlockCar.pdf>]
+[44 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/unlockCar.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
@@ -996,12 +1041,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-<mockups/paymentHistory.pdf, id=983, 293.095pt x 585.18625pt>
+<mockups/paymentHistory.pdf, id=1029, 293.095pt x 585.18625pt>
 File: mockups/paymentHistory.pdf Graphic file (type pdf)
 <use mockups/paymentHistory.pdf>
 Package pdftex.def Info: mockups/paymentHistory.pdf  used on input line 163.
 (pdftex.def)             Requested size: 137.9979pt x 275.51974pt.
-[43 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/paymentHistory.pdf>]
+[45 </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/paymentHistory.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
@@ -1011,12 +1056,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--187
 
  []
 
-<mockups/payments.pdf, id=997, 662.475pt x 585.18625pt>
+<mockups/payments.pdf, id=1044, 662.475pt x 585.18625pt>
 File: mockups/payments.pdf Graphic file (type pdf)
 <use mockups/payments.pdf>
 Package pdftex.def Info: mockups/payments.pdf  used on input line 190.
 (pdftex.def)             Requested size: 310.4979pt x 274.26965pt.
-[44
+[46
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/payments.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 201--202
@@ -1033,32 +1078,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--216
 
  []
 
-<mockups/rentHistory.pdf, id=1011, 658.46pt x 585.18625pt>
+<mockups/rentHistory.pdf, id=1058, 658.46pt x 585.18625pt>
 File: mockups/rentHistory.pdf Graphic file (type pdf)
 <use mockups/rentHistory.pdf>
 Package pdftex.def Info: mockups/rentHistory.pdf  used on input line 219.
 (pdftex.def)             Requested size: 310.4979pt x 275.94835pt.
-[45
+[47
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/rentHistory.pdf>]
-<mockups/customerCare1.pdf, id=1026, 733.74126pt x 576.1525pt>
+<mockups/customerCare1.pdf, id=1072, 733.74126pt x 576.1525pt>
 File: mockups/customerCare1.pdf Graphic file (type pdf)
 <use mockups/customerCare1.pdf>
 Package pdftex.def Info: mockups/customerCare1.pdf  used on input line 243.
 (pdftex.def)             Requested size: 308.77647pt x 242.46591pt.
- [46
+ [48
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/customerCare1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-<mockups/customerCare2.pdf, id=1039, 733.74126pt x 576.1525pt>
+<mockups/customerCare2.pdf, id=1085, 733.74126pt x 576.1525pt>
 File: mockups/customerCare2.pdf Graphic file (type pdf)
 <use mockups/customerCare2.pdf>
 Package pdftex.def Info: mockups/customerCare2.pdf  used on input line 260.
 (pdftex.def)             Requested size: 308.77647pt x 242.46591pt.
-) [47
+) [49
 
  </Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/mockups/customerCare2.pdf>]
 \openout2 = `DD_reqtraceability.aux'.
@@ -1157,87 +1202,98 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 8--43
 Underfull \vbox (badness 10000) detected at line 43
  []
 
-[48
-
-
-]) [49]
-\openout2 = `DD_implementationTesting.aux'.
-
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--21
-
- []
-
 [50
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+]) [51]
+\openout2 = `DD_implementationTesting.aux'.
+
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-<./img/userDataIntegration.pdf, id=1071, 262.0992pt x 176.5797pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--18
+
+ []
+
+[52
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+[53]
+<./img/userDataIntegration.pdf, id=1123, 262.0992pt x 176.5797pt>
 File: ./img/userDataIntegration.pdf Graphic file (type pdf)
 <use ./img/userDataIntegration.pdf>
-Package pdftex.def Info: ./img/userDataIntegration.pdf  used on input line 97.
+Package pdftex.def Info: ./img/userDataIntegration.pdf  used on input line 99.
 (pdftex.def)             Requested size: 172.5pt x 116.21692pt.
-<./img/submissionDataIntegration.pdf, id=1072, 262.0992pt x 176.5797pt>
+<./img/submissionDataIntegration.pdf, id=1124, 262.0992pt x 176.5797pt>
 File: ./img/submissionDataIntegration.pdf Graphic file (type pdf)
 <use ./img/submissionDataIntegration.pdf>
-Package pdftex.def Info: ./img/submissionDataIntegration.pdf  used on input line 106.
+Package pdftex.def Info: ./img/submissionDataIntegration.pdf  used on input line 108.
 (pdftex.def)             Requested size: 172.5pt x 116.21692pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./img/statisticsDataintegration.pdf, id=1073, 262.0992pt x 176.5797pt>
+<./img/statisticsDataintegration.pdf, id=1125, 262.0992pt x 176.5797pt>
 File: ./img/statisticsDataintegration.pdf Graphic file (type pdf)
 <use ./img/statisticsDataintegration.pdf>
-Package pdftex.def Info: ./img/statisticsDataintegration.pdf  used on input line 115.
+Package pdftex.def Info: ./img/statisticsDataintegration.pdf  used on input line 117.
 (pdftex.def)             Requested size: 172.5pt x 116.21692pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/apiDataIntegration.pdf, id=1074, 262.0992pt x 60.225pt>
+<./img/apiDataIntegration.pdf, id=1126, 262.0992pt x 60.225pt>
 File: ./img/apiDataIntegration.pdf Graphic file (type pdf)
 <use ./img/apiDataIntegration.pdf>
-Package pdftex.def Info: ./img/apiDataIntegration.pdf  used on input line 124.
+Package pdftex.def Info: ./img/apiDataIntegration.pdf  used on input line 126.
 (pdftex.def)             Requested size: 172.5pt x 39.6374pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51
-
- <./img/userDataIntegration.pdf>] [52 <./img/submissionDataIntegration.pdf> <./img/statisticsDataintegration.pdf> <./img/apiDataIntegration.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 134--137
+[54 <./img/userDataIntegration.pdf> <./img/submissionDataIntegration.pdf>] [55 <./img/statisticsDataintegration.pdf> <./img/apiDataIntegration.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
-<./img/userAppIntegration.pdf, id=1161, 262.0992pt x 60.225pt>
+<./img/userAppIntegration.pdf, id=1211, 262.0992pt x 60.225pt>
 File: ./img/userAppIntegration.pdf Graphic file (type pdf)
 <use ./img/userAppIntegration.pdf>
-Package pdftex.def Info: ./img/userAppIntegration.pdf  used on input line 140.
+Package pdftex.def Info: ./img/userAppIntegration.pdf  used on input line 142.
 (pdftex.def)             Requested size: 172.5pt x 39.6374pt.
-<./img/customerCareIntegration.pdf, id=1162, 262.0992pt x 60.225pt>
+<./img/customerCareIntegration.pdf, id=1212, 262.0992pt x 60.225pt>
 File: ./img/customerCareIntegration.pdf Graphic file (type pdf)
 <use ./img/customerCareIntegration.pdf>
-Package pdftex.def Info: ./img/customerCareIntegration.pdf  used on input line 149.
+Package pdftex.def Info: ./img/customerCareIntegration.pdf  used on input line 151.
 (pdftex.def)             Requested size: 172.5pt x 39.6374pt.
-) [53
+) [56
 
  <./img/userAppIntegration.pdf> <./img/customerCareIntegration.pdf>]
 \openout2 = `DD_appendix.aux'.
 
- (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.tex [54
+ (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.tex
+
+LaTeX Warning: Hyper reference `sec:mapRunView' on page 57 undefined on input line 39.
+
+[57
 
 
-]) [55]
+]) [58]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.aux (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_userinterfacedesign.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_reqtraceability.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_implementationTesting.aux) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 83.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
 Package rerunfilecheck Info: File `DD_main.out' has not changed.
-(rerunfilecheck)             Checksum: 1B12428573EF2F807377B4A17FFFE134;5116.
+(rerunfilecheck)             Checksum: AD85CB5DA82B3064B6D09BE85C95FA84;5258.
 
 
 LaTeX Warning: There were undefined references.
@@ -1248,18 +1304,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
- 19731 strings out of 492616
- 369775 string characters out of 6129481
- 677543 words of memory out of 5000000
- 22933 multiletter control sequences out of 15000+600000
+ 19777 strings out of 492616
+ 370843 string characters out of 6129481
+ 677767 words of memory out of 5000000
+ 22955 multiletter control sequences out of 15000+600000
  18314 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,81p,748b,1151s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.pdf (59 pages, 4499295 bytes).
+Output written on /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.pdf (62 pages, 4465560 bytes).
 PDF statistics:
- 1344 PDF objects out of 1440 (max. 8388607)
- 1114 compressed objects within 12 object streams
- 274 named destinations out of 1000 (max. 500000)
- 869 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1398 PDF objects out of 1440 (max. 8388607)
+ 1157 compressed objects within 12 object streams
+ 294 named destinations out of 1000 (max. 500000)
+ 905 words of extra memory for PDF output out of 10000 (max. 10000000)
 
