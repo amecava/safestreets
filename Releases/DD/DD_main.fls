@@ -261,8 +261,6 @@ OUTPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Release
 INPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.tex
 INPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_introduction.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 OUTPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.aux
 INPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.tex
 INPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_archdesign.tex
@@ -275,6 +273,8 @@ INPUT ./img/ClientServer.pdf
 INPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/./img/ComponentOverview.pdf
 INPUT ./img/ComponentOverview.pdf
 INPUT ./img/ComponentOverview.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/./img/highLevelComponents.png
 INPUT ./img/highLevelComponents.png
 INPUT ./img/highLevelComponents.png

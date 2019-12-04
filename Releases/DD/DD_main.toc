@@ -17,89 +17,89 @@
 \contentsline {paragraph}{Data Interface}{4}{section*.6}% 
 \contentsline {subsection}{\numberline {2.2}Component view}{5}{subsection.2.2}% 
 \contentsline {subsubsection}{\numberline {2.2.1}DB component}{7}{subsubsection.2.2.1}% 
-\contentsline {paragraph}{ER model}{7}{section*.7}% 
-\contentsline {paragraph}{Users}{7}{section*.8}% 
-\contentsline {paragraph}{Fees and discounts}{7}{section*.9}% 
-\contentsline {paragraph}{Cars}{7}{section*.10}% 
-\contentsline {paragraph}{Payment status}{8}{section*.11}% 
-\contentsline {paragraph}{Failures}{8}{section*.12}% 
-\contentsline {paragraph}{Charging stations}{8}{section*.13}% 
-\contentsline {paragraph}{Safe areas}{9}{section*.14}% 
-\contentsline {paragraph}{Safe areas and charging stations deployment}{9}{section*.15}% 
-\contentsline {paragraph}{Security}{9}{section*.16}% 
+\contentsline {paragraph}{ER model}{7}{section*.8}% 
+\contentsline {paragraph}{Users}{7}{section*.9}% 
+\contentsline {paragraph}{Fees and discounts}{7}{section*.10}% 
+\contentsline {paragraph}{Cars}{7}{section*.11}% 
+\contentsline {paragraph}{Payment status}{8}{section*.12}% 
+\contentsline {paragraph}{Failures}{8}{section*.13}% 
+\contentsline {paragraph}{Charging stations}{8}{section*.14}% 
+\contentsline {paragraph}{Safe areas}{9}{section*.15}% 
+\contentsline {paragraph}{Safe areas and charging stations deployment}{9}{section*.16}% 
+\contentsline {paragraph}{Security}{9}{section*.17}% 
 \contentsline {subsubsection}{\numberline {2.2.2}Server component}{10}{subsubsection.2.2.2}% 
-\contentsline {paragraph}{UserAppServer}{11}{section*.17}% 
-\contentsline {paragraph}{ValidationAppServer}{11}{section*.18}% 
-\contentsline {paragraph}{MapHandler}{11}{section*.19}% 
-\contentsline {paragraph}{StatisticsHandler}{11}{section*.20}% 
-\contentsline {paragraph}{SubmissionHandler}{11}{section*.21}% 
-\contentsline {paragraph}{AccessHandler}{12}{section*.22}% 
-\contentsline {paragraph}{UserInformationHandler}{12}{section*.23}% 
-\contentsline {paragraph}{ValidationHandler}{13}{section*.24}% 
-\contentsline {paragraph}{DataProvider}{13}{section*.25}% 
-\contentsline {paragraph}{APIHandler}{13}{section*.26}% 
+\contentsline {paragraph}{UserAppServer}{11}{section*.18}% 
+\contentsline {paragraph}{ValidationAppServer}{11}{section*.19}% 
+\contentsline {paragraph}{MapHandler}{11}{section*.20}% 
+\contentsline {paragraph}{StatisticsHandler}{11}{section*.21}% 
+\contentsline {paragraph}{SubmissionHandler}{11}{section*.22}% 
+\contentsline {paragraph}{AccessHandler}{12}{section*.23}% 
+\contentsline {paragraph}{UserInformationHandler}{12}{section*.24}% 
+\contentsline {paragraph}{ValidationHandler}{13}{section*.25}% 
+\contentsline {paragraph}{DataProvider}{13}{section*.26}% 
+\contentsline {paragraph}{APIHandler}{13}{section*.28}% 
 \contentsline {subsubsection}{\numberline {2.2.3}RentManager component}{14}{subsubsection.2.2.3}% 
-\contentsline {paragraph}{InUseCarHandler:}{15}{section*.27}% 
-\contentsline {paragraph}{CarUnlockManager:}{15}{section*.28}% 
-\contentsline {paragraph}{EndRentManager:}{15}{section*.29}% 
-\contentsline {paragraph}{ReservationRequestManager:}{15}{section*.30}% 
-\contentsline {paragraph}{PaymentProcedureHandler:}{15}{section*.31}% 
-\contentsline {paragraph}{ReservationTimer:}{15}{section*.32}% 
-\contentsline {paragraph}{MoneySavingOptionHandler:}{15}{section*.33}% 
-\contentsline {paragraph}{EndRentTimerHandler:}{15}{section*.34}% 
-\contentsline {paragraph}{DiscountFeeApplicableHandler:}{15}{section*.35}% 
+\contentsline {paragraph}{InUseCarHandler:}{15}{section*.29}% 
+\contentsline {paragraph}{CarUnlockManager:}{15}{section*.30}% 
+\contentsline {paragraph}{EndRentManager:}{15}{section*.31}% 
+\contentsline {paragraph}{ReservationRequestManager:}{15}{section*.32}% 
+\contentsline {paragraph}{PaymentProcedureHandler:}{15}{section*.33}% 
+\contentsline {paragraph}{ReservationTimer:}{15}{section*.34}% 
+\contentsline {paragraph}{MoneySavingOptionHandler:}{15}{section*.35}% 
+\contentsline {paragraph}{EndRentTimerHandler:}{15}{section*.36}% 
+\contentsline {paragraph}{DiscountFeeApplicableHandler:}{15}{section*.37}% 
 \contentsline {subsubsection}{\numberline {2.2.4}MaintenanceManager component}{16}{subsubsection.2.2.4}% 
-\contentsline {paragraph}{CarBatteryManager:}{16}{section*.36}% 
-\contentsline {paragraph}{SecurityChecker:}{16}{section*.37}% 
-\contentsline {paragraph}{UnavailableCarManager:}{16}{section*.38}% 
-\contentsline {paragraph}{MaintenanceDoneManager:}{17}{section*.39}% 
+\contentsline {paragraph}{CarBatteryManager:}{16}{section*.38}% 
+\contentsline {paragraph}{SecurityChecker:}{16}{section*.39}% 
+\contentsline {paragraph}{UnavailableCarManager:}{16}{section*.40}% 
+\contentsline {paragraph}{MaintenanceDoneManager:}{17}{section*.41}% 
 \contentsline {subsubsection}{\numberline {2.2.5}UserInformationManager component}{17}{subsubsection.2.2.5}% 
-\contentsline {paragraph}{CcUserInfoManager:}{17}{section*.40}% 
-\contentsline {paragraph}{UserInfoManager:}{17}{section*.41}% 
-\contentsline {paragraph}{BanUnbanManager:}{17}{section*.42}% 
+\contentsline {paragraph}{CcUserInfoManager:}{17}{section*.42}% 
+\contentsline {paragraph}{UserInfoManager:}{17}{section*.43}% 
+\contentsline {paragraph}{BanUnbanManager:}{17}{section*.44}% 
 \contentsline {subsubsection}{\numberline {2.2.6}AccessManager component}{17}{subsubsection.2.2.6}% 
 \contentsline {subsubsection}{\numberline {2.2.7}UserAppServer component}{18}{subsubsection.2.2.7}% 
 \contentsline {subsubsection}{\numberline {2.2.8}CustomerCareServer component}{18}{subsubsection.2.2.8}% 
 \contentsline {subsubsection}{\numberline {2.2.9}DataProvider component}{18}{subsubsection.2.2.9}% 
 \contentsline {subsubsection}{\numberline {2.2.10}CarHandler and EventBroker components}{18}{subsubsection.2.2.10}% 
-\contentsline {paragraph}{Car Handler}{18}{section*.43}% 
-\contentsline {paragraph}{EventBroker}{18}{section*.44}% 
+\contentsline {paragraph}{Car Handler}{18}{section*.45}% 
+\contentsline {paragraph}{EventBroker}{18}{section*.46}% 
 \contentsline {subsection}{\numberline {2.3}Deployment view}{19}{subsection.2.3}% 
 \contentsline {subsubsection}{\numberline {2.3.1}Four tier architecture}{19}{subsubsection.2.3.1}% 
-\contentsline {paragraph}{Mapping of Server components on architecture:}{19}{section*.45}% 
+\contentsline {paragraph}{Mapping of Server components on architecture:}{19}{section*.47}% 
 \contentsline {subsubsection}{\numberline {2.3.2}Implementation choices}{21}{subsubsection.2.3.2}% 
-\contentsline {paragraph}{Web Pages:}{21}{section*.46}% 
-\contentsline {paragraph}{Application Logic:}{21}{section*.47}% 
-\contentsline {paragraph}{Application Server and Web Server:}{21}{section*.48}% 
-\contentsline {paragraph}{Provided APIs:}{21}{section*.49}% 
-\contentsline {paragraph}{Data - Application Logic Communication:}{21}{section*.50}% 
-\contentsline {paragraph}{Web Server - Application Logic Communication:}{21}{section*.51}% 
-\contentsline {paragraph}{DBMS:}{21}{section*.52}% 
+\contentsline {paragraph}{Web Pages:}{21}{section*.48}% 
+\contentsline {paragraph}{Application Logic:}{21}{section*.49}% 
+\contentsline {paragraph}{Application Server and Web Server:}{21}{section*.50}% 
+\contentsline {paragraph}{Provided APIs:}{21}{section*.51}% 
+\contentsline {paragraph}{Data - Application Logic Communication:}{21}{section*.52}% 
+\contentsline {paragraph}{Web Server - Application Logic Communication:}{21}{section*.53}% 
+\contentsline {paragraph}{DBMS:}{21}{section*.54}% 
 \contentsline {subsubsection}{\numberline {2.3.3}Decision Tree}{22}{subsubsection.2.3.3}% 
 \contentsline {subsubsection}{\numberline {2.3.4}Deployment diagram}{23}{subsubsection.2.3.4}% 
-\contentsline {paragraph}{Security:}{23}{section*.53}% 
-\contentsline {paragraph}{Scalability:}{23}{section*.54}% 
-\contentsline {paragraph}{Decoupling:}{23}{section*.55}% 
-\contentsline {paragraph}{Redundancy:}{23}{section*.56}% 
-\contentsline {paragraph}{Fault Tolerance:}{23}{section*.57}% 
+\contentsline {paragraph}{Security:}{23}{section*.55}% 
+\contentsline {paragraph}{Scalability:}{23}{section*.56}% 
+\contentsline {paragraph}{Decoupling:}{23}{section*.57}% 
+\contentsline {paragraph}{Redundancy:}{23}{section*.58}% 
+\contentsline {paragraph}{Fault Tolerance:}{23}{section*.59}% 
 \contentsline {subsection}{\numberline {2.4}Runtime view}{25}{subsection.2.4}% 
-\contentsline {paragraph}{Notes to read the diagram}{25}{section*.58}% 
+\contentsline {paragraph}{Notes to read the diagram}{25}{section*.60}% 
 \contentsline {subsubsection}{\numberline {2.4.1}Upload}{25}{subsubsection.2.4.1}% 
-\contentsline {paragraph}{Note}{26}{section*.60}% 
+\contentsline {paragraph}{Note}{26}{section*.62}% 
 \contentsline {subsubsection}{\numberline {2.4.2}Map request}{26}{subsubsection.2.4.2}% 
-\contentsline {paragraph}{Interactions not represented}{26}{section*.61}% 
+\contentsline {paragraph}{Interactions not represented}{26}{section*.63}% 
 \contentsline {subsubsection}{\numberline {2.4.3}Show statistic}{27}{subsubsection.2.4.3}% 
-\contentsline {paragraph}{Interactions not represented}{27}{section*.62}% 
+\contentsline {paragraph}{Interactions not represented}{27}{section*.64}% 
 \contentsline {subsubsection}{\numberline {2.4.4}Payment}{28}{subsubsection.2.4.4}% 
-\contentsline {paragraph}{Interactions not represented}{28}{section*.63}% 
-\contentsline {paragraph}{Notes}{28}{section*.64}% 
+\contentsline {paragraph}{Interactions not represented}{28}{section*.65}% 
+\contentsline {paragraph}{Notes}{28}{section*.66}% 
 \contentsline {subsubsection}{\numberline {2.4.5}Reservation expiring}{30}{subsubsection.2.4.5}% 
-\contentsline {paragraph}{Note}{30}{section*.65}% 
-\contentsline {paragraph}{Interactions not represented}{30}{section*.66}% 
+\contentsline {paragraph}{Note}{30}{section*.67}% 
+\contentsline {paragraph}{Interactions not represented}{30}{section*.68}% 
 \contentsline {subsubsection}{\numberline {2.4.6}Maintenance API and failures occurrence}{31}{subsubsection.2.4.6}% 
-\contentsline {paragraph}{Interactions not represented}{31}{section*.67}% 
-\contentsline {paragraph}{Critical battery level}{32}{section*.68}% 
-\contentsline {subparagraph}{Note}{32}{section*.69}% 
+\contentsline {paragraph}{Interactions not represented}{31}{section*.69}% 
+\contentsline {paragraph}{Critical battery level}{32}{section*.70}% 
+\contentsline {subparagraph}{Note}{32}{section*.71}% 
 \contentsline {subsection}{\numberline {2.5}Component interfaces}{33}{subsection.2.5}% 
 \contentsline {subsubsection}{\numberline {2.5.1}Car-server interfaces}{33}{subsubsection.2.5.1}% 
 \contentsline {subsubsection}{\numberline {2.5.2}Maintenance API interface}{33}{subsubsection.2.5.2}% 
@@ -115,7 +115,7 @@
 \contentsline {subsubsection}{\numberline {3.1.3}See available cars}{38}{subsubsection.3.1.3}% 
 \contentsline {subsubsection}{\numberline {3.1.4}Reserve a car}{39}{subsubsection.3.1.4}% 
 \contentsline {subsubsection}{\numberline {3.1.5}Money saving option}{40}{subsubsection.3.1.5}% 
-\contentsline {paragraph}{Note}{40}{section*.70}% 
+\contentsline {paragraph}{Note}{40}{section*.72}% 
 \contentsline {subsubsection}{\numberline {3.1.6}Unlock a car}{41}{subsubsection.3.1.6}% 
 \contentsline {subsubsection}{\numberline {3.1.7}Payment history}{42}{subsubsection.3.1.7}% 
 \contentsline {subsubsection}{\numberline {3.1.8}Rent history}{44}{subsubsection.3.1.8}% 
@@ -125,10 +125,10 @@
 \contentsline {section}{\numberline {4}Requirements traceability}{47}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Functional requirements}{47}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}Non functional requirements}{47}{subsection.4.2}% 
-\contentsline {paragraph}{Performance requirements}{47}{section*.71}% 
-\contentsline {paragraph}{Availability}{48}{section*.72}% 
-\contentsline {paragraph}{Security}{48}{section*.73}% 
-\contentsline {paragraph}{Portability}{48}{section*.75}% 
+\contentsline {paragraph}{Performance requirements}{47}{section*.73}% 
+\contentsline {paragraph}{Availability}{48}{section*.74}% 
+\contentsline {paragraph}{Security}{48}{section*.75}% 
+\contentsline {paragraph}{Portability}{48}{section*.77}% 
 \contentsline {section}{\numberline {5}Implementation, integration and test plan}{49}{section.5}% 
 \contentsline {subsection}{\numberline {5.1}Server}{49}{subsection.5.1}% 
 \contentsline {subsection}{\numberline {5.2}UserApplication features}{49}{subsection.5.2}% 
@@ -137,7 +137,7 @@
 \contentsline {subsubsection}{\numberline {5.4.1}Integration of the internal components of the Server}{51}{subsubsection.5.4.1}% 
 \contentsline {subsubsection}{\numberline {5.4.2}Integration of the frontend with the backend}{53}{subsubsection.5.4.2}% 
 \contentsline {subsubsection}{\numberline {5.4.3}Integration with the external services}{53}{subsubsection.5.4.3}% 
-\contentsline {section}{Appendices}{54}{section*.76}% 
+\contentsline {section}{Appendices}{54}{section*.78}% 
 \contentsline {section}{\numberline {A}Software and tools used}{54}{Appendix.1.A}% 
 \contentsline {section}{\numberline {B}Hours of work}{54}{Appendix.1.B}% 
 \contentsline {section}{\numberline {C}Changelog}{54}{Appendix.1.C}% 
