@@ -490,54 +490,22 @@ The diagram in \autoref{fig:mapRequest} shows the map request process.\\
 \end{figure}
 
 \clearpage
-\subsubsection{Performing a rent}
-The following sequence diagrams show the interactions between the \mbox{Rent} \mbox{Manager} and other system components in different scenarios:
-\begin{itemize}
-	\item \autoref{fig:sequenceUnlockStartRent}: a user unlocks the car he reserved and starts the rent
-	\item \autoref{fig:sequenceEndRent1}: a in use car notifies the system that the engine is off, there are no passengers in the car and the doors are closed
-	\item \autoref{fig:sequenceEndRent2}: the rent just ended and the system initialize the payment procedure
-\end{itemize}
+\subsubsection{Show statistic}
+The following sequence diagram shows the interactions between the modules involved in the process of retrieving data
+for a certain statistic and show it to the user.\\
 
 \paragraph{Interactions not represented}
 \begin{itemize}
-	\item During the rent, at predetermined regular time intervals, \emph{CarUnlockManager} calls a primitive on the car through the \emph{CarHandler} component in order to retrieve the GPS position
-	
-	\item When the trigger method is called on \emph{CarHandler}, it uses the carJPA passed as parameter in order to enable on the correspondent car the triggers passed as parameters; this happens as specified in previous sections.
-	
-	\item The \emph{DataProvider} deletes the active reservation during the \emph{createRentJPA} method before creating the rent record and after having retrieved the user associated with the aforementioned reservation.
-	
-	\item The \emph{EventBroker} component calls the notify method on \emph{InUseCarHandler} when a notification is received by a car, as specified in previous sections.
-	
-	\item In \autoref{fig:sequenceEndRent1} the \emph{setParameters} method refers to a set of calls to setter methods of the carJPA in order to updated parameters retrieved from cars
+	\item The \emph{DataProvider} needs to contact the \emph{DBMS API} to get the data necessary for the statistic requested,
+		but this interaction is not represented in order to leave the diagram as simple as possible
 \end{itemize}
 
-\paragraph{Notes}
-The timestamp saved in the rent record in the DB is the one of interaction \emph{15: startRent} while the interaction \emph{17: startRentTimer} is used to start the timer on the car, just to show the user the current cost of its ride based upon the time-based cost provided to the car using a specific primitive.
-
-\clearpage
-
 \begin{figure}[h!]
 	\centering
-	\includegraphics[angle=90,width=0.95\linewidth]{sequenceDiagrams/UnlockStartRent}
+	\includegraphics[angle=0,width=0.95\linewidth]{sequenceDiagrams/showStatistics}
 	\caption{
-		\label{fig:sequenceUnlockStartRent} 
-		\emph{Car unlock and start rent} sequence diagram
-	}
-\end{figure}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[angle=90,width=\linewidth]{sequenceDiagrams/EndRent}
-	\caption{
-		\label{fig:sequenceEndRent1} 
-		\emph{End rent} sequence diagram (part 1)
-	}
-\end{figure}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[angle=90,width=\linewidth]{sequenceDiagrams/EndRent2}
-	\caption{
-		\label{fig:sequenceEndRent2} 
-		\emph{End rent} sequence diagram (part 2)
+		\label{fig:showStatistics} 
+		\emph{Show statistic} sequence diagram
 	}
 \end{figure}
 

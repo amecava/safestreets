@@ -30,7 +30,7 @@
 \BOOKMARK [2][-]{subsection.2.4}{Runtime view}{section.2}% 30
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Upload}{subsection.2.4}% 31
 \BOOKMARK [3][-]{subsubsection.2.4.2}{Map request}{subsection.2.4}% 32
-\BOOKMARK [3][-]{subsubsection.2.4.3}{Performing a rent}{subsection.2.4}% 33
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Show statistic}{subsection.2.4}% 33
 \BOOKMARK [3][-]{subsubsection.2.4.4}{Payment}{subsection.2.4}% 34
 \BOOKMARK [3][-]{subsubsection.2.4.5}{Reservation expiring}{subsection.2.4}% 35
 \BOOKMARK [3][-]{subsubsection.2.4.6}{Maintenance API and failures occurrence}{subsection.2.4}% 36
@@ -66,7 +66,7 @@
 \BOOKMARK [3][-]{subsubsection.5.4.1}{Integration of the internal components of the Server}{subsection.5.4}% 66
 \BOOKMARK [3][-]{subsubsection.5.4.2}{Integration of the frontend with the backend}{subsection.5.4}% 67
 \BOOKMARK [3][-]{subsubsection.5.4.3}{Integration with the external services}{subsection.5.4}% 68
-\BOOKMARK [1][-]{section*.77}{Appendices}{}% 69
+\BOOKMARK [1][-]{section*.76}{Appendices}{}% 69
 \BOOKMARK [1][-]{Appendix.1.A}{Software and tools used}{}% 70
 \BOOKMARK [1][-]{Appendix.1.B}{Hours of work}{}% 71
 \BOOKMARK [1][-]{Appendix.1.C}{Changelog}{}% 72
