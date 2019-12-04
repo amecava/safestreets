@@ -55,7 +55,7 @@ The system via the external GIS is required to be capable of handling the follow
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=335pt]{diagrams/GIS.png}
+		\includegraphics[width=300pt]{diagrams/GIS.png}
 		\caption{
 			\label{fig:externalGIS} GIS Interaction Diagram}
 	\end{figure}
@@ -679,6 +679,18 @@ Application specific scenarios are presented to enrich the system's specificatio
    			\textbf{\ref{assumption:workingConnection}} Internet connection always works correctly
    			
 			\textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+
+		\item \ref{goal:operator} Provide validation service the ability to validate user's submissions of data describing occurred violations
+			   \begin{enumerate}[resume*]
+				   \item The system must be able to mark and unmark a report as valid
+				   \item The system must be able to generate violations from valid reports
+				   \item The system must allow validation service to access the data of occurred violations stored on the system
+				   \item The system must allow the validation service to set the state of a speciﬁc report to valid or not valid
+			   \end{enumerate}
+
+			   \textbf{\ref{assumption:workingDBMS}} The DBMS always works properly so that the information in the DB are always accessible
+
+
 
    	\end{description}
    	

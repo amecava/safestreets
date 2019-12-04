@@ -11,25 +11,28 @@
 		
 	\begin{figure}[h]
 			\centering
-			\includegraphics[width=350pt, height=200pt]{diagrams/uml.png}
+			\includegraphics[width=360pt]{diagrams/uml.png}
 			\caption{ 
 				\label{fig:classDiagram} 
 				SafeStreets Class Diagram
 			}
 		\end{figure}
 		
-	\subsubsection{System Interfaces}
+\subsubsection{System Interfaces}
 	\label{sec:systemInterfaces}
-		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{Goals} stated before. \newline 
-		\begin{figure}[h]
+		The system requires some external interfaces (represented in \autoref{fig:systemInterfaces}) to accomplish the \hyperref[sec:goals]{Goals} stated before.
+		\begin{figure}[ht!]
 			\centering
-			\includegraphics[width=300pt, height=50pt]{diagrams/system_blocks}
+			\includegraphics[width=210pt]{diagrams/system_blocks.png}
 			\caption{
 				\label{fig:systemInterfaces} 
 				Overview of system interfaces
 			}
 		\end{figure} 
-\clearpage			
+
+\label{operator}
+\paragraph{Validation Service} SafeStreets validation service operators will interact with the system. Validation service operators can request and access all the submitted data describing occurred acciddents including the associated metadata. Such operators can also mark or unmark reports as valid in order to filter valid and not valid user's submissions.
+		
 \paragraph{Municipality Data Exchange} The system will interact with municipalities. The system will retrieve the information about the accidents that occur on the territory of the municipality and cross this information with its own data to identify potentially unsafe areas. It will also retrieve the information about issued tickets from the municipalities to build statistics, for example about the effectiveness of the SafeStreets initiative (e.g., by looking for trends in the issuing of tickets). In addition, our system will expose via a \emph{restricted access API} the stored information about the violations to the municipalities, so that the local authorities can generate traffic tickets from it, and receive suggestions for possible interventions (e.g., add a barrier between the bike lane and the part of the road for motorised vehicles to prevent unsafe parking). \cite{Assignments}
 
 

@@ -266,9 +266,9 @@ INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_overallDescr
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/./img/diagrams/uml.png
 INPUT ./img/diagrams/uml.png
 INPUT ./img/diagrams/uml.png
-INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/./img/diagrams/system_blocks.pdf
-INPUT ./img/diagrams/system_blocks.pdf
-INPUT ./img/diagrams/system_blocks.pdf
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/./img/diagrams/system_blocks.png
+INPUT ./img/diagrams/system_blocks.png
+INPUT ./img/diagrams/system_blocks.png
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/./img/diagrams/state-diagrams/SubmitViolation.png

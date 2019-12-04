@@ -5,52 +5,53 @@
 \contentsline {subsubsection}{\numberline {1.2.1}Goals}{1}{subsubsection.1.2.1}% 
 \contentsline {subsection}{\numberline {1.3}Glossary}{2}{subsection.1.3}% 
 \contentsline {subsubsection}{\numberline {1.3.1}Definitions}{2}{subsubsection.1.3.1}% 
-\contentsline {subsubsection}{\numberline {1.3.2}Acronyms}{2}{subsubsection.1.3.2}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Acronyms}{3}{subsubsection.1.3.2}% 
 \contentsline {subsubsection}{\numberline {1.3.3}Abbreviations}{3}{subsubsection.1.3.3}% 
 \contentsline {subsection}{\numberline {1.4}Document overview}{3}{subsection.1.4}% 
 \contentsline {section}{\numberline {2}Overall Description}{4}{section.2}% 
 \contentsline {subsection}{\numberline {2.1}Product Perspective}{4}{subsection.2.1}% 
 \contentsline {subsubsection}{\numberline {2.1.1}System Interfaces}{4}{subsubsection.2.1.1}% 
-\contentsline {paragraph}{Municipality Data Exchange}{5}{section*.4}% 
-\contentsline {paragraph}{Geographic Information System}{5}{section*.5}% 
+\contentsline {paragraph}{Validation Service}{4}{section*.4}% 
+\contentsline {paragraph}{Municipality Data Exchange}{5}{section*.5}% 
+\contentsline {paragraph}{Geographic Information System}{5}{section*.6}% 
 \contentsline {subsubsection}{\numberline {2.1.2}User Interfaces}{5}{subsubsection.2.1.2}% 
-\contentsline {paragraph}{Guest User}{5}{section*.6}% 
-\contentsline {paragraph}{Logged User}{5}{section*.7}% 
+\contentsline {paragraph}{Guest User}{5}{section*.7}% 
+\contentsline {paragraph}{Logged User}{6}{section*.8}% 
 \contentsline {subsubsection}{\numberline {2.1.3}Hardware Interfaces}{6}{subsubsection.2.1.3}% 
 \contentsline {subsubsection}{\numberline {2.1.4}Software Interfaces}{6}{subsubsection.2.1.4}% 
 \contentsline {subsubsection}{\numberline {2.1.5}Communication Interfaces}{6}{subsubsection.2.1.5}% 
 \contentsline {subsection}{\numberline {2.2}Product Functions}{6}{subsection.2.2}% 
-\contentsline {paragraph}{Violation Upload Procedure}{6}{section*.8}% 
-\contentsline {paragraph}{Retrieve Data from Municipality}{6}{section*.9}% 
-\contentsline {paragraph}{Show Information and Statistics}{8}{section*.10}% 
-\contentsline {paragraph}{Restricted Access API}{8}{section*.11}% 
+\contentsline {paragraph}{Violation Upload Procedure}{6}{section*.9}% 
+\contentsline {paragraph}{Retrieve Data from Municipality}{7}{section*.10}% 
+\contentsline {paragraph}{Show Information and Statistics}{8}{section*.11}% 
+\contentsline {paragraph}{Restricted Access API}{8}{section*.12}% 
 \contentsline {subsection}{\numberline {2.3}User Characteristics}{9}{subsection.2.3}% 
 \contentsline {subsection}{\numberline {2.4}Constraints}{9}{subsection.2.4}% 
 \contentsline {subsection}{\numberline {2.5}Assumptions}{9}{subsection.2.5}% 
 \contentsline {section}{\numberline {3}Specific Requirements}{10}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}External Interfaces}{10}{subsection.3.1}% 
 \contentsline {subsubsection}{\numberline {3.1.1}System Interfaces}{10}{subsubsection.3.1.1}% 
-\contentsline {paragraph}{Municipality Data Exchange}{10}{section*.12}% 
-\contentsline {paragraph}{Geographic Information System}{11}{section*.13}% 
-\contentsline {subsubsection}{\numberline {3.1.2}User Interfaces}{11}{subsubsection.3.1.2}% 
-\contentsline {paragraph}{Guest User}{11}{section*.14}% 
-\contentsline {paragraph}{Logged User}{12}{section*.15}% 
+\contentsline {paragraph}{Municipality Data Exchange}{10}{section*.13}% 
+\contentsline {paragraph}{Geographic Information System}{11}{section*.14}% 
+\contentsline {subsubsection}{\numberline {3.1.2}User Interfaces}{12}{subsubsection.3.1.2}% 
+\contentsline {paragraph}{Guest User}{12}{section*.15}% 
+\contentsline {paragraph}{Logged User}{13}{section*.16}% 
 \contentsline {subsubsection}{\numberline {3.1.3}Hardware Interfaces}{15}{subsubsection.3.1.3}% 
 \contentsline {subsubsection}{\numberline {3.1.4}Software Interfaces}{15}{subsubsection.3.1.4}% 
-\contentsline {paragraph}{Databases}{15}{section*.16}% 
-\contentsline {paragraph}{DBMS}{15}{section*.17}% 
+\contentsline {paragraph}{Databases}{15}{section*.17}% 
+\contentsline {paragraph}{DBMS}{15}{section*.18}% 
 \contentsline {subsubsection}{\numberline {3.1.5}Communication Interfaces}{16}{subsubsection.3.1.5}% 
 \contentsline {subsection}{\numberline {3.2}Functional Requirements}{16}{subsection.3.2}% 
 \contentsline {subsubsection}{\numberline {3.2.1}Scenarios}{16}{subsubsection.3.2.1}% 
 \contentsline {subsubsection}{\numberline {3.2.2}Use Case Diagram}{17}{subsubsection.3.2.2}% 
-\contentsline {paragraph}{Notes to read the diagram}{17}{section*.18}% 
+\contentsline {paragraph}{Notes to read the diagram}{17}{section*.19}% 
 \contentsline {subsubsection}{\numberline {3.2.3}Use Cases Description}{18}{subsubsection.3.2.3}% 
 \contentsline {subsubsection}{\numberline {3.2.4}Requirements Mapping}{34}{subsubsection.3.2.4}% 
 \contentsline {subsection}{\numberline {3.3}Performance Requirements}{37}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}Design Constraints}{37}{subsection.3.4}% 
 \contentsline {subsubsection}{\numberline {3.4.1}Standards Compliance}{37}{subsubsection.3.4.1}% 
-\contentsline {paragraph}{Application Security}{37}{section*.19}% 
-\contentsline {paragraph}{Data Protection}{37}{section*.20}% 
+\contentsline {paragraph}{Application Security}{37}{section*.20}% 
+\contentsline {paragraph}{Data Protection}{37}{section*.21}% 
 \contentsline {subsubsection}{\numberline {3.4.2}Hardware Limitations}{37}{subsubsection.3.4.2}% 
 \contentsline {subsection}{\numberline {3.5}Software System Attributes}{38}{subsection.3.5}% 
 \contentsline {subsubsection}{\numberline {3.5.1}Reliability}{38}{subsubsection.3.5.1}% 
@@ -61,8 +62,8 @@
 \contentsline {section}{\numberline {4}Formal Analysis using Alloy}{39}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Source code}{39}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}Generated Worlds}{44}{subsection.4.2}% 
-\contentsline {paragraph}{Notes to read the generated worlds}{50}{section*.21}% 
-\contentsline {section}{Appendices}{51}{section*.22}% 
+\contentsline {paragraph}{Notes to read the generated worlds}{50}{section*.22}% 
+\contentsline {section}{Appendices}{51}{section*.23}% 
 \contentsline {section}{\numberline {A}Software and tools used}{51}{Appendix.1.A}% 
 \contentsline {section}{\numberline {B}Hours of Work}{51}{Appendix.1.B}% 
 \contentsline {section}{\numberline {C}Changelog}{51}{Appendix.1.C}% 
