@@ -286,6 +286,9 @@ INPUT ./img/diagrams/state-diagrams/RequestAPI.png
 OUTPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.aux
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.tex
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.tex
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/./img/diagrams/validationservice.png
+INPUT ./img/diagrams/validationservice.png
+INPUT ./img/diagrams/validationservice.png
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/./img/diagrams/GIS.png
 INPUT ./img/diagrams/GIS.png
 INPUT ./img/diagrams/GIS.png

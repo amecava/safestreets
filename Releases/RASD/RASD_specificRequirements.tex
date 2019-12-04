@@ -7,6 +7,29 @@
 
 \subsubsection{System Interfaces}
 
+\paragraph{Validation Service} The system is required to offer the following functionalities to the Validation Service:
+
+	\begin{itemize}
+		\item Guarantee a secure authentication to the system via a dedicated Web Interface
+	\end{itemize}
+Via the web interface the system is required to offer the following functionalities to the Validation Service:
+
+	\begin{itemize}
+		\item Access and visualize all the submitted data describing occurred acciddents including the associated metadata
+		\item Visualize the pending reports of possibly occurred accidents
+		\item Visualize the result of the image recognition alghoritms associated to every report
+		\item Furtherly support the image recognition by manually modifying the report license plate if not present, wrongly typed by the user, or totally not recognized
+		\item Mark and unmark reports as valid in order to filter valid and not valid user's submissions
+	\end{itemize}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=350pt]{diagrams/validationservice.png}
+		\caption{
+			\label{fig:externalGIS} GIS Interaction Diagram}
+	\end{figure}
+
+	\clearpage
 \paragraph{Municipality Data Exchange} \label{p:mde} The definition of the municipality data exchange interface is dependent to the corresponding SafeStreet's interface required to be offered to the municipalities. The municipality is required to offer the following functionalities to the system:
 
 	\begin{itemize}
@@ -33,8 +56,6 @@ To fulfil the bidirectional data exchange the system is required to offer the fo
 		
 	\end{itemize} 
 	
-\clearpage
-
 \paragraph{Geographic Information System} \label{p:gis} The definition of the external GIS interface is GIS dependant and will be described in a functionality-based way. The system is required to perform the following functions:
 
 	\begin{itemize}
@@ -55,11 +76,12 @@ The system via the external GIS is required to be capable of handling the follow
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=300pt]{diagrams/GIS.png}
+		\includegraphics[width=350pt]{diagrams/GIS.png}
 		\caption{
 			\label{fig:externalGIS} GIS Interaction Diagram}
 	\end{figure}
 
+\clearpage
 \subsubsection{User Interfaces}
 
 	One of the key methodologies to capture the goals that the system's user interfaces must satisfy is through user interfaces mockups. The same structure of the overall description \hyperref[sec:goals]{corresponding section} will be used in order to extend the already stated requirements.
@@ -569,9 +591,57 @@ Application specific scenarios are presented to enrich the system's specificatio
 		\emph{Provide Data from API} sequence diagram
 	}
 \end{figure}
-
 \clearpage
 
+\textbf{Visualize data}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Visualize data} \\
+\midrule
+\textbf{Actors} & Validation Service operator \\
+\midrule
+\textbf{Entry \newline conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item The system receives a data retrieval request from the Validation Service
+	\item The system processes the request and provides the requested data
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The Validation Service operator can view the information required\\
+\midrule
+\textbf{Exceptions} & 
+ \\
+\bottomrule
+\caption{\emph{Visualize data} use case description}
+\end{longtable}
+
+\textbf{Mark reports validity}
+\begin{longtable}{p{0.25\linewidth}p{0.75\linewidth}}
+\toprule
+\textbf{Name} & \textbf{Mark reports validity} \\
+\midrule
+\textbf{Actors} & Validation Service operator \\
+\midrule
+\textbf{Entry \newline conditions} & \\
+\midrule
+\textbf{Flow of events} & 
+\begin{enumerate}
+	\item \textbf{Visualize data}
+	\item The Validation Service operator selects a report to validate from the pending queue
+	\item The Validation Service operator asks to mark or unmark as valid the selected report
+	\item The system marks or unmarks the selected report as valid
+\end{enumerate}\\
+\midrule
+\textbf{Exit conditions} & The state of the report is updated and if it's set to valid the system will generate a violation associated to it\\
+\midrule
+\textbf{Exceptions} & 
+ \\
+\bottomrule
+\caption{\emph{Mark reports validity} use case description}
+\end{longtable}
+
+\clearpage
 \subsubsection{Requirements Mapping}
 
 	The following requirements are derived in order to achieve the specified goals.

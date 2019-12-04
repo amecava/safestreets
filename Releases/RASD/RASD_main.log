@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  2 DEC 2019 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  4 DEC 2019 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,7 +477,11 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/latex_alloy.sty) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_overallDescription.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_alloy.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.aux))
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/latex_alloy.sty) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_overallDescription.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.aux
+
+LaTeX Warning: Label `fig:externalGIS' multiply defined.
+
+) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_alloy.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.aux))
 \openout1 = `RASD_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -558,15 +562,57 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `RASD_main.toc'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.lof)
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+(/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.lof)
 \tf@lof=\write6
 \openout6 = `RASD_main.lof'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.lot)
+ [2] (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.lot)
 \tf@lot=\write7
 \openout7 = `RASD_main.lot'.
 
- [2]
+ [3
+
+]
 \openout2 = `RASD_introduction.aux'.
 
  (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_introduction.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -584,17 +630,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<./img/diagrams/uml.png, id=420, 798.985pt x 459.7175pt>
+<./img/diagrams/uml.png, id=431, 819.06pt x 602.25pt>
 File: ./img/diagrams/uml.png Graphic file (type png)
 <use ./img/diagrams/uml.png>
 Package pdftex.def Info: ./img/diagrams/uml.png  used on input line 14.
-(pdftex.def)             Requested size: 360.0pt x 207.13751pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 14--18
- [][] 
- []
-
-<./img/diagrams/system_blocks.png, id=423, 409.53pt x 261.97874pt>
+(pdftex.def)             Requested size: 340.0pt x 250.0026pt.
+<./img/diagrams/system_blocks.png, id=434, 409.53pt x 261.97874pt>
 File: ./img/diagrams/system_blocks.png Graphic file (type png)
 <use ./img/diagrams/system_blocks.png>
 Package pdftex.def Info: ./img/diagrams/system_blocks.png  used on input line 26.
@@ -610,7 +651,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
  [5 <./img/diagrams/system_blocks.png>]
-<./img/diagrams/state-diagrams/SubmitViolation.png, id=444, 791.95876pt x 460.72125pt>
+<./img/diagrams/state-diagrams/SubmitViolation.png, id=454, 791.95876pt x 460.72125pt>
 File: ./img/diagrams/state-diagrams/SubmitViolation.png Graphic file (type png)
 <use ./img/diagrams/state-diagrams/SubmitViolation.png>
 Package pdftex.def Info: ./img/diagrams/state-diagrams/SubmitViolation.png  used on input line 81.
@@ -625,18 +666,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
  []
 
 [6]
-<./img/diagrams/state-diagrams/RequestMunicipality.png, id=452, 776.9025pt x 559.08875pt>
+<./img/diagrams/state-diagrams/RequestMunicipality.png, id=462, 776.9025pt x 559.08875pt>
 File: ./img/diagrams/state-diagrams/RequestMunicipality.png Graphic file (type png)
 <use ./img/diagrams/state-diagrams/RequestMunicipality.png>
 Package pdftex.def Info: ./img/diagrams/state-diagrams/RequestMunicipality.png  used on input line 92.
 (pdftex.def)             Requested size: 285.00737pt x 204.99983pt.
  [7 <./img/diagrams/state-diagrams/SubmitViolation.png> <./img/diagrams/state-diagrams/RequestMunicipality.png>]
-<./img/diagrams/state-diagrams/ShowStatistics.png, id=461, 733.74126pt x 335.2525pt>
+<./img/diagrams/state-diagrams/ShowStatistics.png, id=471, 733.74126pt x 335.2525pt>
 File: ./img/diagrams/state-diagrams/ShowStatistics.png Graphic file (type png)
 <use ./img/diagrams/state-diagrams/ShowStatistics.png>
 Package pdftex.def Info: ./img/diagrams/state-diagrams/ShowStatistics.png  used on input line 103.
 (pdftex.def)             Requested size: 300.00735pt x 134.99895pt.
-<./img/diagrams/state-diagrams/RequestAPI.png, id=463, 698.61pt x 410.53375pt>
+<./img/diagrams/state-diagrams/RequestAPI.png, id=473, 698.61pt x 410.53375pt>
 File: ./img/diagrams/state-diagrams/RequestAPI.png Graphic file (type png)
 <use ./img/diagrams/state-diagrams/RequestAPI.png>
 Package pdftex.def Info: ./img/diagrams/state-diagrams/RequestAPI.png  used on input line 113.
@@ -646,309 +687,347 @@ Package pdftex.def Info: ./img/diagrams/state-diagrams/RequestAPI.png  used on i
  <./img/diagrams/state-diagrams/ShowStatistics.png> <./img/diagrams/state-diagrams/RequestAPI.png>] [9])
 \openout2 = `RASD_specificRequirements.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.tex [10
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.tex
+<./img/diagrams/validationservice.png, id=497, 626.34pt x 293.095pt>
+File: ./img/diagrams/validationservice.png Graphic file (type png)
+<use ./img/diagrams/validationservice.png>
+Package pdftex.def Info: ./img/diagrams/validationservice.png  used on input line 27.
+(pdftex.def)             Requested size: 350.0pt x 163.7877pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 27--29
+ [][] 
+ []
+
+[10
 
 
+
+ <./img/diagrams/validationservice.png>] [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-<./img/diagrams/GIS.png, id=492, 663.47874pt x 443.6575pt>
+<./img/diagrams/GIS.png, id=510, 663.47874pt x 443.6575pt>
 File: ./img/diagrams/GIS.png Graphic file (type png)
 <use ./img/diagrams/GIS.png>
-Package pdftex.def Info: ./img/diagrams/GIS.png  used on input line 58.
-(pdftex.def)             Requested size: 300.0pt x 200.60532pt.
-[11
+Package pdftex.def Info: ./img/diagrams/GIS.png  used on input line 79.
+(pdftex.def)             Requested size: 350.0pt x 234.04066pt.
 
- <./img/diagrams/GIS.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Overfull \hbox (5.0pt too wide) in paragraph at lines 79--81
+ [][] 
+ []
+
+[12 <./img/diagrams/GIS.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
-<./img/mockups/register-empty.png, id=500, 1172.38pt x 2101.8525pt>
+<./img/mockups/register-empty.png, id=517, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/register-empty.png Graphic file (type png)
 <use ./img/mockups/register-empty.png>
-Package pdftex.def Info: ./img/mockups/register-empty.png  used on input line 77.
+Package pdftex.def Info: ./img/mockups/register-empty.png  used on input line 99.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
-<./img/mockups/register.png, id=501, 1172.38pt x 2101.8525pt>
+<./img/mockups/register.png, id=518, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/register.png Graphic file (type png)
 <use ./img/mockups/register.png>
-Package pdftex.def Info: ./img/mockups/register.png  used on input line 82.
+Package pdftex.def Info: ./img/mockups/register.png  used on input line 104.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
-<./img/mockups/login-empty.png, id=502, 1172.38pt x 2101.8525pt>
+<./img/mockups/login-empty.png, id=519, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/login-empty.png Graphic file (type png)
 <use ./img/mockups/login-empty.png>
-Package pdftex.def Info: ./img/mockups/login-empty.png  used on input line 90.
+Package pdftex.def Info: ./img/mockups/login-empty.png  used on input line 112.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
-<./img/mockups/login.png, id=503, 1172.38pt x 2101.8525pt>
+<./img/mockups/login.png, id=520, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/login.png Graphic file (type png)
 <use ./img/mockups/login.png>
-Package pdftex.def Info: ./img/mockups/login.png  used on input line 95.
+Package pdftex.def Info: ./img/mockups/login.png  used on input line 117.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./img/mockups/register-empty.png> <./img/mockups/register.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+[13
+
+ <./img/mockups/register-empty.png> <./img/mockups/register.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-<./img/mockups/statistics.png, id=513, 1172.38pt x 2101.8525pt>
+<./img/mockups/statistics.png, id=530, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/statistics.png Graphic file (type png)
 <use ./img/mockups/statistics.png>
-Package pdftex.def Info: ./img/mockups/statistics.png  used on input line 118.
+Package pdftex.def Info: ./img/mockups/statistics.png  used on input line 140.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
-<./img/mockups/profile.png, id=514, 1172.38pt x 2101.8525pt>
+<./img/mockups/profile.png, id=531, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/profile.png Graphic file (type png)
 <use ./img/mockups/profile.png>
-Package pdftex.def Info: ./img/mockups/profile.png  used on input line 123.
+Package pdftex.def Info: ./img/mockups/profile.png  used on input line 145.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/mockups/submit-violation.png, id=515, 1172.38pt x 2101.8525pt>
+<./img/mockups/submit-violation.png, id=532, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/submit-violation.png Graphic file (type png)
 <use ./img/mockups/submit-violation.png>
-Package pdftex.def Info: ./img/mockups/submit-violation.png  used on input line 131.
+Package pdftex.def Info: ./img/mockups/submit-violation.png  used on input line 153.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
-<./img/mockups/map.png, id=516, 1172.38pt x 2101.8525pt>
+<./img/mockups/map.png, id=533, 1172.38pt x 2101.8525pt>
 File: ./img/mockups/map.png Graphic file (type png)
 <use ./img/mockups/map.png>
-Package pdftex.def Info: ./img/mockups/map.png  used on input line 136.
+Package pdftex.def Info: ./img/mockups/map.png  used on input line 158.
 (pdftex.def)             Requested size: 137.9979pt x 247.40067pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./img/mockups/login-empty.png> <./img/mockups/login.png>] [14 <./img/mockups/statistics.png> <./img/mockups/profile.png> <./img/mockups/submit-violation.png> <./img/mockups/map.png>] [15
+[14 <./img/mockups/login-empty.png> <./img/mockups/login.png>] [15 <./img/mockups/statistics.png> <./img/mockups/profile.png> <./img/mockups/submit-violation.png> <./img/mockups/map.png>] [16
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 189--205
+Underfull \hbox (badness 10000) in paragraph at lines 211--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--205
+Underfull \hbox (badness 10000) in paragraph at lines 211--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--205
+Underfull \hbox (badness 10000) in paragraph at lines 211--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--205
+Underfull \hbox (badness 10000) in paragraph at lines 211--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--205
+Underfull \hbox (badness 10000) in paragraph at lines 211--227
 
  []
 
-[16]
-<./img/diagrams/UseCaseDiagram.png, id=544, 871.255pt x 532.99126pt>
+[17]
+<./img/diagrams/UseCaseDiagram.png, id=561, 903.375pt x 532.99126pt>
 File: ./img/diagrams/UseCaseDiagram.png Graphic file (type png)
 <use ./img/diagrams/UseCaseDiagram.png>
-Package pdftex.def Info: ./img/diagrams/UseCaseDiagram.png  used on input line 209.
-(pdftex.def)             Requested size: 345.0pt x 211.0538pt.
- [17 <./img/diagrams/UseCaseDiagram.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 236--274
+Package pdftex.def Info: ./img/diagrams/UseCaseDiagram.png  used on input line 231.
+(pdftex.def)             Requested size: 345.0pt x 203.55537pt.
+ [18 <./img/diagrams/UseCaseDiagram.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 258--296
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 274
+Underfull \vbox (badness 10000) detected at line 296
  []
 
-[18
+[19
 
 ]
-<./img/diagrams/sequence-diagrams/sdRegistration.png, id=568, 1102.1175pt x 909.3975pt>
+<./img/diagrams/sequence-diagrams/sdRegistration.png, id=585, 1102.1175pt x 909.3975pt>
 File: ./img/diagrams/sequence-diagrams/sdRegistration.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdRegistration.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdRegistration.png  used on input line 278.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdRegistration.png  used on input line 300.
 (pdftex.def)             Requested size: 345.0pt x 284.67169pt.
- [19 <./img/diagrams/sequence-diagrams/sdRegistration.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 288--311
+ [20 <./img/diagrams/sequence-diagrams/sdRegistration.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 310--333
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 311
+Underfull \vbox (badness 10000) detected at line 333
  []
 
-<./img/diagrams/sequence-diagrams/sdLogin.png, id=574, 644.4075pt x 704.6325pt>
+<./img/diagrams/sequence-diagrams/sdLogin.png, id=591, 644.4075pt x 704.6325pt>
 File: ./img/diagrams/sequence-diagrams/sdLogin.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdLogin.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdLogin.png  used on input line 316.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdLogin.png  used on input line 338.
 (pdftex.def)             Requested size: 345.0pt x 377.2596pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20
+[21
 
-] [21 <./img/diagrams/sequence-diagrams/sdLogin.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 326--349
+] [22 <./img/diagrams/sequence-diagrams/sdLogin.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 348--371
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 349
+Underfull \vbox (badness 10000) detected at line 371
  []
 
-<./img/diagrams/sequence-diagrams/sdAuthentication.png, id=586, 644.4075pt x 564.1075pt>
+<./img/diagrams/sequence-diagrams/sdAuthentication.png, id=605, 644.4075pt x 564.1075pt>
 File: ./img/diagrams/sequence-diagrams/sdAuthentication.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdAuthentication.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdAuthentication.png  used on input line 353.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdAuthentication.png  used on input line 375.
 (pdftex.def)             Requested size: 345.0pt x 302.02263pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22
+[23
 
-] [23 <./img/diagrams/sequence-diagrams/sdAuthentication.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 363--393
+] [24 <./img/diagrams/sequence-diagrams/sdAuthentication.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 385--415
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 393
+Underfull \vbox (badness 10000) detected at line 415
  []
 
-<./img/diagrams/sequence-diagrams/sdViolationSubmission.png, id=600, 714.67pt x 694.595pt>
+<./img/diagrams/sequence-diagrams/sdViolationSubmission.png, id=617, 714.67pt x 694.595pt>
 File: ./img/diagrams/sequence-diagrams/sdViolationSubmission.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdViolationSubmission.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViolationSubmission.png  used on input line 397.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViolationSubmission.png  used on input line 419.
 (pdftex.def)             Requested size: 345.0pt x 335.30957pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24
+[25
 
-] [25 <./img/diagrams/sequence-diagrams/sdViolationSubmission.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 407--437
+] [26 <./img/diagrams/sequence-diagrams/sdViolationSubmission.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 429--459
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 437
+Underfull \vbox (badness 10000) detected at line 459
  []
 
-<./img/diagrams/sequence-diagrams/sdViewMap.png, id=618, 713.66624pt x 723.70375pt>
+<./img/diagrams/sequence-diagrams/sdViewMap.png, id=635, 713.66624pt x 723.70375pt>
 File: ./img/diagrams/sequence-diagrams/sdViewMap.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdViewMap.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViewMap.png  used on input line 441.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViewMap.png  used on input line 463.
 (pdftex.def)             Requested size: 345.0pt x 349.84744pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26
+[27
 
-] [27 <./img/diagrams/sequence-diagrams/sdViewMap.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 451--481
+] [28 <./img/diagrams/sequence-diagrams/sdViewMap.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 473--503
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 481
+Underfull \vbox (badness 10000) detected at line 503
  []
 
-<./img/diagrams/sequence-diagrams/sdViewStatistics.png, id=634, 743.77875pt x 716.6775pt>
+<./img/diagrams/sequence-diagrams/sdViewStatistics.png, id=652, 743.77875pt x 716.6775pt>
 File: ./img/diagrams/sequence-diagrams/sdViewStatistics.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdViewStatistics.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViewStatistics.png  used on input line 485.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdViewStatistics.png  used on input line 507.
 (pdftex.def)             Requested size: 345.0pt x 332.43143pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28
+[29
 
-] [29 <./img/diagrams/sequence-diagrams/sdViewStatistics.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 495--524
+] [30 <./img/diagrams/sequence-diagrams/sdViewStatistics.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 517--546
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 524
+Underfull \vbox (badness 10000) detected at line 546
  []
 
-<./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png, id=651, 760.8425pt x 673.51625pt>
+<./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png, id=668, 760.8425pt x 673.51625pt>
 File: ./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png  used on input line 528.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png  used on input line 550.
 (pdftex.def)             Requested size: 345.0pt x 305.41238pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30
+[31
 
-] [31 <./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 538--562
+] [32 <./img/diagrams/sequence-diagrams/sdRetrieveMunicipality.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 560--584
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 562
+Underfull \vbox (badness 10000) detected at line 584
  []
 
-<./img/diagrams/sequence-diagrams/sdProvideAPI.png, id=668, 643.40375pt x 673.51625pt>
+<./img/diagrams/sequence-diagrams/sdProvideAPI.png, id=685, 643.40375pt x 673.51625pt>
 File: ./img/diagrams/sequence-diagrams/sdProvideAPI.png Graphic file (type png)
 <use ./img/diagrams/sequence-diagrams/sdProvideAPI.png>
-Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdProvideAPI.png  used on input line 566.
+Package pdftex.def Info: ./img/diagrams/sequence-diagrams/sdProvideAPI.png  used on input line 588.
 (pdftex.def)             Requested size: 345.0pt x 361.15494pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32
+[33
 
-] [33 <./img/diagrams/sequence-diagrams/sdProvideAPI.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 602--603
-
+] [34 <./img/diagrams/sequence-diagrams/sdProvideAPI.png>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 597--617
+ [] [] 
  []
 
-[34
+
+Underfull \vbox (badness 10000) detected at line 617
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 620--642
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 642
+ []
+
+[35
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 622--623
+Underfull \hbox (badness 10000) in paragraph at lines 672--673
+
+ []
+
+[36
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 692--693
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
 
  []
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--671
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
 
  []
 
-[36] [37
+[38] [39
 
-] [38])
+] [40])
 \openout2 = `RASD_alloy.aux'.
 
  (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_alloy.tex
@@ -956,12 +1035,12 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/SafeStreets.als [39
+) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/SafeStreets.als [41
 
 
 
-] [40] [41] [42] [43])
-<alloy/world1.png, id=1030, 1600.98125pt x 524.96124pt>
+] [42] [43] [44] [45])
+<alloy/world1.png, id=1058, 1600.98125pt x 524.96124pt>
 File: alloy/world1.png Graphic file (type png)
 <use alloy/world1.png>
 Package pdftex.def Info: alloy/world1.png  used on input line 13.
@@ -970,7 +1049,7 @@ Package pdftex.def Info: alloy/world1.png  used on input line 13.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<alloy/world2.png, id=1031, 1541.76pt x 671.50874pt>
+<alloy/world2.png, id=1059, 1541.76pt x 671.50874pt>
 File: alloy/world2.png Graphic file (type png)
 <use alloy/world2.png>
 Package pdftex.def Info: alloy/world2.png  used on input line 22.
@@ -978,7 +1057,7 @@ Package pdftex.def Info: alloy/world2.png  used on input line 22.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<alloy/world3.png, id=1032, 1514.65875pt x 565.11125pt>
+<alloy/world3.png, id=1060, 1514.65875pt x 565.11125pt>
 File: alloy/world3.png Graphic file (type png)
 <use alloy/world3.png>
 Package pdftex.def Info: alloy/world3.png  used on input line 31.
@@ -986,7 +1065,7 @@ Package pdftex.def Info: alloy/world3.png  used on input line 31.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<alloy/world4.png, id=1033, 1526.70375pt x 576.1525pt>
+<alloy/world4.png, id=1061, 1526.70375pt x 576.1525pt>
 File: alloy/world4.png Graphic file (type png)
 <use alloy/world4.png>
 Package pdftex.def Info: alloy/world4.png  used on input line 40.
@@ -994,7 +1073,7 @@ Package pdftex.def Info: alloy/world4.png  used on input line 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<alloy/world5.png, id=1034, 1525.7pt x 560.0925pt>
+<alloy/world5.png, id=1062, 1525.7pt x 560.0925pt>
 File: alloy/world5.png Graphic file (type png)
 <use alloy/world5.png>
 Package pdftex.def Info: alloy/world5.png  used on input line 49.
@@ -1002,39 +1081,43 @@ Package pdftex.def Info: alloy/world5.png  used on input line 49.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44] [45 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world1.png (PNG copy)>] [46 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world2.png (PNG copy)>] [47 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world3.png (PNG copy)>] [48 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world4.png (PNG copy)>] [49 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world5.png (PNG copy)>]) [50
+[46] [47 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world1.png (PNG copy)>] [48 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world2.png (PNG copy)>] [49 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world3.png (PNG copy)>] [50 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world4.png (PNG copy)>] [51 </Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/alloy/world5.png (PNG copy)>]) [52
 
 ]
 \openout2 = `RASD_appendix.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.tex [51
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.tex [53
 
 
-]) [52
+]) [54
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_overallDescription.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_specificRequirements.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_alloy.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `RASD_main.out' has not changed.
-(rerunfilecheck)             Checksum: E0DD8E11BC6B450540A4BC2B9A6597BA;3381.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+(rerunfilecheck)             Checksum: 00987CB65384F71D8B956E08D583D8DA;3381.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 19898 strings out of 492616
- 367952 string characters out of 6129480
- 622482 words of memory out of 5000000
- 22839 multiletter control sequences out of 15000+600000
+ 19918 strings out of 492616
+ 368250 string characters out of 6129480
+ 622634 words of memory out of 5000000
+ 22845 multiletter control sequences out of 15000+600000
  19015 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,81p,1024b,2058s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.pdf (55 pages, 6278364 bytes).
+Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/RASD/RASD_main.pdf (58 pages, 6322016 bytes).
 PDF statistics:
- 1304 PDF objects out of 1440 (max. 8388607)
- 1145 compressed objects within 12 object streams
- 546 named destinations out of 1000 (max. 500000)
- 651 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1334 PDF objects out of 1440 (max. 8388607)
+ 1170 compressed objects within 12 object streams
+ 559 named destinations out of 1000 (max. 500000)
+ 656 words of extra memory for PDF output out of 10000 (max. 10000000)
 

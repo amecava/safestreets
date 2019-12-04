@@ -1,9 +1,11 @@
 \babel@toc {english}{}
-\contentsline {table}{\numberline {1}{\emph {Registration} use case description}}{19}{Item.34}% 
-\contentsline {table}{\numberline {2}{\emph {Login} use case description}}{20}{Item.36}% 
-\contentsline {table}{\numberline {3}{\emph {API Authentication} use case description}}{22}{Item.38}% 
-\contentsline {table}{\numberline {4}{\emph {Violation Submission} use case description}}{24}{Item.46}% 
-\contentsline {table}{\numberline {5}{\emph {View Map} use case description}}{26}{Item.52}% 
-\contentsline {table}{\numberline {6}{\emph {View Statistics} use case description}}{28}{Item.58}% 
-\contentsline {table}{\numberline {7}{\emph {Retrieve Data from Municipality} use case description}}{30}{Item.65}% 
-\contentsline {table}{\numberline {8}{\emph {Provide Data from API} use case description}}{32}{Item.68}% 
+\contentsline {table}{\numberline {1}{\emph {Registration} use case description}}{20}{Item.34}% 
+\contentsline {table}{\numberline {2}{\emph {Login} use case description}}{21}{Item.36}% 
+\contentsline {table}{\numberline {3}{\emph {API Authentication} use case description}}{23}{Item.38}% 
+\contentsline {table}{\numberline {4}{\emph {Violation Submission} use case description}}{25}{Item.46}% 
+\contentsline {table}{\numberline {5}{\emph {View Map} use case description}}{27}{Item.52}% 
+\contentsline {table}{\numberline {6}{\emph {View Statistics} use case description}}{29}{Item.58}% 
+\contentsline {table}{\numberline {7}{\emph {Retrieve Data from Municipality} use case description}}{31}{Item.65}% 
+\contentsline {table}{\numberline {8}{\emph {Provide Data from API} use case description}}{33}{Item.68}% 
+\contentsline {table}{\numberline {9}{\emph {Visualize data} use case description}}{35}{Item.70}% 
+\contentsline {table}{\numberline {10}{\emph {Mark reports validity} use case description}}{35}{Item.74}% 
