@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.8)  3 DEC 2019 08:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.8)  4 DEC 2019 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -543,19 +543,19 @@ LaTeX Info: Redefining \nameref on input line 46.
 \openout2 = `DD_cover.aux'.
 
  (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_cover.tex
-<./img/logo_poli.png, id=320, 666.49pt x 302.12875pt>
-File: ./img/logo_poli.png Graphic file (type png)
-<use ./img/logo_poli.png>
-Package pdftex.def Info: ./img/logo_poli.png  used on input line 9.
-(pdftex.def)             Requested size: 199.94853pt x 90.63931pt.
+<./img/logo_poli_colored.png, id=320, 312.16624pt x 312.16624pt>
+File: ./img/logo_poli_colored.png Graphic file (type png)
+<use ./img/logo_poli_colored.png>
+Package pdftex.def Info: ./img/logo_poli_colored.png  used on input line 9.
+(pdftex.def)             Requested size: 124.86427pt x 124.86427pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 33.
+(Font)              <7> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 33.
+(Font)              <5> on input line 36.
  [1
 
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_poli.png>]) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.toc [1
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/logo_poli_colored.png>]) (/Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.toc [1
 
 
 ])
@@ -1289,18 +1289,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
- 19761 strings out of 492616
- 370449 string characters out of 6129481
- 677632 words of memory out of 5000000
- 22947 multiletter control sequences out of 15000+600000
- 18314 words of font info for 35 fonts, out of 8000000 for 9000
+ 19765 strings out of 492616
+ 370538 string characters out of 6129481
+ 677638 words of memory out of 5000000
+ 22949 multiletter control sequences out of 15000+600000
+ 19860 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,81p,748b,1151s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.pdf (59 pages, 4147881 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on /Users/federicocapaccio/Documents/GitHub/CalabreseCapaccioCavallo/Releases/DD/DD_main.pdf (59 pages, 4203679 bytes).
 PDF statistics:
- 1368 PDF objects out of 1440 (max. 8388607)
- 1134 compressed objects within 12 object streams
+ 1372 PDF objects out of 1440 (max. 8388607)
+ 1137 compressed objects within 12 object streams
  288 named destinations out of 1000 (max. 500000)
  895 words of extra memory for PDF output out of 10000 (max. 10000000)
 
