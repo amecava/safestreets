@@ -268,6 +268,7 @@ This component is used to manage the authorities requests of accessing informati
 \clearpage
 
 \subsubsection{RentManager component}
+\todo{remove}
 
 \autoref{fig:rentObjectDiagram} shows the internal structure of the Rent Manager component; an \mbox{Object} \mbox{Diagram} was used in order to show the objects realizing the component functionalities and the associations between the aforementioned objects. This diagram also shows the delegation associations between the provided and required interfaces of the components and the objects realizing it.
 \\
@@ -294,6 +295,7 @@ This component encapsulates most of the logic of the System, it manages the info
 
 \clearpage
 \subsubsection{MaintenanceManager component}
+\todo{remove}
 \autoref{fig:maintenanceManagerObjectDiagram} shows the internal structure of the Maintenance Manager component; an Object Diagram was used in order to show the objects realizing the component functionalities and the associations between the aforementioned objects. This diagram also shows the delegation associations between the provided and required interfaces of the components and the objects realizing it.
 \\
 This component provides the Maintenance Service with all the functionalities it needs, granting it access to the API and allowing it to see unavailable cars and tag fixed cars as available.
@@ -312,6 +314,7 @@ This component provides the Maintenance Service with all the functionalities it 
 \paragraph{MaintenanceDoneManager:} this part of the MaintenanceManager component allows the Maintenance Service operators to tag a car as \emph{Available} after fixing a problem.
 
 \subsubsection{UserInformationManager component}
+\todo{da vedere}
 \autoref{fig:userInformationManagerObjectDiagram} shows the internal structure of the UserInformationManager component; an Object Diagram was used in order to show the objects realizing the component functionalities and the associations between the aforementioned objects. This diagram also shows the delegation associations between the provided and required interfaces of the components and the objects realizing it.
 This component manages the user information present in the system, granting access to it to the Customer Care and to the User Application Server.
 \begin{figure}[h!]
@@ -339,6 +342,7 @@ This component provides the CustomerCareApplication client with the information 
 This component is in charge of providing a unified interface to access the different data sources of the System, both the DBMS and the files contained in the File System of the OS hosting the application logic. This component allows a better decoupling between the application logic components and the underlying data layer.
 
 \subsubsection{CarHandler and EventBroker components}
+\todo{remove}
 These 2 components are responsible for the communication with the cars embedded system.
 \paragraph{Car Handler} exposes to the PowerEnJoy system all of the primitives provided by the car embedded system; it does that via a client server communication in which the cars embedded system is the server, offering its primitives, and the CarHandler component is the client, requesting the primitives.
 \paragraph{EventBroker} instead is notified by the cars embedded system when some specific events take place in the car system; this communication is realized via a publish subscribe paradigm in which the cars embedded system is the publisher, publishing events on the EventBroker component, and the internal components of the PowerEnJoy system are the subscribers which are interested to the events taking place in the cars. 
@@ -363,6 +367,7 @@ we decided to design the system on a four tier architecture pattern (see also \l
 	}
 \end{figure}
 \paragraph{Mapping of Server components on architecture:}to clarify at a finer level how the Server components are mapped in the four tier layered architecture the following diagram represents the Server components highlighted in the same color of the tier in the previous diagram:
+\todo{update names}
 \begin{itemize}
 	\item Client: components used by users in order to access the functionalities offered by the system
 		\begin{itemize}
@@ -414,6 +419,7 @@ The following technologies were chosen for the implementation of the SafeStreets
 \paragraph{DBMS:} MySQL was chosen as DBMS since it is the most popular and widespread and it has a lot of documentation and a big community of users; in combination with it we chose InnoDB which allows the usage of foreign keys
 \clearpage
 \subsubsection{Decision Tree}
+\todo{modificare}
 \autoref{fig:decisionTree} represents a summary of the main design and implementation decisions that were made during the development of the architecture of the PowerEnJoy system.\\
 
 \begin{figure}[h!]
@@ -426,6 +432,7 @@ The following technologies were chosen for the implementation of the SafeStreets
 \end{figure}
 \clearpage
 \subsubsection{Deployment diagram}
+\todo{rivedere}
 The diagram in \autoref{fig:deployment} represents the mapping of the software components depicted in \autoref{fig:deployServerComponent} and \autoref{fig:highLevelComponents} on the devices that will run them. Many design concerns were considered while developing this solution.
 \paragraph{Security:}security is ensured in different points of the architecture, in particular the \emph{UserAppServer} uses HTTPS as communication protocol to communicate with the users; the devices running the \emph{CustomerCareApplication} component are in a VPN with the device running the \emph{CustomerCareServer}.
 \paragraph{Scalability:}this model of deployment is scalable in the sense that the system administrators will be able to add more devices and deploy more instances of the needed components when and where performance issues will arise, in order to maintain a minimum level of performance even with loads increase.
@@ -433,7 +440,7 @@ The diagram in \autoref{fig:deployment} represents the mapping of the software c
 \paragraph{Redundancy:}in this iteration of the architecture no redundancy of components or devices is present, but it is allowed in prevision of future expansions of the system's infrastructure.
 \paragraph{Fault Tolerance:}deploying different components on different machines allows the system to be easier to recover in case of a problem on one of the machines; for an example the Web Server running the \textit{UserAppServer} component goes down, it can be replaced with another machine and in the mean time the \textit{ApplicationServer} would still be up and running and still be able to provide the \textit{CustomerCareApplication} with its functionalities.
 \clearpage
-
+\todo{sistemare}
 \begin{figure}[t!]
 	\centering
 	\includegraphics[width=\linewidth]{deployment}
