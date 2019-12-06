@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces \emph {MapHandler} object diagram }}{10}{figure.7}% 
 \contentsline {figure}{\numberline {8}{\ignorespaces \emph {SubmissionHandler} object diagram }}{11}{figure.8}% 
 \contentsline {figure}{\numberline {9}{\ignorespaces \emph {AccessHandler} object diagram }}{11}{figure.9}% 
-\contentsline {figure}{\numberline {10}{\ignorespaces \emph {AccessHandler} object diagram }}{12}{figure.10}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces \emph {Data Provider} object diagram }}{12}{figure.10}% 
 \contentsline {figure}{\numberline {11}{\ignorespaces \emph {APIHandler} object diagram }}{13}{figure.11}% 
 \contentsline {figure}{\numberline {12}{\ignorespaces Four tier architecture with internet layer }}{14}{figure.12}% 
 \contentsline {figure}{\numberline {13}{\ignorespaces Mapping server component on architecture }}{15}{figure.13}% 
