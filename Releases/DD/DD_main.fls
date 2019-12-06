@@ -297,9 +297,6 @@ INPUT ./img/diagrams/DataProviderComponent.png
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/APIHandlerComponent.png
 INPUT ./img/diagrams/APIHandlerComponent.png
 INPUT ./img/diagrams/APIHandlerComponent.png
-INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/ObjectUserInformationManager.pdf
-INPUT ./img/diagrams/ObjectUserInformationManager.pdf
-INPUT ./img/diagrams/ObjectUserInformationManager.pdf
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/4Tier.pdf
 INPUT ./img/diagrams/4Tier.pdf
 INPUT ./img/diagrams/4Tier.pdf
@@ -321,6 +318,15 @@ INPUT ./img/sequence/mapRequest.png
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/sequence/showStatistics.png
 INPUT ./img/sequence/showStatistics.png
 INPUT ./img/sequence/showStatistics.png
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/sequence/seeUserInfo.png
+INPUT ./img/sequence/seeUserInfo.png
+INPUT ./img/sequence/seeUserInfo.png
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/sequence/validateReport.png
+INPUT ./img/sequence/validateReport.png
+INPUT ./img/sequence/validateReport.png
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/sequence/sendDataToMun.png
+INPUT ./img/sequence/sendDataToMun.png
+INPUT ./img/sequence/sendDataToMun.png
 OUTPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.aux
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.tex
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.tex

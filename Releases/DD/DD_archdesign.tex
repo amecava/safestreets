@@ -215,11 +215,11 @@ This component manages the user information present in the system and provides \
 \paragraph{ValidationHandler}
 This component is used to provide the reports stored in the \textit{DBMS} that still have to be validated to the \textit{ValidationApplication}, in order to allow the \textit{ValidationOperator} to evaluate the submission and decide to approve or reject it. The decision is then stored and the violations information are updated. This component is required to avoid possible malicious or involuntary wrong usages of the system by the customers, trying to submit an unreal violation.
 \paragraph{DataProvider}
-This component is in charge of providing a unified interface to access the different data sources of the System, both the \textit{DBMS} and the files contained in the File System of the OS hosting the application logic. This component allows a better decoupling between the application logic components and the underlying data layer. \newline\newline
+This component is in charge of providing a unified interface to access the different data sources of the System, both the \textit{DBMS} and the files contained in the File System of the OS hosting the application logic. This component allows a better decoupling between the application logic components and the underlying data layer. \newline\newline\newline
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{diagrams/DataProviderComponent.png}
+	\includegraphics[width=1.1\linewidth]{diagrams/DataProviderComponent.png}
 	\caption{
 		\label{fig:accessHandlerComponentDiagram} 
 		\emph{AccessHandler} object diagram
@@ -227,19 +227,19 @@ This component is in charge of providing a unified interface to access the diffe
 \end{figure}
 
 \clearpage
+
 \paragraph{APIHandler}
 This component is used to manage the authorities requests of accessing informations about submitted violations. The \textit{SecurityChecker} module guarantees that only authorised municipalities is allowed to retrieve that data. Having a component for this specific purpose enhances decoupling between the presentation layer and the data layer, ensuring data reservation and protection. \autoref{fig:APIHandlerDiagram} shows the internal structure of this component.\newline\newline
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{diagrams/APIHandlerComponent.png}
+	\includegraphics[width=1.1\linewidth]{diagrams/APIHandlerComponent.png}
 	\caption{
 		\label{fig:APIHandlerDiagram} 
 		\emph{APIHandler} object diagram
 	}
 \end{figure}
-		
-\clearpage
 
+\clearpage
 
 \subsection{Deployment view}
 
@@ -250,15 +250,17 @@ Taking into account that:
 	\item in the \emph{Server component view} we can clearly distinguish modules who take care of presentation and communication with the client
 	\item in the \emph{Server component view} we can clearly distinguish modules who take care of the specific application logic
 \end{itemize}
-we decided to design the system on a four tier architecture pattern (see also \label{sec:deploymentView}
+we decided to design the system on a four tier architecture pattern.\newline\newline
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{diagrams/4Tier.pdf}
+	\includegraphics[width=0.9\linewidth]{diagrams/4Tier.pdf}
 	\caption{
 		\label{fig:fourTierCloud} 
 		Four tier architecture with internet layer
 	}
 \end{figure}
+
 \paragraph{Mapping of Server components on architecture:}to clarify at a finer level how the Server components are mapped in the four tier layered architecture the following diagram represents the Server components highlighted in the same color of the tier in the previous diagram:
 \todo{update names}
 \begin{itemize}
@@ -285,7 +287,7 @@ we decided to design the system on a four tier architecture pattern (see also \l
 		\end{itemize}
 	\item Data: components which store and manage the access to the data produced and needed by the Business Logic
 		\begin{itemize}
-			\item DBMS
+			\item DBMS \newline\newline
 		\end{itemize}
 \end{itemize}
 
