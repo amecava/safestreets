@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  5 DEC 2019 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  6 DEC 2019 12:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -705,11 +705,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--213
 LaTeX Warning: Reference `fig:userInformationHandlerDiagram' on page 11 undefined on input line 214.
 
 [11 <./img/diagrams/SubmissionHandlerComponent.png> <./img/diagrams/AccessHandlerComponent.png>]
-<./img/diagrams/DataProviderComponent.png, id=579, 1477.52pt x 928.46875pt>
+<./img/diagrams/DataProviderComponent.png, id=579, 1724.4425pt x 884.30376pt>
 File: ./img/diagrams/DataProviderComponent.png Graphic file (type png)
 <use ./img/diagrams/DataProviderComponent.png>
 Package pdftex.def Info: ./img/diagrams/DataProviderComponent.png  used on input line 222.
-(pdftex.def)             Requested size: 345.0pt x 216.78763pt.
+(pdftex.def)             Requested size: 345.0pt x 176.91159pt.
 <./img/diagrams/APIHandlerComponent.png, id=581, 791.95876pt x 423.5825pt>
 File: ./img/diagrams/APIHandlerComponent.png Graphic file (type png)
 <use ./img/diagrams/APIHandlerComponent.png>
@@ -1253,13 +1253,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
 Here is how much of TeX's memory you used:
  19394 strings out of 492616
  365673 string characters out of 6129480
- 452918 words of memory out of 5000000
+ 452920 words of memory out of 5000000
  22655 multiletter control sequences out of 15000+600000
  17703 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,81p,725b,973s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.pdf (52 pages, 3426695 bytes).
+Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.pdf (52 pages, 3419782 bytes).
 PDF statistics:
  1055 PDF objects out of 1200 (max. 8388607)
  879 compressed objects within 9 object streams
