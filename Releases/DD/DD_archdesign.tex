@@ -215,7 +215,7 @@ This component manages the user information present in the system and provides \
 \paragraph{ValidationHandler}
 This component is used to provide the reports stored in the \textit{DBMS} that still have to be validated to the \textit{ValidationApplication}, in order to allow the \textit{ValidationOperator} to evaluate the submission and decide to approve or reject it. The decision is then stored and the violations information are updated. This component is required to avoid possible malicious or involuntary wrong usages of the system by the customers, trying to submit an unreal violation.
 \paragraph{DataProvider}
-This component is in charge of providing a unified interface to access the different data sources of the System, both the \textit{DBMS} and the files contained in the File System of the OS hosting the application logic. This component allows a better decoupling between the application logic components and the underlying data layer. 
+This component is in charge of providing a unified interface to access the different data sources of the System, both the \textit{DBMS} and the files contained in the File System of the OS hosting the application logic. This component allows a better decoupling between the application logic components and the underlying data layer. \newline\newline
 
 \begin{figure}[h!]
 	\centering
@@ -226,6 +226,7 @@ This component is in charge of providing a unified interface to access the diffe
 	}
 \end{figure}
 
+\clearpage
 \paragraph{APIHandler}
 This component is used to manage the authorities requests of accessing informations about submitted violations. The \textit{SecurityChecker} module guarantees that only authorised municipalities is allowed to retrieve that data. Having a component for this specific purpose enhances decoupling between the presentation layer and the data layer, ensuring data reservation and protection. \autoref{fig:APIHandlerDiagram} shows the internal structure of this component.\newline\newline
 \begin{figure}[h!]
@@ -239,33 +240,6 @@ This component is used to manage the authorities requests of accessing informati
 		
 \clearpage
 
-\subsubsection{UserInformationManager component}
-\todo{da vedere}
-\autoref{fig:userInformationManagerObjectDiagram} shows the internal structure of the UserInformationManager component; an Object Diagram was used in order to show the objects realizing the component functionalities and the associations between the aforementioned objects. This diagram also shows the delegation associations between the provided and required interfaces of the components and the objects realizing it.
-This component manages the user information present in the system, granting access to it to the Customer Care and to the User Application Server.
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{diagrams/ObjectUserInformationManager.pdf}
-	\caption{
-		\label{fig:userInformationManagerObjectDiagram} 
-		\emph{UserInformationManager} object diagram
-	}
-\end{figure}
-
-\paragraph{CcUserInfoManager:} this part of the UserInformationManager component provides the Customer Care with the information it is allowed to access, and allows it access the BanUnbanManager.
-\paragraph{UserInfoManager:} this part of the UserInformationManafer component provides the User Application Server with the information it is allowed to access.
-\paragraph{BanUnbanManager:} allows the Customer Care to ban or unban Users.
-\subsubsection{AccessManager component}
-This component manages the registration and login phase of users, it encapsulates the logic that allows the users to register and login. Having a component for this specific purpose enhances decoupling in the system and ensures that these functionalities will not be affected by changes in other components of the system.
-
-\subsubsection{UserAppServer component}
-This component acts as an interface between the user and the application logic of the system; it produces the html pages shown to the user by his web browser and it receives the commands the users inputs on the web page. This component solves the concerns related to the handling of the requests sent by the users: these connection requests and the work related to generating the web pages will be handled by this component, without causing load problems on the application logic. It also allows the decoupling of the application logic from the presentation logic, which has to be realized in a four tier client-server architecture.
-
-\subsubsection{CustomerCareServer component}
-This component provides the CustomerCareApplication client with the information it needs to show and with the functionalities it needs to access; this component was decoupled from the UserAppServer component because it offers different functionalities and is only used and accessible by a specific client application.
-
-\subsubsection{DataProvider component}
-This component is in charge of providing a unified interface to access the different data sources of the System, both the DBMS and the files contained in the File System of the OS hosting the application logic. This component allows a better decoupling between the application logic components and the underlying data layer.
 
 \subsection{Deployment view}
 
@@ -374,14 +348,13 @@ The diagram in \autoref{fig:deployment} represents the mapping of the software c
 In this section we represent some runtime views of the supposed interactions between the components of the \emph{SafeStreets} system.
 
 \paragraph{Notes to read the diagram} When an attribute is modified in a JPA object the changes are reflected into the
-	\emph{DataProviderComponent} in order to keep the database updated. \todo{What does this mean?}
-	The \emph{Login Phase} is represented only in the first diagram in order to show how it will be performed but will no be 
+	\emph{DataProviderComponent} in order to keep the database updated. 	The \emph{Login Phase} is represented only in the first diagram in order to show how it will be performed but will no be 
 	repeated in every diagram in order to improve readability.
 
 \subsubsection{Upload}
 
 	\label{sec:uploadRunView}
-	The \autoref{fig:uploadSubmission} shows how the upload of a report is handled in the Server component of the system.
+	The sequence diagram in \autoref{fig:uploadSubmission} shows how the upload of a report is handled in the Server component of the system.
 
 	\begin{figure}[h!]
 		\centering
@@ -397,7 +370,7 @@ In this section we represent some runtime views of the supposed interactions bet
 	in order to focus on the purpose of the diagram.\\
 
 \subsubsection{Map request}
-The diagram in \autoref{fig:mapRequest} shows the map request process.\\
+The sequence diagram in \autoref{fig:mapRequest} shows the map request process.\\
 
 \paragraph{Interactions not represented}
 \begin{itemize}
@@ -419,14 +392,8 @@ The diagram in \autoref{fig:mapRequest} shows the map request process.\\
 
 \clearpage
 \subsubsection{Show statistic}
-The following sequence diagram shows the interactions between the modules involved in the process of retrieving data
+The sequence diagram in \autoref{fig:showStatistics} shows the interactions between the modules involved in the process of retrieving data
 for a certain statistic and show it to the user.\\
-
-\paragraph{Interactions not represented}
-\begin{itemize}
-	\item The \emph{DataProvider} needs to contact the \emph{DBMS API} to get the data necessary for the statistic requested,
-		but this interaction is not represented in order to leave the diagram as simple as possible
-\end{itemize}
 
 \begin{figure}[h!]
 	\centering
@@ -438,8 +405,45 @@ for a certain statistic and show it to the user.\\
 \end{figure}
 
 \clearpage
-\todo{TIA: quelli da fare sono dentro sequence/diagrams}
+\subsubsection{See user info}
+The sequence diagram in \autoref{fig:seeUserInfo} shows the interactions between the modules involved in the process of retrieving data of a certain user and show it to the \emph{ValidationApplication}.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[angle=0,width=\linewidth]{sequence/seeUserInfo.png}
+	\caption{
+		\label{fig:seeUserInfo} 
+		\emph{See user info} sequence diagram
+	}
+\end{figure}
 \clearpage
+
+\subsubsection{Validate reports}
+The sequence diagram in \autoref{fig:validateReport} shows the interactions between the modules involved in the process of validating the submitted reports, performed by the \emph{ValidationApplication}.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[angle=0,width=\linewidth]{sequence/validateReport.png}
+	\caption{
+		\label{fig:validateReport} 
+		\emph{Validate reports} sequence diagram
+	}
+\end{figure}
+\clearpage
+
+\subsubsection{Send data to municipality}
+The sequence diagram in \autoref{fig:sendDataToMun} shows the interactions between the modules involved in the process of providing violations data to the municipality.\\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[angle=0,width=\linewidth]{sequence/sendDataToMun.png}
+	\caption{
+		\label{fig:sendDataToMun} 
+		\emph{Send data to municipality} sequence diagram
+	}
+\end{figure}
+\clearpage
+
 
 \subsection{Component interfaces}
 
