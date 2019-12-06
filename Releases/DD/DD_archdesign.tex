@@ -254,7 +254,7 @@ we decided to design the system on a four tier architecture pattern.\newline\new
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\linewidth]{diagrams/4Tier.pdf}
+	\includegraphics[width=0.9\linewidth]{diagrams/4Tier.png}
 	\caption{
 		\label{fig:fourTierCloud} 
 		Four tier architecture with internet layer
@@ -270,11 +270,11 @@ we decided to design the system on a four tier architecture pattern.\newline\new
 		\end{itemize}
 	\item Web Server: components which provides interfaces to clients in order to allow them to use functionalities offered by the system
 		\begin{itemize}
-			\item UserAppServer
 			\item ValidationAppServer
 		\end{itemize}
 	\item Business Logic: components which realizes the functionalities offered by the system
 		\begin{itemize}
+			\item UserAppServer
 			\item MapHandler
 			\item StatisticsHandler
 			\item SubmissionHandler
@@ -331,7 +331,7 @@ The diagram in \autoref{fig:deployment} represents the mapping of the software c
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=\linewidth]{diagrams/deployment.pdf}
+	\includegraphics[width=\linewidth]{diagrams/deployment.png}
 	\caption{
 		\label{fig:deployment} 
 		Deployment diagram
