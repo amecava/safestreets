@@ -303,9 +303,9 @@ INPUT ./img/diagrams/4Tier.pdf
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/deployComponent.png
 INPUT ./img/diagrams/deployComponent.png
 INPUT ./img/diagrams/deployComponent.png
-INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/decisionTree.pdf
-INPUT ./img/diagrams/decisionTree.pdf
-INPUT ./img/diagrams/decisionTree.pdf
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/decisionTree.png
+INPUT ./img/diagrams/decisionTree.png
+INPUT ./img/diagrams/decisionTree.png
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/deployment.pdf
 INPUT ./img/diagrams/deployment.pdf
 INPUT ./img/diagrams/deployment.pdf
