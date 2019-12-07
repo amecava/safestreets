@@ -20,20 +20,11 @@
 \contentsline {figure}{\numberline {19}{\ignorespaces \emph {See user info} sequence diagram }}{23}{figure.19}% 
 \contentsline {figure}{\numberline {20}{\ignorespaces \emph {Validate reports} sequence diagram }}{24}{figure.20}% 
 \contentsline {figure}{\numberline {21}{\ignorespaces \emph {Send data to municipality} sequence diagram }}{25}{figure.21}% 
-\contentsline {figure}{\numberline {22}{\ignorespaces \emph {Login page} mockup }}{29}{figure.22}% 
-\contentsline {figure}{\numberline {23}{\ignorespaces \emph {Home page} mockup }}{30}{figure.23}% 
-\contentsline {figure}{\numberline {24}{\ignorespaces \emph {See available cars} mockup }}{31}{figure.24}% 
-\contentsline {figure}{\numberline {25}{\ignorespaces \emph {Reserve a car} mockup }}{32}{figure.25}% 
-\contentsline {figure}{\numberline {26}{\ignorespaces \emph {Money saving option} mockup }}{33}{figure.26}% 
-\contentsline {figure}{\numberline {27}{\ignorespaces \emph {Unlock a car} mockup }}{34}{figure.27}% 
-\contentsline {figure}{\numberline {28}{\ignorespaces \emph {Payment history} mockup }}{35}{figure.28}% 
-\contentsline {figure}{\numberline {29}{\ignorespaces \emph {Single payment records} mockup }}{36}{figure.29}% 
-\contentsline {figure}{\numberline {30}{\ignorespaces \emph {Rent history} mockup }}{37}{figure.30}% 
-\contentsline {figure}{\numberline {31}{\ignorespaces \emph {Customer care home page} mockup }}{38}{figure.31}% 
-\contentsline {figure}{\numberline {32}{\ignorespaces \emph {Customer care user's information page} mockup }}{39}{figure.32}% 
-\contentsline {figure}{\numberline {33}{\ignorespaces User data integration }}{44}{figure.33}% 
-\contentsline {figure}{\numberline {34}{\ignorespaces Submissions and violations data integration }}{44}{figure.34}% 
-\contentsline {figure}{\numberline {35}{\ignorespaces Statistics and map data integration }}{44}{figure.35}% 
-\contentsline {figure}{\numberline {36}{\ignorespaces Municipality API data integration }}{45}{figure.36}% 
-\contentsline {figure}{\numberline {37}{\ignorespaces User app integration }}{45}{figure.37}% 
-\contentsline {figure}{\numberline {38}{\ignorespaces Validation Service integration }}{45}{figure.38}% 
+\contentsline {figure}{\numberline {22}{\ignorespaces \emph {Validation service home page} mockup }}{29}{figure.22}% 
+\contentsline {figure}{\numberline {23}{\ignorespaces \emph {Validation service reports and violations list} mockup }}{29}{figure.23}% 
+\contentsline {figure}{\numberline {24}{\ignorespaces User data integration }}{34}{figure.24}% 
+\contentsline {figure}{\numberline {25}{\ignorespaces Submissions and violations data integration }}{34}{figure.25}% 
+\contentsline {figure}{\numberline {26}{\ignorespaces Statistics and map data integration }}{34}{figure.26}% 
+\contentsline {figure}{\numberline {27}{\ignorespaces Municipality API data integration }}{35}{figure.27}% 
+\contentsline {figure}{\numberline {28}{\ignorespaces User app integration }}{35}{figure.28}% 
+\contentsline {figure}{\numberline {29}{\ignorespaces Validation Service integration }}{35}{figure.29}% 

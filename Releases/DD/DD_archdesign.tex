@@ -1,3 +1,6 @@
+\setlength{\parindent}{4ex}
+\setlength{\parskip}{1ex}
+
 \section{Architectural design}
 
 \subsection{Overview}
@@ -52,16 +55,16 @@
 \clearpage
 
 \subsection{Component view}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\linewidth]{diagrams/highLevelComponents.png}
-	\caption{
-		\label{fig:highLevelComponents} 
-		High-level components
-	}
-\end{figure}
+	\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=\linewidth]{diagrams/highLevelComponents.png}
+		\caption{
+			\label{fig:highLevelComponents} 
+			High-level components
+		}
+	\end{figure} Considering all the previous graphs, we have identified the following high level components and interfaces, shown in \autoref{fig:highLevelComponents}, implementing the functionalities defined in the RASD \cite{RASD}:
 
-Considering all the previous graphs, we have identified the following high level components and interfaces, shown in \autoref{fig:highLevelComponents}, implementing the functionalities defined in the RASD:
+
 \begin{itemize}
 
 	\item \textbf{User Application}
@@ -114,7 +117,7 @@ Considering all the previous graphs, we have identified the following high level
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9685\linewidth]{diagrams/DBComponent.png}
+	\includegraphics[width=1.1\linewidth]{diagrams/DBComponent.png}
 	\caption{
 		\label{fig:ERModel} 
 		ER model
@@ -167,7 +170,7 @@ The white box representation (\autoref{fig:ServerComponent}) shows the parts com
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{diagrams/ServerComponent.png}
+	\includegraphics[width=0.95\linewidth]{diagrams/ServerComponent.png}
 	\caption{
 	\label{fig:ServerComponent} 
 		Server component
@@ -190,7 +193,7 @@ This component processes the map visualisation requests performed by the users. 
 \end{figure}
 \paragraph{StatisticsHandler}
 This component processes the statistics requests performed by the users, retrieving data from the \textit{DBMS}, analysing it and turning it into the requested information, which can regard a general or more specific scope. Having a component for this specific purpose enhances decoupling in the system and provides a security layer for the integrity of the data.
-\paragraph{SubmissionHandler}
+\clearpage\paragraph{SubmissionHandler}
 This component processes the violation data submitted by the users and the \textit{ImageAnalyser} module is involved to perform the recognition of the license plate in the picture. Finally, the \textit{PlateValidator} module checks whether the recognised plate and possibly the manually inserted plate match and are valid. This data is stored as a report and later validated by the operator to eventually turn it into a violation.\newline\newline
 \begin{figure}[h!]
 	\centering
@@ -300,6 +303,7 @@ we decided to design the system on a four tier architecture pattern.\newline\new
 		\end{figure}
 \clearpage
 
+\label{sec:implementationChoices}
 \subsubsection{Implementation choices}
 The following technologies were chosen for the implementation of the SafeStreets system. J2EE was the main choice we made because it offers a wide range of functionalities that makes the development of scalable multi tiered web based application much easier than with other technologies.
 
@@ -449,6 +453,8 @@ The sequence diagram in \autoref{fig:sendDataToMun} shows the interactions betwe
 
 
 \subsection{Component interfaces}
+
+\todo{todo}
 
 \subsubsection{Car-server interfaces}
 \label{sec:carServerInt}

@@ -1,3 +1,6 @@
+\setlength{\parindent}{4ex}
+\setlength{\parskip}{1ex}
+
 \section{Requirements traceability}
 
     \subsection{Functional requirements}
@@ -38,26 +41,26 @@
                 \textbf{G8} Allow municipality to consult the system data and receive suggestions on possible interventions via 
                 a restrict access API 
                 & \mbox{APIHandler} \mbox{DataProvider}\\
+            \midrule
+                \textbf{G9} Provide validation service the ability to validate user’s submissions of data describing occurred violations
+                & \mbox{ValidationAppServer} \mbox{ValidationHandler} \mbox{DataProvider}\\
             \bottomrule
             \caption{\label{tbl:mappingGoalsOnComponent}Mapping goals on components}
         \end{longtable} 
 
-        \todo{goal 9}
-
+        \clearpage
+        
     \subsection{Non functional requirements}
-    \todo{RASD?}
+        \paragraph{Security}
+        Security protocols are used for transmission and storage of sensitive data.
+        Validation Service Server is accessed over a VPN to ensure security.
 
         \paragraph{Performance requirements}
-        To guarantee a short response time we have tried to decouple components in order to enable an instance pooling management of components by the EJB container and so an as much as possible concurrent management of requests. \\
-        During all the design process we also have kept in mind the scalability of the software w.r.t. the number of cars trying to keep a linear complexity factor and to reduce car-dependent activities where it is possible.
+        To guarantee a short response time we have tried to decouple components in order to enable an instance pooling management of components by the EJB container and so an as much as possible concurrent management of requests.
+        During all the design process we also have kept in mind the scalability of the software.
 
         \paragraph{Availability}
         To ensure availability requirements server will be running 24 hours for day. The architecture is designed with the purpose of enabling a redundancy architecture if availability constraints would make it necessary.
-
-        \paragraph{Security}
-        Security protocols are used for transmission and storage of sensitive data.
-        Maintenance API is only accessible through token mechanisms.
-        Customer Care Server is accessed over a VPN to ensure security. \todo{fix}
 
         \paragraph{Portability}
         Users access the system through a web-based application that enables the portability and a cross-operative system compatibility.
