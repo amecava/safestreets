@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  7 DEC 2019 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.17)  9 DEC 2019 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -477,7 +477,11 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_archdesign.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_reqtraceability.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_implementationTesting.aux
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.aux (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_cover.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_introduction.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_archdesign.aux
+
+LaTeX Warning: Label `fig:sendDataToMun' multiply defined.
+
+) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_reqtraceability.aux) (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_implementationTesting.aux
 
 LaTeX Warning: Label `tab:table1' multiply defined.
 
@@ -589,17 +593,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 \openout2 = `DD_archdesign.aux'.
 
  (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_archdesign.tex
-<./img/diagrams/contextViewPoints.png, id=432, 656.4525pt x 322.20375pt>
+<./img/diagrams/contextViewPoints.png, id=436, 656.4525pt x 322.20375pt>
 File: ./img/diagrams/contextViewPoints.png Graphic file (type png)
 <use ./img/diagrams/contextViewPoints.png>
 Package pdftex.def Info: ./img/diagrams/contextViewPoints.png  used on input line 11.
 (pdftex.def)             Requested size: 345.0pt x 169.33649pt.
-<./img/diagrams/ClientServer.png, id=433, 352.31625pt x 121.45375pt>
+<./img/diagrams/ClientServer.png, id=437, 352.31625pt x 121.45375pt>
 File: ./img/diagrams/ClientServer.png Graphic file (type png)
 <use ./img/diagrams/ClientServer.png>
 Package pdftex.def Info: ./img/diagrams/ClientServer.png  used on input line 23.
 (pdftex.def)             Requested size: 172.5pt x 59.46466pt.
-<./img/diagrams/ComponentOverview.png, id=434, 911.405pt x 583.17876pt>
+<./img/diagrams/ComponentOverview.png, id=438, 911.405pt x 583.17876pt>
 File: ./img/diagrams/ComponentOverview.png Graphic file (type png)
 <use ./img/diagrams/ComponentOverview.png>
 Package pdftex.def Info: ./img/diagrams/ComponentOverview.png  used on input line 34.
@@ -618,7 +622,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 
  <./img/diagrams/contextViewPoints.png> <./img/diagrams/ClientServer.png>] [4 <./img/diagrams/ComponentOverview.png>]
-<./img/diagrams/highLevelComponents.png, id=451, 548.0475pt x 446.66875pt>
+<./img/diagrams/highLevelComponents.png, id=455, 548.0475pt x 446.66875pt>
 File: ./img/diagrams/highLevelComponents.png Graphic file (type png)
 <use ./img/diagrams/highLevelComponents.png>
 Package pdftex.def Info: ./img/diagrams/highLevelComponents.png  used on input line 60.
@@ -629,7 +633,7 @@ Package pdftex.def Info: ./img/diagrams/highLevelComponents.png  used on input l
 
 ]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 115.
-<./img/diagrams/DBComponent.png, id=464, 1049.9225pt x 965.6075pt>
+<./img/diagrams/DBComponent.png, id=468, 1049.9225pt x 965.6075pt>
 File: ./img/diagrams/DBComponent.png Graphic file (type png)
 <use ./img/diagrams/DBComponent.png>
 Package pdftex.def Info: ./img/diagrams/DBComponent.png  used on input line 120.
@@ -658,7 +662,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
-<./img/diagrams/ServerComponent.png, id=485, 1204.5pt x 1125.20375pt>
+<./img/diagrams/ServerComponent.png, id=489, 1204.5pt x 1125.20375pt>
 File: ./img/diagrams/ServerComponent.png Graphic file (type png)
 <use ./img/diagrams/ServerComponent.png>
 Package pdftex.def Info: ./img/diagrams/ServerComponent.png  used on input line 173.
@@ -666,7 +670,7 @@ Package pdftex.def Info: ./img/diagrams/ServerComponent.png  used on input line 
 [9
 
  <./img/diagrams/ServerComponent.png>]
-<./img/diagrams/MapHandlerComponent.png, id=492, 1252.68pt x 452.69125pt>
+<./img/diagrams/MapHandlerComponent.png, id=497, 1252.68pt x 452.69125pt>
 File: ./img/diagrams/MapHandlerComponent.png Graphic file (type png)
 <use ./img/diagrams/MapHandlerComponent.png>
 Package pdftex.def Info: ./img/diagrams/MapHandlerComponent.png  used on input line 188.
@@ -682,7 +686,7 @@ Overfull \hbox (4.28554pt too wide) in paragraph at lines 195--196
  []
 
 [10 <./img/diagrams/MapHandlerComponent.png>]
-<./img/diagrams/SubmissionHandlerComponent.png, id=503, 971.63pt x 452.69125pt>
+<./img/diagrams/SubmissionHandlerComponent.png, id=507, 971.63pt x 452.69125pt>
 File: ./img/diagrams/SubmissionHandlerComponent.png Graphic file (type png)
 <use ./img/diagrams/SubmissionHandlerComponent.png>
 Package pdftex.def Info: ./img/diagrams/SubmissionHandlerComponent.png  used on input line 200.
@@ -692,7 +696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--206
 
  []
 
-<./img/diagrams/AccessHandlerComponent.png, id=504, 1253.68375pt x 452.69125pt>
+<./img/diagrams/AccessHandlerComponent.png, id=508, 1253.68375pt x 452.69125pt>
 File: ./img/diagrams/AccessHandlerComponent.png Graphic file (type png)
 <use ./img/diagrams/AccessHandlerComponent.png>
 Package pdftex.def Info: ./img/diagrams/AccessHandlerComponent.png  used on input line 210.
@@ -722,7 +726,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
-<./img/diagrams/DataProviderComponent.png, id=513, 1724.4425pt x 884.30376pt>
+<./img/diagrams/DataProviderComponent.png, id=517, 1724.4425pt x 884.30376pt>
 File: ./img/diagrams/DataProviderComponent.png Graphic file (type png)
 <use ./img/diagrams/DataProviderComponent.png>
 Package pdftex.def Info: ./img/diagrams/DataProviderComponent.png  used on input line 225.
@@ -733,7 +737,7 @@ Overfull \hbox (34.5021pt too wide) in paragraph at lines 225--229
  []
 
 [12 <./img/diagrams/DataProviderComponent.png>]
-<./img/diagrams/APIHandlerComponent.png, id=523, 791.95876pt x 423.5825pt>
+<./img/diagrams/APIHandlerComponent.png, id=527, 791.95876pt x 423.5825pt>
 File: ./img/diagrams/APIHandlerComponent.png Graphic file (type png)
 <use ./img/diagrams/APIHandlerComponent.png>
 Package pdftex.def Info: ./img/diagrams/APIHandlerComponent.png  used on input line 238.
@@ -760,7 +764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
-<./img/diagrams/4Tier.png, id=530, 3233.07875pt x 859.21pt>
+<./img/diagrams/4Tier.png, id=534, 3233.07875pt x 859.21pt>
 File: ./img/diagrams/4Tier.png Graphic file (type png)
 <use ./img/diagrams/4Tier.png>
 Package pdftex.def Info: ./img/diagrams/4Tier.png  used on input line 260.
@@ -777,7 +781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-<./img/diagrams/deployComponent.png, id=537, 1204.5pt x 1125.20375pt>
+<./img/diagrams/deployComponent.png, id=541, 1204.5pt x 1125.20375pt>
 File: ./img/diagrams/deployComponent.png Graphic file (type png)
 <use ./img/diagrams/deployComponent.png>
 Package pdftex.def Info: ./img/diagrams/deployComponent.png  used on input line 298.
@@ -794,7 +798,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-<./img/diagrams/decisionTree.png, id=557, 3358.5475pt x 3839.34375pt>
+<./img/diagrams/decisionTree.png, id=561, 3358.5475pt x 3839.34375pt>
 File: ./img/diagrams/decisionTree.png Graphic file (type png)
 <use ./img/diagrams/decisionTree.png>
 Package pdftex.def Info: ./img/diagrams/decisionTree.png  used on input line 325.
@@ -816,7 +820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
-<./img/diagrams/deployment.png, id=565, 1289.81876pt x 1296.845pt>
+<./img/diagrams/deployment.png, id=569, 1289.81876pt x 1296.845pt>
 File: ./img/diagrams/deployment.png Graphic file (type png)
 <use ./img/diagrams/deployment.png>
 Package pdftex.def Info: ./img/diagrams/deployment.png  used on input line 338.
@@ -831,7 +835,7 @@ Overfull \hbox (68.99895pt too wide) in paragraph at lines 338--342
  <./img/diagrams/deployment.png>] [19
 
 ]
-<./img/sequence/uploadSubmission.png, id=581, 1044.90375pt x 881.2925pt>
+<./img/sequence/uploadSubmission.png, id=585, 1044.90375pt x 881.2925pt>
 File: ./img/sequence/uploadSubmission.png Graphic file (type png)
 <use ./img/sequence/uploadSubmission.png>
 Package pdftex.def Info: ./img/sequence/uploadSubmission.png  used on input line 368.
@@ -848,7 +852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
-<./img/sequence/mapRequest.png, id=589, 1044.90375pt x 693.59125pt>
+<./img/sequence/mapRequest.png, id=593, 1044.90375pt x 693.59125pt>
 File: ./img/sequence/mapRequest.png Graphic file (type png)
 <use ./img/sequence/mapRequest.png>
 Package pdftex.def Info: ./img/sequence/mapRequest.png  used on input line 393.
@@ -860,7 +864,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
 
-<./img/sequence/showStatistics.png, id=599, 1095.09125pt x 804.00375pt>
+<./img/sequence/showStatistics.png, id=603, 1095.09125pt x 804.00375pt>
 File: ./img/sequence/showStatistics.png Graphic file (type png)
 <use ./img/sequence/showStatistics.png>
 Package pdftex.def Info: ./img/sequence/showStatistics.png  used on input line 407.
@@ -872,7 +876,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
-<./img/sequence/seeUserInfo.png, id=606, 864.22874pt x 456.70625pt>
+<./img/sequence/seeUserInfo.png, id=610, 864.22874pt x 456.70625pt>
 File: ./img/sequence/seeUserInfo.png Graphic file (type png)
 <use ./img/sequence/seeUserInfo.png>
 Package pdftex.def Info: ./img/sequence/seeUserInfo.png  used on input line 420.
@@ -884,7 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
-<./img/sequence/validateReport.png, id=614, 1014.79124pt x 1025.8325pt>
+<./img/sequence/validateReport.png, id=618, 1014.79124pt x 1025.8325pt>
 File: ./img/sequence/validateReport.png Graphic file (type png)
 <use ./img/sequence/validateReport.png>
 Package pdftex.def Info: ./img/sequence/validateReport.png  used on input line 433.
@@ -896,35 +900,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 442--443
 
  []
 
-<./img/sequence/sendDataToMun.png, id=621, 924.45375pt x 442.65375pt>
+<./img/sequence/sendDataToMun.png, id=625, 924.45375pt x 442.65375pt>
 File: ./img/sequence/sendDataToMun.png Graphic file (type png)
 <use ./img/sequence/sendDataToMun.png>
 Package pdftex.def Info: ./img/sequence/sendDataToMun.png  used on input line 446.
 (pdftex.def)             Requested size: 924.45149pt x 442.65265pt.
 [25
 
- <./img/sequence/sendDataToMun.png>] [26
+ <./img/sequence/sendDataToMun.png>]
+<./img/diagrams/ServerComponent-methods.png, id=631, 1075.01625pt x 729.72626pt>
+File: ./img/diagrams/ServerComponent-methods.png Graphic file (type png)
+<use ./img/diagrams/ServerComponent-methods.png>
+Package pdftex.def Info: ./img/diagrams/ServerComponent-methods.png  used on input line 459.
+(pdftex.def)             Requested size: 1075.01364pt x 729.72449pt.
 
-]) [27]
+Overfull \hbox (34.4928pt too wide) in paragraph at lines 459--463
+ [][] 
+ []
+
+[26
+
+ <./img/diagrams/ServerComponent-methods.png>] [27]) [28]
 \openout2 = `DD_userinterfacedesign.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.tex [28
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.tex
+<./img/diagrams/UXdiagram-user.png, id=648, 1285.80376pt x 884.30376pt>
+File: ./img/diagrams/UXdiagram-user.png Graphic file (type png)
+<use ./img/diagrams/UXdiagram-user.png>
+Package pdftex.def Info: ./img/diagrams/UXdiagram-user.png  used on input line 18.
+(pdftex.def)             Requested size: 345.0pt x 237.26744pt.
+ [29
 
 
-]
-<mockups/customerCare1.pdf, id=643, 733.74126pt x 576.1525pt>
+ <./img/diagrams/UXdiagram-user.png>]
+<mockups/customerCare1.pdf, id=654, 733.74126pt x 576.1525pt>
 File: mockups/customerCare1.pdf Graphic file (type pdf)
 <use mockups/customerCare1.pdf>
-Package pdftex.def Info: mockups/customerCare1.pdf  used on input line 32.
+Package pdftex.def Info: mockups/customerCare1.pdf  used on input line 41.
 (pdftex.def)             Requested size: 276.00105pt x 216.7248pt.
-<mockups/customerCare2.pdf, id=644, 733.74126pt x 576.1525pt>
+ [30 </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare1.pdf>]
+<mockups/customerCare2.pdf, id=667, 733.74126pt x 576.1525pt>
 File: mockups/customerCare2.pdf Graphic file (type pdf)
 <use mockups/customerCare2.pdf>
-Package pdftex.def Info: mockups/customerCare2.pdf  used on input line 45.
+Package pdftex.def Info: mockups/customerCare2.pdf  used on input line 55.
 (pdftex.def)             Requested size: 276.00105pt x 216.7248pt.
-) [29
+) [31
 
- </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare1.pdf> </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare2.pdf>]
+ </Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare2.pdf>]
 \openout2 = `DD_reqtraceability.aux'.
 
  (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_reqtraceability.tex
@@ -1031,10 +1053,10 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 11--49
 Underfull \vbox (badness 10000) detected at line 49
  []
 
-[30
+[32
 
 
-]) [31
+]) [33
 
 ]
 \openout2 = `DD_implementationTesting.aux'.
@@ -1044,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--19
 
  []
 
-[32
+[34
 
 
 ]
@@ -1057,23 +1079,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[33]
-<./img/diagrams/userDataIntegration.png, id=688, 363.3575pt x 242.9075pt>
+[35]
+<./img/diagrams/userDataIntegration.png, id=703, 363.3575pt x 242.9075pt>
 File: ./img/diagrams/userDataIntegration.png Graphic file (type png)
 <use ./img/diagrams/userDataIntegration.png>
 Package pdftex.def Info: ./img/diagrams/userDataIntegration.png  used on input line 100.
 (pdftex.def)             Requested size: 172.5pt x 115.31924pt.
-<./img/diagrams/submissionDataIntegration.png, id=689, 363.3575pt x 242.9075pt>
+<./img/diagrams/submissionDataIntegration.png, id=704, 363.3575pt x 242.9075pt>
 File: ./img/diagrams/submissionDataIntegration.png Graphic file (type png)
 <use ./img/diagrams/submissionDataIntegration.png>
 Package pdftex.def Info: ./img/diagrams/submissionDataIntegration.png  used on input line 109.
 (pdftex.def)             Requested size: 172.5pt x 115.31924pt.
-<./img/diagrams/statisticsDataintegration.png, id=690, 363.3575pt x 242.9075pt>
+<./img/diagrams/statisticsDataintegration.png, id=705, 363.3575pt x 242.9075pt>
 File: ./img/diagrams/statisticsDataintegration.png Graphic file (type png)
 <use ./img/diagrams/statisticsDataintegration.png>
 Package pdftex.def Info: ./img/diagrams/statisticsDataintegration.png  used on input line 118.
 (pdftex.def)             Requested size: 172.5pt x 115.31924pt.
-<./img/diagrams/apiDataIntegration.png, id=691, 363.3575pt x 82.3075pt>
+<./img/diagrams/apiDataIntegration.png, id=706, 363.3575pt x 82.3075pt>
 File: ./img/diagrams/apiDataIntegration.png Graphic file (type png)
 <use ./img/diagrams/apiDataIntegration.png>
 Package pdftex.def Info: ./img/diagrams/apiDataIntegration.png  used on input line 127.
@@ -1087,21 +1109,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
-[34 <./img/diagrams/userDataIntegration.png> <./img/diagrams/submissionDataIntegration.png> <./img/diagrams/statisticsDataintegration.png>]
-<./img/diagrams/userAppIntegration.png, id=699, 363.3575pt x 82.3075pt>
+[36 <./img/diagrams/userDataIntegration.png> <./img/diagrams/submissionDataIntegration.png> <./img/diagrams/statisticsDataintegration.png>]
+<./img/diagrams/userAppIntegration.png, id=715, 363.3575pt x 82.3075pt>
 File: ./img/diagrams/userAppIntegration.png Graphic file (type png)
 <use ./img/diagrams/userAppIntegration.png>
 Package pdftex.def Info: ./img/diagrams/userAppIntegration.png  used on input line 142.
 (pdftex.def)             Requested size: 172.5pt x 39.0751pt.
-<./img/diagrams/validationIntegration.png, id=700, 363.3575pt x 82.3075pt>
+<./img/diagrams/validationIntegration.png, id=716, 363.3575pt x 82.3075pt>
 File: ./img/diagrams/validationIntegration.png Graphic file (type png)
 <use ./img/diagrams/validationIntegration.png>
 Package pdftex.def Info: ./img/diagrams/validationIntegration.png  used on input line 150.
 (pdftex.def)             Requested size: 172.5pt x 39.0751pt.
-) [35 <./img/diagrams/apiDataIntegration.png> <./img/diagrams/userAppIntegration.png> <./img/diagrams/validationIntegration.png>]
+) [37 <./img/diagrams/apiDataIntegration.png> <./img/diagrams/userAppIntegration.png> <./img/diagrams/validationIntegration.png>]
 \openout2 = `DD_appendix.aux'.
 
- (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_appendix.tex) [36
+ (/Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_appendix.tex) [38
 
 
 ]
@@ -1111,7 +1133,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `DD_main.out' has not changed.
-(rerunfilecheck)             Checksum: F95218B6C1F9F5692FA3A3448EDEB77E;3965.
+(rerunfilecheck)             Checksum: CAFB9C03F091D4146027250BBA41600B;3977.
 
 
 LaTeX Warning: There were undefined references.
@@ -1122,18 +1144,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 19196 strings out of 492616
- 361363 string characters out of 6129480
- 435311 words of memory out of 5000000
- 22509 multiletter control sequences out of 15000+600000
+ 19202 strings out of 492616
+ 361600 string characters out of 6129480
+ 434211 words of memory out of 5000000
+ 22510 multiletter control sequences out of 15000+600000
  17703 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,81p,661b,970s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfxc1200.pfb>
-Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.pdf (40 pages, 2004055 bytes).
+Output written on /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_main.pdf (42 pages, 2087141 bytes).
 PDF statistics:
- 813 PDF objects out of 1000 (max. 8388607)
- 671 compressed objects within 7 object streams
- 185 named destinations out of 1000 (max. 500000)
- 707 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 829 PDF objects out of 1000 (max. 8388607)
+ 681 compressed objects within 7 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 717 words of extra memory for PDF output out of 10000 (max. 10000000)
 

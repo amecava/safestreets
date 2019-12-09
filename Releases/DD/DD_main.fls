@@ -327,9 +327,15 @@ INPUT ./img/sequence/validateReport.png
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/sequence/sendDataToMun.png
 INPUT ./img/sequence/sendDataToMun.png
 INPUT ./img/sequence/sendDataToMun.png
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/ServerComponent-methods.png
+INPUT ./img/diagrams/ServerComponent-methods.png
+INPUT ./img/diagrams/ServerComponent-methods.png
 OUTPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.aux
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.tex
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/DD_userinterfacedesign.tex
+INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/./img/diagrams/UXdiagram-user.png
+INPUT ./img/diagrams/UXdiagram-user.png
+INPUT ./img/diagrams/UXdiagram-user.png
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare1.pdf
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare1.pdf
 INPUT /Users/amedeo/Documents/GitHub/safestreets/Releases/DD/mockups/customerCare1.pdf
