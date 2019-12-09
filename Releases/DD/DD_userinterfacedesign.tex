@@ -12,37 +12,44 @@ The main goal of our mockups design process is to build an interface that clearl
 The user app mockups have been discussed and presented in the User Interfaces section of the \emph{SafeStreets: Requirements Analysis and Specification Document} \cite{RASD}. For further implementation details refer to the \hyperref[sec:implementationChoices]{Implementation Choices} section of this document.
 
 \subsection{Validation Service app}
-The validation service app has a simple interface in order to provide features to validation service operator in a clear and simple way. This interface must be optimized for a desktop monitor size.
+The validation service app has a simple interface in order to provide features to validation service operators in a clear and simple way. This interface must be optimised for a desktop monitor size.
 
+\clearpage
 \subsubsection{Home page}
 All main features are accessible directly from the home page to provide a rapid and intuitive access to them. \\
 From the home page the operator can:
 \begin{itemize}
-	\item Visualize the pending reports of possibly occurred accidents
-	\item Select a specific report to visualize all the stored data regarding it
-	\item Visualize the result of the image recognition alghoritms associated to the selected report
-	\item Furtherly support the image recognition by manually modifying the report license plate if not present, wrongly typed by the user, or totally not recognized
-	\item Mark and unmark reports as valid in order to ﬁlter valid and not valid user’s submissions
+	\item Visualise all the submitted reports
+	\item Filter by the pending reports of possibly occurred accidents
+	\item Filter by the already validated reports
+	\item Delete single or multiple reports
+	\item Select a specific report to visualise all the stored data regarding it, accessing the \emph{report details page}\newline\newline
 \end{itemize}
-
-\clearpage
- 
  \begin{figure}[ht!]
+ 	\hspace*{-1cm}
 			\centering
-			\includegraphics[width=0.8\linewidth]{mockups/customerCare1}
+			\includegraphics[scale=0.3]{mockups/validationApp1.png}
 			\caption{
 				\label{fig:cc1} 
 				\emph{Validation service home page} mockup
 			}
 		\end{figure}
 		
-\subsubsection{User's information}
+\clearpage
+\subsubsection{Report details}
 
-From the home page the operator could access the list of all the not valid reports and valid violations.
+From the report details page, the operator can:
+\begin{itemize}
+	\item Visualise all the detailed information about the selected report
+	\item Visualise the result of the image recognition algorithms associated to the selected report
+	\item Manually type the report license plate if not present, wrongly typed by the user, or totally not recognised
+	\item Mark and unmark reports as valid in order to transform it into a violation\newline\newline
+\end{itemize}
 
 \begin{figure}[ht!]
+	\hspace*{-1cm}
 	\centering
-	\includegraphics[width=0.8\linewidth]{mockups/customerCare2}
+	\includegraphics[scale=0.3]{mockups/validationApp2.png}
 	\caption{
 		\label{fig:cc2} 
 		\emph{Validation service reports and violations list} mockup
