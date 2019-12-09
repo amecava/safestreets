@@ -436,68 +436,36 @@ The sequence diagram in \autoref{fig:sendDataToMun} shows the interactions betwe
 \clearpage
 
 
-\subsection{Component interfaces}
+\subsection{Component Interfaces}
+The component interfaces offered by the application server are represented in the following component interfaces diagram.
+The arrows represents the dependencies relations. All the data parameters and return values are classes that implements the JsonValue interface, in order to be optimized for serialization.\\
+
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[angle=0,width=1.1\linewidth]{diagrams/ServerComponent-methods.png}
 	\caption{
 		\label{fig:sendDataToMun} 
-		\emph{Send data to municipality} sequence diagram
+		\emph{Component interfaces} diagram
 	}
 \end{figure}
 
-\subsubsection{Car-server interfaces}
-\label{sec:carServerInt}
-All cars are provided with a module that grants TCP/IP connectivity over a dedicated subnet offered by a specific ISP. In order to ensure better security for the communications, in the same subnet is also located the server with the \mbox{\emph{CarEventHandler}} interface and the API used by Maintenance.
-
-The \emph{CarHandler} component communicates to cars via the \mbox{\emph{CarPrimitives}} external API provided by cars (using the JAX-RS API) which executes functions directly on their modules.
-
-A specific car is reach by the system using its IP address or via ARP protocol using the \emph{MACaddress} database attribute when the IP is unknown.
-
-\subsubsection{Maintenance API interface}
-The Maintenance API must be realized using the REST paradigm. The external maintenance system should query the Maintenance API at predefined time intervals in order to retrieve an updated list of car failures paired with proper software keys in order to unlock the doors.
-
-Considering the importance of the operations performed, these security measures must be taken into consideration:
-\begin{itemize}
-	\item The API must be accessible only over the system dedicated subnet
-	\item A security token must be provided in order to perform any action through the API
-\end{itemize}
-The maintenance operators have been provided a smartphone which is connected in the same dedicated subnet used for cars and for the server with the Maintenance API.
-Security tokens must be negotiated by our system and the external maintenance service.
-
 \subsubsection{User Application interface}
-The \emph{UserAppIntF} interface is responsible for communications between the user application and the user application server.
+The User Application interface is responsible for communications between the user application and the user application server.
+Because of the nature of exchanged data (password and privacy-related information), the protocol to be used is HTTPS.
 
-Because of the nature of exchanged data (credit card number, password, and privacy-related information), the protocol to be used is HTTPS.
+\subsubsection{Validation Service interface}
+Via the Validation Service interface is responsible for communications between the validation service application and the validation application server.
 
-\subsubsection{Customer Care interface}
-Via the \emph{CustomerCareIntF} interface is responsible for communications between the customer care application and the CustomerCare server.
+All computers used by the validation service are connected in the same dedicated subnet as the validation application server and this web server is accessible only from the aforementioned subnet. 
 
-All computers used by the customer care service are connected in the same dedicated subnet as the CustomerCare server and this web server is accessible only from the aforementioned subnet. 
+A VPN is used to achieve what mentioned above. Because of the sensitive data exchange, the protocol to be used is HTTPS
 
-A VPN is used to achieve what mentioned above. Because of corporate data exchange, the protocol to be used id HTTPS
+\subsubsection{Data Provider interface}
+Trough the Data Provider API the system can retrieve and write data into the database. Note that the Data Provider component is the only one that access directly the DBMS API component.
 
-\subsubsection{GIS API}
-\label{sec:gis}
-Using this external API of a \emph{Geographical Information System} our system is able to:
-\begin{itemize}
-	\item retrieve a reference to an up-to-date map centered on a given position
-	\item add pointers to the aforementioned map
-	\item get the latitude and longitude of a given location and vice versa
-\end{itemize}
-The \emph{UserApplication} component loads and shows the map using its reference.
+\subsubsection{API Handler interface}
+The API Handler Interface must be realized using the REST paradigm. The external Municipality system should query the API Handler
+in order to retrieve an updated list of violations and statistics. 
 
-\subsubsection{DBMS API}
-Trough the DBMS API the system can retrieve and write data into the database. Note that the \mbox{\emph{DataProvider}} component is the only one that access directly this interface.
 
-\subsubsection{Payments API}
-Payment transactions are processed using this external API of a \emph{Web based electronic payment system}.\\
-Information required from this API are in order to complete a payment transaction (fetched from the database):
-\begin{itemize}
-	\item name and surname of the payer
-	\item due amount
-	\item credit card number
-\end{itemize}
-Data encryption must be taken into consideration.\\
-The API response must be the payment outcome in JSON format (succeded or rejected).
