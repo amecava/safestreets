@@ -112,7 +112,6 @@
 \clearpage
 
 \subsubsection{DB component}
-\todo{TIA}
 \paragraph{ER model}In \autoref{fig:ERModel} is represented the ER model of the system's database.
 
 \begin{figure}[h!]
@@ -128,33 +127,18 @@
 \paragraph{Users} Beyond the primary key, the \mbox{\emph{username}} of each registered user must be unique.
 
 \paragraph{Reports}
-Reports are identified by a unique \emph{reportID}, but also the couple User, timeStamp must be unique.
-Fees and discounts must be defined as sum of a fixed value and a percentage factor w.r.t. the base rent cost.
-The \emph{appliedDiscount} and \emph{appliedFee} payment attributes are determined, respectively, based upon the set of all \emph{applicableDiscount} and \emph{applicableFee} attributes associated to the rent. See \hyperref[sec:paymentAlgorithms]{payment algorithms} for more details.
+Reports are identified by a unique \emph{reportID}, but also the couple \\ \emph{(uploadedBy,timeStamp)} must be unique. Every report can have one or more types; the committedBy Plate represents the manual inserted plate number, so it's an optional value.
+The \emph{hasViolation} field can be empty until the report is validated and approved, so it's used in pair with the \emph{validReportFlag}, which is also optional in order to distinguish between validated and to be validated reports.
 
-As particular example, the \emph{OutOfSafeArea} fee, which is composed by a fixed amount plus a variable amount proportional to the \emph{distance} of the car form the nearest safe area, can be expressed as a fixed number of fees clustered w.r.t. distance.
+\paragraph{Violations}Beyond the primary key, the \mbox{\emph{hasReport}} attribute must be unique. The \mbox{\emph{committedBy}} field is set to the recognised and validated Plate.
 
-\paragraph{Violations}Beyond the primary key, the \mbox{\emph{licenseNumber}} and \emph{MAC Address} attributes must be unique. The \mbox{\emph{lastSeen}} attribute is set by default to the timestamp of the last car information update. The \mbox{\emph{carStatus}} attribute represents the car statuses as defined in the RASD.
+\paragraph{Plates} Every plate is identified by its number; the \emph{egregiousOffenderFlag} is used to indicate whether the owner of the vehicle having that plate often commits violations.
 
-\paragraph{Plates} There are three possible payment status:
-\begin{itemize}
-	\item \emph{Pending}: a payment transaction request has been sent to the external payment system
-	\item \emph{Confirmed}: the payment transaction has been successfully executed
-	\item \emph{Rejected}: the payment transaction has failed
-\end{itemize}
-The default state for a payment is \emph{Pending}.
+\paragraph{Streets} Every street is identified by the couple \emph{(streetName,area)} which must be unique. The \emph{isSafeFlag} represents whether there are enough violations that took place in that street in order to mark it as unsafe.
 
-\paragraph{Streets}A failure is considered "open" (i.d. to be fixed) if the attribute \emph{fixedTimestamp} is not present. A car can have at most one open failure.
+\paragraph{Areas} An area is identified by the couple \emph{(areaName,city)} which must be unique. The \emph{isSafeFlag} represents whether there are enough violations that took place in that area in order to mark it as unsafe.
 
-\paragraph{Areas}Safe areas are also provided as XML file according to the \emph{GPX GPS Exchange Format} \cite{gpx} and they are composed by closed polygonal chains.
-
-\paragraph{Cities}The position of charging stations and safe areas are processed and sent to cars through the dedicated primitive only in case of:
-\begin{itemize}
-	\item system initialization (sent to all cars)
-	\item changes in XML files (sent to all cars)
-	\item new car (sent to one car)
-\end{itemize}
-
+\paragraph{Cities} A city is identified by the couple \emph{(cityName,country)} which must be unique. The \emph{isSafeFlag} represents whether there are enough violations that took place in that city in order to mark it as unsafe.
 \clearpage
 \subsubsection{Server component}
 In this section, we illustrate the \emph{Server} structure and its main components and interactions, in order to explain how interfaces, communication with external components and system functionalities are performed and managed.
