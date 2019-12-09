@@ -11,6 +11,17 @@ The main goal of our mockups design process is to build an interface that clearl
 \subsection{User app}
 The user app mockups have been discussed and presented in the User Interfaces section of the \emph{SafeStreets: Requirements Analysis and Specification Document} \cite{RASD}. For further implementation details refer to the \hyperref[sec:implementationChoices]{Implementation Choices} section of this document.
 
+In addition we present the UX diagram to show the flow which the user will follow to navigate inside the application, in accordance with the mockups specified in the RASD:
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\linewidth]{diagrams/UXdiagram-user.png}
+	\caption{
+		\label{fig:uxuser} 
+		\emph{UX Diagram} - User
+	}
+\end{figure}
+
 \subsection{Validation Service app}
 The validation service app has a simple interface in order to provide features to validation service operators in a clear and simple way. This interface must be optimised for a desktop monitor size.
 
@@ -25,6 +36,7 @@ From the home page the operator can:
 	\item Delete single or multiple reports
 	\item Select a specific report to visualise all the stored data regarding it, accessing the \emph{report details page}\newline\newline
 \end{itemize}
+ 
  \begin{figure}[ht!]
  	\hspace*{-1cm}
 			\centering
@@ -34,9 +46,9 @@ From the home page the operator can:
 				\emph{Validation service home page} mockup
 			}
 		\end{figure}
-		
-\clearpage
-\subsubsection{Report details}
+
+		\clearpage
+\subsubsection{List of Reports and Violations}
 
 From the report details page, the operator can:
 \begin{itemize}

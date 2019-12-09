@@ -38,7 +38,7 @@
 \BOOKMARK [2][-]{subsection.3.1}{User app}{section.3}% 38
 \BOOKMARK [2][-]{subsection.3.2}{Validation Service app}{section.3}% 39
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Home page}{subsection.3.2}% 40
-\BOOKMARK [3][-]{subsubsection.3.2.2}{User's information}{subsection.3.2}% 41
+\BOOKMARK [3][-]{subsubsection.3.2.2}{List of Reports and Violations}{subsection.3.2}% 41
 \BOOKMARK [1][-]{section.4}{Requirements traceability}{}% 42
 \BOOKMARK [2][-]{subsection.4.1}{Functional requirements}{section.4}% 43
 \BOOKMARK [2][-]{subsection.4.2}{Non functional requirements}{section.4}% 44
@@ -50,7 +50,7 @@
 \BOOKMARK [3][-]{subsubsection.5.4.1}{Integration of the internal components of the Server}{subsection.5.4}% 50
 \BOOKMARK [3][-]{subsubsection.5.4.2}{Integration of the frontend with the backend}{subsection.5.4}% 51
 \BOOKMARK [3][-]{subsubsection.5.4.3}{Integration with the external services}{subsection.5.4}% 52
-\BOOKMARK [1][-]{section*.49}{Appendices}{}% 53
+\BOOKMARK [1][-]{section*.48}{Appendices}{}% 53
 \BOOKMARK [1][-]{Appendix.1.A}{Software and tools used}{}% 54
 \BOOKMARK [1][-]{Appendix.1.B}{Hours of work}{}% 55
 \BOOKMARK [1][-]{Appendix.1.C}{Changelog}{}% 56
