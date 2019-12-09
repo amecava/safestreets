@@ -116,6 +116,7 @@
 \paragraph{ER model}In \autoref{fig:ERModel} is represented the ER model of the system's database.
 
 \begin{figure}[h!]
+	\hspace*{-0.7cm}
 	\centering
 	\includegraphics[width=1.1\linewidth]{diagrams/DBComponent.png}
 	\caption{
@@ -124,17 +125,18 @@
 	}
 \end{figure}
 
-\paragraph{Users} Beyond the primary key, the \mbox{\emph{email}}, \mbox{\emph{drivingLicenseNumber}} and \mbox{\emph{emailToken}} attributes must be unique.
+\paragraph{Users} Beyond the primary key, the \mbox{\emph{username}} of each registered user must be unique.
 
-\paragraph{Fees and discounts}
+\paragraph{Reports}
+Reports are identified by a unique \emph{reportID}, but also the couple User, timeStamp must be unique.
 Fees and discounts must be defined as sum of a fixed value and a percentage factor w.r.t. the base rent cost.
 The \emph{appliedDiscount} and \emph{appliedFee} payment attributes are determined, respectively, based upon the set of all \emph{applicableDiscount} and \emph{applicableFee} attributes associated to the rent. See \hyperref[sec:paymentAlgorithms]{payment algorithms} for more details.
 
 As particular example, the \emph{OutOfSafeArea} fee, which is composed by a fixed amount plus a variable amount proportional to the \emph{distance} of the car form the nearest safe area, can be expressed as a fixed number of fees clustered w.r.t. distance.
 
-\paragraph{Cars}Beyond the primary key, the \mbox{\emph{licenseNumber}} and \emph{MACaddress} attributes must be unique. The \mbox{\emph{lastSeen}} attribute is set by default to the timestamp of the last car information update. The \mbox{\emph{carStatus}} attribute represents the car statuses as defined in the RASD.
+\paragraph{Violations}Beyond the primary key, the \mbox{\emph{licenseNumber}} and \emph{MAC Address} attributes must be unique. The \mbox{\emph{lastSeen}} attribute is set by default to the timestamp of the last car information update. The \mbox{\emph{carStatus}} attribute represents the car statuses as defined in the RASD.
 
-\paragraph{Payment status} There are three possible payment status:
+\paragraph{Plates} There are three possible payment status:
 \begin{itemize}
 	\item \emph{Pending}: a payment transaction request has been sent to the external payment system
 	\item \emph{Confirmed}: the payment transaction has been successfully executed
@@ -142,18 +144,16 @@ As particular example, the \emph{OutOfSafeArea} fee, which is composed by a fixe
 \end{itemize}
 The default state for a payment is \emph{Pending}.
 
-\paragraph{Failures}A failure is considered "open" (i.d. to be fixed) if the attribute \emph{fixedTimestamp} is not present. A car can have at most one open failure.
+\paragraph{Streets}A failure is considered "open" (i.d. to be fixed) if the attribute \emph{fixedTimestamp} is not present. A car can have at most one open failure.
 
-\paragraph{Safe areas}Safe areas are also provided as XML file according to the \emph{GPX GPS Exchange Format} \cite{gpx} and they are composed by closed polygonal chains.
+\paragraph{Areas}Safe areas are also provided as XML file according to the \emph{GPX GPS Exchange Format} \cite{gpx} and they are composed by closed polygonal chains.
 
-\paragraph{Safe areas and charging stations deployment}The position of charging stations and safe areas are processed and sent to cars through the dedicated primitive only in case of:
+\paragraph{Cities}The position of charging stations and safe areas are processed and sent to cars through the dedicated primitive only in case of:
 \begin{itemize}
 	\item system initialization (sent to all cars)
 	\item changes in XML files (sent to all cars)
 	\item new car (sent to one car)
 \end{itemize}
-
-\paragraph{Security}Users' passwords and all credit card numbers (associated to users and used for past payments) must be stored with proper and secure encryption.
 
 \clearpage
 \subsubsection{Server component}
