@@ -198,7 +198,7 @@ This component manages the registration and login phase of the users, encapsulat
 	}
 \end{figure}
 \paragraph{UserInformationHandler}
-This component manages the user information present in the system and provides \textit{UserAppServer} and \textit{ValidationAppServer} the data accessible by the user, given his roles' permissions. The main purpose of this component is to secure users' data, avoiding unauthorised users to consult sensible information. The diagram in \autoref{fig:userInformationHandlerDiagram} shows the internal structure of the \textit{UserInformationHandler} component and the delegation associations between the components interfaces involved.
+This component manages the user information present in the system and provides \textit{UserAppServer} and \textit{ValidationAppServer} the data accessible by the user, given his roles' permissions. The main purpose of this component is to secure users' data, avoiding unauthorised users to consult sensible information. 
 \paragraph{ValidationHandler}
 This component is used to provide the reports stored in the \textit{DBMS} that still have to be validated to the \textit{ValidationApplication}, in order to allow the \textit{ValidationOperator} to evaluate the submission and decide to approve or reject it. The decision is then stored and the violations information are updated. This component is required to avoid possible malicious or involuntary wrong usages of the system by the customers, trying to submit an unreal violation.
 \paragraph{DataProvider}
@@ -302,7 +302,7 @@ The following technologies were chosen for the implementation of the SafeStreets
 \paragraph{DBMS:} MySQL was chosen as DBMS since it is the most popular and widespread and it has a lot of documentation and a big community of users; in combination with it we chose InnoDB which allows the usage of foreign keys
 \clearpage
 \subsubsection{Decision Tree}
-\autoref{fig:decisionTree} represents a summary of the main design and implementation decisions that were made during the development of the architecture of the PowerEnJoy system.\\
+\autoref{fig:decisionTree} represents a summary of the main design and implementation decisions that were made during the development of the architecture of the SafeStreets system.\\
 
 \begin{figure}[h!]
 	\centering
