@@ -6,11 +6,11 @@ The system allows users to send pictures of violations, including suitable metad
 	
 The system will also provide a communication interface to the municipality's provided service to create a secure bridge for data transfer. This connection will enable SafeStreets to cross its data with municipality's to make analysis and build different types of statistics. Moreover the system will offer back to the municipality the possibility to retrieve information about the violations in order to generate traffic tickets from it and receive suggestions on possible interventions.
   
-# RASD
+## RASD
 
 The purpose of a Requirement Analysis and Specifications Document is the process of discovering the purpose for which a software system was intended, by identifying stakeholders and their needs, and documenting these in a form that is amenable to analysis, communication, and subsequent implementation. It is also concerned with the relationship of software's factors such as goals, functions and constrains to precise specifications of software behaviour, and to their evolution over time and across software families.
 
-# DD
+## DD
 
 In this document we are going to describe software design and architecture of the SafeStreets system.
 The software architecture of a system is the structure or structures of the system, which comprise software elements, the externally visible properties of those elements, and the relationships among them.
